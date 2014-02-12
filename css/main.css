@@ -74,18 +74,21 @@ body {
    =================== */
 
 .header-container {
-    border-bottom: 20px solid #e44d26;
+    /*border-bottom: 20px solid #e44d26;*//* dark orange */
+    border-bottom: 20px solid #1B92BA;/* dark blue */
 }
 
 .footer-container,
 .main aside {
-    border-top: 20px solid #e44d26;
+    /*border-top: 20px solid #e44d26;*//* orange dark */
+    border-top: 20px solid #1B92BA;/* dark blue */
 }
 
 .header-container,
 .footer-container,
 .main aside {
-    background: #f16529;
+    /*background: #f16529;*//* orange */
+    background: #f16529;*//* blue */
 }
 
 .title {
