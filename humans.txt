@@ -1,0 +1,11 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Sylvain Dethier - Designer, Developer - @sv1l https://twitter.com/sv1l
+
+# TECHNOLOGY COLOPHON
+
+    HTML5, CSS3
+    Initializr, Modernizr, jQuery
