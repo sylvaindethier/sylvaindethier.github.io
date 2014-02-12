@@ -80,14 +80,19 @@ body {
 
 .footer-container,
 .main aside {
-    /*border-top: 20px solid #e44d26;*//* orange dark */
+    /*border-top: 20px solid #e44d26;/* dark orange */
     border-top: 20px solid #1B92BA;/* dark blue */
+}
+
+nav a {
+    /*background: #e44d26;/* dark orange */
+    background: #1B92BA;
 }
 
 .header-container,
 .footer-container,
 .main aside {
-    /*background: #f16529;*//* orange */
+    /*background: #f16529;/* orange */
     background: #23BCEF;*//* blue */
 }
 
