@@ -99,8 +99,8 @@ textarea {
    Author's custom styles
    ========================================================================== */
 /* NavBar fixed to top */
-body { padding-top: 70px; }
-
+body, section .title { padding-top: 70px; }
+section { margin-top: 20px;}
 
 
 

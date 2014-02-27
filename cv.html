@@ -18,13 +18,13 @@
         <!-- Modernizr & Respond -->
         <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
     </head>
-    <body>
+    <body data-spy="scroll" data-target=".navbar">
         <!--[if lt IE 7]>
             <p class="browsehappy">Vous utilisez un navigateur <strong>obsolète</strong>. Veuillez <a target="_blank" href="http://browsehappy.com/">mettre à jour votre navigateur</a> pour améliorer votre expérience.</p>
         <![endif]-->
 
         <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-            <div class="container-fluid">
+            <div class="container">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                         <span class="sr-only">Toggle navigation</span>
@@ -34,8 +34,179 @@
                     </button>
                     <a id="top" class="navbar-brand" href="/">Sylvain Dethier</a>
                 </div>
+
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#informations">Informations</a></li>
+                        <li><a href="#competences">Compétences</a></li>
+                        <li><a href="#experiences">Expériences</a></li>
+                        <li><a href="#formations">Formations</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
             </div>
         </nav>
+
+        <div id="main" class="container">
+            <h1 class="text-center">Développeur PHP Symfony, JavaScript, application web sur Paris</h1>
+
+            <section>
+                <h2 id="informations" class="title text-center">Informations</h2>
+                <p class="lead">Je suis passionné par les sciences et l’informatique, et fais une veille continue sur les technologies web. Mon sens de la logique sert à l’analyse des systèmes, la compréhension de leur fonctionnement, ainsi qu’à la réflexion aux solutions. Curieux et perfectionniste, j’aime apprendre les bonnes pratiques pour concevoir du code meilleur: testé, maintenable, évolutif, lisible, compréhensible, tâches automatisées.</p>
+            </section>
+
+            <section>
+                <h2 id="competences" class="title text-center">Compétences</h2>
+                <h3><em>Langages / Frameworks</em></h3>
+                <div class="row skill">
+                    <div class="col-md-1"><strong>PHP</strong></div>
+                    <div class="col-md-11"><span class="skill-level"><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star-empty"></span><span class="glyphicon glyphicon-star-empty"></span></span> confirmé: Symfony 1.4, Symfony2, Zend 1.x</div>
+                </div>
+                <div class="row skill">
+                    <div class="col-md-1"><strong>JavaScript</strong></div>
+                    <div class="col-md-11"><span class="skill-level"><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star-empty"></span><span class="glyphicon glyphicon-star-empty"></span></span> confirmé: Natif, AJAX, jQuery, ExtJS, Promise, AngularJS</div>
+                </div>
+                <div class="row skill">
+                    <div class="col-md-1"><strong>SQL</strong></div>
+                    <div class="col-md-11"><span class="skill-level"><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star-empty"></span><span class="glyphicon glyphicon-star-empty"></span></span> confirmé: MySQL, PostreSQL</div>
+                </div>
+                <div class="row skill">
+                    <div class="col-md-1"><strong>HTML</strong></div>
+                    <div class="col-md-11"><span class="skill-level"><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star-empty"></span><span class="glyphicon glyphicon-star-empty"></span></span> confirmé: Intégration, HTML5 (Boilerplate)</div>
+                </div>
+                <div class="row skill">
+                    <div class="col-md-1"><strong>CSS</strong></div>
+                    <div class="col-md-11"><span class="skill-level"><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star-empty"></span><span class="glyphicon glyphicon-star-empty"></span><span class="glyphicon glyphicon-star-empty"></span></span> intermédiaire: Bootstrap, Modernizr, Responsive, Système de grille</div>
+                </div>
+                <h3><em>Outils</em></h3>
+                <p>LAMP, PhpMyAdmin, MySQL Workbench, PHPUnit, NodeJS, Git / Github, SVN, Redmine, Sublime Text, Netbeans, Eclipse</p>
+            </section>
+
+            <section>
+                <h2 id="experiences" class="title text-center">Expériences</h2>
+                <div class="section-unit">
+                    <div class="row">
+                        <div class="col-md-4 xp-title"><strong>Développeur Symfony 2</strong></div>
+                        <div class="col-md-4 xp-firm"><small><em>Qobuz</em></small></div>
+                        <div class="col-md-4 xp-date text-right"><small>CDI, mai 2013 - juillet 2013, <strong>3 mois</strong></small></div>
+                    </div>
+                    <p class="techs">Symfony 2, Doctrine 2, FOSCommentBundle, JMSSerializerBundle, JavaScript (jQuery, Handlebars), SOA REST, Git/Github</p>
+                    <p class="desc">Refonte des commentaires en mode widget, mise en oeuvre et développement de l’API (SOA, REST) et du bundle spécifique (Controller as Service, Dependency injection). Implémentation et développement d’un outil de calcul d’indice de performance des albums. Maintenance et évolution de l’existant en Symfony 1.4.</p>
+                </div>
+
+                <div class="section-unit">
+                    <div class="row">
+                        <div class="col-md-4 xp-title"><strong>Développeur Zend 1.x</strong></div>
+                        <div class="col-md-4 xp-firm"><small><em>Abvent</em></small></div>
+                        <div class="col-md-4 xp-date text-right"><small>CDI, avril 2013 - mai 2013, <strong>1 mois</strong></small></div>
+                    </div>
+                    <p class="techs">Zend framework 1.x, MySQL, JavaScript (Mootools)</p>
+                    <p class="desc">Maintenance et évolution d'une boutique intégrée à un logiciel, application de type e-commerce.</p>
+                </div>
+
+                <div class="section-unit">
+                    <div class="row">
+                        <div class="col-md-4 xp-title"><strong>Développeur JavaScript</strong></div>
+                        <div class="col-md-4 xp-firm"><small><em>ZenPro</em></small></div>
+                        <div class="col-md-4 xp-date text-right"><small>mission, novembre 2012 - mars 2013, <strong>5 mois</strong></small></div>
+                    </div>
+                    <p class="techs">HTML5, CSS3, Bootstrap, JavaScript (Natif, Websocket, jQuery, Service, Promise), Git/Github</p>
+                    <p class="desc">Conception et développement frontend d'un éditeur collaboratif de code.</p>
+                </div>
+
+                <div class="section-unit">
+                    <div class="row">
+                        <div class="col-md-4 xp-title"><strong>Développeur Zend 1.x</strong></div>
+                        <div class="col-md-4 xp-firm"><small><em>Innovia Team</em></small></div>
+                        <div class="col-md-4 xp-date text-right"><small>CDI, août 2012 - octobre 2012, <strong>3 mois</strong></small></div>
+                    </div>
+                    <p class="techs">PHP 5.3, Zend framework 1.x, PostgreSQL, ExtJS, SVN</p>
+                    <p class="desc">Maintenance et évolution sue deux applications BigData (vente en ligne, énergie de bâtiment): calcul et affichage textuel et graphique d'indicateurs de performances.</p>
+                </div>
+
+                <div class="section-unit">
+                    <div class="row">
+                        <div class="col-md-4 xp-title"><strong>Développeur Symfony 2</strong></div>
+                        <div class="col-md-4 xp-firm"><small><em>EvoReso</em></small></div>
+                        <div class="col-md-4 xp-date text-right"><small>co-fondateur, juin 2011 - juin 2012, <strong>12 mois</strong></small></div>
+                    </div>
+                    <p class="techs">Symfony 2, Doctrine 2, PostgreSQL, REST SOA, HTML5 CSS3 (Boilerplate, Bootstrap), jQuery, Git/Github</p>
+                    <p class="desc">Analyse des besoins, conception et développement d'un portail et service API REST de gestion collaborée d'organisation d'évenements.</p>
+                </div>
+
+                <div class="section-unit">
+                    <div class="row">
+                        <div class="col-md-4 xp-title"><strong>Développeur Symfony 1.4</strong></div>
+                        <div class="col-md-4 xp-firm"><small><em>Formastreet</em></small></div>
+                        <div class="col-md-4 xp-date text-right"><small>CDI, octobre 2010 - avril 2011, <strong>7 mois</strong></small></div>
+                    </div>
+                    <p class="techs">Symfony 1.4, Doctrine 1.2, PostgreSQL, jQuery, ExtJS, SVN, Git/Github</p>
+                    <p class="desc">Responsable technique, prise en charde des projets et serveurs applicatifs. Maintenance et évolution des applications en backend et frontend. Conception et développement d'une solution CRM propriétaire légère.</p>
+                </div>
+
+                <div class="section-unit">
+                    <div class="row">
+                        <div class="col-md-4 xp-title"><strong>Développeur Symfony 1.4 Zend 1.x</strong></div>
+                        <div class="col-md-4 xp-firm"><small><em>Freelance</em></small></div>
+                        <div class="col-md-4 xp-date text-right"><small>contrats / missions, mars 2009 - août 2010, <strong>18 mois</strong></small></div>
+                    </div>
+                    <p class="techs">PHP 5.2, Zend 1.x, Symfony 1.4, SOAP, REST, MySQL, HTML, CSS, jQuery, Mootools, SVN</p>
+                    <p class="desc">Conception, modélisation, développement, maintenance et évolution sur des projets web (internet, intranet, interface client). Conseiller, former, et accompagner les utilisateurs, ainsi que les particuliers à l'usage d'un ordinateur et de l'internet.</p>
+                </div>
+
+                <div class="section-unit">
+                    <div class="row">
+                        <div class="col-md-4 xp-title"><strong>Développeur PHP</strong></div>
+                        <div class="col-md-4 xp-firm"><small><em>Canal TP</em></small></div>
+                        <div class="col-md-4 xp-date text-right"><small>CDI, juillet 2008 - décembre 2008, <strong>6 mois</strong></small></div>
+                    </div>
+                    <p class="techs">PHP 5.2, HTML, CSS, jQuery, DOM</p>
+                    <p class="desc">Consommation, exploitation, transformation, et intégration de données d'un service d'information voyageur des transports en commun. Collaboration à la mise en œuvre d'un framework orienté métier.</p>
+                </div>
+            </section>
+
+            <section>
+                <h2 id="formations" class="title text-center">Formations</h2>
+                <div class="section-unit">
+                    <div class="row">
+                        <div class="col-md-4 xp-title"><strong>Développeur informatique</strong></div>
+                        <div class="col-md-4 xp-firm"><small><em>AFPA Nanterre</em></small></div>
+                        <div class="col-md-4 xp-date text-right"><small>mai 2007 - mai 2008, <strong>1 an</strong></small></div>
+                    </div>
+                    <p class="techs">Symfony 1.2, Doctrine, MySQL, HTML, CSS, jQuery, Mootools</p>
+                    <p class="desc">Modélisation et conception d'un portail démonstratif de vente d'articles en ligne.</p>
+                </div>
+
+                <div class="section-unit">
+                    <div class="row">
+                        <div class="col-md-4 xp-title"><strong>IUP Génie Mathématique et Informatique</strong></div>
+                        <div class="col-md-4 xp-firm"><small><em>Paris IX Dauphine</em></small></div>
+                        <div class="col-md-4 xp-date text-right"><small>octobre 2002 - juin  2003, <strong>1 an</strong></small></div>
+                    </div>
+                </div>
+
+                <div class="section-unit">
+                    <div class="row">
+                        <div class="col-md-4 xp-title"><strong>CPGE TPC</strong></div>
+                        <div class="col-md-4 xp-firm"><small><em>Jean Mermoz Montpellier</em></small></div>
+                        <div class="col-md-4 xp-date text-right"><small>septembre 2000 - juin 2002, <strong>2 ans</strong></small></div>
+                    </div>
+                </div>
+
+                <div class="section-unit">
+                    <div class="row">
+                        <div class="col-md-4 xp-title"><strong>BAC STL Chimie</strong></div>
+                        <div class="col-md-4 xp-firm"><small><em>ENCPB Paris</em></small></div>
+                        <div class="col-md-4 xp-date text-right"><small>septembre 1997 - juin 2000, <strong>3 ans</strong></small></div>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h2 id="contact" class="title text-center">Contact</h2>
+            </section>
+        </div><!-- #main .container -->
+
 
         <!-- jQuery -->
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
@@ -50,10 +221,12 @@
 
         <!-- Google Analytics -->
         <script>
+          /*
           (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
           m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
           })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
           ga('create','UA-48020170-2','sylvaindethier.github.io');ga('send','pageview');
+          */
         </script>
     </body>
 </html>
