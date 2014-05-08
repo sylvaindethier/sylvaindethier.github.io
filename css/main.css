@@ -121,7 +121,7 @@ body {background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAoAAAA
 /*! Fonts & colors */
 body { font-family: 'Roboto', 'sans-serif'; }
 .navbar, h1, h2, .h1, .h2 { font-family: 'Quicksand', 'sans-serif'; font-weight: 700; }
-#main { color: #666666; }
+#main { color: #666666; padding-bottom: 40px; }
 .h2 { color: #3c78d8;}
 .h3 { color: #434343; font-size: 14px; /* body font-size */; font-weight: 700; }
 .h4 { color: #434343; font-size: 14px; font-weight: normal; font-style: italic; }
