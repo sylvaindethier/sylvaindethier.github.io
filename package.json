@@ -1,0 +1,20 @@
+{
+  "name": "sylvaindethier.github.io",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Sylvain Dethier personal website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sylvaindethier/sylvaindethier.github.io.git"
+  },
+  "author": "Sylvain Dethier <dethiersylvain@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sylvaindethier/sylvaindethier.github.io/issues"
+  },
+  "homepage": "https://github.com/sylvaindethier/sylvaindethier.github.io#readme"
+}
