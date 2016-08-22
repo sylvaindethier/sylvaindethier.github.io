@@ -4,8 +4,9 @@
   "description": "Sylvain Dethier personal website",
   "scripts": {
     "start": "node ./scripts/start.js",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "node ./scripts/build.js"
+    "test": "echo \"Error: no test specified\"",
+    "build": "npm run test && node ./scripts/build.js",
+    "deploy": "npm run build && node ./scripts/deploy.js"
   },
   "repository": {
     "type": "git",
