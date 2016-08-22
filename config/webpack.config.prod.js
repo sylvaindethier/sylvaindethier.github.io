@@ -129,7 +129,7 @@ module.exports = {
     // }),
     new ExtractTextPlugin('static/css/[name].[contenthash:8].css'),
     new CopyWebpackPlugin([
-      { from: path.join(paths.appSrc, 'robots.txt') },
+      { from: path.join(paths.appSrc, 'files') },
     ]),
   ]
 };
