@@ -1,0 +1,25 @@
+<!doctype html><%
+
+var opts = Object.assign({}, htmlWebpackPlugin.options, {
+  lang: 'en',
+  title: 'React App',
+  description: '',
+  keywords: '',
+  rootString: 'Loading app ...',
+});
+var files = htmlWebpackPlugin.files;
+
+%><html lang="<%= opts.lang %>" <% if(files.manifest) { %>manifest="<%= files.manifest %>"<% } %>>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <title><%= opts.title %></title>
+    <meta name="description" content="<%= opts.description %>">
+    <meta name="keywords" content="<%= opts.keywords %>">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    <div id="root"><%= opts.rootString %></div>
+  </body>
+</html>
