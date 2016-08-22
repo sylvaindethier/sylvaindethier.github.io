@@ -125,7 +125,7 @@ module.exports = {
     }),
     new ExtractTextPlugin('css/[name].[contenthash:8].css'),
     new CopyWebpackPlugin([
-      { from: path.join(paths.appSrc, 'files') },
+      { from: path.join(paths.appSrc, 'static') },
     ]),
   ]
 };
