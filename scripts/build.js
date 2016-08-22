@@ -1,10 +1,10 @@
 process.env.NODE_ENV = 'production';
 
-var chalk = require('chalk');
-var rimrafSync = require('rimraf').sync;
-var webpack = require('webpack');
-var config = require('../config/webpack.config.prod');
-var paths = require('../config/paths');
+const chalk = require('chalk');
+const rimrafSync = require('rimraf').sync;
+const webpack = require('webpack');
+const config = require('../config/webpack.config.prod');
+const paths = require('../config/paths');
 
 // Remove all content but keep the directory so that
 // if you're in it, you don't end up in Trash
