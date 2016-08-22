@@ -2,22 +2,20 @@ const webpack = require('webpack');
 const path = require('path');
 const autoprefixer = require('autoprefixer');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-// const CaseSensitivePathsPlugin = require('case-sensitive-paths-webpack-plugin');
 const paths = require('./paths');
 
 module.exports = {
   devtool: 'eval',
 
   entry: {
-    // vendors, be sure to load them first
     vendors: [
+      require.resolve('./polyfills'),
       'react',
       'react-dom',
     ],
     app: [
       require.resolve('webpack-dev-server/client') + '?/',
       require.resolve('webpack/hot/dev-server'),
-      require.resolve('./polyfills'),
       path.join(paths.appSrc, 'index'),
     ]
   },
@@ -26,15 +24,11 @@ module.exports = {
     // Next line is not used in dev but WebpackDevServer crashes without it:
     path: paths.appBuild,
     pathinfo: true,
-    filename: 'static/js/bundle.js',
+    filename: 'js/bundle.js',
     publicPath: '/',
   },
   resolve: {
     extensions: ['', '.js', '.json'],
-  },
-  resolveLoader: {
-    root: paths.ownNodeModules,
-    // moduleTemplates: ['*-loader'],
   },
   module: {
     preLoaders: [
@@ -66,7 +60,7 @@ module.exports = {
         include: [paths.appSrc, paths.appNodeModules],
         loader: 'file',
         query: {
-          name: 'static/media/[name].[ext]',
+          name: 'media/[name].[ext]',
         },
       },
       {
@@ -75,7 +69,7 @@ module.exports = {
         loader: 'url',
         query: {
           limit: 10000,
-          name: 'static/media/[name].[ext]',
+          name: 'media/[name].[ext]',
         },
       },
     ],
@@ -90,14 +84,13 @@ module.exports = {
   },
 
   plugins: [
-    new webpack.optimize.CommonsChunkPlugin('vendors', 'static/js/vendors.bundle.js'),
+    new webpack.DefinePlugin({ 'process.env.NODE_ENV': '"development"' }),
+    new webpack.optimize.CommonsChunkPlugin('vendors', 'js/vendors.js'),
     new HtmlWebpackPlugin({
       inject: true,
       template: paths.appHtml,
       favicon: paths.appFavicon,
     }),
-    new webpack.DefinePlugin({ 'process.env.NODE_ENV': '"development"' }),
     new webpack.HotModuleReplacementPlugin(),
-    // new CaseSensitivePathsPlugin(), // WIsFor ?
   ],
 };

@@ -12,27 +12,23 @@ module.exports = {
 
   entry: {
     vendors: [
+      require.resolve('./polyfills'),
       'react',
       'react-dom',
     ],
     app: [
-      require.resolve('./polyfills'),
       path.join(paths.appSrc, 'index')
     ]
   },
 
   output: {
     path: paths.appBuild,
-    filename: 'static/js/[name].[chunkhash:8].js',
-    chunkFilename: 'static/js/[name].[chunkhash:8].chunk.js',
-    publicPath: '/'
+    filename: 'js/[name].[chunkhash:8].js',
+    chunkFilename: 'js/[name].[chunkhash:8].chunk.js',
+    publicPath: '/',
   },
   resolve: {
     extensions: ['', '.js', '.json'],
-  },
-  resolveLoader: {
-    root: paths.ownNodeModules,
-    moduleTemplates: ['*-loader']
   },
   module: {
     preLoaders: [
@@ -67,7 +63,7 @@ module.exports = {
         include: [paths.appSrc, paths.appNodeModules],
         loader: 'file',
         query: {
-          name: 'static/media/[name].[hash:8].[ext]'
+          name: 'media/[name].[hash:8].[ext]'
         }
       },
       {
@@ -76,7 +72,7 @@ module.exports = {
         loader: 'url',
         query: {
           limit: 10000,
-          name: 'static/media/[name].[hash:8].[ext]'
+          name: 'media/[name].[hash:8].[ext]'
         }
       }
     ]
@@ -93,7 +89,8 @@ module.exports = {
   },
 
   plugins: [
-    new webpack.optimize.CommonsChunkPlugin('vendors', 'static/js/vendors.[chunkhash:8].js'),
+    new webpack.DefinePlugin({ 'process.env.NODE_ENV': '"production"' }),
+    new webpack.optimize.CommonsChunkPlugin('vendors', 'js/vendors.[chunkhash:8].js'),
     new HtmlWebpackPlugin({
       inject: true,
       template: paths.appHtml,
@@ -111,7 +108,6 @@ module.exports = {
         minifyURLs: true,
       }
     }),
-    new webpack.DefinePlugin({ 'process.env.NODE_ENV': '"production"' }),
     new webpack.optimize.OccurrenceOrderPlugin(),
     new webpack.optimize.DedupePlugin(),
     new webpack.optimize.UglifyJsPlugin({
@@ -127,7 +123,7 @@ module.exports = {
         screw_ie8: true
       }
     }),
-    new ExtractTextPlugin('static/css/[name].[contenthash:8].css'),
+    new ExtractTextPlugin('css/[name].[contenthash:8].css'),
     new CopyWebpackPlugin([
       { from: path.join(paths.appSrc, 'files') },
     ]),
