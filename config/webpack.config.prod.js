@@ -19,19 +19,19 @@ module.exports = {
     publicPath: '/',
   },
   resolve: {
-    extensions: ['', '.js', '.json'],
+    extensions: ['', '.js', '.jsx', '.json'],
   },
   module: {
     preLoaders: [
       {
-        test: /\.js$/,
+        test: /\.jsx?$/,
         loader: 'eslint',
         include: paths.appSrc
       }
     ],
     loaders: [
       {
-        test: /\.js$/,
+        test: /\.jsx?$/,
         include: paths.appSrc,
         loader: 'babel',
         query: require('./babel')
