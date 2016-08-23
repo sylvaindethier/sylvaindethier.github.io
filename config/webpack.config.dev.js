@@ -12,6 +12,7 @@ module.exports = {
       require.resolve('./polyfills'),
       'react',
       'react-dom',
+      'react-router',
     ],
     app: [
       require.resolve('webpack-dev-server/client') + '?/',

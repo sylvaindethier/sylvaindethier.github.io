@@ -15,6 +15,7 @@ module.exports = {
       require.resolve('./polyfills'),
       'react',
       'react-dom',
+      'react-router',
     ],
     app: [
       path.join(paths.appSrc, 'index')
