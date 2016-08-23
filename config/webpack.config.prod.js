@@ -1,61 +1,41 @@
+const join = require('path').join;
 const webpack = require('webpack');
-const path = require('path');
-const autoprefixer = require('autoprefixer');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const paths = require('./paths');
-const entry = require('./webpack.config.entry');
+const config = require('./webpack.config');
+const assign = Object.assign;
 
-module.exports = {
+module.exports = assign(config, {
   bail: true,
   devtool: 'source-map',
 
-  entry,
   output: {
     path: paths.appBuild,
+    publicPath: '/',
     filename: 'js/[name].[chunkhash:8].js',
     chunkFilename: 'js/[name].[chunkhash:8].chunk.js',
-    publicPath: '/',
   },
-  resolve: {
-    extensions: ['', '.js', '.jsx', '.json'],
-  },
-  module: {
-    preLoaders: [
-      {
-        test: /\.jsx?$/,
-        loader: 'eslint',
-        include: paths.appSrc
-      }
-    ],
-    loaders: [
-      {
-        test: /\.jsx?$/,
-        include: paths.appSrc,
-        loader: 'babel',
-        query: require('./babel')
-      },
+
+  module: assign(config.module, {
+    // append PROD specific module loaders
+    loaders: config.module.loaders.concat([
       {
         test: /\.css$/,
         include: [paths.appSrc, paths.appNodeModules],
         // Disable autoprefixer in css-loader itself:
         // https://github.com/webpack/css-loader/issues/281
         // We already have it thanks to postcss.
-        loader: ExtractTextPlugin.extract('style', 'css?-autoprefixer!postcss')
-      },
-      {
-        test: /\.json$/,
-        include: [paths.appSrc, paths.appNodeModules],
-        loader: 'json'
+        loader: ExtractTextPlugin.extract('style', 'css?-autoprefixer!postcss'),
       },
       {
         test: /\.(jpg|png|gif|eot|svg|ttf|woff|woff2)(\?.*)?$/,
         include: [paths.appSrc, paths.appNodeModules],
         loader: 'file',
         query: {
-          name: 'media/[name].[hash:8].[ext]'
-        }
+          name: 'media/[name].[hash:8].[ext]',
+        },
       },
       {
         test: /\.(mp4|webm)(\?.*)?$/,
@@ -63,21 +43,11 @@ module.exports = {
         loader: 'url',
         query: {
           limit: 10000,
-          name: 'media/[name].[hash:8].[ext]'
-        }
-      }
-    ]
-  },
-
-  eslint: {
-    // TODO: consider separate config for production,
-    // e.g. to enable no-console and no-debugger only in prod.
-    configFile: path.join(__dirname, 'eslint.js'),
-    useEslintrc: false
-  },
-  postcss: function() {
-    return [autoprefixer];
-  },
+          name: 'media/[name].[hash:8].[ext]',
+        },
+      },
+    ]),
+  }),
 
   plugins: [
     new webpack.DefinePlugin({ 'process.env.NODE_ENV': '"production"' }),
@@ -115,7 +85,7 @@ module.exports = {
     }),
     new ExtractTextPlugin('css/[name].[contenthash:8].css'),
     new CopyWebpackPlugin([
-      { from: path.join(paths.appSrc, 'static') },
+      { from: join(paths.appSrc, 'static') },
     ]),
-  ]
-};
+  ],
+});

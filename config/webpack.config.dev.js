@@ -1,55 +1,36 @@
 const webpack = require('webpack');
-const path = require('path');
-const autoprefixer = require('autoprefixer');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const paths = require('./paths');
-const entry = require('./webpack.config.entry');
+const config = require('./webpack.config');
+const assign = Object.assign;
 
-// prepend webpack-dev-server client
-// and webpack hot dev-server to 'app' entry
-entry.app = [
-  require.resolve('webpack-dev-server/client') + '?/',
-  require.resolve('webpack/hot/dev-server'),
-].concat(entry.app);
-
-module.exports = {
+module.exports = assign(config, {
   devtool: 'eval',
 
-  entry,
+  entry: assign(config.entry, {
+    // prepend webpack-dev-server client
+    // and webpack hot dev-server to 'app' config.entry
+    app: [
+      require.resolve('webpack-dev-server/client') + '?/',
+      require.resolve('webpack/hot/dev-server'),
+    ].concat(config.entry.app),
+  }),
+
   output: {
     // Next line is not used in dev but WebpackDevServer crashes without it:
     path: paths.appBuild,
+    publicPath: '/',
     pathinfo: true,
     filename: 'js/bundle.js',
-    publicPath: '/',
   },
-  resolve: {
-    extensions: ['', '.js', '.jsx', '.json'],
-  },
-  module: {
-    preLoaders: [
-      {
-        test: /\.jsx?$/,
-        loader: 'eslint',
-        include: paths.appSrc,
-      },
-    ],
-    loaders: [
-      {
-        test: /\.jsx?$/,
-        include: paths.appSrc,
-        loader: 'babel',
-        query: require('./babel'),
-      },
+
+  module: assign(config.module, {
+    // append DEV specific module loaders
+    loaders: config.module.loaders.concat([
       {
         test: /\.css$/,
         include: [paths.appSrc, paths.appNodeModules],
         loader: 'style!css!postcss',
-      },
-      {
-        test: /\.json$/,
-        include: [paths.appSrc, paths.appNodeModules],
-        loader: 'json',
       },
       {
         test: /\.(jpg|png|gif|eot|svg|ttf|woff|woff2)(\?.*)?$/,
@@ -68,16 +49,8 @@ module.exports = {
           name: 'media/[name].[ext]',
         },
       },
-    ],
-  },
-
-  eslint: {
-    configFile: path.join(__dirname, 'eslint.js'),
-    useEslintrc: false,
-  },
-  postcss() {
-    return [autoprefixer];
-  },
+    ]),
+  }),
 
   plugins: [
     new webpack.DefinePlugin({ 'process.env.NODE_ENV': '"development"' }),
@@ -88,4 +61,4 @@ module.exports = {
     }),
     new webpack.HotModuleReplacementPlugin(),
   ],
-};
+});

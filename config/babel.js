@@ -1,10 +1,14 @@
-const config = {
+module.exports = {
   babelrc: false,
+  // only in DEV
+  cacheDirectory: process.env.NODE_ENV === 'development',
+
   presets: [
     'babel-preset-es2015',
     'babel-preset-es2016',
     'babel-preset-react'
   ].map(require.resolve),
+
   plugins: [
     'babel-plugin-syntax-trailing-function-commas',
     'babel-plugin-transform-class-properties',
@@ -18,12 +22,5 @@ const config = {
       polyfill: false,
       regenerator: true
     }]
-  ])
+  ]),
 };
-
-if (process.env.NODE_ENV === 'development') {
-  // only in DEV
-  config.cacheDirectory = true;
-}
-
-module.exports = config;

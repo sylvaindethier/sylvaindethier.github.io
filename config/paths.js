@@ -1,12 +1,11 @@
-const path = require('path');
-const resolveApp = path.resolve;
+const resolve = require('path').resolve;
 
 module.exports = {
-  appPackageJson: resolveApp('package.json'),
-  appNodeModules: resolveApp('node_modules'),
-  ownNodeModules: resolveApp('node_modules'),
-  appSrc: resolveApp('src'),
-  appHtml: resolveApp('src/index.html'),
-  appFavicon: resolveApp('src/favicon.ico'),
-  appBuild: resolveApp('build'),
+  appPackageJson: resolve('package.json'),
+  appNodeModules: resolve('node_modules'),
+  ownNodeModules: resolve('node_modules'),
+  appSrc: resolve('src'),
+  appHtml: resolve('src/index.html'),
+  appFavicon: resolve('src/favicon.ico'),
+  appBuild: resolve('build'),
 };
