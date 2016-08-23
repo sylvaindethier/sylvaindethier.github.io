@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Example () {
+function Example() {
   return (
     <p>
       This is just a basic example Component

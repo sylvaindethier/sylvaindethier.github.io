@@ -1,5 +1,3 @@
-/* This file runs a webpack-dev-server */
-// force NODE_ENV to be 'development'
 process.env.NODE_ENV = 'development';
 
 const webpack = require('webpack');

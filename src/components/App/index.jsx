@@ -15,7 +15,7 @@ injectTapEventPlugin();
 // build muiTheme w/ myTheme
 const muiTheme = getMuiTheme(myTheme)
 
-function App (props) {
+function App(props) {
   return (
     <MuiThemeProvider muiTheme={muiTheme}>
       <div className="App">

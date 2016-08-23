@@ -7,7 +7,7 @@ import Example from './components/Example';
 import PageNotFound from './components/PageNotFound';
 
 // keep the PageNotFound component at the end of the routes definition
-const routes = (
+export default (
   <Route path="/" component={App}>
     <IndexRoute component={Home} />
     <Route path="/example" component={Example} />
@@ -15,4 +15,3 @@ const routes = (
     <Route path="*" component={PageNotFound} />
   </Route>
 );
-export default routes;

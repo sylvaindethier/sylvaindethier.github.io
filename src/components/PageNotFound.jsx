@@ -11,7 +11,6 @@ function PageNotFound({ location }) {
 PageNotFound.displayName = 'PageNotFound';
 PageNotFound.propTypes = {
   location: PropTypes.object.isRequired,
-
 };
 
 export default PageNotFound;

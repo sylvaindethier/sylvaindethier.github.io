@@ -1,5 +1,5 @@
 const ghpages = require('gh-pages');
-const path = require('path');
+const join = require('path').join;
 
 const defaults = {
   dist: 'dist',
@@ -15,7 +15,7 @@ const options = Object.assign({}, defaults, {
   message: 'Deploy updates, see `react-app` branch'
 });
 
-ghpages.publish(path.join(process.cwd(), options.dist), {
+ghpages.publish(join(process.cwd(), options.dist), {
   repo: options.repo,
   silent: !!options.silent,
   branch: options.branch,
