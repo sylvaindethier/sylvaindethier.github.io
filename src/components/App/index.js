@@ -18,7 +18,6 @@ function App (props) {
 App.displayName = 'App';
 App.propTypes = {
   children: PropTypes.element.isRequired,
-  // routes: PropTypes.array.isRequired,
 }
 
 export default App;

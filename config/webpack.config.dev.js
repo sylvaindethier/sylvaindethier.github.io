@@ -90,7 +90,6 @@ module.exports = {
     new HtmlWebpackPlugin({
       inject: true,
       template: paths.appHtml,
-      favicon: paths.appFavicon,
     }),
     new webpack.HotModuleReplacementPlugin(),
   ],

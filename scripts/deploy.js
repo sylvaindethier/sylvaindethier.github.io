@@ -12,7 +12,7 @@ const defaults = {
 const options = Object.assign({}, defaults, {
   dist: 'build',
   branch: 'master',
-  message: 'Deploy updates'
+  message: 'Deploy updates, see `react-app` branch'
 });
 
 ghpages.publish(path.join(process.cwd(), options.dist), {
