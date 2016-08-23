@@ -5,8 +5,9 @@
   "scripts": {
     "start": "node ./scripts/start.js",
     "test": "echo \"Error: no test specified\"",
-    "build": "npm run test && node ./scripts/build.js",
-    "deploy": "npm run build && node ./scripts/deploy.js"
+    "prebuild": "echo \"Should run the tests before build\"",
+    "build": "node ./scripts/build.js",
+    "deploy": "node ./scripts/deploy.js"
   },
   "repository": {
     "type": "git",
