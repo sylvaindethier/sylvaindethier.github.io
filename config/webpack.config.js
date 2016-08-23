@@ -6,10 +6,11 @@ module.exports = {
   entry: {
     vendors: [
       require.resolve('./polyfills'),
-      // ReactJS
+      // React
       'react',
       'react-dom',
       'react-router',
+      'react-intl',
       // material UI
       'material-ui',
       'react-tap-event-plugin',

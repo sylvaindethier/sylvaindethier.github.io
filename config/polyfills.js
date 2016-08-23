@@ -7,3 +7,9 @@ if (typeof Promise === 'undefined') {
 }
 
 require('whatwg-fetch');
+
+// Intl
+if (typeof Intl === 'undefined') {
+  require('intl');
+  require('intl/locale-data/jsonp/en.js');
+}
