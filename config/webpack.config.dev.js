@@ -3,24 +3,19 @@ const path = require('path');
 const autoprefixer = require('autoprefixer');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const paths = require('./paths');
+const entry = require('./webpack.config.entry');
+
+// prepend webpack-dev-server client
+// and webpack hot dev-server to 'app' entry
+entry.app = [
+  require.resolve('webpack-dev-server/client') + '?/',
+  require.resolve('webpack/hot/dev-server'),
+].concat(entry.app);
 
 module.exports = {
   devtool: 'eval',
 
-  entry: {
-    vendors: [
-      require.resolve('./polyfills'),
-      'react',
-      'react-dom',
-      'react-router',
-    ],
-    app: [
-      require.resolve('webpack-dev-server/client') + '?/',
-      require.resolve('webpack/hot/dev-server'),
-      path.join(paths.appSrc, 'index'),
-    ]
-  },
-
+  entry,
   output: {
     // Next line is not used in dev but WebpackDevServer crashes without it:
     path: paths.appBuild,

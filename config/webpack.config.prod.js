@@ -5,23 +5,13 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const paths = require('./paths');
+const entry = require('./webpack.config.entry');
 
 module.exports = {
   bail: true,
   devtool: 'source-map',
 
-  entry: {
-    vendors: [
-      require.resolve('./polyfills'),
-      'react',
-      'react-dom',
-      'react-router',
-    ],
-    app: [
-      path.join(paths.appSrc, 'index')
-    ]
-  },
-
+  entry,
   output: {
     path: paths.appBuild,
     filename: 'js/[name].[chunkhash:8].js',
