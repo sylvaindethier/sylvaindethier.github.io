@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Sylvain Dethier - SPA for GitHub Pages</title>
+    <script type="text/javascript">
+    /////////////////////////////////////////////////////////////////////////
+    // Single Page Apps for GitHub Pages
+    // https://github.com/rafrex/spa-github-pages
+    // Copyright (c) 2016 Rafael Pedicini, licensed under the MIT License
+    // ----------------------------------------------------------------------
+    // This script takes the current url and converts the path and query
+    // string into just a query string, and then redirects the browser
+    // to the new url with only a query string and hash fragment,
+    // e.g. http://www.foo.tld/one/two?a=b&c=d#qwe, becomes
+    // http://www.foo.tld/?p=/one/two&q=a=b~and~c=d#qwe
+    /////////////////////////////////////////////////////////////////////////
+
+    var l = window.location;
+    l.replace(
+      l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
+      '/?' +
+      (l.pathname ? 'p=' + l.pathname.replace(/&/g, '~and~') : '') +
+      (l.search ? '&q=' + l.search.slice(1).replace(/&/g, '~and~') : '') +
+      l.hash
+    );
+    </script>
+  </head>
+  <body></body>
+</html>
+<!-- IE needs 512+ bytes: https://blogs.msdn.microsoft.com/ieinternals/2010/08/18/friendly-http-error-pages/ -->
