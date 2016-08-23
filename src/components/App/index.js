@@ -1,22 +1,24 @@
-import React, { Component } from 'react';
+import React, { PropTypes } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
-        </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App/index.js</code> and save to reload.
-        </p>
-        <p>This rocks !</p>
+function App (props) {
+  return (
+    <div className="App">
+      <div className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <h2>Welcome to React</h2>
       </div>
-    );
-  }
+      {props.children}
+      <p>This rocks !</p>
+    </div>
+  );
+}
+
+App.displayName = 'App';
+App.propTypes = {
+  children: PropTypes.element.isRequired,
+  // routes: PropTypes.array.isRequired,
 }
 
 export default App;

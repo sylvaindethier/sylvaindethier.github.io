@@ -1,21 +1,25 @@
 import React from 'react'
 import { render } from 'react-dom'
-import App from './components/App'
+import { Router, Route, IndexRoute, browserHistory } from 'react-router';
+import App from './components/App';
+import Home from './components/Home';
+import Example from './components/Example';
+// keep the PageNotFound component at the end of the routes definition
+import PageNotFound from './components/PageNotFound';
 import './index.css';
+
+const routes = (
+  <Route path="/" component={App}>
+    <IndexRoute component={Home} />
+    <Route path="/example" component={Example} />
+
+    <Route path="*" component={PageNotFound} />
+  </Route>
+);
 
 const root =   document.getElementById('root');
 
 render(
-  <App />,
+  <Router history={browserHistory} routes={routes} />,
   root
 );
-
-if (module && module.hot) {
-  module.hot.accept('./components/App', () => {
-    const NewApp = require('./components/App').default;
-    render(
-      <NewApp />,
-      root
-    );
-  });
-}
