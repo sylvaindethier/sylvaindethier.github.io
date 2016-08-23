@@ -6,7 +6,7 @@ import Home from './components/Home';
 import Example from './components/Example';
 // keep the PageNotFound component at the end of the routes definition
 import PageNotFound from './components/PageNotFound';
-import './index.css';
+import 'normalize.css';
 
 const routes = (
   <Route path="/" component={App}>

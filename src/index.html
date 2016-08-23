@@ -18,7 +18,6 @@ var files = htmlWebpackPlugin.files;
     <meta name="description" content="<%= opts.description %>">
     <meta name="keywords" content="<%= opts.keywords %>">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta http-equiv="X-Frame-Options" content="deny">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Add to homescreen for Chrome on Android -->
@@ -36,37 +35,6 @@ var files = htmlWebpackPlugin.files;
     <meta name="msapplication-TileColor" content="#2196F3">
 
     <link rel="shortcut icon" href="icons/favicon.png">
-    <style type="text/css">
-    /* spinner from http://tobiasahlin.com/spinkit/ */
-    .spinner {
-      width: 40px;
-      height: 40px;
-      background-color: #333;
-
-      margin: 100px auto;
-      -webkit-animation: sk-rotateplane 1.2s infinite ease-in-out;
-      animation: sk-rotateplane 1.2s infinite ease-in-out;
-    }
-
-    @-webkit-keyframes sk-rotateplane {
-      0% { -webkit-transform: perspective(120px) }
-      50% { -webkit-transform: perspective(120px) rotateY(180deg) }
-      100% { -webkit-transform: perspective(120px) rotateY(180deg)  rotateX(180deg) }
-    }
-
-    @keyframes sk-rotateplane {
-      0% {
-        transform: perspective(120px) rotateX(0deg) rotateY(0deg);
-        -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg)
-      } 50% {
-        transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
-        -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg)
-      } 100% {
-        transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
-        -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
-      }
-    }
-    </style>
     <script type="text/javascript">
     /*! Single Page Apps for GitHub Pages
      * https://github.com/rafrex/spa-github-pages
@@ -91,7 +59,40 @@ var files = htmlWebpackPlugin.files;
   </head>
   <body>
     <div id="root">
-      <div class="spinner"></div>
+      <div class="spinner">
+      <style type="text/css">
+      /* spinner from http://tobiasahlin.com/spinkit/ */
+      .spinner {
+        width: 100px;
+        height: 100px;
+        background-color: #333;
+        position: relative;
+
+        margin: 100px auto;
+        -webkit-animation: sk-rotateplane 1.2s infinite ease-in-out;
+        animation: sk-rotateplane 1.2s infinite ease-in-out;
+      }
+
+      @-webkit-keyframes sk-rotateplane {
+        0% { -webkit-transform: perspective(120px) }
+        50% { -webkit-transform: perspective(120px) rotateY(180deg) }
+        100% { -webkit-transform: perspective(120px) rotateY(180deg)  rotateX(180deg) }
+      }
+
+      @keyframes sk-rotateplane {
+        0% {
+          transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+          -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg)
+        } 50% {
+          transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+          -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg)
+        } 100% {
+          transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+          -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+        }
+      }
+      </style>
+      </div>
     </div>
   </body>
 </html>
