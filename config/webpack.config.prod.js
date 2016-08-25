@@ -1,4 +1,4 @@
-const join = require('path').join;
+const path = require('path');
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
@@ -85,7 +85,8 @@ module.exports = assign(config, {
     }),
     new ExtractTextPlugin('css/[name].[contenthash:8].css'),
     new CopyWebpackPlugin([
-      { from: join(paths.appSrc, 'static') },
+      { from: path.join(paths.appSrc, 'static') },
+      { from: path.resolve('README.md') },
     ]),
   ],
 });
