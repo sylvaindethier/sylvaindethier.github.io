@@ -7,14 +7,9 @@ const assign = Object.assign;
 module.exports = assign(config, {
   devtool: 'eval',
 
-  entry: assign(config.entry, {
-    // prepend webpack-dev-server client
-    // and webpack hot dev-server to 'app' config.entry
-    app: [
-      require.resolve('webpack-dev-server/client') + '?/',
-      require.resolve('webpack/hot/dev-server'),
-    ].concat(config.entry.app),
-  }),
+  // prepend webpack-dev-server client
+  // and webpack hot dev-server to 'app' config.entry
+  // this will be done when webpack-dev-server starts
 
   output: {
     // Next line is not used in dev but WebpackDevServer crashes without it:
@@ -59,6 +54,5 @@ module.exports = assign(config, {
       inject: true,
       template: paths.appHtml,
     }),
-    new webpack.HotModuleReplacementPlugin(),
   ],
 });

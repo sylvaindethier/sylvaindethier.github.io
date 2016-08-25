@@ -9,6 +9,15 @@ const DEFAULT_PORT = process.env.PORT || 3000;
 const DEFAULT_HOST = process.env.HOST || 'localhost';
 const URL = `htt://${DEFAULT_HOST}:${DEFAULT_PORT}/`;
 
+// Add DEV server and Hot reloading
+config.entry.app.unshift(
+  `webpack-dev-server/client?${URL}`,
+  'webpack/hot/dev-server'
+);
+config.plugins.push(
+  new webpack.HotModuleReplacementPlugin(),
+);
+
 // run webpack-dev-server
 new WebpackDevServer(webpack(config), {
   publicPath: config.output.publicPath,
