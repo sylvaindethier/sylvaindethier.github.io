@@ -1,4 +1,4 @@
-if (typeof Promise === 'undefined') {
+if (typeof window.Promise === 'undefined') {
   // Rejection tracking prevents a common issue where React gets into an
   // inconsistent state due to an error, but it gets swallowed by a Promise,
   // and the user has no idea what causes React's erratic future behavior.
@@ -9,7 +9,15 @@ if (typeof Promise === 'undefined') {
 require('whatwg-fetch');
 
 // Intl
-if (typeof Intl === 'undefined') {
-  require('intl');
-  require('intl/locale-data/jsonp/en.js');
+if (typeof window.Intl === 'undefined') {
+  // async load int module & locales
+  require.ensure([
+    'intl',
+    'intl/locale-data/jsonp/fr.js',
+    'intl/locale-data/jsonp/en.js',
+  ], function(require) {
+    require('intl');
+    require('intl/locale-data/jsonp/fr.js');
+    require('intl/locale-data/jsonp/en.js');
+  });
 }
