@@ -6,6 +6,7 @@ module.exports = {
   entry: {
     vendors: [
       require.resolve('./polyfills'),
+      // 'babel-polyfill', // should we also include Babel polyfill ?
       // React
       'react',
       'react-dom',
@@ -49,7 +50,7 @@ module.exports = {
   },
 
   eslint: {
-    // TODO: consider separate config for production,
+    // @TODO: consider separate config for production,
     // e.g. to enable no-console and no-debugger only in prod.
     configFile: join(__dirname, 'eslint.js'),
     useEslintrc: false,
@@ -57,4 +58,10 @@ module.exports = {
   postcss() {
     return [autoprefixer];
   },
+
+  // Make web variables accessible to webpack, e.g. window
+  target: 'web',
+  // Don't show stats in the console
+  stats: false,
+  progress: true,
 };
