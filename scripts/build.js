@@ -1,6 +1,5 @@
 process.env.NODE_ENV = 'production';
 
-const chalk = require('chalk');
 const rimrafSync = require('rimraf').sync;
 const webpack = require('webpack');
 const config = require('../config/webpack.config.prod');
@@ -18,6 +17,6 @@ webpack(config).run(function(err, stats) {
     process.exit(1);
   }
 
-  console.log(chalk.green('Compiled successfully.'));
+  console.info('Compiled successfully.');
   console.log();
 });
