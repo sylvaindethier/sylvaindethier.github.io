@@ -7,6 +7,7 @@ This repository is about my work, my resume, and stuff I like in IT and web app 
 
 # TODO
 * do the TODOs from the code source
+* add Flow types
 * server side rendering
 * SEO
 * async routes data fetching
