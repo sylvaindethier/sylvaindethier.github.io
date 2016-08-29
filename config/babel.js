@@ -25,8 +25,11 @@ module.exports = {
       polyfill: false,
       regenerator: true
     }],
+    // only in PROD
+    process.env.NODE_ENV === 'production' ?
     [require.resolve('babel-plugin-react-intl'), {
       messagesDir: path.join(paths.build, 'messages'),
-    }],
+      enforceDescriptions: true,
+    }] : [],
   ]),
 };
