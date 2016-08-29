@@ -85,7 +85,7 @@ module.exports = assign(config, {
     }),
     new ExtractTextPlugin('css/[name].[contenthash:8].css'),
     new CopyWebpackPlugin([
-      { from: path.join(paths.appSrc, 'static') },
+      { from: path.resolve('static') },
       { from: path.resolve('README.md') },
     ]),
   ],

@@ -23,7 +23,7 @@ module.exports = {
   },
 
   resolve: {
-    extensions: ['', '.js', '.jsx', '.json'],
+    extensions: ['', '.js', '.json', '.jsx'],
   },
 
   module: {
@@ -61,7 +61,6 @@ module.exports = {
 
   // Make web variables accessible to webpack, e.g. window
   target: 'web',
-  // Don't show stats in the console
-  stats: false,
+  stats: true,
   progress: true,
 };

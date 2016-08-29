@@ -1,3 +1,6 @@
+const path = require('path');
+const paths = require('./paths');
+
 module.exports = {
   babelrc: false,
   // only in DEV
@@ -6,7 +9,7 @@ module.exports = {
   presets: [
     'babel-preset-es2015',
     'babel-preset-es2016',
-    'babel-preset-react'
+    'babel-preset-react',
   ].map(require.resolve),
 
   plugins: [
@@ -21,6 +24,9 @@ module.exports = {
       helpers: false,
       polyfill: false,
       regenerator: true
-    }]
+    }],
+    [require.resolve('babel-plugin-react-intl'), {
+      messagesDir: path.join(paths.appBuild, 'messages'),
+    }],
   ]),
 };

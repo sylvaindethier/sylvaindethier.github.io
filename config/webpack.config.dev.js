@@ -7,10 +7,6 @@ const assign = Object.assign;
 module.exports = assign(config, {
   devtool: 'eval',
 
-  // prepend webpack-dev-server client
-  // and webpack hot dev-server to 'app' config.entry
-  // this will be done when webpack-dev-server starts
-
   output: {
     // Next line is not used in dev but WebpackDevServer crashes without it:
     path: paths.appBuild,
