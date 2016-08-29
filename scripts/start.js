@@ -52,7 +52,7 @@ new WebpackDevServer(buildCompiler(), {
   historyApiFallback: true,
   // Hot reload
   hot: true,
-  quiet: true, // No logs
+  // quiet: true, // No logs
   watchOptions: {
     ignored: /node_modules/
   }

@@ -1,4 +1,4 @@
-const join = require('path').join;
+const path = require('path');
 const autoprefixer = require('autoprefixer');
 const paths = require('./paths');
 
@@ -18,7 +18,7 @@ module.exports = {
     ],
 
     app: [
-      join(paths.appSrc, 'index'),
+      path.join(paths.src, 'index'),
     ],
   },
 
@@ -31,19 +31,19 @@ module.exports = {
       {
         test: /\.jsx?$/,
         loader: 'eslint',
-        include: paths.appSrc,
+        include: paths.src,
       },
     ],
     loaders: [
       {
         test: /\.jsx?$/,
-        include: paths.appSrc,
+        include: paths.src,
         loader: 'babel',
         query: require('./babel'),
       },
       {
         test: /\.json$/,
-        include: [paths.appSrc, paths.appNodeModules],
+        include: [paths.src, paths.l10n, paths.nodeModules],
         loader: 'json',
       },
     ],
@@ -52,7 +52,7 @@ module.exports = {
   eslint: {
     // @TODO: consider separate config for production,
     // e.g. to enable no-console and no-debugger only in prod.
-    configFile: join(__dirname, 'eslint.js'),
+    configFile: path.join(__dirname, 'eslint.js'),
     useEslintrc: false,
   },
   postcss() {

@@ -1,6 +1,7 @@
 const ghpages = require('gh-pages');
-const join = require('path').join;
+const path = require('path');
 
+// gh-pages defaults options
 const defaults = {
   dist: 'dist',
   src: '**/*',
@@ -9,13 +10,15 @@ const defaults = {
   message: 'Updates',
   remove: '.',
 };
+
+// project options
 const options = Object.assign({}, defaults, {
   dist: 'build',
   branch: 'master',
   message: 'Deploy updates, see `react-app` branch'
 });
 
-ghpages.publish(join(process.cwd(), options.dist), {
+ghpages.publish(path.join(process.cwd(), options.dist), {
   repo: options.repo,
   silent: !!options.silent,
   branch: options.branch,
@@ -28,12 +31,12 @@ ghpages.publish(join(process.cwd(), options.dist), {
   remote: options.remote,
   push: !options.noPush,
   logger: function(message) {
-    process.stderr.write(message + '\n');
+    process.stdout.write(message + '\n');
   }
 }, function(err) {
   if (err) {
-    process.stderr.write(err.message + '\n');
+    console.error(err.message);
     return process.exit(1);
   }
-  process.stderr.write('Published\n');
+  console.log('Published');
 });

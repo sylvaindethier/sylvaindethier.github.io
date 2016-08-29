@@ -26,7 +26,7 @@ module.exports = {
       regenerator: true
     }],
     [require.resolve('babel-plugin-react-intl'), {
-      messagesDir: path.join(paths.appBuild, 'messages'),
+      messagesDir: path.join(paths.build, 'messages'),
     }],
   ]),
 };

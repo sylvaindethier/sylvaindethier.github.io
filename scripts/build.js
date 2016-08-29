@@ -7,9 +7,9 @@ const paths = require('../config/paths');
 
 // Remove all content but keep the directory so that
 // if you're in it, you don't end up in Trash
-rimrafSync(paths.appBuild + '/*');
+rimrafSync(paths.build + '/*');
 
-console.log('Creating an optimized production build...');
+console.info('Creating an optimized production build...');
 webpack(config).run(function(err, stats) {
   if (err) {
     console.error('Failed to create a production build. Reason:');

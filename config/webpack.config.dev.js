@@ -9,7 +9,7 @@ module.exports = assign(config, {
 
   output: {
     // Next line is not used in dev but WebpackDevServer crashes without it:
-    path: paths.appBuild,
+    path: paths.build,
     publicPath: '/',
     pathinfo: true,
     filename: 'js/bundle.js',
@@ -20,12 +20,12 @@ module.exports = assign(config, {
     loaders: config.module.loaders.concat([
       {
         test: /\.css$/,
-        include: [paths.appSrc, paths.appNodeModules],
+        include: [paths.src, paths.nodeModules],
         loader: 'style!css!postcss',
       },
       {
         test: /\.(jpg|png|gif|eot|svg|ttf|woff|woff2)(\?.*)?$/,
-        include: [paths.appSrc, paths.appNodeModules],
+        include: [paths.src, paths.nodeModules],
         loader: 'file',
         query: {
           name: 'media/[name].[ext]',
@@ -33,7 +33,7 @@ module.exports = assign(config, {
       },
       {
         test: /\.(mp4|webm)(\?.*)?$/,
-        include: [paths.appSrc, paths.appNodeModules],
+        include: [paths.src, paths.nodeModules],
         loader: 'url',
         query: {
           limit: 10000,
@@ -48,7 +48,7 @@ module.exports = assign(config, {
     new webpack.optimize.CommonsChunkPlugin('vendors', 'js/vendors.js'),
     new HtmlWebpackPlugin({
       inject: true,
-      template: paths.appHtml,
+      template: paths.template,
     }),
   ],
 });

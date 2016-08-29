@@ -12,7 +12,7 @@ module.exports = assign(config, {
   devtool: 'source-map',
 
   output: {
-    path: paths.appBuild,
+    path: paths.build,
     publicPath: '/',
     filename: 'js/[name].[chunkhash:8].js',
     chunkFilename: 'js/[name].[chunkhash:8].chunk.js',
@@ -23,7 +23,7 @@ module.exports = assign(config, {
     loaders: config.module.loaders.concat([
       {
         test: /\.css$/,
-        include: [paths.appSrc, paths.appNodeModules],
+        include: [paths.src, paths.nodeModules],
         // Disable autoprefixer in css-loader itself:
         // https://github.com/webpack/css-loader/issues/281
         // We already have it thanks to postcss.
@@ -31,7 +31,7 @@ module.exports = assign(config, {
       },
       {
         test: /\.(jpg|png|gif|eot|svg|ttf|woff|woff2)(\?.*)?$/,
-        include: [paths.appSrc, paths.appNodeModules],
+        include: [paths.src, paths.nodeModules],
         loader: 'file',
         query: {
           name: 'media/[name].[hash:8].[ext]',
@@ -39,7 +39,7 @@ module.exports = assign(config, {
       },
       {
         test: /\.(mp4|webm)(\?.*)?$/,
-        include: [paths.appSrc, paths.appNodeModules],
+        include: [paths.src, paths.nodeModules],
         loader: 'url',
         query: {
           limit: 10000,
@@ -54,7 +54,7 @@ module.exports = assign(config, {
     new webpack.optimize.CommonsChunkPlugin('vendors', 'js/vendors.[chunkhash:8].js'),
     new HtmlWebpackPlugin({
       inject: true,
-      template: paths.appHtml,
+      template: paths.template,
       minify: {
         removeComments: true,
         // collapseWhitespace: true,
@@ -85,7 +85,7 @@ module.exports = assign(config, {
     }),
     new ExtractTextPlugin('css/[name].[contenthash:8].css'),
     new CopyWebpackPlugin([
-      { from: path.resolve('static') },
+      { from: paths.static },
       { from: path.resolve('README.md') },
     ]),
   ],
