@@ -1,0 +1,5 @@
+{
+  "API": "Salut {name} !!!!!",
+  "INLINE": "message en ligne",
+  "VARIABLE": "mesage avec la variable nommée 'name': {name}"
+}

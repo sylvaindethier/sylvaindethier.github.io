@@ -1,0 +1,5 @@
+{
+  "API": "(translated) Hello {name} !!!!!",
+  "INLINE": "(translated) inline message",
+  "VARIABLE": "(translated) mesage w/ the 'name' variable: {name}"
+}
