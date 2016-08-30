@@ -5,5 +5,7 @@ module.exports = {
   src: resolve('src'),
   build: resolve('build'),
   template: resolve('src/index.html'),
-  l10n: resolve('l10n'),
+  static: resolve('static'),
+  l10nMessages: resolve('l10n'),
+  intlMessages: resolve('build/messages'),
 };

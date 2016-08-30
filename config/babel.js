@@ -1,4 +1,3 @@
-const path = require('path');
 const paths = require('./paths');
 
 module.exports = {
@@ -24,12 +23,15 @@ module.exports = {
       helpers: false,
       polyfill: false,
       regenerator: true
-    }],
+    }]
+  ]).concat(process.env.NODE_ENV === 'production' ?
     // only in PROD
-    process.env.NODE_ENV === 'production' ?
-    [require.resolve('babel-plugin-react-intl'), {
-      messagesDir: path.join(paths.build, 'messages'),
-      enforceDescriptions: true,
-    }] : [],
-  ]),
+    [
+      [require.resolve('babel-plugin-react-intl'), {
+        messagesDir: paths.intlMessages,
+        enforceDescriptions: true,
+      }]
+    ] : []
+  ),
+
 };

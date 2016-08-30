@@ -6,7 +6,9 @@
     "start": "node ./scripts/start.js",
     "test": "echo \"Error: no test specified\"",
     "prebuild": "echo \"Should run the tests before build\"",
-    "build": "node ./scripts/build.js",
+    "build": "npm run build:client && npm run build:intl",
+    "build:client": "node ./scripts/build-client.js",
+    "build:intl": "node ./scripts/build-intl.js",
     "deploy": "node ./scripts/deploy.js"
   },
   "repository": {
@@ -34,6 +36,7 @@
     "babel-core": "^6.14.0",
     "babel-eslint": "^6.1.2",
     "babel-loader": "^6.2.5",
+    "babel-plugin-react-intl": "^2.1.4",
     "babel-plugin-syntax-trailing-function-commas": "^6.13.0",
     "babel-plugin-transform-class-properties": "^6.11.5",
     "babel-plugin-transform-object-rest-spread": "^6.8.0",

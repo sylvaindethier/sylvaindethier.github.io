@@ -43,7 +43,7 @@ module.exports = {
       },
       {
         test: /\.json$/,
-        include: [paths.src, paths.l10n, paths.nodeModules],
+        include: [paths.src, paths.l10nMessages, paths.nodeModules],
         loader: 'json',
       },
     ],

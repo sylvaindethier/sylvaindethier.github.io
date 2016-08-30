@@ -2,6 +2,7 @@ process.env.NODE_ENV = 'production';
 
 const rimrafSync = require('rimraf').sync;
 const webpack = require('webpack');
+const chalk = require('chalk');
 const config = require('../config/webpack.config.prod');
 const paths = require('../config/paths');
 
@@ -12,11 +13,10 @@ rimrafSync(paths.build + '/*');
 console.info('Creating an optimized production build...');
 webpack(config).run(function(err, stats) {
   if (err) {
-    console.error('Failed to create a production build. Reason:');
+    console.error(chalk.red('Failed to create a production build. Reason:'));
     console.error(err.message || err);
-    process.exit(1);
+    return process.exit(1);
   }
 
-  console.info('Compiled successfully.');
-  console.log();
+  console.info(chalk.green('Compiled successfully.'));
 });

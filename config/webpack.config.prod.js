@@ -73,14 +73,14 @@ module.exports = assign(config, {
     new webpack.optimize.UglifyJsPlugin({
       compress: {
         screw_ie8: true,
-        warnings: false
+        warnings: false,
       },
       mangle: {
-        screw_ie8: true
+        screw_ie8: true,
       },
       output: {
         comments: false,
-        screw_ie8: true
+        screw_ie8: true,
       }
     }),
     new ExtractTextPlugin('css/[name].[contenthash:8].css'),

@@ -50,9 +50,8 @@ function buildCompiler() {
 new WebpackDevServer(buildCompiler(), {
   publicPath: config.output.publicPath,
   historyApiFallback: true,
-  // Hot reload
-  hot: true,
-  // quiet: true, // No logs
+  hot: true, // Hot reload
+  quiet: true, // No logs
   watchOptions: {
     ignored: /node_modules/
   }
@@ -61,7 +60,7 @@ new WebpackDevServer(buildCompiler(), {
     return console.error(err);
   }
 
-  console.info('Development server listening at ' + chalk.cyan(URL));
+  console.info('Starting development server at ' + chalk.cyan(URL));
 });
 
 
