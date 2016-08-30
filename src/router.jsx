@@ -7,7 +7,7 @@ import Home from './components/Home';
 import Example from './components/Example';
 import PageNotFound from './components/PageNotFound';
 
-export const routes = (
+const routes = (
   <Route path="/" component={App}>
     <IndexRoute component={Home} />
     <Route path="/example" component={Example} />
@@ -16,6 +16,11 @@ export const routes = (
   </Route>
 );
 
-export default (
-  <Router history={browserHistory} routes={routes} />
+const router = (
+  <Router history={browserHistory}>
+    {routes}
+  </Router>
 );
+
+export default router;
+export { routes };
