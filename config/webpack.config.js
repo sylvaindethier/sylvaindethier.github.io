@@ -5,8 +5,7 @@ const paths = require('./paths');
 module.exports = {
   entry: {
     vendors: [
-      require.resolve('./polyfills'),
-      // 'babel-polyfill', // should we also include Babel polyfill ?
+      require.resolve(paths.src + '/utils/polyfills'),
       // React
       'react',
       'react-dom',
