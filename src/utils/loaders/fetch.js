@@ -1,9 +1,11 @@
-const loader = resolve => {
+const resolver = resolve => {
   require.ensure(['whatwg-fetch'], require => {
     resolve({
       fetch: require('whatwg-fetch'),
     });
   }, 'polyfill-fetch');
 };
+const required = !global.fetch;
 
-export default () => (global.fetch ? false : loader);
+const loader = required ? resolver : false;
+export default loader;
