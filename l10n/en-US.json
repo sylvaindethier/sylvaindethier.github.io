@@ -1,5 +1,0 @@
-{
-    "translated.simple": "(translated) Simple message",
-    "translated.singleVariable": "(translated) Message with a single 'name' variable, value is: {name}",
-    "translated.multipleVariable": "(translated) Message with variables: 'foo' is {foo}; 'bar' is {bar}"
-}
