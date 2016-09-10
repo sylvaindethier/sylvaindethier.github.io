@@ -11,6 +11,10 @@ module.exports = {
       'react-dom',
       'react-router',
       'react-intl',
+      // Redux
+      'redux',
+      'redux-actions',
+      'react-redux',
       // material UI
       'material-ui',
       'react-tap-event-plugin'
