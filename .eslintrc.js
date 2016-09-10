@@ -2,7 +2,6 @@ module.exports = {
   root: true,
 
   env: {
-    browser: true,
     commonjs: true,
     es6: true,
     node: true,
@@ -13,10 +12,6 @@ module.exports = {
   parserOptions: {
     ecmaVersion: 6,
     sourceType: 'module',
-    ecmaFeatures: {
-      generators: true,
-      experimentalObjectRestSpread: true,
-    },
   },
 
   plugins: [

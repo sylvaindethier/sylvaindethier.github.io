@@ -1,4 +1,8 @@
 module.exports = {
+  env: {
+    browser: true,
+  },
+
   parserOptions: {
     ecmaFeatures: {
       jsx: true,
@@ -15,6 +19,7 @@ module.exports = {
   ],
 
   extends: [
+    'eslint:recommended',
     'plugin:react/recommended',
     'airbnb',
     'standard',
@@ -28,14 +33,14 @@ module.exports = {
     ],
     'import/extensions': ['.js', '.jsx'],
     'import/resolver': {
-      node: {
-        extensions: ['.js', '.json'],
+      'node': {
+        'extensions': ['.js', '.json', '.jsx'],
       },
     },
   },
 
   rules: {
     // disable react/require-extension as this rule is deprecated
-    'react/require-extension': 'off',
+    'react/require-extension': 0,
   }
 }
