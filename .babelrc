@@ -21,7 +21,7 @@
       "plugins": [
         "transform-react-constant-elements",
         ["react-intl", {
-          "messagesDir": "./intlMessages/",
+          "messagesDir": "./build/messagesIntl/",
           "enforceDescriptions": true
         }]
       ]

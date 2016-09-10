@@ -7,5 +7,5 @@ module.exports = {
   template: resolve('src/index.html'),
   static: resolve('static'),
   messages: resolve('messages'),
-  messagesIntl: resolve('build/messages-intl')
+  messagesIntl: resolve('build/messagesIntl')
 }

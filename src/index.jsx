@@ -1,6 +1,55 @@
 import React from 'react'
-import { render as ReactDOMrender } from 'react-dom'
+import { render } from 'react-dom'
+import { createStore, compose, applyMiddleware } from 'redux'
+import { Provider } from 'react-redux'
+
+/* eslint-disable import/no-extraneous-dependencies */
+// only in dev
+import createLogger from 'redux-logger'
+/* eslint-enable import/no-extraneous-dependencies */
+
+import reducer from './reducers'
 import { loadPolyfills } from './utils/loaders'
+
+// Containers
+import HelloWorld from './HelloWorld/container'
+
+const devToolsExtension = () => (
+  typeof window === 'object' &&
+  typeof window.devToolsExtension !== 'undefined'
+    ? window.devToolsExtension() : f => f
+)
+
+const initialState = {
+}
+
+const logger = createLogger()
+const middleware = [
+  // only in dev
+  logger
+]
+
+// const enhancer = compose(
+//   applyMiddleware(...middleware),
+//   // only in dev
+//   devToolsExtension
+// )
+const enhancer = window.devToolsExtension && window.devToolsExtension()
+const store = createStore(reducer, initialState, enhancer)
+const root = (
+  <Provider store={store}>
+    <HelloWorld />
+  </Provider>
+)
+const rootEl = document.getElementById('root')
+
+function renderRoot () {
+  render(root, rootEl)
+}
+
+// load polyfills first, then boot
+loadPolyfills()
+.then(renderRoot)
 
 // /////////////////////////////////////////////////////////////////////////////
 
@@ -25,23 +74,3 @@ import { loadPolyfills } from './utils/loaders'
 //   });
 // });
 // /////////////////////////////////////////////////////////////////////////////
-
-function Root () {
-  return (
-    <div>
-      RootContainer
-    </div>
-  )
-}
-Root.displayName = 'Root'
-
-function render () {
-  ReactDOMrender(
-    <Root />,
-    document.getElementById('root')
-  )
-}
-
-// load polyfills first, then boot
-loadPolyfills()
-.then(render)
