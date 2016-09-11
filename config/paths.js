@@ -1,6 +1,7 @@
 const resolve = require('path').resolve
 
 module.exports = {
+  root: resolve('.'),
   nodeModules: resolve('node_modules'),
   src: resolve('src'),
   build: resolve('build'),

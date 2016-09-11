@@ -3,10 +3,11 @@ const webpack = require('webpack')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
 const CopyWebpackPlugin = require('copy-webpack-plugin')
+// relative import
 const config = require('./common')
 const paths = require('../../config/paths')
-const assign = Object.assign
 
+const assign = Object.assign
 module.exports = assign(config, {
   bail: true,
   devtool: 'source-map',

@@ -7,18 +7,20 @@ const WebpackDevServer = require('webpack-dev-server')
 const chalk = require('chalk')
 const config = require('./webpack.config/dev')
 
-// Tools like Cloud9 rely on this
 const DEFAULT_PORT = process.env.PORT || 3000
 const DEFAULT_HOST = process.env.HOST || 'localhost'
 const URL = `http://${DEFAULT_HOST}:${DEFAULT_PORT}/`
 
-// Add DEV server and Hot reloading
+// Add DEV server and Hot reloading (must be first entries)
 config.entry.app.unshift(
+  // enable HMR w/ react-hot-loader
+  // works w/ react-hot-loader/patch babel plugin
+  // 'react-hot-loader/patch',
   `webpack-dev-server/client?${URL}`,
-  'webpack/hot/dev-server'
+  'webpack/hot/only-dev-server' // 'only' prevents reload on syntax errors
 )
 config.plugins.push(
-  new webpack.HotModuleReplacementPlugin()
+  new webpack.HotModuleReplacementPlugin() // enable HMR
 )
 
 // setup compiler

@@ -17,6 +17,9 @@
   ],
 
   "env": {
+    "development": {
+    },
+
     "production": {
       "plugins": [
         "transform-react-constant-elements",

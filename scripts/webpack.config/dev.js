@@ -1,11 +1,13 @@
 const webpack = require('webpack')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
+// relative import
 const config = require('./common')
 const paths = require('../../config/paths')
-const assign = Object.assign
 
+const assign = Object.assign
 module.exports = assign(config, {
   devtool: 'eval',
+  // additional DEV entries on dev server start
 
   output: {
     // Next line is not used in dev but WebpackDevServer crashes without it:

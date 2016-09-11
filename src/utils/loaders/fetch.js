@@ -8,7 +8,7 @@ const resolver = resolve => {
     })
   }, 'polyfill-fetch')
 }
-const required = !global.fetch
+const required = !window.fetch
 
 const loader = required ? resolver : false
 export default loader

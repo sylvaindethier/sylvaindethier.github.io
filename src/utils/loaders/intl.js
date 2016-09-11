@@ -8,7 +8,7 @@ const resolver = resolve => {
     })
   }, 'polyfill-Intl')
 }
-const required = !global.Intl
+const required = !window.Intl
 
 const loader = required ? resolver : false
 export default loader

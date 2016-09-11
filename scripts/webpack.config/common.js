@@ -1,21 +1,31 @@
 const path = require('path')
 const autoprefixer = require('autoprefixer')
+// relative import
 const paths = require('../../config/paths')
 
 module.exports = {
+  // Make web variables accessible to webpack, e.g. window
+  target: 'web',
+  stats: true,
+  progress: true,
+
   entry: {
     vendors: [
+      // includes promise, whatwg-fetch, intl, whatwg-fetch
       require.resolve(paths.src + '/utils/polyfills'),
       // React
       'react',
       'react-dom',
       'react-router',
-      'react-intl',
       // Redux
       'redux',
       'redux-actions',
       'react-redux',
-      // material UI
+      // Intl
+      'react-intl',
+      'intl-locales-supported',
+      // UI
+      'normalize.css',
       'material-ui',
       'react-tap-event-plugin'
     ],
@@ -34,14 +44,14 @@ module.exports = {
       {
         test: /\.jsx?$/,
         loader: 'eslint',
-        exclude: paths.nodeModules
+        include: [paths.root]
       }
     ],
     loaders: [
       {
         test: /\.jsx?$/,
         loader: 'babel',
-        include: paths.src
+        include: [paths.src]
       },
       {
         test: /\.json$/,
@@ -53,10 +63,5 @@ module.exports = {
 
   postcss () {
     return [autoprefixer]
-  },
-
-  // Make web variables accessible to webpack, e.g. window
-  target: 'web',
-  stats: true,
-  progress: true
+  }
 }

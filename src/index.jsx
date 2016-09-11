@@ -1,41 +1,15 @@
 import React from 'react'
 import { render } from 'react-dom'
-import { createStore, compose, applyMiddleware } from 'redux'
 import { Provider } from 'react-redux'
 
-/* eslint-disable import/no-extraneous-dependencies */
-// only in dev
-import createLogger from 'redux-logger'
-/* eslint-enable import/no-extraneous-dependencies */
-
-import reducer from './reducers'
-import { loadPolyfills } from './utils/loaders'
-
-// Containers
+import configureStore from './store/configureStore'
 import HelloWorld from './HelloWorld/container'
 
-const devToolsExtension = () => (
-  typeof window === 'object' &&
-  typeof window.devToolsExtension !== 'undefined'
-    ? window.devToolsExtension() : f => f
-)
+import { loadPolyfills } from './utils/loaders'
 
-const initialState = {
-}
+// configureStore w/ initialState from global if any
+const store = configureStore(window.INITIAL_STATE)
 
-const logger = createLogger()
-const middleware = [
-  // only in dev
-  logger
-]
-
-// const enhancer = compose(
-//   applyMiddleware(...middleware),
-//   // only in dev
-//   devToolsExtension
-// )
-const enhancer = window.devToolsExtension && window.devToolsExtension()
-const store = createStore(reducer, initialState, enhancer)
 const root = (
   <Provider store={store}>
     <HelloWorld />
