@@ -31,21 +31,46 @@ const history = syncHistoryWithStore(browserHistory, store)
 // get bestLocale from store
 // const bestLocale = 'en-US'
 
-const routes = (
-  <Route path='/' component={App}>
-    <IndexRedirect to='en-US' />
-    <Route path=':locale'>
-      <IndexRoute component={Home} />
+// const routes = (
+//   <Route path='/' component={App}>
+//     <IndexRedirect to='en-US' />
+//     <Route path=':locale'>
+//       <IndexRoute component={Home} />
+//
+//       <Route path='repos' component={RepoList}>
+//         <Route path=':userName/:repoName' component={Repo} />
+//       </Route>
+//
+//       <Route path='about' component={About} />
+//       <Route path='*' component={NotFound} />
+//     </Route>
+//   </Route>
+// )
 
-      <Route path='repos' component={RepoList}>
-        <Route path=':userName/:repoName' component={Repo} />
-      </Route>
+const reposRoute = {
+  path: 'repos',
+  component: RepoList,
+  childRoutes: [
+    { path: ':userName/:repoName', component: Repo }
+  ]
+}
 
-      <Route path='about' component={About} />
-      <Route path='*' component={NotFound} />
-    </Route>
-  </Route>
-)
+const localeRoute = {
+  path: ':locale',
+  indexRoute: { component: Home },
+  childRoutes: [
+    reposRoute,
+    { path: 'about', component: About },
+    { path: '*', component: NotFound }
+  ]
+}
+const routes = {
+  path: '/',
+  component: App,
+  // <IndexRedirect to='/en-US'/> child
+  indexRoute: { onEnter: (nextState, replace) => replace('/en-US') },
+  childRoutes: [localeRoute]
+}
 
 const root = (
   <Provider store={store}>
