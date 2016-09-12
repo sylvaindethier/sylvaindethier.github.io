@@ -1,7 +1,6 @@
 import { combineReducers } from 'redux'
-
-import helloWorld from '../HelloWorld/reducer'
+import { routerReducer } from 'react-router-redux'
 
 export default combineReducers({
-  helloWorld
+  routing: routerReducer
 })

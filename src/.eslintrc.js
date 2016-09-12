@@ -41,6 +41,10 @@ module.exports = {
 
   rules: {
     // disable react/require-extension as this rule is deprecated
-    'react/require-extension': 0,
+    'react/require-extension': 'off',
+    // skip PropTypes.shape validation (not very accurate)
+    'react/no-unused-prop-types': ['error', {
+      'skipShapeProps': true
+    }],
   }
 }

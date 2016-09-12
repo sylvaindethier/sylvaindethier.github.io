@@ -21,6 +21,7 @@ module.exports = {
       'redux',
       'redux-actions',
       'react-redux',
+      'react-router-redux',
       // Intl
       'react-intl',
       'intl-locales-supported',
