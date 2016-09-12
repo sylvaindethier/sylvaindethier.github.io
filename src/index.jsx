@@ -3,9 +3,9 @@ import React from 'react'
 import { render } from 'react-dom'
 // Router
 import Router from 'react-router/lib/Router'
-import Route from 'react-router/lib/Route'
-import IndexRoute from 'react-router/lib/IndexRoute'
-import IndexRedirect from 'react-router/lib/IndexRedirect'
+// import Route from 'react-router/lib/Route'
+// import IndexRoute from 'react-router/lib/IndexRoute'
+// import IndexRedirect from 'react-router/lib/IndexRedirect'
 import browserHistory from 'react-router/lib/browserHistory'
 import { syncHistoryWithStore } from 'react-router-redux'
 // Redux
@@ -29,23 +29,8 @@ const store = configureStore(window.INITIAL_STATE || {})
 const history = syncHistoryWithStore(browserHistory, store)
 
 // get bestLocale from store
-// const bestLocale = 'en-US'
-
-// const routes = (
-//   <Route path='/' component={App}>
-//     <IndexRedirect to='en-US' />
-//     <Route path=':locale'>
-//       <IndexRoute component={Home} />
-//
-//       <Route path='repos' component={RepoList}>
-//         <Route path=':userName/:repoName' component={Repo} />
-//       </Route>
-//
-//       <Route path='about' component={About} />
-//       <Route path='*' component={NotFound} />
-//     </Route>
-//   </Route>
-// )
+const bestLocale = 'en-US'
+const supportLocale = ['en-US', 'fr-FR']
 
 const reposRoute = {
   path: 'repos',
@@ -55,21 +40,27 @@ const reposRoute = {
   ]
 }
 
-const localeRoute = {
-  path: ':locale',
-  indexRoute: { component: Home },
-  childRoutes: [
-    reposRoute,
-    { path: 'about', component: About },
-    { path: '*', component: NotFound }
-  ]
-}
 const routes = {
   path: '/',
   component: App,
   // <IndexRedirect to='/en-US'/> child
-  indexRoute: { onEnter: (nextState, replace) => replace('/en-US') },
-  childRoutes: [localeRoute]
+  indexRoute: { onEnter: (nextState, replace) => replace(`/${bestLocale}`) },
+  childRoutes: [{
+    path: ':locale',
+    indexRoute: { component: Home },
+    onEnter: (nextState, replace) => {
+      // check if locale is supported, replace w/ bestLocale otherwise
+      const { params: { locale } } = nextState
+      if (!supportLocale.includes(locale)) {
+        replace(`/${bestLocale}`)
+      }
+    },
+    childRoutes: [
+      reposRoute,
+      { path: 'about', component: About },
+      { path: '*', component: NotFound }
+    ]
+  }]
 }
 
 const root = (
