@@ -1,11 +1,11 @@
-const debug = require('../debug')('app:loaders')
+import _debug from '../../utils/debug'
 
-const resolver = resolve => {
+const debug = _debug('app:loaders:polyfills')
+
+const resolver = (resolve, reject) => {
   require.ensure(['intl'], require => {
     debug('load Intl polyfill')
-    resolve({
-      intl: require('intl')
-    })
+    resolve(require('intl'))
   }, 'polyfill-Intl')
 }
 const required = !window.Intl

@@ -1,20 +1,18 @@
 import { createStore, applyMiddleware, compose } from 'redux'
+import thunk from 'redux-thunk'
 import rootReducer from '../reducers'
 
-// Middleware you want to use in development:
+// Middleware used in development
 const middleware = [
+  thunk
 ]
-
-const devToolsExtension = () => (
-  typeof window === 'object' &&
-  typeof window.devToolsExtension !== 'undefined'
-    ? window.devToolsExtension() : f => f
-)
 
 const enhancer = compose(
   applyMiddleware(...middleware),
   // devToolsExtension
-  devToolsExtension()
+  typeof window === 'object' &&
+  typeof window.devToolsExtension !== 'undefined'
+    ? window.devToolsExtension() : f => f
 )
 
 export default function configureStore (initialState) {

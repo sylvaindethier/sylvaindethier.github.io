@@ -1,11 +1,11 @@
-const debug = require('../debug')('app:loaders')
+import _debug from '../../utils/debug'
 
-const resolver = resolve => {
+const debug = _debug('app:loaders:polyfills')
+
+const resolver = (resolve, reject) => {
   require.ensure(['whatwg-fetch'], require => {
     debug('load whatwg-fetch')
-    resolve({
-      fetch: require('whatwg-fetch')
-    })
+    resolve(require('whatwg-fetch'))
   }, 'polyfill-fetch')
 }
 const required = !window.fetch

@@ -3,6 +3,8 @@ module.exports = {
     browser: true,
   },
 
+  parser: 'babel-eslint',
+
   parserOptions: {
     ecmaFeatures: {
       jsx: true,

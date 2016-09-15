@@ -1,7 +1,7 @@
 import { createStore, applyMiddleware, compose } from 'redux'
 import rootReducer from '../reducers'
 
-// Middleware you want to use in production:
+// Middleware used in production
 const middleware = [
 ]
 

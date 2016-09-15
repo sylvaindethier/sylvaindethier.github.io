@@ -1,10 +1,13 @@
-module.exports = {
-  // default app locale
-  default: 'fr-FR',
+// default app locale (from the default messages)
+const defaultLocale = 'en-US'
 
-  // app supported locales
-  support: [
-    'fr-FR',
-    'en-US'
-  ]
+// app supported locales
+const supportedLocales = [
+  defaultLocale,
+  'fr-FR'
+]
+
+module.exports = {
+  defaultLocale,
+  supportedLocales
 }
