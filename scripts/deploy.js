@@ -14,7 +14,7 @@ const defaults = {
 // project options
 const options = Object.assign({}, defaults, {
   dist: 'build',
-  branch: 'master',
+  // branch: 'master',
   message: 'Deploy updates, see `react-app` branch'
 })
 

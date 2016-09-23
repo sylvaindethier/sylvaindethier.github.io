@@ -4,6 +4,7 @@ import { Link } from 'react-router'
 const NavLink = (props) => (
   <Link activeStyle={{ color: 'green' }} {...props}>{props.children}</Link>
 )
+
 NavLink.displayName = 'NavLink'
 NavLink.propTypes = {
   children: PropTypes.oneOfType([
