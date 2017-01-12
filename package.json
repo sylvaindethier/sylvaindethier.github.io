@@ -15,12 +15,9 @@
   "homepage": "https://sylvaindethier.github.io",
   "scripts": {
     "start": "node scripts/start.js",
-    "build": "node scripts/build.js",
     "test": "node scripts/test.js --env=jsdom",
-    "lint": "./node_modules/.bin/eslint . --fix",
-    "preprod": "npm run lint && npm run test && npm run build",
+    "build": "node scripts/build.js",
     "prod": "./node_modules/.bin/pushstate-server build",
-    "predeploy": "npm run preprod",
     "deploy": "node scripts/deploy.js"
   },
   "dependencies": {
