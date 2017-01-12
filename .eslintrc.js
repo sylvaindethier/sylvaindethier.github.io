@@ -3,7 +3,6 @@ module.exports = {
 
   parser: 'babel-eslint',
 
-
   env: {
     browser: true,
     commonjs: true,
@@ -28,7 +27,9 @@ module.exports = {
     'eslint:recommended',
     'plugin:react/recommended',
     'plugin:jsx-a11y/recommended',
-    'plugin:flowtype/recommended'
+    'plugin:flowtype/recommended',
+    'standard',
+    'standard-react'
   ],
 
   settings: {
