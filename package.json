@@ -16,7 +16,7 @@
   "scripts": {
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
-    "test": "node scripts/test.js --env=jsdom",
+    "test": "node scripts/test.js --env=jsdom --config=.jestrc",
     "preprod": "npm run build",
     "prod": "./node_modules/.bin/pushstate-server build",
     "deploy": "node scripts/deploy.js"
@@ -74,29 +74,5 @@
     "webpack": "1.14.0",
     "webpack-dev-server": "1.16.2",
     "webpack-manifest-plugin": "1.1.0"
-  },
-  "jest": {
-    "collectCoverageFrom": [
-      "src/**/*.{js,jsx}"
-    ],
-    "setupFiles": [
-      "<rootDir>/config/polyfills.js"
-    ],
-    "testPathIgnorePatterns": [
-      "<rootDir>[/\\\\](build|docs|node_modules|scripts)[/\\\\]"
-    ],
-    "testEnvironment": "node",
-    "testURL": "http://localhost",
-    "transform": {
-      "^.+\\.(js|jsx)$": "<rootDir>/node_modules/babel-jest",
-      "^.+\\.css$": "<rootDir>/config/jest/cssTransform.js",
-      "^(?!.*\\.(js|jsx|css|json)$)": "<rootDir>/config/jest/fileTransform.js"
-    },
-    "transformIgnorePatterns": [
-      "[/\\\\]node_modules[/\\\\].+\\.(js|jsx)$"
-    ],
-    "moduleNameMapper": {
-      "^react-native$": "react-native-web"
-    }
   }
 }
