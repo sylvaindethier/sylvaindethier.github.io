@@ -52,10 +52,16 @@ module.exports = {
   // You can exclude the *.map files from the build during deployment.
   devtool: 'source-map',
   // In production, we only want to load the polyfills and the app code.
-  entry: [
-    require.resolve('./polyfills'),
-    paths.appIndexJs
-  ],
+  entry: {
+    app: [
+      paths.appIndexJs
+    ],
+    vendor: [
+      require.resolve('./polyfills'),
+      'react',
+      'react-dom'
+    ]
+  },
   output: {
     // The build folder.
     path: paths.appBuild,
@@ -175,6 +181,11 @@ module.exports = {
           })
         ]
       }
+    }),
+    // Commons chunk for code splitting
+    new webpack.optimize.CommonsChunkPlugin({
+      names: ['vendor'],
+      filename: '[name].[hash:8].js'
     }),
     // Makes the public URL available as %PUBLIC_URL% in index.html, e.g.:
     // <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
