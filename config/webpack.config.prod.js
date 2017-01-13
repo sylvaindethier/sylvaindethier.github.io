@@ -156,7 +156,18 @@ module.exports = {
         test: /\.css$/,
         loader: ExtractTextPlugin.extract({
           fallbackLoader: 'style-loader',
-          loader: 'css-loader?importLoaders=1!postcss-loader'
+          // loader: 'css-loader?importLoaders=1!postcss-loader',
+          loader: [
+            {
+              loader: 'css-loader',
+              query: {
+                importLoaders: true
+              }
+            },
+            {
+              loader: 'postcss-loader'
+            }
+          ]
         })
         // Note: this won't work without `new ExtractTextPlugin()` in `plugins`.
       },
@@ -189,7 +200,7 @@ module.exports = {
     // Commons chunk for code splitting
     new webpack.optimize.CommonsChunkPlugin({
       names: ['vendor', 'manifest'],
-      filename: '[name].[hash:8].js'
+      filename: 'static/js/[name].[hash:8].js'
     }),
     // Makes the public URL available as %PUBLIC_URL% in index.html, e.g.:
     // <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">

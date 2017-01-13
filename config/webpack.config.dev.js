@@ -187,8 +187,8 @@ module.exports = {
     }),
     // Commons chunk for code splitting
     new webpack.optimize.CommonsChunkPlugin({
-      names: ['vendor'],
-      filename: '[name].[hash:8].js'
+      names: ['vendor', 'manifest'],
+      filename: 'static/js/[name].js'
     }),
     // Makes the public URL available as %PUBLIC_URL% in index.html, e.g.:
     // <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
