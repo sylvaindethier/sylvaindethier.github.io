@@ -3,6 +3,7 @@ var webpack = require('webpack')
 var HtmlWebpackPlugin = require('html-webpack-plugin')
 var ExtractTextPlugin = require('extract-text-webpack-plugin')
 var ManifestPlugin = require('webpack-manifest-plugin')
+var StatsPlugin = require('stats-webpack-plugin')
 var InterpolateHtmlPlugin = require('react-dev-utils/InterpolateHtmlPlugin')
 var url = require('url')
 var paths = require('./paths')
@@ -51,6 +52,8 @@ module.exports = {
   // We generate sourcemaps in production. This is slow but gives good results.
   // You can exclude the *.map files from the build during deployment.
   devtool: 'source-map',
+  // Profile bundle stats
+  profile: true,
   // In production, we only want to load the polyfills and the app code.
   entry: {
     app: [
@@ -80,7 +83,8 @@ module.exports = {
     // if there any conflicts. This matches Node resolution mechanism.
     // https://github.com/facebookincubator/create-react-app/issues/253
     modules: paths.nodePaths.concat([
-      paths.appNodeModules
+      paths.appNodeModules,
+      paths.appSrc
     ]),
     // These are the reasonable defaults supported by the Node ecosystem.
     // We also include JSX as a common component filename extension to support
@@ -184,7 +188,7 @@ module.exports = {
     }),
     // Commons chunk for code splitting
     new webpack.optimize.CommonsChunkPlugin({
-      names: ['vendor'],
+      names: ['vendor', 'manifest'],
       filename: '[name].[hash:8].js'
     }),
     // Makes the public URL available as %PUBLIC_URL% in index.html, e.g.:
@@ -242,7 +246,8 @@ module.exports = {
     // having to parse `index.html`.
     new ManifestPlugin({
       fileName: 'asset-manifest.json'
-    })
+    }),
+    new StatsPlugin('webpack-stats.json')
   ],
   // Some libraries import Node modules but don't use them in the browser.
   // Tell Webpack to provide empty mocks for them so importing them works.
