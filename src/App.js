@@ -1,32 +1,61 @@
 import React from 'react'
 import { Link, Match, Miss } from 'react-router'
 
-import Home from './pages/Home'
-import About from './pages/About'
-import Topics from './pages/Topics'
-import NoMatch from './pages/NoMatch'
+// source: https://gist.github.com/acdlite/a68433004f9d6b4cbc83b5cc3990c194
+// getComponent is a function that returns a promise for a component
+// It will not be called until the first mount
+function asyncComponent (getComponent) {
+  return class AsyncComponent extends React.Component {
+    static Component = null;
+    state = { Component: AsyncComponent.Component };
 
-const renderHome = (props) => {
-  console.log('renderHome from App w/', props) // eslint-disable-line
-  return (
-    <Home {...props} />
-  )
+    componentWillMount () {
+      if (!this.state.Component) {
+        getComponent().then(Component => {
+          AsyncComponent.Component = Component
+          this.setState({ Component })
+        })
+      }
+    }
+    render () {
+      const { Component } = this.state
+      if (Component) {
+        return <Component {...this.props} />
+      }
+      return null
+    }
+  }
 }
-const renderAbout = (props) => {
-  console.log('renderAbout from App') // eslint-disable-line
-  return (
-    <About {...props} />
-  )
-}
-const renderTopics = (props) => {
-  console.log('renderTopics from App') // eslint-disable-line
-  return (
-    <Topics {...props} />
-  )
-}
+
+const Home = asyncComponent(() =>
+  import('./pages/Home').then(module => module.default)
+)
+const renderHome = (props) => (
+  <Home {...props} />
+)
+
+const About = asyncComponent(() =>
+  import('./pages/About').then(module => module.default)
+)
+const renderAbout = (props) => (
+  <About {...props} />
+)
+
+const Topics = asyncComponent(() =>
+  import('./pages/Topics').then(module => module.default)
+)
+const renderTopics = (props) => (
+  <Topics {...props} />
+)
+
+const NoMatch = asyncComponent(() =>
+  import('./pages/NoMatch').then(module => module.default)
+)
+const renderNoMatch = (props) => (
+  <NoMatch {...props} />
+)
 
 const App = () => {
-  console.log('render App') // eslint-disable-line
   return (
     <div>
       <ul>
@@ -47,7 +76,7 @@ const App = () => {
       <Match pattern='/topics' render={renderTopics} />
 
       {/* If none of those match, then a sibling `Miss` will render. */}
-      <Miss component={NoMatch} />
+      <Miss render={renderNoMatch} />
     </div>
   )
 }
