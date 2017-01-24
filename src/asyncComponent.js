@@ -7,10 +7,7 @@ export default function asyncComponent (getComponent, DefaultComponent = null) {
   return class AsyncComponent extends React.Component {
     static Component = null
     static DefaultComponent = DefaultComponent
-    state = {
-      Component: AsyncComponent.Component,
-      DefaultComponent: AsyncComponent.DefaultComponent
-    }
+    state = { Component: AsyncComponent.Component }
     mounted = false
 
     componentWillMount () {
@@ -19,9 +16,8 @@ export default function asyncComponent (getComponent, DefaultComponent = null) {
           AsyncComponent.Component = Component
           // check if the Component is still mounted before calling setState
           // to ensure it still needs to be rendered
-          if (this.mounted) {
-            this.setState({ Component })
-          }
+          this.mounted &&
+          this.setState({ Component })
         })
       }
     }
@@ -29,21 +25,21 @@ export default function asyncComponent (getComponent, DefaultComponent = null) {
     componentDidMount () {
       this.mounted = true
     }
-
     componentWillUnmount () {
       this.mounted = false
     }
 
     render () {
-      const { Component, DefaultComponent } = this.state
-      return Component !== null ? (
-        <Component {...this.props} />
-      ) : (
-        DefaultComponent !== null ? (
+      const { Component } = this.state
+      const { DefaultComponent } = AsyncComponent
+      return (Component === null) ? (
+        // render DefaultComponent
+        DefaultComponent === null ? null : (
           <DefaultComponent {...this.props} />
-        ) : (
-          null
         )
+      ) : (
+        // render Component
+        <Component {...this.props} />
       )
     }
   }
