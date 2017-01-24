@@ -5,11 +5,16 @@ import { asyncModuleComponent } from '../asyncComponent'
 import logo from './logo.svg'
 import './App.css'
 
+// eslint-disable-next-line react/prop-types
+const Loader = ({ pathname }) => (
+  <div>Loading <code>{pathname}</code> ...</div>
+)
+
 // define pages as asyncComponent
-const Home = asyncModuleComponent(() => import('../pages/Home'))
-const About = asyncModuleComponent(() => import('../pages/About'))
-const Topics = asyncModuleComponent(() => import('../pages/Topics'))
-const NoMatch = asyncModuleComponent(() => import('../pages/NoMatch'))
+const Home = asyncModuleComponent(() => import('../pages/Home'), Loader)
+const About = asyncModuleComponent(() => import('../pages/About'), Loader)
+const Topics = asyncModuleComponent(() => import('../pages/Topics'), Loader)
+const NoMatch = asyncModuleComponent(() => import('../pages/NoMatch'), Loader)
 
 const App = () => (
   <div className='App'>
