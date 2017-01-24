@@ -1,7 +1,7 @@
 import React from 'react'
 import { render } from 'react-dom'
+import 'sanitize.css/sanitize.css'
 import Root from './Root'
-import './index.css'
 
 render(
   <Root />,
