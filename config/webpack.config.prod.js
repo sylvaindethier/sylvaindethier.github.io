@@ -62,7 +62,9 @@ module.exports = {
     vendor: [
       require.resolve('./polyfills'),
       'react',
-      'react-dom'
+      'react-dom',
+      'react-router',
+      'sanitize.css/sanitize.css'
     ]
   },
   output: {
