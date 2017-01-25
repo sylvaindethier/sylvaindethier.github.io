@@ -1,14 +1,11 @@
 import React from 'react'
 import { Link, Match, Miss } from 'react-router'
 import { asyncModuleComponent } from '../asyncComponent'
+import Loader from '../Loader'
+
 // media
 import logo from './logo.svg'
 import './App.css'
-
-// eslint-disable-next-line react/prop-types
-const Loader = ({ pathname }) => (
-  <div>Loading <code>{pathname}</code> ...</div>
-)
 
 // define pages as asyncComponent
 const Home = asyncModuleComponent(() => import('../pages/Home'), Loader)
