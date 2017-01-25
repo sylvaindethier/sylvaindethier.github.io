@@ -158,12 +158,12 @@ module.exports = {
         test: /\.css$/,
         loader: ExtractTextPlugin.extract({
           fallbackLoader: 'style-loader',
-          // loader: 'css-loader?importLoaders=1!postcss-loader',
           loader: [
             {
               loader: 'css-loader',
               query: {
-                importLoaders: true
+                importLoaders: true,
+                minimize: { safe: true }
               }
             },
             {
