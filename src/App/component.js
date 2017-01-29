@@ -1,11 +1,12 @@
 import React from 'react'
 import { Link, Match, Miss } from 'react-router'
+import RaisedButton from 'material-ui/RaisedButton'
+import FlatButton from 'material-ui/FlatButton'
 import { asyncModuleComponent } from '../asyncComponent'
 import Loader from '../Loader'
-
 // media
 import logo from './logo.svg'
-import './App.css'
+import './styles.css'
 
 // define pages as asyncComponent
 const Home = asyncModuleComponent(() => import('../pages/Home'), Loader)
@@ -30,6 +31,9 @@ const App = () => (
     </ul>
 
     <hr />
+    <FlatButton label='Ok' primary />
+    <RaisedButton label='Super Secret Password' secondary />
+
     <Match exactly pattern='/' render={(props) => <Home {...props} />} />
     <Match pattern='/about' render={(props) => <About {...props} />} />
     <Match pattern='/topics' render={(props) => <Topics {...props} />} />
