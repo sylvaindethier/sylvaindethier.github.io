@@ -51,7 +51,7 @@ module.exports = {
       require.resolve('./polyfills'),
       'react',
       'react-dom',
-      'react-router',
+      'react-router-dom',
       'material-ui',
       'react-tap-event-plugin',
       'sanitize.css/sanitize.css'

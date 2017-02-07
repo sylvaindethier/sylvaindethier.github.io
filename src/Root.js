@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrowserRouter } from 'react-router'
+import Router from 'react-router-dom/BrowserRouter'
 
 import App from './App'
 
@@ -7,9 +7,9 @@ const Root = () => (
   // 2. render a `Router`, it will listen to the url changes
   //    and make the location available to other components
   //    automatically
-  <BrowserRouter>
+  <Router>
     <App />
-  </BrowserRouter>
+  </Router>
 )
 
 export default Root

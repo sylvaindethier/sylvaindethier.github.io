@@ -1,5 +1,7 @@
 import React from 'react'
-import { Link, Match, Miss } from 'react-router'
+import Link from 'react-router-dom/Link'
+import Switch from 'react-router-dom/Switch'
+import Route from 'react-router-dom/Route'
 import RaisedButton from 'material-ui/RaisedButton'
 import FlatButton from 'material-ui/FlatButton'
 import { asyncModuleComponent } from '../asyncComponent'
@@ -34,10 +36,12 @@ const App = () => (
     <FlatButton label='Ok' primary />
     <RaisedButton label='Super Secret Password' secondary />
 
-    <Match exactly pattern='/' render={(props) => <Home {...props} />} />
-    <Match pattern='/about' render={(props) => <About {...props} />} />
-    <Match pattern='/topics' render={(props) => <Topics {...props} />} />
-    <Miss component={NoMatch} />
+    <Switch>
+      <Route exactly pattern='/' component={Home} />
+      <Route pattern='/about' component={About} />
+      <Route pattern='/topics' component={Topics} />
+      <Route component={NoMatch} />
+    </Switch>
   </div>
 )
 

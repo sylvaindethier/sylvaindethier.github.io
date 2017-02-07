@@ -1,6 +1,6 @@
 import React from 'react'
-import { propTypes } from 'react-router'
 
+// eslint-disable-next-line react/prop-types
 const NoMatch = ({ location }) => {
   console.log('render NoMatch w/', {location}) // eslint-disable-line
   return (
@@ -9,10 +9,6 @@ const NoMatch = ({ location }) => {
       <p>Sorry but {location.pathname} didn’t match any pages</p>
     </div>
   )
-}
-
-NoMatch.propTypes = {
-  location: propTypes.location
 }
 
 export default NoMatch

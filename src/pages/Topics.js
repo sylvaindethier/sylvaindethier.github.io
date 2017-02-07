@@ -1,5 +1,6 @@
 import React, { PropTypes } from 'react'
-import { Match, Link } from 'react-router'
+import Link from 'react-router-dom/Link'
+import Route from 'react-router-dom/Route'
 import Topic from './Topic'
 
 const Topics = ({ pathname, pattern }) => {
@@ -22,10 +23,10 @@ const Topics = ({ pathname, pattern }) => {
              within the render lifecycle. Use the parent's matched
              pathname to nest the url.
       */}
-      <Match pattern={`${pathname}/:topicId`} component={Topic} />
+      <Route pattern={`${pathname}/:topicId`} component={Topic} />
 
       {/* 8. use the `render` prop for convenient inline rendering */}
-      <Match pattern={pathname} exactly render={() => (
+      <Route pattern={pathname} exactly render={() => (
         <h3>Please select a topic</h3>
       )} />
     </div>
