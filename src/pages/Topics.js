@@ -1,41 +1,36 @@
-import React, { PropTypes } from 'react'
+import React from 'react'
 import Link from 'react-router-dom/Link'
 import Route from 'react-router-dom/Route'
-import Topic from './Topic'
+import { match as matchPropTypes } from '../routerPropTypes'
 
-const Topics = ({ pathname, pattern }) => {
-  console.log('render Topics w/ ', {pathname, pattern}) // eslint-disable-line
-  return (
-    // 5. Components rendered by a `Match` get some routing-specific
-    //    props, like the portion of the parent `pattern` that was
-    //    matched against the current `location.pathname`, in this case
-    //    `/topics`
-    <div>
-      <h2>Topics</h2>
-      <ul>
-        {/* 6. Use the parent's matched pathname to link relatively */}
-        <li><Link to={`${pathname}/rendering`}>Rendering with React</Link></li>
-        <li><Link to={`${pathname}/components`}>Components</Link></li>
-        <li><Link to={`${pathname}/props-v-state`}>Props v. State</Link></li>
-      </ul>
+const Topics = ({ match }) => (
+  <div>
+    <h2>Topics</h2>
+    <ul>
+      <li><Link to={`${match.url}/rendering`}>Rendering with React</Link></li>
+      <li><Link to={`${match.url}/components`}>Components</Link></li>
+      <li><Link to={`${match.url}/props-v-state`}>Props v. State</Link></li>
+    </ul>
 
-      {/* 7. Render more `Match` components to get nesting naturally
-             within the render lifecycle. Use the parent's matched
-             pathname to nest the url.
-      */}
-      <Route pattern={`${pathname}/:topicId`} component={Topic} />
-
-      {/* 8. use the `render` prop for convenient inline rendering */}
-      <Route pattern={pathname} exactly render={() => (
-        <h3>Please select a topic</h3>
-      )} />
-    </div>
-  )
-}
+    <Route path={`${match.url}/:topicId`} component={Topic} />
+    <Route path={match.url} exact render={() => (
+      <h3>Please select a topic.</h3>
+    )} />
+  </div>
+)
 
 Topics.propTypes = {
-  pathname: PropTypes.string.isRequired,
-  pattern: PropTypes.string.isRequired
+  match: matchPropTypes.isRequired
+}
+
+const Topic = ({ match }) => (
+  <div>
+    <h3>{match.params.topicId}</h3>
+  </div>
+)
+
+Topic.propTypes = {
+  match: matchPropTypes.isRequired
 }
 
 export default Topics

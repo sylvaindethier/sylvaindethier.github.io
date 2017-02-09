@@ -1,4 +1,5 @@
 import React from 'react'
+import './Loader.css'
 
 /* https://codepen.io/jczimm/pen/vEBpoL */
 const Loader = () => (

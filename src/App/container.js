@@ -8,10 +8,10 @@ import Component from './component'
 // http://stackoverflow.com/a/34015469/988941
 injectTapEventPlugin()
 
-const App = () => (
+const AppContainer = () => (
   <MuiThemeProvider muiTheme={muiTheme}>
     <Component />
   </MuiThemeProvider>
 )
 
-export default App
+export default AppContainer
