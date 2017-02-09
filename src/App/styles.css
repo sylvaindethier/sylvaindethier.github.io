@@ -4,3 +4,8 @@
 html {
   font-family: 'Roboto', sans-serif;
 }
+
+.nav-link {
+  display: block;
+  text-decoration: none;
+}

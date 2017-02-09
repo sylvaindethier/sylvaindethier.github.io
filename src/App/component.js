@@ -1,11 +1,15 @@
 import React from 'react'
-import AppRoutes from './routes'
-import AppNav from './nav'
+import AppBar from './AppBar'
+import AppRoutes from './AppRoutes'
 import './styles.css'
+
+// const handleMenuTap = (event) => {
+//   console.log('handleMenuTap', event) // eslint-disable-line no-console
+// }
 
 const AppComponent = () => (
   <div>
-    <AppNav />
+    <AppBar />
     <hr />
     <AppRoutes />
   </div>
