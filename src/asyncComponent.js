@@ -1,19 +1,26 @@
 import React from 'react'
 
+const getDisplayName = (Component) => (
+  Component.displayName ||
+  Component.name ||
+  'Component'
+)
+
 // source: https://gist.github.com/acdlite/a68433004f9d6b4cbc83b5cc3990c194
 // getComponent is a function that returns a promise for a component
 // It will not be called until the first mount
 export default function asyncComponent (getComponent, DefaultComponent = null) {
   return class AsyncComponent extends React.Component {
-    static Component = null
-    static DefaultComponent = DefaultComponent
-    state = { Component: AsyncComponent.Component }
-    mounted = false
+    static Component = null;
+    static displayName = 'AsyncComponent';
+    state = { Component: AsyncComponent.Component };
+    mounted = false;
 
     componentWillMount () {
       if (this.state.Component === null) {
         getComponent().then(Component => {
           AsyncComponent.Component = Component
+          AsyncComponent.displayName = `Async(${getDisplayName(Component)})`
           // check if the Component is still mounted before calling setState
           // to ensure it still needs to be rendered
           this.mounted &&
@@ -29,16 +36,21 @@ export default function asyncComponent (getComponent, DefaultComponent = null) {
       this.mounted = false
     }
 
-    render () {
-      const { Component } = this.state
-      const { DefaultComponent } = AsyncComponent
-      return (Component === null) ? (
-        // render DefaultComponent
-        DefaultComponent === null ? null : (
+    renderDefault () {
+      // render DefaultComponent if any
+      return DefaultComponent === null
+        ? (
+          null
+        ) : (
           <DefaultComponent {...this.props} />
         )
+    }
+
+    render () {
+      const { Component } = this.state
+      return Component === null ? (
+        this.renderDefault()
       ) : (
-        // render Component
         <Component {...this.props} />
       )
     }
@@ -46,10 +58,10 @@ export default function asyncComponent (getComponent, DefaultComponent = null) {
 }
 
 // add some easying utils
-function getModuleComponent (getModule) {
+function getComponentModule (getModule) {
   return () => getModule().then(module => module.default)
 }
 
-export function asyncModuleComponent (getModule, DefaultComponent) {
-  return asyncComponent(getModuleComponent(getModule), DefaultComponent)
+export function asyncComponentModule (getModule, DefaultComponent) {
+  return asyncComponent(getComponentModule(getModule), DefaultComponent)
 }
