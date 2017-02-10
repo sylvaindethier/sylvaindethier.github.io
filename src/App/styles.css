@@ -9,3 +9,31 @@ html {
   display: block;
   text-decoration: none;
 }
+
+.mini-footer {
+  display: flex;
+  flex-flow: row wrap;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 32px 16px;
+}
+.mini-footer--left {
+  display: inline-block;
+  -webkit-order: 0;
+  -ms-flex-order: 0;
+  order: 0;
+}
+.mini-footer--right {
+  display: inline-block;
+  -webkit-order: 0;
+  -ms-flex-order: 0;
+  order: 1;
+}
+
+.mdl-logo {
+    margin-bottom: 16px;
+    color: #fff;
+}
+.mdl-mini-footer .mdl-logo {
+    line-height: 36px;
+}

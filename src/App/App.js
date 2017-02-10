@@ -4,6 +4,7 @@ import injectTapEventPlugin from 'react-tap-event-plugin'
 import muiTheme from './muiTheme'
 import Bar from './Bar'
 import Content from './Content'
+import Footer from './Footer'
 import './styles.css'
 
 // Needed for onTouchTap
@@ -14,6 +15,7 @@ const App = () => (
     <div>
       <Bar />
       <Content />
+      <Footer />
     </div>
   </MuiThemeProvider>
 )
