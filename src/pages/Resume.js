@@ -2,7 +2,7 @@ import React from 'react'
 
 const Resume = () => (
   <div>
-    <h2>Resume</h2>
+    <h2>CV.</h2>
   </div>
 )
 
