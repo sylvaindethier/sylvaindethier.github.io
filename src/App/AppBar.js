@@ -2,12 +2,18 @@ import React, { Component } from 'react'
 import Bar from 'material-ui/AppBar'
 import Drawer from 'material-ui/Drawer'
 import MenuItem from 'material-ui/MenuItem'
+import FontIcon from 'material-ui/FontIcon'
 import Link from 'react-router-dom/Link'
 
 const links = [
   {
     to: '/',
-    children: 'Home'
+    children: (
+      <span>
+        <FontIcon className='material-icons'>home</FontIcon>
+        'Home'
+      </span>
+    )
   },
   {
     to: '/about',
@@ -54,7 +60,7 @@ class AppBar extends Component {
                 key={key}
                 onTouchTap={this.handleClose}
               >
-                <Link className='nav-link' {...link} />
+                <Link className='menu-item-link' {...link} />
               </MenuItem>
             ))}
           </nav>
