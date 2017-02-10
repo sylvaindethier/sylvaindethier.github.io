@@ -7,15 +7,16 @@ import { asyncComponentModule } from '../asyncComponent'
 import Home from '../pages/Home'
 // async pages
 const Loader = () => (<LinearProgress />)
+const Resume = asyncComponentModule(() => import('../pages/Resume'), Loader)
 const About = asyncComponentModule(() => import('../pages/About'), Loader)
-const Topics = asyncComponentModule(() => import('../pages/Topics'), Loader)
 const NoMatch = asyncComponentModule(() => import('../pages/NoMatch'), Loader)
 
+// don't forget to add corresponding Link in Bar
 const Content = () => (
   <Switch>
     <Route exact path='/' component={Home} />
+    <Route path='/resume' component={Resume} />
     <Route path='/about' component={About} />
-    <Route path='/topics' component={Topics} />
     <Route component={NoMatch} />
   </Switch>
 )

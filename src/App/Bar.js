@@ -20,9 +20,10 @@ export default class Bar extends Component {
     const { open } = this.state
 
     return (
-      <div>
+      <div style={{ paddingBottom: 64 }}>
         <AppBar
-          title='Title'
+          title='S. Dethier'
+          style={{ position: 'fixed', top: 0 }}
           onLeftIconButtonTouchTap={this.handleOpen}
         />
         <Drawer
@@ -38,13 +39,13 @@ export default class Bar extends Component {
             />
             <MenuItem
               onTouchTap={this.handleClose}
-              leftIcon={<FontIcon className='material-icons'>info</FontIcon>}
-              children={<Link className='menu-item-link' to='/about'>À propos</Link>}
+              leftIcon={<FontIcon className='material-icons'>code</FontIcon>}
+              children={<Link className='menu-item-link' to='/resume'>CV</Link>}
             />
             <MenuItem
               onTouchTap={this.handleClose}
-              leftIcon={<FontIcon className='material-icons'>list</FontIcon>}
-              children={<Link className='menu-item-link' to='/topics'>Topics</Link>}
+              leftIcon={<FontIcon className='material-icons'>info</FontIcon>}
+              children={<Link className='menu-item-link' to='/about'>À propos</Link>}
             />
           </nav>
         </Drawer>
