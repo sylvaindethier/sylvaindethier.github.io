@@ -10,7 +10,7 @@ const About = asyncComponentModule(() => import('../pages/About'), Loader)
 const Topics = asyncComponentModule(() => import('../pages/Topics'), Loader)
 const NoMatch = asyncComponentModule(() => import('../pages/NoMatch'), Loader)
 
-const AppRoutes = () => (
+const Content = () => (
   <Switch>
     <Route exact path='/' component={Home} />
     <Route path='/about' component={About} />
@@ -18,4 +18,4 @@ const AppRoutes = () => (
     <Route component={NoMatch} />
   </Switch>
 )
-export default AppRoutes
+export default Content
