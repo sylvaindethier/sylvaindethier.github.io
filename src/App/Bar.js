@@ -5,6 +5,33 @@ import MenuItem from 'material-ui/MenuItem'
 import FontIcon from 'material-ui/FontIcon'
 import Link from 'react-router-dom/Link'
 
+// don't forget to add corresponding Link's props from (route.path)s
+const menuItems = [
+  {
+    materialIcon: 'home',
+    link: {
+      to: '/',
+      children: 'Accueil'
+    }
+  },
+
+  {
+    materialIcon: 'code',
+    link: {
+      to: '/resume',
+      children: 'CV'
+    }
+  },
+
+  {
+    materialIcon: 'info',
+    link: {
+      to: '/about',
+      children: 'À propos'
+    }
+  }
+]
+
 export default class Bar extends Component {
   state = {
     open: false
@@ -32,21 +59,24 @@ export default class Bar extends Component {
           onRequestChange={this.handleRequestChange}
         >
           <nav>
-            <MenuItem
-              onTouchTap={this.handleClose}
-              leftIcon={<FontIcon className='material-icons'>home</FontIcon>}
-              children={<Link className='menu-item-link' to='/'>Accueil</Link>}
-            />
-            <MenuItem
-              onTouchTap={this.handleClose}
-              leftIcon={<FontIcon className='material-icons'>code</FontIcon>}
-              children={<Link className='menu-item-link' to='/resume'>CV</Link>}
-            />
-            <MenuItem
-              onTouchTap={this.handleClose}
-              leftIcon={<FontIcon className='material-icons'>info</FontIcon>}
-              children={<Link className='menu-item-link' to='/about'>À propos</Link>}
-            />
+            {menuItems.map((menuItem, key) => (
+              <MenuItem
+                key={key}
+                onTouchTap={this.handleClose}
+                leftIcon={
+                  <FontIcon
+                    className='material-icons'>
+                    {menuItem.materialIcon}
+                  </FontIcon>
+                }
+                children={
+                  <Link
+                    className='menu-item-link'
+                    {...menuItem.link}
+                  />
+                }
+              />
+            ))}
           </nav>
         </Drawer>
       </div>
