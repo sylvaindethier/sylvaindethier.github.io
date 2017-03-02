@@ -12,17 +12,17 @@ var WebpackDevServer = require('webpack-dev-server')
 var historyApiFallback = require('connect-history-api-fallback')
 var httpProxyMiddleware = require('http-proxy-middleware')
 var detect = require('detect-port')
-var clearConsole = require('react-dev-utils/clearConsole')
+// var clearConsole = require('react-dev-utils/clearConsole')
 var checkRequiredFiles = require('react-dev-utils/checkRequiredFiles')
 var formatWebpackMessages = require('react-dev-utils/formatWebpackMessages')
 var getProcessForPort = require('react-dev-utils/getProcessForPort')
 var openBrowser = require('react-dev-utils/openBrowser')
 var prompt = require('react-dev-utils/prompt')
-var pathExists = require('path-exists')
+var fs = require('fs')
 var config = require('../config/webpack.config.dev')
 var paths = require('../config/paths')
 
-var useYarn = pathExists.sync(paths.yarnLockFile)
+var useYarn = fs.existsSync(paths.yarnLockFile)
 var cli = useYarn ? 'yarn' : 'npm'
 var isInteractive = process.stdout.isTTY
 
@@ -32,13 +32,27 @@ if (!checkRequiredFiles([paths.appHtml, paths.appIndexJs])) {
 }
 
 // Tools like Cloud9 rely on this.
-var DEFAULT_PORT = process.env.PORT || 3000
+var DEFAULT_PORT = parseInt(process.env.PORT, 10) || 3000
 var compiler
+var handleCompile
+
+// You can safely remove this after ejecting.
+// We only use this block for testing of Create React App itself:
+var isSmokeTest = process.argv.some(arg => arg.indexOf('--smoke-test') > -1)
+if (isSmokeTest) {
+  handleCompile = function (err, stats) {
+    if (err || stats.hasErrors() || stats.hasWarnings()) {
+      process.exit(1)
+    } else {
+      process.exit(0)
+    }
+  }
+}
 
 function setupCompiler (host, port, protocol) {
   // "Compiler" is a low-level interface to Webpack.
   // It lets us listen to some events and provide our own custom messages.
-  compiler = webpack(config)
+  compiler = webpack(config, handleCompile)
 
   // "invalid" event fires when you have changed a file, and Webpack is
   // recompiling a bundle. WebpackDevServer takes care to pause serving the
@@ -46,7 +60,7 @@ function setupCompiler (host, port, protocol) {
   // "invalid" is short for "bundle invalidated", it doesn't imply any errors.
   compiler.plugin('invalid', function () {
     if (isInteractive) {
-      clearConsole()
+      // clearConsole()
     }
     console.log('Compiling...')
   })
@@ -57,7 +71,7 @@ function setupCompiler (host, port, protocol) {
   // Whether or not you have warnings or errors, you will get this event.
   compiler.plugin('done', function (stats) {
     if (isInteractive) {
-      clearConsole()
+      // clearConsole()
     }
 
     // We have switched off the default Webpack output in WebpackDevServer
@@ -187,7 +201,8 @@ function addMiddleware (devServer) {
       onError: onProxyError(proxy),
       secure: false,
       changeOrigin: true,
-      ws: true
+      ws: true,
+      xfwd: true
     })
     devServer.use(mayProxy, hpm)
 
@@ -216,7 +231,7 @@ function runDevServer (host, port, protocol) {
     // project directory is dangerous because we may expose sensitive files.
     // Instead, we establish a convention that only files in `public` directory
     // get served. Our build script will copy `public` into the `build` folder.
-    // In `index.html`, you can get URL of `public` folder with %PUBLIC_PATH%:
+    // In `index.html`, you can get URL of `public` folder with %PUBLIC_URL%:
     // <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
     // In JavaScript code, you can access it with `process.env.PUBLIC_URL`.
     // Note that we only recommend to use `public` folder as an escape hatch
@@ -256,14 +271,12 @@ function runDevServer (host, port, protocol) {
     }
 
     if (isInteractive) {
-      clearConsole()
+      // clearConsole()
     }
     console.log(chalk.cyan('Starting the development server...'))
     console.log()
 
-    if (isInteractive) {
-      openBrowser(protocol + '://' + host + ':' + port + '/')
-    }
+    openBrowser(protocol + '://' + host + ':' + port + '/')
   })
 }
 
@@ -283,7 +296,7 @@ detect(DEFAULT_PORT).then(port => {
   }
 
   if (isInteractive) {
-    clearConsole()
+    // clearConsole()
     var existingProcess = getProcessForPort(DEFAULT_PORT)
     var question =
       chalk.yellow('Something is already running on port ' + DEFAULT_PORT + '.' +
