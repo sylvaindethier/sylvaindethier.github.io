@@ -32,6 +32,11 @@ const menuItems = [
   }
 ]
 
+const styles = {
+  AppBar: { position: 'fixed', top: 0, height: 64 },
+  Bar: { paddingBottom: 64 }
+}
+
 export default class Bar extends Component {
   state = {
     open: false
@@ -47,10 +52,10 @@ export default class Bar extends Component {
     const { open } = this.state
 
     return (
-      <div style={{ paddingBottom: 64 }}>
+      <div style={styles.Bar}>
         <AppBar
-          title='S. Dethier'
-          style={{ position: 'fixed', top: 0 }}
+          title='S. Dethier - WebApp Developer'
+          style={styles.AppBar}
           onLeftIconButtonTouchTap={this.handleOpen}
         />
         <Drawer
