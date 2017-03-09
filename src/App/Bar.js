@@ -6,12 +6,21 @@ import FontIcon from 'material-ui/FontIcon'
 import Link from 'react-router-dom/Link'
 
 // don't forget to add corresponding Link's props from (route.path)s
+// @TODO: build menuItems from imported routes
 const menuItems = [
   {
     materialIcon: 'home',
     link: {
       to: '/',
       children: 'Accueil'
+    }
+  },
+
+  {
+    materialIcon: 'person',
+    link: {
+      to: '/about',
+      children: 'À propos'
     }
   },
 
@@ -24,10 +33,10 @@ const menuItems = [
   },
 
   {
-    materialIcon: 'info',
+    materialIcon: 'contact_mail',
     link: {
-      to: '/about',
-      children: 'À propos'
+      to: '/contact',
+      children: 'Contact'
     }
   }
 ]
