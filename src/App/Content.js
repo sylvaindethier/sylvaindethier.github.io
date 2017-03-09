@@ -1,7 +1,7 @@
 import React from 'react'
 import Route from 'react-router-dom/Route'
 import Switch from 'react-router-dom/Switch'
-import routes from './routes'
+import routes from '../routes'
 
 const styles = {
   Content: { margin: 24 }

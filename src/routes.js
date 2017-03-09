@@ -7,6 +7,7 @@ import Home from '../pages/Home'
 const Loader = () => (<LinearProgress />)
 const Resume = asyncComponentModule(() => import('../pages/Resume'), Loader)
 const About = asyncComponentModule(() => import('../pages/About'), Loader)
+const Contact = asyncComponentModule(() => import('../pages/Contact'), Loader)
 const NoMatch = asyncComponentModule(() => import('../pages/NoMatch'), Loader)
 
 const routes = [
@@ -17,13 +18,18 @@ const routes = [
   },
 
   {
+    path: '/about',
+    component: About
+  },
+
+  {
     path: '/resume',
     component: Resume
   },
 
   {
-    path: '/about',
-    component: About
+    path: '/contact',
+    component: Contact
   },
 
   {
