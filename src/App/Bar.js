@@ -4,14 +4,13 @@ import Drawer from 'material-ui/Drawer'
 import MenuItem from 'material-ui/MenuItem'
 import FontIcon from 'material-ui/FontIcon'
 import Link from 'react-router-dom/Link'
+import routes from '../routes'
 
-// don't forget to add corresponding Link's props from (route.path)s
-// @TODO: build menuItems from imported routes
 const menuItems = [
   {
     materialIcon: 'home',
     link: {
-      to: '/',
+      to: routes[0].path,
       children: 'Accueil'
     }
   },
@@ -19,7 +18,7 @@ const menuItems = [
   {
     materialIcon: 'person',
     link: {
-      to: '/about',
+      to: routes[1].path,
       children: 'À propos'
     }
   },
@@ -27,7 +26,7 @@ const menuItems = [
   {
     materialIcon: 'code',
     link: {
-      to: '/resume',
+      to: routes[2].path,
       children: 'CV'
     }
   },
@@ -35,7 +34,7 @@ const menuItems = [
   {
     materialIcon: 'contact_mail',
     link: {
-      to: '/contact',
+      to: routes[3].path,
       children: 'Contact'
     }
   }
