@@ -61,6 +61,7 @@ module.exports = {
       'react',
       'react-dom',
       'react-router-dom',
+      'react-loadable',
       'material-ui',
       'react-tap-event-plugin',
       'sanitize.css/sanitize.css'
