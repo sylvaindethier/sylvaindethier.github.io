@@ -1,9 +1,10 @@
 import React from 'react'
+import Router from 'react-router-dom/BrowserRouter'
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
 import injectTapEventPlugin from 'react-tap-event-plugin'
 import muiTheme from './muiTheme'
 import Bar from './Bar'
-import Content from './Content'
+import PageContent from './PageContent'
 import Footer from './Footer'
 import './styles.css'
 
@@ -11,13 +12,15 @@ import './styles.css'
 injectTapEventPlugin()
 
 const App = () => (
-  <MuiThemeProvider muiTheme={muiTheme}>
-    <div>
-      <Bar />
-      <Content />
-      <Footer />
-    </div>
-  </MuiThemeProvider>
+  <Router>
+    <MuiThemeProvider muiTheme={muiTheme}>
+      <div>
+        <Bar />
+        <PageContent />
+        <Footer />
+      </div>
+    </MuiThemeProvider>
+  </Router>
 )
 
 export default App
