@@ -10,7 +10,7 @@ const HomePaper = () => (
 )
 
 const Home = () => (
-  <div>
+  <div className='page-content'>
     <HomePaper />
     <Card>
       <CardHeader

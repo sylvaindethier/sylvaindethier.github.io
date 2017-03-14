@@ -2,8 +2,14 @@ import Loadable from 'react-loadable'
 import path from 'path'
 import LoadingComponent from './Loading'
 
+// function fakeDelay (ms) {
+//   return new Promise(resolve => {
+//     setTimeout(resolve, ms)
+//   })
+// }
+
 const About = Loadable({
-  // loader: () => fakeDelay(5000).then(() => import('../pages/About')),
+  // loader: () => fakeDelay(5000).then(() => import('../About')),
   loader: () => import('../About'),
   LoadingComponent,
   // optional options

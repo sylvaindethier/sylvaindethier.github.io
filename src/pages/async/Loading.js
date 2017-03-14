@@ -1,7 +1,7 @@
 import React, { PropTypes } from 'react'
 import LinearProgress from 'material-ui/LinearProgress'
 
-export default function Loading ({ isLoading, pastDelay, error }) {
+export default function Loading ({ isLoading, pastDelay, error, ...props }) {
   if (isLoading && pastDelay) {
     return pastDelay ? (
       <LinearProgress />
@@ -15,9 +15,9 @@ export default function Loading ({ isLoading, pastDelay, error }) {
   }
 }
 
-const { boolean, number, any } = PropTypes
+const { bool, any } = PropTypes
 Loading.propTypes = {
-  isLoading: boolean,
-  pastDelay: number,
+  isLoading: bool,
+  pastDelay: bool,
   error: any
 }
