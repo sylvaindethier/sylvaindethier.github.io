@@ -1,11 +1,15 @@
 import React from 'react'
+import { Card, CardTitle, CardText } from 'material-ui/Card'
 import { location as locationPropTypes } from './routerPropTypes'
 
 const NoMatch = ({ location }) => (
-  <div className='page-content'>
-    <h2>Page not found.</h2>
-    <p>Sorry but <code>{location.pathname}</code> didn’t match any pages.</p>
-  </div>
+  <Card>
+    <CardTitle title='Page not found.' />
+    <CardText>
+      <p>Hey are you lost ?</p>
+      <p>Sorry but <code>{location.pathname}</code> didn’t match any pages.</p>
+    </CardText>
+  </Card>
 )
 
 NoMatch.propTypes = {
