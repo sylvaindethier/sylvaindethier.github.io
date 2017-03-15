@@ -41,8 +41,7 @@ const menuItems = [
 ]
 
 const styles = {
-  AppBar: { position: 'fixed', top: 0, height: 64 },
-  Bar: { paddingBottom: 64 }
+  AppBar: { position: 'fixed', top: 0, height: 64 }
 }
 
 export default class Bar extends Component {
@@ -60,7 +59,7 @@ export default class Bar extends Component {
     const { open } = this.state
 
     return (
-      <div style={styles.Bar}>
+      <div>
         <AppBar
           title='S. Dethier - WebApp Developer'
           style={styles.AppBar}
