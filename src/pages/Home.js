@@ -19,7 +19,7 @@ const AboutCard = () => (
     <CardTitle title='À propos' subtitle='De qui je suis.' />
     <CardActions>
       <RaisedButton
-        label={<Link to={urls.about}>Voir la page</Link>}
+        label={<Link className='button-link' to={urls.about}>Voir la page</Link>}
         icon={<FontIcon className='material-icons'>person</FontIcon>}
         secondary
       />

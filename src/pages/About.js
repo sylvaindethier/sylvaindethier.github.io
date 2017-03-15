@@ -1,5 +1,5 @@
 import React from 'react'
-import { Card, CardHeader, CardText } from 'material-ui/Card'
+import { Card, CardHeader, CardTitle, CardText } from 'material-ui/Card'
 
 const text = `
   <p>Je suis développeur web depuis <b>2008</b>. J'ai commencé sur des projets
@@ -20,10 +20,11 @@ const styles = {
 const About = () => (
   <Card zDepth='2'>
     <CardHeader
-      title='À propos'
-      subtitle='de moi'
+      title='Sylvain Dethier'
+      subtitle='WebApp Developer'
       avatar='icons/favicon.png'
     />
+    <CardTitle title='À propos' subtitle='De qui je suis.' />
     <CardText style={styles.CardText}>
       <div dangerouslySetInnerHTML={{__html: text}} />
     </CardText>

@@ -10,6 +10,11 @@ html {
   text-decoration: none;
 }
 
+.button-link {
+  display: inline-block;
+  text-decoration: none;
+}
+
 #page-container {
   padding-top: 64px;
   min-height: 200px;
