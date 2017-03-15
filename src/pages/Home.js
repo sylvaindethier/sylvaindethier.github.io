@@ -1,5 +1,5 @@
 import React from 'react'
-import { Card, CardHeader, CardTitle, CardText, CardActions } from 'material-ui/Card'
+import { Card, CardHeader, CardTitle, CardActions } from 'material-ui/Card'
 import RaisedButton from 'material-ui/RaisedButton'
 import FontIcon from 'material-ui/FontIcon'
 import Link from 'react-router-dom/Link'
@@ -13,10 +13,13 @@ const AboutCard = () => (
   <Card style={styles.Card}>
     <CardHeader
       title='Sylvain Dethier'
-      subtitle='WebApp Developer'
+      subtitle='WebApp Developer.'
       avatar='icons/favicon.png'
     />
-    <CardTitle title='À propos' subtitle='De qui je suis.' />
+    <CardTitle
+      title='À propos'
+      subtitle='De qui je suis et du site.'
+    />
     <CardActions>
       <RaisedButton
         label={<Link className='button-link' to={urls.about}>Voir la page</Link>}
@@ -28,41 +31,39 @@ const AboutCard = () => (
 )
 
 const ResumeCard = () => (
-  <Card>
-    <CardHeader
-      title='URL Avatar'
-      subtitle='Subtitle'
-      avatar='images/jsa-128.jpg'
+  <Card style={styles.Card}>
+    <CardTitle
+      title='C.V.'
+      subtitle='Mon parcours professionnel.'
     />
-    <CardTitle title='Card title' subtitle='Card subtitle' />
-    <CardText>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-      Donec mattis pretium massa. Aliquam erat volutpat. Nulla facilisi.
-      Donec vulputate interdum sollicitudin. Nunc lacinia auctor quam sed pellentesque.
-      Aliquam dui mauris, mattis quis lacus id, pellentesque lobortis odio.
-    </CardText>
+    <CardActions>
+      <RaisedButton
+        label={<Link className='button-link' to={urls.resume}>Voir la page</Link>}
+        icon={<FontIcon className='material-icons'>code</FontIcon>}
+        secondary
+      />
+    </CardActions>
   </Card>
 )
 
 const ContactCard = () => (
-  <Card>
-    <CardHeader
-      title='URL Avatar'
-      subtitle='Subtitle'
-      avatar='images/jsa-128.jpg'
+  <Card style={styles.Card}>
+    <CardTitle
+      title='Contact'
+      subtitle='Comment me contacter.'
     />
-    <CardTitle title='Card title' subtitle='Card subtitle' />
-    <CardText>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-      Donec mattis pretium massa. Aliquam erat volutpat. Nulla facilisi.
-      Donec vulputate interdum sollicitudin. Nunc lacinia auctor quam sed pellentesque.
-      Aliquam dui mauris, mattis quis lacus id, pellentesque lobortis odio.
-    </CardText>
+    <CardActions>
+      <RaisedButton
+        label={<Link className='button-link' to={urls.resume}>Voir la page</Link>}
+        icon={<FontIcon className='material-icons'>contact_mail</FontIcon>}
+        secondary
+      />
+    </CardActions>
   </Card>
 )
 
 const Home = () => (
-  <div className='page-content'>
+  <div>
     <AboutCard />
     <ResumeCard />
     <ContactCard />
