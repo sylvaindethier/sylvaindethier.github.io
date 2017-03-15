@@ -54,7 +54,7 @@ const ContactCard = () => (
     />
     <CardActions>
       <RaisedButton
-        label={<Link className='button-link' to={urls.resume}>Voir la page</Link>}
+        label={<Link className='button-link' to={urls.contact}>Voir la page</Link>}
         icon={<FontIcon className='material-icons'>contact_mail</FontIcon>}
         secondary
       />
