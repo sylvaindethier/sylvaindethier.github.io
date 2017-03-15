@@ -1,7 +1,7 @@
 import React from 'react'
 import Route from 'react-router-dom/Route'
 import Switch from 'react-router-dom/Switch'
-import urls from './urls'
+import urls from '../urls'
 
 // sync pages
 import Home from '../pages/Home'

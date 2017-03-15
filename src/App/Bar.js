@@ -4,7 +4,7 @@ import Drawer from 'material-ui/Drawer'
 import MenuItem from 'material-ui/MenuItem'
 import FontIcon from 'material-ui/FontIcon'
 import Link from 'react-router-dom/Link'
-import urls from './urls'
+import urls from '../urls'
 
 const menuItems = [
   {
