@@ -8,8 +8,8 @@ const footerStyle = {
 
 const Footer = () => (
   <footer className='mini-footer' style={footerStyle}>
-    <div className='mini-footer--left'>mini-footer--left</div>
-    <div className='mini-footer--right'>mini-footer--right</div>
+    <div className='mini-footer--left' />
+    <div className='mini-footer--right' />
   </footer>
 )
 
