@@ -26,13 +26,13 @@ const styles = {
 }
 
 const About = () => (
-  <Card zDepth='2'>
+  <Card zDepth={2}>
     <CardHeader
       title='Sylvain Dethier'
       subtitle='WebApp Developer'
       avatar='icons/favicon.png'
     />
-    <CardTitle title='À propos' subtitle='De qui je suis.' />
+    <CardTitle title='À propos' subtitle='Qui je suis.' />
     <CardText style={styles.CardText}>
       <div dangerouslySetInnerHTML={{__html: htmlMe}} />
     </CardText>
