@@ -1,5 +1,5 @@
 import React from 'react'
-import { Card, CardHeader, CardTitle, CardActions } from 'material-ui/Card'
+import { Card, CardHeader, CardActions } from 'material-ui/Card'
 import RaisedButton from 'material-ui/RaisedButton'
 import FontIcon from 'material-ui/FontIcon'
 import Link from 'react-router-dom/Link'
@@ -9,64 +9,55 @@ const styles = {
   Card: { margin: '24px 0' }
 }
 
-const AboutCard = () => (
+// eslint-disable-next-line react/prop-types
+const RaisedButtonLink = ({ to, href, ...rest }) => (
+  <Link to={to || href}><RaisedButton {...rest} /></Link>
+)
+
+const AboutCard = (
   <Card style={styles.Card}>
     <CardHeader
-      title='Sylvain Dethier'
-      subtitle='WebApp Developer.'
-      avatar='icons/favicon.png'
-    />
-    <CardTitle
       title='À propos'
       subtitle='De qui je suis et du site.'
+      avatar='icons/favicon.png'
     />
     <CardActions>
-      <RaisedButton
-        label={<Link className='button-link' to={urls.about}>Voir la page</Link>}
-        icon={<FontIcon className='material-icons'>person</FontIcon>}
-        secondary
-      />
+      <RaisedButtonLink to={urls.about} primary label='Voir la page' />
     </CardActions>
   </Card>
 )
 
-const ResumeCard = () => (
+const ResumeCard = (
   <Card style={styles.Card}>
-    <CardTitle
+    <CardHeader
       title='C.V.'
       subtitle='Mon parcours professionnel.'
+      avatar={<FontIcon className='material-icons'>code</FontIcon>}
     />
     <CardActions>
-      <RaisedButton
-        label={<Link className='button-link' to={urls.resume}>Voir la page</Link>}
-        icon={<FontIcon className='material-icons'>code</FontIcon>}
-        secondary
-      />
+      <RaisedButtonLink to={urls.resume} primary label='Voir la page' />
     </CardActions>
   </Card>
 )
 
-const ContactCard = () => (
+const ContactCard = (
   <Card style={styles.Card}>
-    <CardTitle
+    <CardHeader
       title='Contact'
-      subtitle='Comment me contacter.'
+      subtitle='Me contacter.'
+      avatar={<FontIcon className='material-icons'>contact_mail</FontIcon>}
     />
     <CardActions>
-      <RaisedButton
-        label={<Link className='button-link' to={urls.contact}>Voir la page</Link>}
-        icon={<FontIcon className='material-icons'>contact_mail</FontIcon>}
-        secondary
-      />
+      <RaisedButtonLink to={urls.contact} primary label='Voir la page' />
     </CardActions>
   </Card>
 )
 
 const Home = () => (
   <div>
-    <AboutCard />
-    <ResumeCard />
-    <ContactCard />
+    {AboutCard}
+    {ResumeCard}
+    {ContactCard}
   </div>
 )
 
