@@ -21,7 +21,13 @@ module.exports = {
     }
   },
 
-  plugins: ['import', 'flowtype', 'jsx-a11y', 'react'],
+  plugins: [
+    'import',
+    'flowtype',
+    'jsx-a11y',
+    'react',
+    'prettier'
+  ],
 
   extends: [
     'eslint:recommended',
@@ -29,7 +35,10 @@ module.exports = {
     'plugin:jsx-a11y/recommended',
     'plugin:flowtype/recommended',
     'standard',
-    'standard-react'
+    'standard-react',
+    'prettier',
+    'prettier/flowtype',
+    'prettier/react'
   ],
 
   settings: {
