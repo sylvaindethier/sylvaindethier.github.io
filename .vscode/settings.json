@@ -2,6 +2,6 @@
 {
   "files.autoSave": "onWindowChange",
   "editor.formatOnSave": true,
-  "eslint.run": "onSave",
+  "eslint.run": "onType",
   "eslint.autoFixOnSave": true
 }
