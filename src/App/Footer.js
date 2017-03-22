@@ -1,5 +1,5 @@
 import React from 'react'
-import { grey900, lightWhite } from 'material-ui/styles/colors'
+import {grey900, lightWhite} from 'material-ui/styles/colors'
 
 const footerStyle = {
   backgroundColor: grey900,

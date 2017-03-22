@@ -36,8 +36,8 @@ const cssFilename = 'static/css/[name].[contenthash:8].css'
 // However, our output is structured with css, js and media folders.
 // To have this structure working with relative paths, we have to use custom options.
 const extractTextPluginOptions = shouldUseRelativeAssetPaths
-  // Making sure that the publicPath goes back to to build folder.
-  ? { publicPath: Array(cssFilename.split('/').length).join('../') }
+  ? // Making sure that the publicPath goes back to to build folder.
+    {publicPath: Array(cssFilename.split('/').length).join('../')}
   : undefined
 
 // This is the production configuration.
@@ -53,9 +53,7 @@ module.exports = {
   profile: true,
   // In production, we only want to load the polyfills and the app code.
   entry: {
-    app: [
-      paths.appIndexJs
-    ],
+    app: [paths.appIndexJs],
     vendor: [
       require.resolve('./polyfills'),
       'react',
@@ -84,10 +82,7 @@ module.exports = {
     // We use `fallback` instead of `root` because we want `node_modules` to "win"
     // if there any conflicts. This matches Node resolution mechanism.
     // https://github.com/facebookincubator/create-react-app/issues/253
-    modules: paths.nodePaths.concat([
-      paths.appNodeModules,
-      paths.appSrc
-    ]),
+    modules: paths.nodePaths.concat([paths.appNodeModules, paths.appSrc]),
     // These are the reasonable defaults supported by the Node ecosystem.
     // We also include JSX as a common component filename extension to support
     // some tools, although we do not recommend using it, see:
@@ -123,13 +118,7 @@ module.exports = {
       // "url" loader works just like "file" loader but it also embeds
       // assets smaller than specified size as data URLs to avoid requests.
       {
-        exclude: [
-          /\.html$/,
-          /\.(js|jsx)$/,
-          /\.css$/,
-          /\.json$/,
-          /\.svg$/
-        ],
+        exclude: [/\.html$/, /\.(js|jsx)$/, /\.css$/, /\.json$/, /\.svg$/],
         loader: 'url-loader',
         options: {
           limit: 10000,
@@ -156,21 +145,26 @@ module.exports = {
       // in the main CSS file.
       {
         test: /\.css$/,
-        use: ExtractTextPlugin.extract(Object.assign({
-          fallback: 'style-loader',
-          use: [
+        use: ExtractTextPlugin.extract(
+          Object.assign(
             {
-              loader: 'css-loader',
-              options: {
-                importLoaders: true,
-                minimize: { safe: true }
-              }
+              fallback: 'style-loader',
+              use: [
+                {
+                  loader: 'css-loader',
+                  options: {
+                    importLoaders: true,
+                    minimize: {safe: true}
+                  }
+                },
+                {
+                  loader: 'postcss-loader'
+                }
+              ]
             },
-            {
-              loader: 'postcss-loader'
-            }
-          ]
-        }, extractTextPluginOptions))
+            extractTextPluginOptions
+          )
+        )
         // Note: this won't work without `new ExtractTextPlugin()` in `plugins`.
       },
       // "file" loader for svg

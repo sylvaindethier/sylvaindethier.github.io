@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, {Component} from 'react'
 import AppBar from 'material-ui/AppBar'
 import Drawer from 'material-ui/Drawer'
 import MenuItem from 'material-ui/MenuItem'
@@ -41,7 +41,7 @@ const menuItems = [
 ]
 
 const styles = {
-  AppBar: { position: 'fixed', top: 0, height: 64 }
+  AppBar: {position: 'fixed', top: 0, height: 64}
 }
 
 export default class Bar extends Component {
@@ -49,14 +49,14 @@ export default class Bar extends Component {
     open: false
   };
 
-  handleOpen = () => this.setState({ open: true });
+  handleOpen = () => this.setState({open: true});
 
-  handleClose = () => this.setState({ open: false });
+  handleClose = () => this.setState({open: false});
 
-  handleRequestChange = (open) => this.setState({ open });
+  handleRequestChange = open => this.setState({open});
 
   render () {
-    const { open } = this.state
+    const {open} = this.state
 
     return (
       <div>
@@ -76,16 +76,12 @@ export default class Bar extends Component {
                 key={key}
                 onTouchTap={this.handleClose}
                 leftIcon={
-                  <FontIcon
-                    className='material-icons'>
+                  <FontIcon className='material-icons'>
                     {menuItem.materialIcon}
                   </FontIcon>
                 }
                 children={
-                  <Link
-                    className='menu-item-link'
-                    {...menuItem.link}
-                  />
+                  <Link className='menu-item-link' {...menuItem.link} />
                 }
               />
             ))}

@@ -1,8 +1,8 @@
 import React from 'react'
-import { Card, CardTitle, CardText } from 'material-ui/Card'
-import { location as locationPropTypes } from './routerPropTypes'
+import {Card, CardTitle, CardText} from 'material-ui/Card'
+import {location as locationPropTypes} from './routerPropTypes'
 
-const NoMatch = ({ location }) => (
+const NoMatch = ({location}) => (
   <Card>
     <CardTitle title='Page not found.' />
     <CardText>

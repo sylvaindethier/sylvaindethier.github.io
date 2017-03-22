@@ -57,12 +57,15 @@ function getDifferenceLabel (currentSize, previousSize) {
 recursive(paths.appBuild, (err, fileNames) => {
   var previousSizeMap = (fileNames || [])
     .filter(fileName => /\.(js|css)$/.test(fileName))
-    .reduce((memo, fileName) => {
-      var contents = fs.readFileSync(fileName)
-      var key = removeFileNameHash(fileName)
-      memo[key] = gzipSize(contents)
-      return memo
-    }, {})
+    .reduce(
+      (memo, fileName) => {
+        var contents = fs.readFileSync(fileName)
+        var key = removeFileNameHash(fileName)
+        memo[key] = gzipSize(contents)
+        return memo
+      },
+      {}
+    )
 
   // Remove all content but keep the directory so that
   // if you're in it, you don't end up in Trash
@@ -77,8 +80,9 @@ recursive(paths.appBuild, (err, fileNames) => {
 
 // Print a detailed summary of build files.
 function printFileSizes (stats, previousSizeMap) {
-  var assets = stats.toJson().assets
-    .filter(asset => /\.(js|css)$/.test(asset.name))
+  var assets = stats
+    .toJson()
+    .assets.filter(asset => /\.(js|css)$/.test(asset.name))
     .map(asset => {
       var fileContents = fs.readFileSync(paths.appBuild + '/' + asset.name)
       var size = gzipSize(fileContents)
@@ -92,7 +96,8 @@ function printFileSizes (stats, previousSizeMap) {
       }
     })
   assets.sort((a, b) => b.size - a.size)
-  var longestSizeLabelLength = Math.max.apply(null,
+  var longestSizeLabelLength = Math.max.apply(
+    null,
     assets.map(a => stripAnsi(a.sizeLabel).length)
   )
   assets.forEach(asset => {
@@ -103,8 +108,11 @@ function printFileSizes (stats, previousSizeMap) {
       sizeLabel += rightPadding
     }
     console.log(
-      '  ' + sizeLabel +
-      '  ' + chalk.dim(asset.folder + path.sep) + chalk.cyan(asset.name)
+      '  ' +
+        sizeLabel +
+        '  ' +
+        chalk.dim(asset.folder + path.sep) +
+        chalk.cyan(asset.name)
     )
   })
 }
@@ -134,7 +142,10 @@ function build (previousSizeMap) {
     }
 
     if (process.env.CI && stats.compilation.warnings.length) {
-      printErrors('Failed to compile. When process.env.CI = true, warnings are treated as failures. Most CI servers set this automatically.', stats.compilation.warnings)
+      printErrors(
+        'Failed to compile. When process.env.CI = true, warnings are treated as failures. Most CI servers set this automatically.',
+        stats.compilation.warnings
+      )
       process.exit(1)
     }
 
@@ -153,10 +164,22 @@ function build (previousSizeMap) {
     var publicPathname = url.parse(publicPath).pathname
     if (publicUrl && publicUrl.indexOf('.github.io/') !== -1) {
       // "homepage": "http://user.github.io/project"
-      console.log('The project was built assuming it is hosted at ' + chalk.green(publicPathname) + '.')
-      console.log('You can control this with the ' + chalk.green('homepage') + ' field in your ' + chalk.cyan('package.json') + '.')
+      console.log(
+        'The project was built assuming it is hosted at ' +
+          chalk.green(publicPathname) +
+          '.'
+      )
+      console.log(
+        'You can control this with the ' +
+          chalk.green('homepage') +
+          ' field in your ' +
+          chalk.cyan('package.json') +
+          '.'
+      )
       console.log()
-      console.log('The ' + chalk.cyan('build') + ' folder is ready to be deployed.')
+      console.log(
+        'The ' + chalk.cyan('build') + ' folder is ready to be deployed.'
+      )
       console.log('To publish it at ' + chalk.green(publicUrl) + ', run:')
       // If script deploy has been added to package.json, skip the instructions
       if (typeof appPackage.scripts.deploy === 'undefined') {
@@ -164,16 +187,30 @@ function build (previousSizeMap) {
         if (useYarn) {
           console.log('  ' + chalk.cyan('yarn') + ' add --dev gh-pages')
         } else {
-          console.log('  ' + chalk.cyan('npm') + ' install --save-dev gh-pages')
+          console.log(
+            '  ' + chalk.cyan('npm') + ' install --save-dev gh-pages'
+          )
         }
         console.log()
-        console.log('Add the following script in your ' + chalk.cyan('package.json') + '.')
+        console.log(
+          'Add the following script in your ' + chalk.cyan('package.json') + '.'
+        )
         console.log()
         console.log('    ' + chalk.dim('// ...'))
         console.log('    ' + chalk.yellow('"scripts"') + ': {')
         console.log('      ' + chalk.dim('// ...'))
-        console.log('      ' + chalk.yellow('"predeploy"') + ': ' + chalk.yellow('"npm run build",'))
-        console.log('      ' + chalk.yellow('"deploy"') + ': ' + chalk.yellow('"gh-pages -d build"'))
+        console.log(
+          '      ' +
+            chalk.yellow('"predeploy"') +
+            ': ' +
+            chalk.yellow('"npm run build",')
+        )
+        console.log(
+          '      ' +
+            chalk.yellow('"deploy"') +
+            ': ' +
+            chalk.yellow('"gh-pages -d build"')
+        )
         console.log('    }')
         console.log()
         console.log('Then run:')
@@ -183,28 +220,66 @@ function build (previousSizeMap) {
       console.log()
     } else if (publicPath !== '/') {
       // "homepage": "http://mywebsite.com/project"
-      console.log('The project was built assuming it is hosted at ' + chalk.green(publicPath) + '.')
-      console.log('You can control this with the ' + chalk.green('homepage') + ' field in your ' + chalk.cyan('package.json') + '.')
+      console.log(
+        'The project was built assuming it is hosted at ' +
+          chalk.green(publicPath) +
+          '.'
+      )
+      console.log(
+        'You can control this with the ' +
+          chalk.green('homepage') +
+          ' field in your ' +
+          chalk.cyan('package.json') +
+          '.'
+      )
       console.log()
-      console.log('The ' + chalk.cyan('build') + ' folder is ready to be deployed.')
+      console.log(
+        'The ' + chalk.cyan('build') + ' folder is ready to be deployed.'
+      )
       console.log()
     } else {
       if (publicUrl) {
         // "homepage": "http://mywebsite.com"
-        console.log('The project was built assuming it is hosted at ' + chalk.green(publicUrl) + '.')
-        console.log('You can control this with the ' + chalk.green('homepage') + ' field in your ' + chalk.cyan('package.json') + '.')
+        console.log(
+          'The project was built assuming it is hosted at ' +
+            chalk.green(publicUrl) +
+            '.'
+        )
+        console.log(
+          'You can control this with the ' +
+            chalk.green('homepage') +
+            ' field in your ' +
+            chalk.cyan('package.json') +
+            '.'
+        )
         console.log()
       } else {
         // no homepage
-        console.log('The project was built assuming it is hosted at the server root.')
-        console.log('To override this, specify the ' + chalk.green('homepage') + ' in your ' + chalk.cyan('package.json') + '.')
+        console.log(
+          'The project was built assuming it is hosted at the server root.'
+        )
+        console.log(
+          'To override this, specify the ' +
+            chalk.green('homepage') +
+            ' in your ' +
+            chalk.cyan('package.json') +
+            '.'
+        )
         console.log('For example, add this to build it for GitHub Pages:')
         console.log()
-        console.log('  ' + chalk.green('"homepage"') + chalk.cyan(': ') + chalk.green('"http://myname.github.io/myapp"') + chalk.cyan(','))
+        console.log(
+          '  ' +
+            chalk.green('"homepage"') +
+            chalk.cyan(': ') +
+            chalk.green('"http://myname.github.io/myapp"') +
+            chalk.cyan(',')
+        )
         console.log()
       }
       var build = path.relative(process.cwd(), paths.appBuild)
-      console.log('The ' + chalk.cyan(build) + ' folder is ready to be deployed.')
+      console.log(
+        'The ' + chalk.cyan(build) + ' folder is ready to be deployed.'
+      )
       console.log('You may also serve it locally with a static server:')
       console.log()
       if (useYarn) {
@@ -213,7 +288,12 @@ function build (previousSizeMap) {
         console.log('  ' + chalk.cyan('npm') + ' install -g pushstate-server')
       }
       console.log('  ' + chalk.cyan('pushstate-server') + ' ' + build)
-      console.log('  ' + chalk.cyan(openCommand) + ' http://localhost:' + (process.env.PORT || 9000))
+      console.log(
+        '  ' +
+          chalk.cyan(openCommand) +
+          ' http://localhost:' +
+          (process.env.PORT || 9000)
+      )
       console.log()
     }
   })

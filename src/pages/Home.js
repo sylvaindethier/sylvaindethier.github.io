@@ -1,16 +1,16 @@
 import React from 'react'
-import { Card, CardHeader, CardActions } from 'material-ui/Card'
+import {Card, CardHeader, CardActions} from 'material-ui/Card'
 import RaisedButton from 'material-ui/RaisedButton'
 import FontIcon from 'material-ui/FontIcon'
 import Link from 'react-router-dom/Link'
 import urls from '../urls'
 
 const styles = {
-  Card: { margin: '24px 0' }
+  Card: {margin: '24px 0'}
 }
 
 // eslint-disable-next-line react/prop-types
-const RaisedButtonLink = ({ to, href, ...rest }) => (
+const RaisedButtonLink = ({to, href, ...rest}) => (
   <Link to={to || href}><RaisedButton {...rest} /></Link>
 )
 
