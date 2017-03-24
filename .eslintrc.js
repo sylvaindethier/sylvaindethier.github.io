@@ -21,14 +21,17 @@ module.exports = {
     }
   },
 
-  plugins: ['import', 'flowtype', 'jsx-a11y', 'react'],
+  plugins: ['import', 'flowtype', 'jsx-a11y', 'react', 'prettier'],
 
   extends: [
+    'standard',
+    'standard-react',
+    'plugin:flowtype/recommended',
     'plugin:react/recommended',
     'plugin:jsx-a11y/recommended',
-    'plugin:flowtype/recommended',
-    'standard',
-    'standard-react'
+    'prettier',
+    'prettier/flowtype',
+    'prettier/react'
   ],
 
   settings: {
@@ -52,12 +55,12 @@ module.exports = {
     'import/no-extraneous-dependencies': 'error',
     'import/no-named-as-default': 'error',
     'import/no-named-as-default-member': 'error',
-    'import/no-unresolved': ['error', {commonjs: true}],
+    'import/no-unresolved': ['error', { commonjs: true }],
     'import/no-webpack-loader-syntax': 'error',
 
     // https://github.com/yannickcr/eslint-plugin-react/tree/master/docs/rules
-    'react/jsx-equals-spacing': ['warn', 'never'],
-    'react/jsx-no-duplicate-props': ['error', {ignoreCase: true}],
+    // 'react/jsx-equals-spacing': ['warn', 'never'],
+    'react/jsx-no-duplicate-props': ['error', { ignoreCase: true }],
     'react/jsx-no-undef': 'error',
     'react/jsx-pascal-case': [
       'warn',

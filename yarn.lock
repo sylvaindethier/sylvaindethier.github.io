@@ -1989,6 +1989,12 @@ escope@^3.6.0:
     esrecurse "^4.1.0"
     estraverse "^4.1.1"
 
+eslint-config-prettier@^1.5.0:
+  version "1.5.0"
+  resolved "https://registry.yarnpkg.com/eslint-config-prettier/-/eslint-config-prettier-1.5.0.tgz#969b6d21b2eb2574a6810426507f755072db1963"
+  dependencies:
+    get-stdin "^5.0.1"
+
 eslint-config-standard-jsx@^3.0.0, eslint-config-standard-jsx@^3.3.0:
   version "3.3.0"
   resolved "https://registry.yarnpkg.com/eslint-config-standard-jsx/-/eslint-config-standard-jsx-3.3.0.tgz#cab0801a15a360bf63facb97ab22fbdd88d8a5e0"
@@ -2060,6 +2066,12 @@ eslint-plugin-jsx-a11y@^4.0.0:
     emoji-regex "^6.1.0"
     jsx-ast-utils "^1.0.0"
     object-assign "^4.0.1"
+
+eslint-plugin-prettier@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-prettier/-/eslint-plugin-prettier-2.0.1.tgz#2ae1216cf053dd728360ca8560bf1aabc8af3fa9"
+  dependencies:
+    requireindex "~1.1.0"
 
 eslint-plugin-promise@^3.5.0:
   version "3.5.0"
@@ -2423,6 +2435,10 @@ flatten@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/flatten/-/flatten-1.0.2.tgz#dae46a9d78fbe25292258cc1e780a41d95c03782"
 
+flow-bin@^0.42.0:
+  version "0.42.0"
+  resolved "https://registry.yarnpkg.com/flow-bin/-/flow-bin-0.42.0.tgz#05dd754b6b052de7b150f9210e2160746961e3cf"
+
 flow-parser@0.40.0:
   version "0.40.0"
   resolved "https://registry.yarnpkg.com/flow-parser/-/flow-parser-0.40.0.tgz#b3444742189093323c4319c4fe9d35391f46bcbc"
@@ -2545,7 +2561,7 @@ get-caller-file@^1.0.1:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/get-caller-file/-/get-caller-file-1.0.2.tgz#f702e63127e7e231c160a80c1554acb70d5047e5"
 
-get-stdin@5.0.1:
+get-stdin@5.0.1, get-stdin@^5.0.1:
   version "5.0.1"
   resolved "https://registry.yarnpkg.com/get-stdin/-/get-stdin-5.0.1.tgz#122e161591e21ff4c52530305693f20e6393a398"
 
@@ -4983,6 +4999,10 @@ require-uncached@^1.0.2:
   dependencies:
     caller-path "^0.1.0"
     resolve-from "^1.0.0"
+
+requireindex@~1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/requireindex/-/requireindex-1.1.0.tgz#e5404b81557ef75db6e49c5a72004893fe03e162"
 
 requires-port@1.0.x, requires-port@1.x.x:
   version "1.0.0"
