@@ -3,22 +3,15 @@ import React from "react";
 const AboutMe = () => (
   <section>
     <p>
-      Développeur web depuis
-      {" "}
-      <b>2008</b>
-      , j'ai commencé sur des projets
+      Développeur web depuis 2008, j'ai commencé sur des projets
       {" "}
       <i><b>backend</b></i>
-      .Le plus souvent avec une intégration
+      . Le plus souvent avec une intégration
       {" "}
       <i><b>frontend</b></i>
       .
       <br />
-      J'ai travaillé pendant plus de
-      {" "}
-      <b>6 ans</b>
-      {" "}
-      avec
+      J'ai travaillé pendant plus de 6 ans avec
       {" "}
       <b>PHP</b>
       ,
@@ -28,9 +21,7 @@ const AboutMe = () => (
     </p>
 
     <p>
-      Depuis
-      {" "}
-      <b>2015</b>
+      Depuis <b>2015</b>
       , je m'oriente en tant que développeur WebApp
       {" "}
       <i><b>frontend / backend</b></i>
@@ -40,8 +31,7 @@ const AboutMe = () => (
       <b>JavaScript / NodeJS</b>
       ,
       {" "}
-      <b>React</b>
-      .
+      <b>React</b>, Angular, Express, ….
     </p>
 
     <p>
