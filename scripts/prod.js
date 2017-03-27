@@ -1,27 +1,27 @@
-var server = require('pushstate-server')
-var chalk = require('chalk')
-var detect = require('detect-port')
-var clearConsole = require('react-dev-utils/clearConsole')
-var getProcessForPort = require('react-dev-utils/getProcessForPort')
-var openBrowser = require('react-dev-utils/openBrowser')
-var prompt = require('react-dev-utils/prompt')
-var paths = require('../config/paths')
+var server = require("pushstate-server");
+var chalk = require("chalk");
+var detect = require("detect-port");
+var clearConsole = require("react-dev-utils/clearConsole");
+var getProcessForPort = require("react-dev-utils/getProcessForPort");
+var openBrowser = require("react-dev-utils/openBrowser");
+var prompt = require("react-dev-utils/prompt");
+var paths = require("../config/paths");
 
-var isInteractive = process.stdout.isTTY
-var DEFAULT_PORT = process.env.PORT || 9000
+var isInteractive = process.stdout.isTTY;
+var DEFAULT_PORT = process.env.PORT || 9000;
 
-function run (port) {
-  var protocol = process.env.HTTPS === 'true' ? 'https' : 'http'
-  var host = process.env.HOST || 'localhost'
-  var url = protocol + '://' + host + ':' + port + '/'
+function run(port) {
+  var protocol = process.env.HTTPS === "true" ? "https" : "http";
+  var host = process.env.HOST || "localhost";
+  var url = protocol + "://" + host + ":" + port + "/";
 
   server.start({
     port: port,
     directory: paths.appBuild
-  })
-  console.log('Listenning at ' + chalk.cyan(url))
+  });
+  console.log("Listenning at " + chalk.cyan(url));
   if (isInteractive) {
-    openBrowser(url)
+    openBrowser(url);
   }
 }
 
@@ -29,28 +29,28 @@ function run (port) {
 // run on a different port. `detect()` Promise resolves to the next free port.
 detect(DEFAULT_PORT).then(port => {
   if (port === DEFAULT_PORT) {
-    run(port)
-    return
+    run(port);
+    return;
   }
 
   if (isInteractive) {
-    clearConsole()
-    var existingProcess = getProcessForPort(DEFAULT_PORT)
+    clearConsole();
+    var existingProcess = getProcessForPort(DEFAULT_PORT);
     var question = chalk.yellow(
-      'Something is already running on port ' +
+      "Something is already running on port " +
         DEFAULT_PORT +
-        '.' +
-        (existingProcess ? ' Probably:\n  ' + existingProcess : '')
-    ) + '\n\nWould you like to run the app on another port instead?'
+        "." +
+        (existingProcess ? " Probably:\n  " + existingProcess : "")
+    ) + "\n\nWould you like to run the app on another port instead?";
 
     prompt(question, true).then(shouldChangePort => {
       if (shouldChangePort) {
-        run(port)
+        run(port);
       }
-    })
+    });
   } else {
     console.log(
-      chalk.red('Something is already running on port ' + DEFAULT_PORT + '.')
-    )
+      chalk.red("Something is already running on port " + DEFAULT_PORT + ".")
+    );
   }
-})
+});

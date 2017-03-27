@@ -1,22 +1,22 @@
-const ghpages = require('gh-pages')
-const path = require('path')
+const ghpages = require("gh-pages");
+const path = require("path");
 
 // gh-pages defaults options
 const defaults = {
-  dist: 'dist',
-  src: '**/*',
-  branch: 'gh-pages',
-  remote: 'origin',
-  message: 'Updates',
-  remove: '.'
-}
+  dist: "dist",
+  src: "**/*",
+  branch: "gh-pages",
+  remote: "origin",
+  message: "Updates",
+  remove: "."
+};
 
 // project options
 const options = Object.assign({}, defaults, {
-  dist: 'build',
+  dist: "build",
   // branch: 'master',
-  message: 'Deploy updates, see `react-app` branch'
-})
+  message: "Deploy updates, see `react-app` branch"
+});
 
 ghpages.publish(
   path.join(process.cwd(), options.dist),
@@ -32,15 +32,15 @@ ghpages.publish(
     only: options.remove,
     remote: options.remote,
     push: !options.noPush,
-    logger: function (message) {
-      process.stdout.write(message + '\n')
+    logger: function(message) {
+      process.stdout.write(message + "\n");
     }
   },
-  function (err) {
+  function(err) {
     if (err) {
-      console.error(err.message)
-      return process.exit(1)
+      console.error(err.message);
+      return process.exit(1);
     }
-    console.log('Published')
+    console.log("Published");
   }
-)
+);

@@ -1,9 +1,9 @@
-import getMuiTheme from 'material-ui/styles/getMuiTheme'
+import getMuiTheme from "material-ui/styles/getMuiTheme";
 import {
   blueGrey500,
   blueGrey700,
   lightBlueA200
-} from 'material-ui/styles/colors'
+} from "material-ui/styles/colors";
 
 // customise docs:
 // http://www.material-ui.com/#/customization/themes
@@ -14,5 +14,5 @@ const muiTheme = getMuiTheme({
     primary2Color: blueGrey700,
     accent1Color: lightBlueA200
   }
-})
-export default muiTheme
+});
+export default muiTheme;
