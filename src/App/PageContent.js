@@ -16,12 +16,16 @@ export default function PageContent() {
   // <Switch> to render only the first child <Route> that matches the location
   // don't forget to add corresponding Link in Bar
   return (
-    <Switch>
-      <Route path={urls.home} exact component={Home} />
-      <Route path={urls.about} component={About} />
-      <Route path={urls.resume} component={Resume} />
-      <Route path={urls.contact} component={Contact} />
-      <Route component={NoMatch} />
-    </Switch>
+    <main id="page-container">
+      <div id="page-content">
+        <Switch>
+          <Route path={urls.home} exact component={Home} />
+          <Route path={urls.about} component={About} />
+          <Route path={urls.resume} component={Resume} />
+          <Route path={urls.contact} component={Contact} />
+          <Route component={NoMatch} />
+        </Switch>
+      </div>
+    </main>
   );
 }

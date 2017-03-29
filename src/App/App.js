@@ -16,11 +16,7 @@ const App = () => (
     <MuiThemeProvider muiTheme={muiTheme}>
       <div>
         <Bar />
-        <div id="page-container">
-          <div id="page-content">
-            <PageContent />
-          </div>
-        </div>
+        <PageContent />
         <Footer />
       </div>
     </MuiThemeProvider>

@@ -62,31 +62,33 @@ export default class Bar extends Component {
     const { open } = this.state;
 
     return (
-      <div>
+      <header>
         <AppBar
           title="S. Dethier - WebApp Developer"
           style={styles.AppBar}
           onLeftIconButtonTouchTap={this.handleOpen}
         />
-        <Drawer
-          docked={false}
-          open={open}
-          onRequestChange={this.handleRequestChange}
-        >
-          <nav>
-            {menuItems.map((menuItem, key) => (
-              <MenuItem
-                key={key}
-                onTouchTap={this.handleClose}
-                leftIcon={menuItem.icon}
-                children={
-                  <Link className="menu-item-link" {...menuItem.link} />
-                }
-              />
-            ))}
-          </nav>
-        </Drawer>
-      </div>
+        <aside>
+          <Drawer
+            docked={false}
+            open={open}
+            onRequestChange={this.handleRequestChange}
+          >
+            <nav>
+              {menuItems.map((menuItem, key) => (
+                <MenuItem
+                  key={key}
+                  onTouchTap={this.handleClose}
+                  leftIcon={menuItem.icon}
+                  children={
+                    <Link className="menu-item-link" {...menuItem.link} />
+                  }
+                />
+              ))}
+            </nav>
+          </Drawer>
+        </aside>
+      </header>
     );
   }
 }
