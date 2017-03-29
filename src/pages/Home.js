@@ -9,11 +9,6 @@ const styles = {
   Card: { margin: "24px 0" }
 };
 
-// eslint-disable-next-line react/prop-types
-const RaisedButtonLink = ({ to, href, ...rest }) => (
-  <Link to={to || href}><RaisedButton {...rest} /></Link>
-);
-
 const AboutCard = (
   <Card style={styles.Card}>
     <CardHeader
@@ -22,7 +17,7 @@ const AboutCard = (
       avatar="icons/favicon.png"
     />
     <CardActions>
-      <RaisedButtonLink to={urls.about} primary label="Voir la page" />
+      <Link to={urls.about}><RaisedButton primary label="Voir la page" /></Link>
     </CardActions>
   </Card>
 );
@@ -35,7 +30,9 @@ const ResumeCard = (
       avatar={<FontIcon className="material-icons">code</FontIcon>}
     />
     <CardActions>
-      <RaisedButtonLink to={urls.resume} primary label="Voir la page" />
+      <Link to={urls.resume}>
+        <RaisedButton primary label="Voir la page" />
+      </Link>
     </CardActions>
   </Card>
 );
@@ -48,7 +45,9 @@ const ContactCard = (
       avatar={<FontIcon className="material-icons">contact_mail</FontIcon>}
     />
     <CardActions>
-      <RaisedButtonLink to={urls.contact} primary label="Voir la page" />
+      <Link to={urls.contact}>
+        <RaisedButton primary label="Voir la page" />
+      </Link>
     </CardActions>
   </Card>
 );

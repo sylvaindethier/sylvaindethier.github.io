@@ -4,6 +4,13 @@ import RaisedButton from "material-ui/RaisedButton";
 import FontIcon from "material-ui/FontIcon";
 import urls from "../urls";
 
+const styles = {
+  RaisedButton: {
+    marginLeft: "0.5em",
+    marginRight: "0.5em"
+  }
+};
+
 const Resume = () => (
   <Card zDepth={2}>
     <CardHeader
@@ -12,30 +19,34 @@ const Resume = () => (
       avatar={<FontIcon className="material-icons">code</FontIcon>}
     />
     <CardText>
-      <p>
-        Mon parcours sur
-        <RaisedButton
-          label="LinkedIn"
-          icon={<FontIcon className="fa fa-linkedin" />}
-        />
-      </p>
-      <p>
-        Mes collaborations publiques sur
-        <RaisedButton
-          label="GitHub"
-          icon={<FontIcon className="fa fa-github" />}
-        />
-      </p>
+      Mon parcours sur
+      <RaisedButton
+        href={urls.linkedin}
+        label="LinkedIn"
+        icon={<FontIcon className="fa fa-linkedin" />}
+        style={styles.RaisedButton}
+      />
+    </CardText>
+    <CardText>
+      Mes collaborations publiques sur
+      <RaisedButton
+        href={urls.gitshowcase}
+        label="Git Showcase"
+        style={styles.RaisedButton}
+      />
+      <RaisedButton
+        href={urls.github}
+        label="GitHub"
+        icon={<FontIcon className="fa fa-github" />}
+        style={styles.RaisedButton}
+      />
     </CardText>
     <CardActions>
       <RaisedButton
-        label={
-          <a className="button-link" href={urls.resumePdf}>
-            Télécharger le PDF
-          </a>
-        }
+        primary
+        href={urls.resumePdf}
+        label="Télécharger le PDF"
         icon={<FontIcon className="material-icons">file_download</FontIcon>}
-        secondary
       />
     </CardActions>
   </Card>

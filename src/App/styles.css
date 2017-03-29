@@ -24,21 +24,27 @@ html {
 .mini-footer {
   display: flex;
   flex-flow: row wrap;
-  -ms-flex-pack: justify;
+  /*-ms-flex-pack: justify;*/
   justify-content: space-between;
   padding: 32px 16px;
 }
 .mini-footer--left {
   display: inline-block;
-  -webkit-order: 0;
-  -ms-flex-order: 0;
+  /*-webkit-order: 0;
+  -ms-flex-order: 0;*/
   order: 0;
+}
+.mini-footer--center {
+  display: inline-block;
+  /*-webkit-order: 1;
+  -ms-flex-order: 1;*/
+  order: 1;
 }
 .mini-footer--right {
   display: inline-block;
-  -webkit-order: 0;
-  -ms-flex-order: 0;
-  order: 1;
+  /*-webkit-order: 2;
+  -ms-flex-order: 2;*/
+  order: 2;
 }
 
 .mdl-logo {
