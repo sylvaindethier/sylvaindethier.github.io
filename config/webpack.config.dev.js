@@ -53,10 +53,7 @@ module.exports = {
       // We ship a few polyfills by default:
       require.resolve("./polyfills"),
       "react",
-      "react-dom",
-      "react-router-dom",
       "react-loadable",
-      "material-ui",
       "react-tap-event-plugin",
       "sanitize.css/sanitize.css"
     ]

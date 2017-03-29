@@ -5,7 +5,6 @@ var ExtractTextPlugin = require("extract-text-webpack-plugin");
 var ManifestPlugin = require("webpack-manifest-plugin");
 var InterpolateHtmlPlugin = require("react-dev-utils/InterpolateHtmlPlugin");
 var StatsPlugin = require("stats-webpack-plugin");
-var url = require("url");
 var paths = require("./paths");
 var getClientEnvironment = require("./env");
 
@@ -57,10 +56,7 @@ module.exports = {
     vendor: [
       require.resolve("./polyfills"),
       "react",
-      "react-dom",
-      "react-router-dom",
       "react-loadable",
-      "material-ui",
       "react-tap-event-plugin",
       "sanitize.css/sanitize.css"
     ]
