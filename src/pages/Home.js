@@ -1,12 +1,15 @@
 import React from "react";
 import { Card, CardHeader, CardActions } from "material-ui/Card";
 import RaisedButton from "material-ui/RaisedButton";
-import FontIcon from "material-ui/FontIcon";
+import CodeIcon from "react-icons/md/code";
+import ContactMailIcon from "react-icons/md/contact-mail";
 import Link from "react-router-dom/Link";
 import urls from "../urls";
 
 const styles = {
-  Card: { margin: "24px 0" }
+  Card: {
+    margin: "24px 0"
+  }
 };
 
 const AboutCard = (
@@ -27,7 +30,7 @@ const ResumeCard = (
     <CardHeader
       title="C.V."
       subtitle="Mon parcours professionnel."
-      avatar={<FontIcon className="material-icons">code</FontIcon>}
+      avatar={<CodeIcon className="react-icons" />}
     />
     <CardActions>
       <Link to={urls.resume}>
@@ -42,7 +45,7 @@ const ContactCard = (
     <CardHeader
       title="Contact"
       subtitle="Me contacter."
-      avatar={<FontIcon className="material-icons">contact_mail</FontIcon>}
+      avatar={<ContactMailIcon className="react-icons" />}
     />
     <CardActions>
       <Link to={urls.contact}>
