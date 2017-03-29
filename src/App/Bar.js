@@ -2,13 +2,16 @@ import React, { Component } from "react";
 import AppBar from "material-ui/AppBar";
 import Drawer from "material-ui/Drawer";
 import MenuItem from "material-ui/MenuItem";
-import FontIcon from "material-ui/FontIcon";
 import Link from "react-router-dom/Link";
+import HomeIcon from "react-icons/md/home";
+import PersonIcon from "react-icons/md/person";
+import CodeIcon from "react-icons/md/code";
+import ContactMailIcon from "react-icons/md/contact-mail";
 import urls from "../urls";
 
 const menuItems = [
   {
-    materialIcon: "home",
+    icon: <HomeIcon />,
     link: {
       to: urls.home,
       children: "Accueil"
@@ -16,7 +19,7 @@ const menuItems = [
   },
 
   {
-    materialIcon: "person",
+    icon: <PersonIcon />,
     link: {
       to: urls.about,
       children: "À propos"
@@ -24,7 +27,7 @@ const menuItems = [
   },
 
   {
-    materialIcon: "code",
+    icon: <CodeIcon />,
     link: {
       to: urls.resume,
       children: "CV"
@@ -32,7 +35,7 @@ const menuItems = [
   },
 
   {
-    materialIcon: "contact_mail",
+    icon: <ContactMailIcon />,
     link: {
       to: urls.contact,
       children: "Contact"
@@ -75,11 +78,7 @@ export default class Bar extends Component {
               <MenuItem
                 key={key}
                 onTouchTap={this.handleClose}
-                leftIcon={
-                  <FontIcon className="material-icons">
-                    {menuItem.materialIcon}
-                  </FontIcon>
-                }
+                leftIcon={menuItem.icon}
                 children={
                   <Link className="menu-item-link" {...menuItem.link} />
                 }

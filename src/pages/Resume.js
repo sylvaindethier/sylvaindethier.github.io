@@ -1,7 +1,10 @@
 import React from "react";
 import { Card, CardHeader, CardText, CardActions } from "material-ui/Card";
 import RaisedButton from "material-ui/RaisedButton";
-import FontIcon from "material-ui/FontIcon";
+import CodeIcon from "react-icons/md/code";
+import FileDownloadIcon from "react-icons/md/file-download";
+import LinkedInIcon from "react-icons/fa/linkedin";
+import GitHubIcon from "react-icons/fa/github";
 import urls from "../urls";
 
 const styles = {
@@ -16,14 +19,14 @@ const Resume = () => (
     <CardHeader
       title="C.V."
       subtitle="Mon parcours professionnel."
-      avatar={<FontIcon className="material-icons">code</FontIcon>}
+      avatar={<CodeIcon className="react-icons" />}
     />
     <CardText>
       Mon parcours sur
       <RaisedButton
         href={urls.linkedin}
         label="LinkedIn"
-        icon={<FontIcon className="fa fa-linkedin" />}
+        icon={<LinkedInIcon className="react-icons" />}
         style={styles.RaisedButton}
       />
     </CardText>
@@ -32,12 +35,13 @@ const Resume = () => (
       <RaisedButton
         href={urls.gitshowcase}
         label="Git Showcase"
+        icon={<GitHubIcon className="react-icons" />}
         style={styles.RaisedButton}
       />
       <RaisedButton
         href={urls.github}
         label="GitHub"
-        icon={<FontIcon className="fa fa-github" />}
+        icon={<GitHubIcon className="react-icons" />}
         style={styles.RaisedButton}
       />
     </CardText>
@@ -46,7 +50,7 @@ const Resume = () => (
         primary
         href={urls.resumePdf}
         label="Télécharger le PDF"
-        icon={<FontIcon className="material-icons">file_download</FontIcon>}
+        icon={<FileDownloadIcon className="react-icons" />}
       />
     </CardActions>
   </Card>

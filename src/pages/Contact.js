@@ -1,7 +1,9 @@
 import React from "react";
 import { Card, CardHeader, CardText } from "material-ui/Card";
 import RaisedButton from "material-ui/RaisedButton";
-import FontIcon from "material-ui/FontIcon";
+import ContactMailIcon from "react-icons/md/contact-mail";
+import TwitterIcon from "react-icons/fa/twitter";
+import LinkedInIcon from "react-icons/fa/linkedin";
 import urls from "../urls";
 
 const styles = {
@@ -16,25 +18,25 @@ const Contact = () => (
     <CardHeader
       title="Contact"
       subtitle="Me contacter."
-      avatar={<FontIcon className="material-icons">contact_mail</FontIcon>}
+      avatar={<ContactMailIcon className="react-icons" />}
     />
     <CardText>
       <RaisedButton
         href={urls.email}
         label="Email"
-        icon={<FontIcon className="material-icons">contact_mail</FontIcon>}
+        icon={<ContactMailIcon className="react-icons" />}
         style={styles.RaisedButton}
       />
       <RaisedButton
         href={urls.twitter}
         label="Twitter"
-        icon={<FontIcon className="fa fa-twitter" />}
+        icon={<TwitterIcon className="react-icons" />}
         style={styles.RaisedButton}
       />
       <RaisedButton
         href={urls.linkedin}
         label="LinkedIn"
-        icon={<FontIcon className="fa fa-linkedin" />}
+        icon={<LinkedInIcon className="react-icons" />}
         style={styles.RaisedButton}
       />
     </CardText>
