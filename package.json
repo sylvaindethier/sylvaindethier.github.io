@@ -14,7 +14,6 @@
   },
   "homepage": "https://sylvaindethier.github.io",
   "scripts": {
-    "eslint-check": "eslint --print-config .eslintrc.js | eslint-config-prettier-check",
     "start": "node scripts/start.js",
     "test": "node scripts/test.js --env=jsdom",
     "build": "node scripts/build.js",
@@ -78,7 +77,6 @@
     "json-loader": "^0.5.4",
     "postcss-loader": "^1.3.3",
     "prettier": "^0.22.0",
-    "prettier-eslint": "^4.3.2",
     "pushstate-server": "^3.0.0",
     "react-dev-utils": "^0.5.2",
     "recursive-readdir": "^2.1.1",
