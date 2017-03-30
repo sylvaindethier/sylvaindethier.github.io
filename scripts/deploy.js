@@ -14,8 +14,8 @@ const defaults = {
 // project options
 const options = Object.assign({}, defaults, {
   dist: "build",
-  // branch: 'master',
-  message: "Deploy updates, see `react-app` branch"
+  // branch: 'master', // gh pages for this project are served from 'master'
+  message: "Deploy updates"
 });
 
 ghpages.publish(
