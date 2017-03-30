@@ -19,6 +19,16 @@
 .menu-item-link {
   display: block;
   text-decoration: none;
+  color: inherit;
+}
+
+.menu-item-link.active {
+  padding-left: 2em;
+}
+.menu-item-link.active:before {
+  content: ">";
+  position: absolute;
+  margin-left: -2em;
 }
 
 #page-container {

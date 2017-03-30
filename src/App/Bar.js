@@ -1,8 +1,9 @@
 import React, { Component } from "react";
 import AppBar from "material-ui/AppBar";
 import Drawer from "material-ui/Drawer";
+import Menu from "material-ui/Menu";
 import MenuItem from "material-ui/MenuItem";
-import Link from "react-router-dom/Link";
+import NavLink from "react-router-dom/NavLink";
 import HomeIcon from "react-icons/md/home";
 import AboutIcon from "react-icons/md/info";
 import ResumeIcon from "react-icons/md/code";
@@ -14,6 +15,7 @@ const menuItems = [
     icon: <HomeIcon />,
     link: {
       to: urls.home,
+      exact: true,
       children: "Accueil"
     }
   },
@@ -75,16 +77,22 @@ export default class Bar extends Component {
             onRequestChange={this.handleRequestChange}
           >
             <nav>
-              {menuItems.map((menuItem, key) => (
-                <MenuItem
-                  key={key}
-                  onTouchTap={this.handleClose}
-                  leftIcon={menuItem.icon}
-                  children={
-                    <Link className="menu-item-link" {...menuItem.link} />
-                  }
-                />
-              ))}
+              <Menu>
+                {menuItems.map((menuItem, key) => (
+                  <MenuItem
+                    key={key}
+                    onTouchTap={this.handleClose}
+                    leftIcon={menuItem.icon}
+                    children={
+                      <NavLink
+                        className="menu-item-link"
+                        activeClassName="active"
+                        {...menuItem.link}
+                      />
+                    }
+                  />
+                ))}
+              </Menu>
             </nav>
           </Drawer>
         </aside>
