@@ -12,14 +12,15 @@ const styles = {
     color: lightWhite
   },
   mediumIcon: {
-    width: 48,
-    height: 48,
+    height: "3em",
+    width: "3em",
     color: lightWhite
   },
   medium: {
-    width: 72,
-    height: 96,
-    padding: "24px 12px"
+    fontSize: "inherit",
+    height: "3em",
+    width: "5em",
+    padding: "0 1em"
   }
 };
 
@@ -32,6 +33,9 @@ const Footer = () => (
         iconStyle={styles.mediumIcon}
         style={styles.medium}
         href={urls.twitter}
+        tooltip="Mon Twitter"
+        tooltipPosition="top-center"
+        touch
       >
         <TwitterIcon />
       </IconButton>
@@ -39,8 +43,11 @@ const Footer = () => (
         iconStyle={styles.mediumIcon}
         style={styles.medium}
         href={urls.github}
+        tooltip="Mon GitHub"
+        tooltipPosition="top-center"
+        touch
       >
-        <GitHubIcon />
+        <GitHubIcon className="react-icons bigger" />
       </IconButton>
     </div>
     <div className="mini-footer--right" />

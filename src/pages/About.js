@@ -21,7 +21,7 @@ const About = () => (
     </CardText>
 
     <CardTitle title="À propos" subtitle="Du site." />
-    <CardText style={styles.CardText}>
+    <CardText>
       <AboutSite />
     </CardText>
   </Card>

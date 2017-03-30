@@ -19,38 +19,42 @@ const Resume = () => (
     <CardHeader
       title="C.V."
       subtitle="Mon parcours professionnel."
-      avatar={<CodeIcon className="react-icons" />}
+      avatar={<CodeIcon className="react-icons bigger" />}
     />
     <CardText>
       Mon parcours sur
       <RaisedButton
         href={urls.linkedin}
         label="LinkedIn"
-        icon={<LinkedInIcon className="react-icons" />}
+        icon={<LinkedInIcon className="react-icons big" />}
+        style={styles.RaisedButton}
+      />
+      <br />
+      <br />
+      Mes collaborations publiques sur
+      <RaisedButton
+        href={urls.github}
+        label="GitHub"
+        icon={<GitHubIcon className="react-icons big" />}
+        style={styles.RaisedButton}
+      />
+      {" "}, à voir aussi sur
+      <RaisedButton
+        href={urls.gitshowcase}
+        label="Git Showcase"
+        icon={<GitHubIcon className="react-icons big" />}
         style={styles.RaisedButton}
       />
     </CardText>
     <CardText>
-      Mes collaborations publiques sur
-      <RaisedButton
-        href={urls.gitshowcase}
-        label="Git Showcase"
-        icon={<GitHubIcon className="react-icons" />}
-        style={styles.RaisedButton}
-      />
-      <RaisedButton
-        href={urls.github}
-        label="GitHub"
-        icon={<GitHubIcon className="react-icons" />}
-        style={styles.RaisedButton}
-      />
+      Dernière mise à jour: <b>avril 2017</b>.
     </CardText>
     <CardActions>
       <RaisedButton
         primary
         href={urls.resumePdf}
         label="Télécharger le PDF"
-        icon={<FileDownloadIcon className="react-icons" />}
+        icon={<FileDownloadIcon className="react-icons big" />}
       />
     </CardActions>
   </Card>

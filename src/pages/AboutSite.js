@@ -9,7 +9,7 @@ const AboutSite = () => (
       {" "}
       {"<3"}
       {" "}
-      avec ReactJS v15, React Router v4, Webpack v2, ESLint / Prettier, Material-UI, ….
+      avec ReactJS v15, React Router v4, React Loadable, Webpack v2, ESLint / Prettier, Material-UI, ….
     </p>
   </section>
 );

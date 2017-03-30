@@ -38,8 +38,7 @@ const AboutMe = () => (
       J'ai sourtout collaboré avec de petites équipes, des compétences
       {" "}
       <i><b>full-stack</b></i>
-      {" "}
-      voire
+      ,
       {" "}
       <i>DevOps</i>
       {" "}

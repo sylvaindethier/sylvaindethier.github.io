@@ -4,9 +4,9 @@ import Drawer from "material-ui/Drawer";
 import MenuItem from "material-ui/MenuItem";
 import Link from "react-router-dom/Link";
 import HomeIcon from "react-icons/md/home";
-import PersonIcon from "react-icons/md/person";
-import CodeIcon from "react-icons/md/code";
-import ContactMailIcon from "react-icons/md/contact-mail";
+import AboutIcon from "react-icons/md/info";
+import ResumeIcon from "react-icons/md/code";
+import ContactIcon from "react-icons/md/contact-mail";
 import urls from "../urls";
 
 const menuItems = [
@@ -19,7 +19,7 @@ const menuItems = [
   },
 
   {
-    icon: <PersonIcon />,
+    icon: <AboutIcon />,
     link: {
       to: urls.about,
       children: "À propos"
@@ -27,7 +27,7 @@ const menuItems = [
   },
 
   {
-    icon: <CodeIcon />,
+    icon: <ResumeIcon />,
     link: {
       to: urls.resume,
       children: "CV"
@@ -35,7 +35,7 @@ const menuItems = [
   },
 
   {
-    icon: <ContactMailIcon />,
+    icon: <ContactIcon />,
     link: {
       to: urls.contact,
       children: "Contact"
