@@ -1,13 +1,14 @@
 import React, { Component } from "react";
+import NavLink from "react-router-dom/NavLink";
 import AppBar from "material-ui/AppBar";
 import Drawer from "material-ui/Drawer";
 import Menu from "material-ui/Menu";
 import MenuItem from "material-ui/MenuItem";
-import NavLink from "react-router-dom/NavLink";
 import HomeIcon from "react-icons/md/home";
 import AboutIcon from "react-icons/md/info";
 import ResumeIcon from "react-icons/md/code";
 import ContactIcon from "react-icons/md/contact-mail";
+import LanguageSelector from "./LanguageSelector";
 import urls from "../urls";
 
 const menuItems = [
@@ -69,6 +70,7 @@ export default class Bar extends Component {
           title="S. Dethier - WebApp Developer"
           style={styles.AppBar}
           onLeftIconButtonTouchTap={this.handleOpen}
+          iconElementRight={<LanguageSelector />}
         />
         <aside>
           <Drawer
@@ -84,11 +86,7 @@ export default class Bar extends Component {
                     onTouchTap={this.handleClose}
                     leftIcon={menuItem.icon}
                     children={
-                      <NavLink
-                        className="menu-item-link"
-                        activeClassName="active"
-                        {...menuItem.link}
-                      />
+                      <NavLink className="menu-item-link" {...menuItem.link} />
                     }
                   />
                 ))}
