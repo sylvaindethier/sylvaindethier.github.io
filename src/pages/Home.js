@@ -17,7 +17,7 @@ const AboutCard = (
   <Card style={styles.Card}>
     <CardHeader
       title="À propos"
-      subtitle="Qui je suis et du site."
+      subtitle="Qui je suis."
       avatar="icons/favicon.png"
     />
     <CardActions>
