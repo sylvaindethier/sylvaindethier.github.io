@@ -2,7 +2,7 @@ const urls = {
   home: "/",
   about: "/about",
   resume: "/resume",
-  resumePdf: "/documents/CV-Sylvain-Dethier.pdf",
+  resumePdf: "/documents/test.pdf",
   contact: "/contact",
   // externals
   linkedin: "https://linked.com/in/sylvaindethier",
