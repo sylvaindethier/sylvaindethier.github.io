@@ -1,0 +1,17 @@
+[ignore]
+.*/node_modules/.*
+.*/build/.*
+
+[include]
+.*/src/.*
+
+[libs]
+flow-typed
+
+[options]
+# Add CSS extension to recognize CSS files as modules
+module.name_mapper='.*\(.css\)' -> 'CSSModule'
+module.system=haste
+
+# Add untyped modules as empty/object
+module.name_mapper='\(react-router-dom)\' -> 'empty/object'
