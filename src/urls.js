@@ -1,4 +1,5 @@
-const urls = {
+/* @flow */
+const urls: { [key: string]: string } = {
   home: "/",
   about: "/about",
   resume: "/resume",

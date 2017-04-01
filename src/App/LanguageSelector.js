@@ -1,3 +1,4 @@
+/* @flow */
 import React, { Component } from "react";
 // import withRouter from "react-router-dom/withRouter";
 import Link from "react-router-dom/Link";

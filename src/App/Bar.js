@@ -1,3 +1,4 @@
+/* @flow */
 import React, { Component } from "react";
 import NavLink from "react-router-dom/NavLink";
 import AppBar from "material-ui/AppBar";

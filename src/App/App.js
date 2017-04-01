@@ -1,3 +1,4 @@
+/* @flow */
 import React from "react";
 import Router from "react-router-dom/BrowserRouter";
 import MuiThemeProvider from "material-ui/styles/MuiThemeProvider";

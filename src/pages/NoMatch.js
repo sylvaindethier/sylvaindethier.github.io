@@ -1,3 +1,4 @@
+/* @flow */
 import React from "react";
 import { Card, CardTitle, CardText } from "material-ui/Card";
 import { location as locationPropTypes } from "./routerPropTypes";

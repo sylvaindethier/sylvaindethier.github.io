@@ -1,3 +1,4 @@
+/* @flow */
 import React from "react";
 import { Card, CardHeader, CardActions } from "material-ui/Card";
 import RaisedButton from "material-ui/RaisedButton";
