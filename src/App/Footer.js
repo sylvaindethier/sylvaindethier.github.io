@@ -27,13 +27,25 @@ const styles = {
 
 const Site = (
   <p>
+    Powered by
+    {" "}
+    <a href="https://pages.github.com/">GitHub Pages</a>.
+    <br />
     Made with
     {" "}
-    <HeartIcon className="react-icons" /> by Sylvain Dethier.
-    <br />
-    Powered by <a href="https://pages.github.com/">GitHub Pages</a>.
+    <HeartIcon className="react-icons" />
+    {" "}
+    by Sylvain Dethier. Found a bug?
+    {" "}
+    <a href="https://github.com/sylvaindethier/sylvaindethier.github.io/issues">
+      Fill in an issue
+    </a>
+    .
     <br />
     <a href="https://facebook.github.io/react/">ReactJS</a>
+    ,
+    {" "}
+    <a href="https://flow.org/">Flow</a>
     ,
     {" "}
     <a href="https://reacttraining.com/react-router/">React Router</a>

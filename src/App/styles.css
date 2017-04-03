@@ -55,8 +55,9 @@
   max-width: 920px;
 }
 .mini-footer a {
-    color: inherit;
+    color: white;
+    text-decoration: none;
 }
 .mini-footer a:hover {
-    color: white;
+    text-decoration: underline;
 }
