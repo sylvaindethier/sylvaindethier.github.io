@@ -11,12 +11,13 @@ import ResumeIcon from "react-icons/md/code";
 import ContactIcon from "react-icons/md/contact-mail";
 import LanguageSelector from "./LanguageSelector";
 import urls from "../urls";
+import { intlLocation } from "../intl";
 
 const menuItems = [
   {
     icon: <HomeIcon />,
     link: {
-      to: urls.home,
+      to: intlLocation(urls.home),
       exact: true,
       children: "Accueil"
     }
@@ -25,7 +26,7 @@ const menuItems = [
   {
     icon: <AboutIcon />,
     link: {
-      to: urls.about,
+      to: intlLocation(urls.about),
       children: "À propos"
     }
   },
@@ -33,7 +34,7 @@ const menuItems = [
   {
     icon: <ResumeIcon />,
     link: {
-      to: urls.resume,
+      to: intlLocation(urls.resume),
       children: "CV"
     }
   },
@@ -41,7 +42,7 @@ const menuItems = [
   {
     icon: <ContactIcon />,
     link: {
-      to: urls.contact,
+      to: intlLocation(urls.contact),
       children: "Contact"
     }
   }
