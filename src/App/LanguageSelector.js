@@ -4,17 +4,18 @@ import React, { Component } from "react";
 import Link from "react-router-dom/Link";
 import DropDownMenu from "material-ui/DropDownMenu";
 import MenuItem from "material-ui/MenuItem";
+// import { intlLocation } from "../intl";
 
 const languages = [
-  { code: "fr", name: "Français" },
-  { code: "en", name: "English" }
+  { locale: "fr", name: "Français" },
+  { locale: "en", name: "English" }
 ];
-// const menuItems = languages.map(({ code, name }) => (
+// const menuItems = languages.map(({ locale, name }) => (
 //   <MenuItem
-//     key={code}
-//     value={code}
+//     key={locale}
+//     value={locale}
 //     primaryText={
-//       <Link to={`/${code}`} className="menu-item-link">
+//       <Link to={`/${locale}/`} className="menu-item-link">
 //         {name}
 //       </Link>
 //     }
@@ -30,7 +31,7 @@ class LanguageSelector extends Component {
   //   history: PropTypes.object.isRequired
   // };
 
-  state = { value: languages[0].code };
+  state = { value: languages[0].locale };
 
   handleChange = (event, index, value) => this.setState({ value });
 
@@ -40,13 +41,13 @@ class LanguageSelector extends Component {
         <MenuItem
           value="fr"
           primaryText={
-            <Link to="/fr" className="menu-item-link">Français</Link>
+            <Link to="/fr/" className="menu-item-link">Français</Link>
           }
         />
         <MenuItem
           value="en"
           primaryText="English"
-          secondaryText="Coming soon!"
+          secondaryText="(Coming soon!)"
           disabled
         />
       </DropDownMenu>
