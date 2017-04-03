@@ -19,7 +19,7 @@ const AboutCard = (
     <CardHeader
       title="À propos"
       subtitle="Qui je suis."
-      avatar="icons/favicon.png"
+      avatar="/icons/favicon.png"
     />
     <CardActions>
       <Link to={urls.about}>
