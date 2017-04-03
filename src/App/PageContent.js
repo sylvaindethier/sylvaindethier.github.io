@@ -1,8 +1,10 @@
 /* @flow */
 import React from "react";
 import Route from "react-router-dom/Route";
+import Redirect from "react-router-dom/Redirect";
 import Switch from "react-router-dom/Switch";
 import urls from "../urls";
+import { intlPath, intlLocation } from "../intl";
 
 // sync pages
 import Home from "../pages/Home";
@@ -20,10 +22,16 @@ export default function PageContent() {
     <main id="page-container">
       <div id="page-content">
         <Switch>
-          <Route path={urls.home} exact component={Home} />
-          <Route path={urls.about} component={About} />
-          <Route path={urls.resume} component={Resume} />
-          <Route path={urls.contact} component={Contact} />
+          {/* redirect / to intl 'home' location */}
+          <Route
+            exact
+            path="/"
+            render={() => <Redirect to={intlLocation(urls.home)} />}
+          />
+          <Route exact path={intlPath(urls.home)} component={Home} />
+          <Route path={intlPath(urls.about)} component={About} />
+          <Route path={intlPath(urls.resume)} component={Resume} />
+          <Route path={intlPath(urls.contact)} component={Contact} />
           <Route component={NoMatch} />
         </Switch>
       </div>
