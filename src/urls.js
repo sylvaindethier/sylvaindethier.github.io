@@ -1,8 +1,8 @@
 /* @flow */
 const urls: { [key: string]: string } = {
   home: "/",
-  about: "/about",
-  resume: "/resume",
+  about: "/à-propos",
+  resume: "/cv",
   resumePdf: "/documents/test.pdf",
   contact: "/contact",
   // externals
