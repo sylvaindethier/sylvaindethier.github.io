@@ -7,16 +7,10 @@ process.on("unhandledRejection", err => {
 
 process.env.NODE_ENV = "production";
 
-// Load environment variables from .env file. Suppress warnings using silent
-// if this file is missing. dotenv will never modify any environment variables
-// that have already been set.
-// https://github.com/motdotla/dotenv
-require("dotenv").config({ silent: true });
-
 const server = require("pushstate-server");
 const chalk = require("chalk");
 const detect = require("detect-port");
-const clearConsole = require("react-dev-utils/clearConsole");
+// const clearConsole = require("react-dev-utils/clearConsole");
 const getProcessForPort = require("react-dev-utils/getProcessForPort");
 const openBrowser = require("react-dev-utils/openBrowser");
 const prompt = require("react-dev-utils/prompt");
@@ -49,7 +43,7 @@ detect(DEFAULT_PORT).then(port => {
   }
 
   if (isInteractive) {
-    clearConsole();
+    // clearConsole();
     const existingProcess = getProcessForPort(DEFAULT_PORT);
     const question = chalk.yellow(
       `Something is already running on port ${DEFAULT_PORT}.` +

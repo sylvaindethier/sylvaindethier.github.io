@@ -17,7 +17,7 @@ const fs = require("fs");
 const chalk = require("chalk");
 const detect = require("detect-port");
 const WebpackDevServer = require("webpack-dev-server");
-const clearConsole = require("react-dev-utils/clearConsole");
+// const clearConsole = require("react-dev-utils/clearConsole");
 const checkRequiredFiles = require("react-dev-utils/checkRequiredFiles");
 const getProcessForPort = require("react-dev-utils/getProcessForPort");
 const openBrowser = require("react-dev-utils/openBrowser");
@@ -77,7 +77,7 @@ function run(port) {
     }
 
     if (isInteractive) {
-      clearConsole();
+      // clearConsole();
     }
     console.log(chalk.cyan("Starting the development server..."));
     console.log();
@@ -95,7 +95,7 @@ detect(DEFAULT_PORT).then(port => {
   }
 
   if (isInteractive) {
-    clearConsole();
+    // clearConsole();
     const existingProcess = getProcessForPort(DEFAULT_PORT);
     const question = chalk.yellow(
       `Something is already running on port ${DEFAULT_PORT}.` +
