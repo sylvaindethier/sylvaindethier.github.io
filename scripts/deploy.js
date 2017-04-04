@@ -14,7 +14,7 @@ const defaults = {
 // project options
 const options = Object.assign({}, defaults, {
   dist: "build",
-  // branch: 'master', // gh pages for this project are served from 'master'
+  branch: "master", // gh pages for this project are served from 'master'
   message: "Deploy updates"
 });
 

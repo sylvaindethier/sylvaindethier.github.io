@@ -1,11 +1,11 @@
-var autoprefixer = require("autoprefixer");
-var webpack = require("webpack");
-var HtmlWebpackPlugin = require("html-webpack-plugin");
-var CaseSensitivePathsPlugin = require("case-sensitive-paths-webpack-plugin");
-var InterpolateHtmlPlugin = require("react-dev-utils/InterpolateHtmlPlugin");
-var WatchMissingNodeModulesPlugin = require("react-dev-utils/WatchMissingNodeModulesPlugin");
-var getClientEnvironment = require("./env");
-var paths = require("./paths");
+const autoprefixer = require("autoprefixer");
+const webpack = require("webpack");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
+const CaseSensitivePathsPlugin = require("case-sensitive-paths-webpack-plugin");
+const InterpolateHtmlPlugin = require("react-dev-utils/InterpolateHtmlPlugin");
+const WatchMissingNodeModulesPlugin = require("react-dev-utils/WatchMissingNodeModulesPlugin");
+const getClientEnvironment = require("./env");
+const paths = require("./paths");
 
 // babel-loader v6.3.2 raise a Webpack warning
 // process.traceDeprecation = true
@@ -27,6 +27,7 @@ module.exports = {
   // You may want 'eval' instead if you prefer to see the compiled output in DevTools.
   // See the discussion in https://github.com/facebookincubator/create-react-app/issues/343.
   devtool: "cheap-module-source-map",
+
   // These are the "entry points" to our application.
   // This means they will be the "root" imports that are included in JS bundle.
   // The first two entry points enable "hot" CSS and auto-refreshes for JS.
@@ -43,6 +44,10 @@ module.exports = {
       // require.resolve('webpack-dev-server/client') + '?/',
       // require.resolve('webpack/hot/dev-server'),
       require.resolve("react-dev-utils/webpackHotDevClient"),
+      // We ship a few polyfills by default:
+      // require.resolve("./polyfills"), // moved to 'vendor'
+      // Errors should be considered fatal in development
+      require.resolve("react-dev-utils/crashOverlay"),
       // Finally, this is your app's code:
       paths.appIndexJs
       // We include the app code last so that if there is a runtime error during
@@ -51,13 +56,15 @@ module.exports = {
     ],
     vendor: [
       // We ship a few polyfills by default:
-      require.resolve("./polyfills"),
+      require.resolve("./polyfills"), // moved to 'vendor'
+      // Most used modules belong to 'vendor', reduce bundle size
       "react",
       "react-loadable",
       "react-tap-event-plugin",
       "sanitize.css/sanitize.css"
     ]
   },
+
   output: {
     // Next line is not used in dev but WebpackDevServer crashes without it:
     path: paths.appBuild,
@@ -70,13 +77,14 @@ module.exports = {
     // This is the URL that app is served from. We use "/" in development.
     publicPath: publicPath
   },
+
   resolve: {
     // This allows you to set a fallback for where Webpack should look for modules.
     // We read `NODE_PATH` environment variable in `paths.js` and pass paths here.
-    // We use `fallback` instead of `root` because we want `node_modules` to "win"
-    // if there any conflicts. This matches Node resolution mechanism.
+    // We placed these paths second because we want `node_modules` to "win"
+    // if there are any conflicts. This matches Node resolution mechanism.
     // https://github.com/facebookincubator/create-react-app/issues/253
-    modules: paths.nodePaths.concat([paths.appNodeModules, paths.appSrc]),
+    modules: ["node_modules", paths.appNodeModules].concat(paths.nodePaths),
     // These are the reasonable defaults supported by the Node ecosystem.
     // We also include JSX as a common component filename extension to support
     // some tools, although we do not recommend using it, see:
@@ -88,32 +96,53 @@ module.exports = {
       "react-native": "react-native-web"
     }
   },
+
   module: {
     rules: [
+      // Disable require.ensure as it's not a standard language feature.
+      { parser: { requireEnsure: false } },
       // First, run the linter.
       // It's important to do this before Babel processes the JS.
       {
         test: /\.(js|jsx)$/,
         enforce: "pre",
-        loader: "eslint-loader",
+        use: [
+          {
+            loader: "eslint-loader"
+          }
+        ],
         include: paths.appSrc
       },
-      // Default loader: load all assets that are not handled
-      // by other loaders with the url loader.
-      // Note: This list needs to be updated with every change of extensions
-      // the other loaders match.
-      // E.g., when adding a loader for a new supported file extension,
-      // we need to add the supported extension to this loader too.
-      // Add one new line in `exclude` for each loader.
-      //
+      // ** ADDING/UPDATING LOADERS **
+      // The "url" loader handles all assets unless explicitly excluded.
+      // The `exclude` list *must* be updated with every change to loader extensions.
+      // When adding a new loader, you must add its `test`
+      // as a new entry in the `exclude` list for "url" loader.
+
       // "file" loader makes sure those assets get served by WebpackDevServer.
       // When you `import` an asset, you get its (virtual) filename.
       // In production, they would get copied to the `build` folder.
+      {
+        exclude: [
+          /\.html$/,
+          /\.(js|jsx)$/,
+          /\.css$/,
+          /\.json$/,
+          /\.bmp$/,
+          /\.gif$/,
+          /\.jpe?g$/,
+          /\.png$/
+        ],
+        loader: "file-loader",
+        options: {
+          name: "static/media/[name].[hash:8].[ext]"
+        }
+      },
       // "url" loader works like "file" loader except that it embeds assets
       // smaller than specified limit in bytes as data URLs to avoid requests.
       // A missing `test` is equivalent to a match.
       {
-        exclude: [/\.html$/, /\.(js|jsx)$/, /\.css$/, /\.json$/, /\.svg$/],
+        test: [/\.bmp$/, /\.gif$/, /\.jpe?g$/, /\.png$/],
         loader: "url-loader",
         options: {
           limit: 10000,
@@ -129,14 +158,13 @@ module.exports = {
           // This is a feature of `babel-loader` for webpack (not Babel itself).
           // It enables caching results in ./node_modules/.cache/babel-loader/
           // directory for faster rebuilds.
-          // cacheDirectory: true
+          cacheDirectory: true
         }
       },
       // Loader for react-icons
       {
         test: /react-icons\/(.)*(.js)$/,
         loader: "babel-loader",
-        // query: { presets: ['es2015', 'react']}
         options: {
           // This is a feature of `babel-loader` for webpack (not Babel itself).
           // It enables caching results in ./node_modules/.cache/babel-loader/
@@ -152,52 +180,37 @@ module.exports = {
       {
         test: /\.css$/,
         use: [
-          {
-            loader: "style-loader"
-          },
+          "style-loader",
           {
             loader: "css-loader",
             options: {
-              importLoaders: true
+              importLoaders: 1
             }
           },
           {
-            loader: "postcss-loader"
+            loader: "postcss-loader",
+            options: {
+              ident: "postcss", // https://webpack.js.org/guides/migrating/#complex-options
+              plugins: () => [
+                autoprefixer({
+                  browsers: [
+                    ">1%",
+                    "last 4 versions",
+                    "Firefox ESR",
+                    "not ie < 9" // React doesn't support IE8 anyway
+                  ]
+                })
+              ]
+            }
           }
         ]
-      },
-      // "file" loader for svg
-      {
-        test: /\.svg$/,
-        loader: "file-loader",
-        options: {
-          name: "static/media/[name].[hash:8].[ext]"
-        }
       }
+      // ** STOP ** Are you adding a new loader?
+      // Remember to add the new extension(s) to the "url" loader exclusion list.
     ]
   },
 
   plugins: [
-    // We use PostCSS for autoprefixing only.
-    new webpack.LoaderOptionsPlugin({
-      options: {
-        postcss: [
-          autoprefixer({
-            browsers: [
-              ">1%",
-              "last 4 versions",
-              "Firefox ESR",
-              "not ie < 9" // React doesn't support IE8 anyway
-            ]
-          })
-        ]
-      }
-    }),
-    // Commons chunk for code splitting
-    new webpack.optimize.CommonsChunkPlugin({
-      names: ["vendor", "manifest"],
-      filename: "static/js/[name].js"
-    }),
     // Makes some environment variables available in index.html.
     // The public URL is available as %PUBLIC_URL% in index.html, e.g.:
     // <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
@@ -221,7 +234,12 @@ module.exports = {
     // to restart the development server for Webpack to discover it. This plugin
     // makes the discovery automatic so you don't have to restart.
     // See https://github.com/facebookincubator/create-react-app/issues/186
-    new WatchMissingNodeModulesPlugin(paths.appNodeModules)
+    new WatchMissingNodeModulesPlugin(paths.appNodeModules),
+    // Commons chunk for code splitting
+    new webpack.optimize.CommonsChunkPlugin({
+      names: ["vendor", "manifest"],
+      filename: "static/js/[name].js"
+    })
   ],
   // Some libraries import Node modules but don't use them in the browser.
   // Tell Webpack to provide empty mocks for them so importing them works.
@@ -229,5 +247,11 @@ module.exports = {
     fs: "empty",
     net: "empty",
     tls: "empty"
+  },
+  // Turn off performance hints during development because we don't do any
+  // splitting or minification in interest of speed. These warnings become
+  // cumbersome.
+  performance: {
+    hints: false
   }
 };

@@ -50,17 +50,20 @@ module.exports = {
   devtool: "source-map",
   // Profile bundle stats
   profile: true,
+
   // In production, we only want to load the polyfills and the app code.
+  // entry: [require.resolve("./polyfills"), paths.appIndexJs],
   entry: {
-    app: [paths.appIndexJs],
     vendor: [
       require.resolve("./polyfills"),
       "react",
       "react-loadable",
       "react-tap-event-plugin",
       "sanitize.css/sanitize.css"
-    ]
+    ],
+    app: [paths.appIndexJs]
   },
+
   output: {
     // The build folder.
     path: paths.appBuild,
@@ -75,10 +78,10 @@ module.exports = {
   resolve: {
     // This allows you to set a fallback for where Webpack should look for modules.
     // We read `NODE_PATH` environment variable in `paths.js` and pass paths here.
-    // We use `fallback` instead of `root` because we want `node_modules` to "win"
-    // if there any conflicts. This matches Node resolution mechanism.
+    // We placed these paths second because we want `node_modules` to "win"
+    // if there are any conflicts. This matches Node resolution mechanism.
     // https://github.com/facebookincubator/create-react-app/issues/253
-    modules: paths.nodePaths.concat([paths.appNodeModules, paths.appSrc]),
+    modules: ["node_modules", paths.appNodeModules].concat(paths.nodePaths),
     // These are the reasonable defaults supported by the Node ecosystem.
     // We also include JSX as a common component filename extension to support
     // some tools, although we do not recommend using it, see:
@@ -93,28 +96,48 @@ module.exports = {
 
   module: {
     rules: [
+      // Disable require.ensure as it's not a standard language feature.
+      { parser: { requireEnsure: false } },
       // First, run the linter.
       // It's important to do this before Babel processes the JS.
       {
         test: /\.(js|jsx)$/,
         enforce: "pre",
-        loader: "eslint-loader",
+        use: [
+          {
+            loader: "eslint-loader"
+          }
+        ],
         include: paths.appSrc
       },
-      // Default loader: load all assets that are not handled
-      // by other loaders with the url loader.
-      // Note: This list needs to be updated with every change of extensions
-      // the other loaders match.
-      // E.g., when adding a loader for a new supported file extension,
-      // we need to add the supported extension to this loader too.
-      // Add one new line in `exclude` for each loader.
-      //
+      // ** ADDING/UPDATING LOADERS **
+      // The "url" loader handles all assets unless explicitly excluded.
+      // The `exclude` list *must* be updated with every change to loader extensions.
+      // When adding a new loader, you must add its `test`
+      // as a new entry in the `exclude` list in the "url" loader.
+
       // "file" loader makes sure those assets end up in the `build` folder.
       // When you `import` an asset, you get its filename.
+      {
+        exclude: [
+          /\.html$/,
+          /\.(js|jsx)$/,
+          /\.css$/,
+          /\.json$/,
+          /\.bmp$/,
+          /\.gif$/,
+          /\.jpe?g$/,
+          /\.png$/
+        ],
+        loader: "file-loader",
+        options: {
+          name: "static/media/[name].[hash:8].[ext]"
+        }
+      },
       // "url" loader works just like "file" loader but it also embeds
       // assets smaller than specified size as data URLs to avoid requests.
       {
-        exclude: [/\.html$/, /\.(js|jsx)$/, /\.css$/, /\.json$/, /\.svg$/],
+        test: [/\.bmp$/, /\.gif$/, /\.jpe?g$/, /\.png$/],
         loader: "url-loader",
         options: {
           limit: 10000,
@@ -130,14 +153,7 @@ module.exports = {
       // Loader for react-icons
       {
         test: /react-icons\/(.)*(.js)$/,
-        loader: "babel-loader",
-        // query: { presets: ['es2015', 'react']}
-        options: {
-          // This is a feature of `babel-loader` for webpack (not Babel itself).
-          // It enables caching results in ./node_modules/.cache/babel-loader/
-          // directory for faster rebuilds.
-          cacheDirectory: true
-        }
+        loader: "babel-loader"
       },
       // The notation here is somewhat confusing.
       // "postcss" loader applies autoprefixer to our CSS.
@@ -153,7 +169,7 @@ module.exports = {
       // in the main CSS file.
       {
         test: /\.css$/,
-        use: ExtractTextPlugin.extract(
+        loader: ExtractTextPlugin.extract(
           Object.assign(
             {
               fallback: "style-loader",
@@ -161,12 +177,24 @@ module.exports = {
                 {
                   loader: "css-loader",
                   options: {
-                    importLoaders: true,
-                    minimize: { safe: true }
+                    importLoaders: 1
                   }
                 },
                 {
-                  loader: "postcss-loader"
+                  loader: "postcss-loader",
+                  options: {
+                    ident: "postcss", // https://webpack.js.org/guides/migrating/#complex-options
+                    plugins: () => [
+                      autoprefixer({
+                        browsers: [
+                          ">1%",
+                          "last 4 versions",
+                          "Firefox ESR",
+                          "not ie < 9" // React doesn't support IE8 anyway
+                        ]
+                      })
+                    ]
+                  }
                 }
               ]
             },
@@ -174,38 +202,12 @@ module.exports = {
           )
         )
         // Note: this won't work without `new ExtractTextPlugin()` in `plugins`.
-      },
-      // "file" loader for svg
-      {
-        test: /\.svg$/,
-        loader: "file-loader",
-        options: {
-          name: "static/media/[name].[hash:8].[ext]"
-        }
       }
+      // ** STOP ** Are you adding a new loader?
+      // Remember to add the new extension(s) to the "url" loader exclusion list.
     ]
   },
   plugins: [
-    // We use PostCSS for autoprefixing only.
-    new webpack.LoaderOptionsPlugin({
-      options: {
-        postcss: [
-          autoprefixer({
-            browsers: [
-              ">1%",
-              "last 4 versions",
-              "Firefox ESR",
-              "not ie < 9" // React doesn't support IE8 anyway
-            ]
-          })
-        ]
-      }
-    }),
-    // Commons chunk for code splitting
-    new webpack.optimize.CommonsChunkPlugin({
-      names: ["vendor", "manifest"],
-      filename: "static/js/[name].[hash:8].js"
-    }),
     // Makes some environment variables available in index.html.
     // The public URL is available as %PUBLIC_URL% in index.html, e.g.:
     // <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
@@ -234,10 +236,6 @@ module.exports = {
     // It is absolutely essential that NODE_ENV was set to production here.
     // Otherwise React will be compiled in the very slow development mode.
     new webpack.DefinePlugin(env.stringified),
-    // This helps ensure the builds are consistent if source hasn't changed:
-    new webpack.optimize.OccurrenceOrderPlugin(),
-    // Try to dedupe duplicated modules, if any:
-    new webpack.optimize.DedupePlugin(),
     // Minify the code.
     new webpack.optimize.UglifyJsPlugin({
       compress: {
@@ -250,15 +248,23 @@ module.exports = {
       output: {
         comments: false,
         screw_ie8: true
-      }
+      },
+      sourceMap: true
     }),
     // Note: this won't work without ExtractTextPlugin.extract(..) in `loaders`.
-    new ExtractTextPlugin(cssFilename),
+    new ExtractTextPlugin({
+      filename: cssFilename
+    }),
     // Generate a manifest file which contains a mapping of all asset filenames
     // to their corresponding output file so that tools can pick it up without
     // having to parse `index.html`.
     new ManifestPlugin({
       fileName: "asset-manifest.json"
+    }),
+    // Commons chunk for code splitting
+    new webpack.optimize.CommonsChunkPlugin({
+      names: ["vendor", "manifest"],
+      filename: "static/js/[name].[hash:8].js"
     }),
     new StatsPlugin("webpack-stats.json")
   ],
