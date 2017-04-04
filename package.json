@@ -14,8 +14,11 @@
   },
   "homepage": "https://sylvaindethier.github.io",
   "scripts": {
-    "preinstall": "git submodule init && git submodule update",
-    "postinstall": "rimraf ./flow-typed/npm && flow-typed install",
+    "install:submodule": "git submodule init && git submodule update",
+    "install:cra": "cd create-react-app && npm install && cd ..",
+    "install:flow-typed": "rimraf ./flow-typed/npm && flow-typed install",
+    "preinstall": "npm run install:submodule && npm run install:cra",
+    "postinstall": "npm run install:flow-typed",
     "start": "node scripts/start.js",
     "test": "node scripts/test.js --env=jsdom",
     "build": "node scripts/build.js",
