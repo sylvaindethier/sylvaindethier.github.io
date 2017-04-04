@@ -1,6 +1,6 @@
 const chalk = require("chalk");
 const webpack = require("webpack");
-const clearConsole = require("react-dev-utils/clearConsole");
+// const clearConsole = require("react-dev-utils/clearConsole");
 const formatWebpackMessages = require("react-dev-utils/formatWebpackMessages");
 
 const isInteractive = process.stdout.isTTY;
@@ -39,7 +39,7 @@ module.exports = function createWebpackCompiler(config, onReadyCallback) {
   // "invalid" is short for "bundle invalidated", it doesn't imply any errors.
   compiler.plugin("invalid", () => {
     if (isInteractive) {
-      clearConsole();
+      // clearConsole();
     }
     console.log("Compiling...");
   });
@@ -50,7 +50,7 @@ module.exports = function createWebpackCompiler(config, onReadyCallback) {
   // Whether or not you have warnings or errors, you will get this event.
   compiler.plugin("done", stats => {
     if (isInteractive) {
-      clearConsole();
+      // clearConsole();
     }
 
     // We have switched off the default Webpack output in WebpackDevServer
