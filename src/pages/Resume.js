@@ -54,6 +54,7 @@ const Resume = () => (
       <RaisedButton
         primary
         href={urls.resumePdf}
+        target="_blank"
         label="Télécharger le PDF"
         icon={<FileDownloadIcon className="react-icons big" />}
       />
