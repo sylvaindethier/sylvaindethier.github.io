@@ -7,6 +7,7 @@ import ContactMailIcon from "react-icons/md/contact-mail";
 import PageViewIcon from "react-icons/md/pageview";
 import Link from "react-router-dom/Link";
 import urls from "../urls";
+import { intlLocation } from "../intl";
 
 const styles = {
   Card: {
@@ -22,7 +23,7 @@ const AboutCard = (
       avatar="/icons/favicon.png"
     />
     <CardActions>
-      <Link to={urls.about}>
+      <Link to={intlLocation(urls.about)}>
         <RaisedButton
           primary
           label="Voir la page"
@@ -41,7 +42,7 @@ const ResumeCard = (
       avatar={<CodeIcon className="react-icons bigger" />}
     />
     <CardActions>
-      <Link to={urls.resume}>
+      <Link to={intlLocation(urls.resume)}>
         <RaisedButton
           primary
           label="Voir la page"
@@ -60,7 +61,7 @@ const ContactCard = (
       avatar={<ContactMailIcon className="react-icons bigger" />}
     />
     <CardActions>
-      <Link to={urls.contact}>
+      <Link to={intlLocation(urls.contact)}>
         <RaisedButton
           primary
           label="Voir la page"
