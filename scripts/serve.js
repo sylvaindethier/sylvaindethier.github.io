@@ -7,7 +7,7 @@ process.on("unhandledRejection", err => {
 
 process.env.NODE_ENV = "production";
 
-const server = require("pushstate-server");
+const serve = require("serve");
 const chalk = require("chalk");
 const detect = require("detect-port");
 // const clearConsole = require("react-dev-utils/clearConsole");
@@ -26,9 +26,8 @@ function run(port) {
   const host = process.env.HOST || "localhost";
 
   // Launch the server.
-  server.start({
-    port: port,
-    directory: paths.appBuild
+  serve(paths.appBuild, {
+    port: port
   });
   console.log(chalk.cyan("Production server started."));
   openBrowser(`${protocol}://${host}:${port}/`);
