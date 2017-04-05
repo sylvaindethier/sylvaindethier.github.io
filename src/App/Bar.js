@@ -1,6 +1,7 @@
 /* @flow */
 import React, { Component } from "react";
 import NavLink from "react-router-dom/NavLink";
+import Link from "react-router-dom/Link";
 import AppBar from "material-ui/AppBar";
 import Drawer from "material-ui/Drawer";
 import Menu from "material-ui/Menu";
@@ -69,7 +70,11 @@ export default class Bar extends Component {
     return (
       <header>
         <AppBar
-          title="S. Dethier - WebApp Developer"
+          title={
+            <Link to={intlLocation(urls.home)} className="bar-link">
+              S. Dethier - WebApp Developer
+            </Link>
+          }
           style={styles.AppBar}
           onLeftIconButtonTouchTap={this.handleOpen}
           iconElementRight={<LanguageSelector />}

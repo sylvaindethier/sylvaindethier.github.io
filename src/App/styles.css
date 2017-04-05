@@ -16,7 +16,7 @@
   height: 2em;
 }
 
-.menu-item-link {
+.bar-link, .menu-item-link {
   display: block;
   text-decoration: none;
   color: inherit;
