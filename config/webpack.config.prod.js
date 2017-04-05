@@ -57,9 +57,10 @@ module.exports = {
     vendor: [
       require.resolve("./polyfills"),
       "react",
-      "react-loadable",
-      "react-tap-event-plugin",
-      "sanitize.css/sanitize.css"
+      "react-dom",
+      "react-router",
+      "react-router-dom",
+      "react-loadable"
     ],
     app: [paths.appIndexJs]
   },
@@ -263,12 +264,14 @@ module.exports = {
     }),
     // Commons chunk for code splitting
     new webpack.optimize.CommonsChunkPlugin({
-      names: ["vendor", "manifest"],
+      names: ["vendor"],
       filename: "static/js/[name].[hash:8].js"
     }),
     new BundleAnalyzerPlugin({
       generateStatsFile: true,
-      statsFilename: "webpack-stats.json"
+      statsFilename: "webpack-stats.json",
+      reportFilename: "webpack-stats.html", // only works w/ `analyzerMode: "static"`
+      analyzerMode: "static"
     })
   ],
   // Some libraries import Node modules but don't use them in the browser.
