@@ -4,7 +4,7 @@ var HtmlWebpackPlugin = require("html-webpack-plugin");
 var ExtractTextPlugin = require("extract-text-webpack-plugin");
 var ManifestPlugin = require("webpack-manifest-plugin");
 var InterpolateHtmlPlugin = require("react-dev-utils/InterpolateHtmlPlugin");
-var StatsPlugin = require("stats-webpack-plugin");
+var BundleAnalyzerPlugin = require("webpack-bundle-analyzer").BundleAnalyzerPlugin;
 var paths = require("./paths");
 var getClientEnvironment = require("./env");
 
@@ -266,7 +266,10 @@ module.exports = {
       names: ["vendor", "manifest"],
       filename: "static/js/[name].[hash:8].js"
     }),
-    new StatsPlugin("webpack-stats.json")
+    new BundleAnalyzerPlugin({
+      generateStatsFile: true,
+      statsFilename: "webpack-stats.json"
+    })
   ],
   // Some libraries import Node modules but don't use them in the browser.
   // Tell Webpack to provide empty mocks for them so importing them works.
