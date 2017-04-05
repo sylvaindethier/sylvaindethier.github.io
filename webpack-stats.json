@@ -2,8 +2,8 @@
   "errors": [],
   "warnings": [],
   "version": "2.3.3",
-  "hash": "fe00cbc6b0d12054e989",
-  "time": 14450,
+  "hash": "2f484f5919ba91f6ee3b",
+  "time": 13853,
   "publicPath": "/",
   "assetsByChunkName": {
     "app": [
@@ -13,8 +13,8 @@
       "static/css/app.662cfa90.css.map"
     ],
     "vendor": [
-      "static/js/vendor.fe00cbc6.js",
-      "static/js/vendor.fe00cbc6.js.map"
+      "static/js/vendor.2f484f59.js",
+      "static/js/vendor.2f484f59.js.map"
     ]
   },
   "assets": [
@@ -58,7 +58,7 @@
       "isOverSizeLimit": true
     },
     {
-      "name": "static/js/vendor.fe00cbc6.js",
+      "name": "static/js/vendor.2f484f59.js",
       "size": 199042,
       "chunks": [
         4
@@ -129,7 +129,7 @@
       "emitted": true
     },
     {
-      "name": "static/js/vendor.fe00cbc6.js.map",
+      "name": "static/js/vendor.2f484f59.js.map",
       "size": 1980719,
       "chunks": [
         4
@@ -141,7 +141,7 @@
     },
     {
       "name": "index.html",
-      "size": 3048,
+      "size": 3372,
       "chunks": [],
       "chunkNames": [],
       "emitted": true
@@ -160,8 +160,8 @@
         4
       ],
       "assets": [
-        "static/js/vendor.fe00cbc6.js",
-        "static/js/vendor.fe00cbc6.js.map"
+        "static/js/vendor.2f484f59.js",
+        "static/js/vendor.2f484f59.js.map"
       ]
     },
     "app": {
@@ -170,8 +170,8 @@
         3
       ],
       "assets": [
-        "static/js/vendor.fe00cbc6.js",
-        "static/js/vendor.fe00cbc6.js.map",
+        "static/js/vendor.2f484f59.js",
+        "static/js/vendor.2f484f59.js.map",
         "static/js/app.0fecfe79.js",
         "static/css/app.662cfa90.css",
         "static/js/app.0fecfe79.js.map",
@@ -308,8 +308,8 @@
         "vendor"
       ],
       "files": [
-        "static/js/vendor.fe00cbc6.js",
-        "static/js/vendor.fe00cbc6.js.map"
+        "static/js/vendor.2f484f59.js",
+        "static/js/vendor.2f484f59.js.map"
       ],
       "hash": "f40d6b0920ed425da214",
       "parents": [],
@@ -346,8 +346,8 @@
       "issuerId": 496,
       "issuerName": "multi ./config/polyfills.js react react-dom react-router react-router-dom react-loadable",
       "profile": {
-        "factory": 71,
-        "building": 260
+        "factory": 68,
+        "building": 297
       },
       "failed": false,
       "errors": 0,
@@ -1224,8 +1224,8 @@
       "issuerId": 358,
       "issuerName": "./~/material-ui/styles/MuiThemeProvider.js",
       "profile": {
-        "factory": 754,
-        "building": 484
+        "factory": 783,
+        "building": 461
       },
       "failed": false,
       "errors": 0,
@@ -1616,8 +1616,8 @@
       "issuerId": 358,
       "issuerName": "./~/material-ui/styles/MuiThemeProvider.js",
       "profile": {
-        "factory": 754,
-        "building": 484
+        "factory": 783,
+        "building": 462
       },
       "failed": false,
       "errors": 0,
@@ -1995,12 +1995,12 @@
         4
       ],
       "assets": [],
-      "issuer": "/home/sdt/www/sylvaindethier.github.io/node_modules/react/lib/ReactComponent.js",
-      "issuerId": 126,
-      "issuerName": "./~/react/lib/ReactComponent.js",
+      "issuer": "/home/sdt/www/sylvaindethier.github.io/node_modules/react/lib/ReactClass.js",
+      "issuerId": 476,
+      "issuerName": "./~/react/lib/ReactClass.js",
       "profile": {
-        "factory": 207,
-        "building": 257
+        "factory": 194,
+        "building": 251
       },
       "failed": false,
       "errors": 0,
@@ -2382,8 +2382,8 @@
       "issuerId": 358,
       "issuerName": "./~/material-ui/styles/MuiThemeProvider.js",
       "profile": {
-        "factory": 755,
-        "building": 485
+        "factory": 784,
+        "building": 463
       },
       "failed": false,
       "errors": 0,
@@ -2756,9 +2756,9 @@
       "issuerId": 358,
       "issuerName": "./~/material-ui/styles/MuiThemeProvider.js",
       "profile": {
-        "factory": 755,
-        "building": 484,
-        "dependencies": 1
+        "factory": 784,
+        "building": 463,
+        "dependencies": 0
       },
       "failed": false,
       "errors": 0,
@@ -3131,9 +3131,9 @@
       "issuerId": 358,
       "issuerName": "./~/material-ui/styles/MuiThemeProvider.js",
       "profile": {
-        "factory": 754,
-        "building": 485,
-        "dependencies": 0
+        "factory": 784,
+        "building": 461,
+        "dependencies": 1
       },
       "failed": false,
       "errors": 0,
@@ -3506,8 +3506,8 @@
       "issuerId": 326,
       "issuerName": "./~/material-ui/Drawer/Drawer.js",
       "profile": {
-        "factory": 285,
-        "building": 116
+        "factory": 278,
+        "building": 114
       },
       "failed": false,
       "errors": 0,
@@ -3844,8 +3844,8 @@
       "issuerId": 38,
       "issuerName": "./~/react/lib/React.js",
       "profile": {
-        "factory": 692,
-        "building": 286,
+        "factory": 562,
+        "building": 195,
         "dependencies": 0
       },
       "failed": false,
@@ -4170,12 +4170,12 @@
         3
       ],
       "assets": [],
-      "issuer": "/home/sdt/www/sylvaindethier.github.io/node_modules/material-ui/Menu/Menu.js",
-      "issuerId": 102,
-      "issuerName": "./~/material-ui/Menu/Menu.js",
+      "issuer": "/home/sdt/www/sylvaindethier.github.io/node_modules/material-ui/AppBar/AppBar.js",
+      "issuerId": 316,
+      "issuerName": "./~/material-ui/AppBar/AppBar.js",
       "profile": {
-        "factory": 78,
-        "building": 135
+        "factory": 95,
+        "building": 127
       },
       "failed": false,
       "errors": 0,
@@ -4476,8 +4476,8 @@
       "issuerId": 13,
       "issuerName": "./~/react-dom/lib/ReactDOMComponentTree.js",
       "profile": {
-        "factory": 108,
-        "building": 256
+        "factory": 101,
+        "building": 251
       },
       "failed": false,
       "errors": 0,
@@ -4765,12 +4765,12 @@
         3
       ],
       "assets": [],
-      "issuer": "/home/sdt/www/sylvaindethier.github.io/node_modules/material-ui/Menu/Menu.js",
-      "issuerId": 102,
-      "issuerName": "./~/material-ui/Menu/Menu.js",
+      "issuer": "/home/sdt/www/sylvaindethier.github.io/node_modules/material-ui/AppBar/AppBar.js",
+      "issuerId": 316,
+      "issuerName": "./~/material-ui/AppBar/AppBar.js",
       "profile": {
-        "factory": 77,
-        "building": 134
+        "factory": 94,
+        "building": 128
       },
       "failed": false,
       "errors": 0,
@@ -5054,7 +5054,7 @@
       "issuerName": "./config/polyfills.js",
       "profile": {
         "factory": 341,
-        "building": 1043
+        "building": 700
       },
       "failed": false,
       "errors": 0,
@@ -5301,9 +5301,9 @@
       "issuerId": 392,
       "issuerName": "./~/react-dom/lib/ReactDOM.js",
       "profile": {
-        "factory": 337,
-        "building": 281,
-        "dependencies": 110
+        "factory": 203,
+        "building": 236,
+        "dependencies": 103
       },
       "failed": false,
       "errors": 0,
@@ -5514,8 +5514,8 @@
       "issuerId": 496,
       "issuerName": "multi ./config/polyfills.js react react-dom react-router react-router-dom react-loadable",
       "profile": {
-        "factory": 76,
-        "building": 282
+        "factory": 73,
+        "building": 302
       },
       "failed": false,
       "errors": 0,
@@ -5718,8 +5718,8 @@
       "issuerId": 326,
       "issuerName": "./~/material-ui/Drawer/Drawer.js",
       "profile": {
-        "factory": 100,
-        "building": 123
+        "factory": 98,
+        "building": 124
       },
       "failed": false,
       "errors": 0,
@@ -5894,8 +5894,8 @@
       "issuerId": 496,
       "issuerName": "multi ./config/polyfills.js react react-dom react-router react-router-dom react-loadable",
       "profile": {
-        "factory": 72,
-        "building": 262
+        "factory": 69,
+        "building": 298
       },
       "failed": false,
       "errors": 0,
@@ -6048,12 +6048,12 @@
         4
       ],
       "assets": [],
-      "issuer": "/home/sdt/www/sylvaindethier.github.io/node_modules/react-dom/lib/BeforeInputEventPlugin.js",
-      "issuerId": 380,
-      "issuerName": "./~/react-dom/lib/BeforeInputEventPlugin.js",
+      "issuer": "/home/sdt/www/sylvaindethier.github.io/node_modules/react-dom/lib/ChangeEventPlugin.js",
+      "issuerId": 382,
+      "issuerName": "./~/react-dom/lib/ChangeEventPlugin.js",
       "profile": {
-        "factory": 116,
-        "building": 809
+        "factory": 123,
+        "building": 804
       },
       "failed": false,
       "errors": 0,
@@ -6210,8 +6210,8 @@
       "issuerId": 231,
       "issuerName": "./~/core-js/library/fn/object/get-prototype-of.js",
       "profile": {
-        "factory": 57,
-        "building": 37
+        "factory": 37,
+        "building": 57
       },
       "failed": false,
       "errors": 0,
@@ -6350,8 +6350,8 @@
       "issuerId": 475,
       "issuerName": "./~/react/lib/ReactChildren.js",
       "profile": {
-        "factory": 233,
-        "building": 258
+        "factory": 219,
+        "building": 252
       },
       "failed": false,
       "errors": 0,
@@ -6486,12 +6486,12 @@
         4
       ],
       "assets": [],
-      "issuer": "/home/sdt/www/sylvaindethier.github.io/node_modules/react-router/es/Route.js",
-      "issuerId": 187,
-      "issuerName": "./~/react-router/es/Route.js",
+      "issuer": "/home/sdt/www/sylvaindethier.github.io/node_modules/react-router/es/Router.js",
+      "issuerId": 124,
+      "issuerName": "./~/react-router/es/Router.js",
       "profile": {
-        "factory": 664,
-        "building": 282
+        "factory": 549,
+        "building": 194
       },
       "failed": false,
       "errors": 0,
@@ -6626,12 +6626,12 @@
         4
       ],
       "assets": [],
-      "issuer": "/home/sdt/www/sylvaindethier.github.io/node_modules/react-dom/lib/ReactReconciler.js",
-      "issuerId": 48,
-      "issuerName": "./~/react-dom/lib/ReactReconciler.js",
+      "issuer": "/home/sdt/www/sylvaindethier.github.io/node_modules/react-dom/lib/ReactMount.js",
+      "issuerId": 175,
+      "issuerName": "./~/react-dom/lib/ReactMount.js",
       "profile": {
-        "factory": 109,
-        "building": 301
+        "factory": 99,
+        "building": 305
       },
       "failed": false,
       "errors": 0,
@@ -6761,8 +6761,8 @@
       "issuerId": 270,
       "issuerName": "./~/core-js/library/modules/web.dom.iterable.js",
       "profile": {
-        "factory": 54,
-        "building": 53,
+        "factory": 53,
+        "building": 50,
         "dependencies": 0
       },
       "failed": false,
@@ -6884,9 +6884,9 @@
       "issuerId": 392,
       "issuerName": "./~/react-dom/lib/ReactDOM.js",
       "profile": {
-        "factory": 338,
-        "building": 306,
-        "dependencies": 93
+        "factory": 204,
+        "building": 260,
+        "dependencies": 86
       },
       "failed": false,
       "errors": 0,
@@ -7003,12 +7003,12 @@
         3
       ],
       "assets": [],
-      "issuer": "/home/sdt/www/sylvaindethier.github.io/node_modules/inline-style-prefixer/lib/plugins/calc.js",
-      "issuerId": 289,
-      "issuerName": "./~/inline-style-prefixer/lib/plugins/calc.js",
+      "issuer": "/home/sdt/www/sylvaindethier.github.io/node_modules/inline-style-prefixer/lib/plugins/position.js",
+      "issuerId": 295,
+      "issuerName": "./~/inline-style-prefixer/lib/plugins/position.js",
       "profile": {
-        "factory": 51,
-        "building": 57
+        "factory": 49,
+        "building": 56
       },
       "failed": false,
       "errors": 0,
@@ -7120,9 +7120,9 @@
       "issuerId": 326,
       "issuerName": "./~/material-ui/Drawer/Drawer.js",
       "profile": {
-        "factory": 101,
-        "building": 130,
-        "dependencies": 0
+        "factory": 99,
+        "building": 123,
+        "dependencies": 1
       },
       "failed": false,
       "errors": 0,
@@ -7234,8 +7234,8 @@
       "issuerId": 382,
       "issuerName": "./~/react-dom/lib/ChangeEventPlugin.js",
       "profile": {
-        "factory": 113,
-        "building": 815,
+        "factory": 121,
+        "building": 803,
         "dependencies": 1
       },
       "failed": false,
@@ -7348,8 +7348,8 @@
       "issuerId": 50,
       "issuerName": "./~/react/lib/ReactElement.js",
       "profile": {
-        "factory": 143,
-        "building": 257
+        "factory": 159,
+        "building": 251
       },
       "failed": false,
       "errors": 0,
@@ -7457,12 +7457,12 @@
         3
       ],
       "assets": [],
-      "issuer": "/home/sdt/www/sylvaindethier.github.io/node_modules/babel-loader/lib/index.js!/home/sdt/www/sylvaindethier.github.io/node_modules/react-icons/md/home.js",
-      "issuerId": 219,
-      "issuerName": "./~/react-icons/md/home.js",
+      "issuer": "/home/sdt/www/sylvaindethier.github.io/node_modules/babel-loader/lib/index.js!/home/sdt/www/sylvaindethier.github.io/node_modules/react-icons/md/info.js",
+      "issuerId": 220,
+      "issuerName": "./~/react-icons/md/info.js",
       "profile": {
-        "factory": 644,
-        "building": 220,
+        "factory": 627,
+        "building": 214,
         "dependencies": 5
       },
       "failed": false,
@@ -7589,12 +7589,12 @@
         3
       ],
       "assets": [],
-      "issuer": "/home/sdt/www/sylvaindethier.github.io/node_modules/core-js/library/modules/es6.object.set-prototype-of.js",
-      "issuerId": 265,
-      "issuerName": "./~/core-js/library/modules/es6.object.set-prototype-of.js",
+      "issuer": "/home/sdt/www/sylvaindethier.github.io/node_modules/core-js/library/modules/es6.object.define-property.js",
+      "issuerId": 262,
+      "issuerName": "./~/core-js/library/modules/es6.object.define-property.js",
       "profile": {
-        "factory": 40,
-        "building": 60,
+        "factory": 38,
+        "building": 58,
         "dependencies": 0
       },
       "failed": false,
@@ -7698,8 +7698,8 @@
       "issuerId": 270,
       "issuerName": "./~/core-js/library/modules/web.dom.iterable.js",
       "profile": {
-        "factory": 53,
-        "building": 54
+        "factory": 52,
+        "building": 49
       },
       "failed": false,
       "errors": 0,
@@ -7802,9 +7802,9 @@
       "issuerId": 262,
       "issuerName": "./~/core-js/library/modules/es6.object.define-property.js",
       "profile": {
-        "factory": 40,
-        "building": 61,
-        "dependencies": 1
+        "factory": 39,
+        "building": 58,
+        "dependencies": 0
       },
       "failed": false,
       "errors": 0,
@@ -7908,7 +7908,7 @@
       "issuerName": "./~/core-js/library/modules/es6.object.define-property.js",
       "profile": {
         "factory": 39,
-        "building": 62,
+        "building": 58,
         "dependencies": 0
       },
       "failed": false,
@@ -8003,8 +8003,8 @@
       "issuerId": 267,
       "issuerName": "./~/core-js/library/modules/es6.symbol.js",
       "profile": {
-        "factory": 39,
-        "building": 49
+        "factory": 15,
+        "building": 62
       },
       "failed": false,
       "errors": 0,
@@ -8098,9 +8098,9 @@
       "issuerId": 267,
       "issuerName": "./~/core-js/library/modules/es6.symbol.js",
       "profile": {
-        "factory": 41,
-        "building": 51,
-        "dependencies": 5
+        "factory": 18,
+        "building": 63,
+        "dependencies": 6
       },
       "failed": false,
       "errors": 0,
@@ -8194,8 +8194,8 @@
       "issuerId": 326,
       "issuerName": "./~/material-ui/Drawer/Drawer.js",
       "profile": {
-        "factory": 152,
-        "building": 200
+        "factory": 150,
+        "building": 194
       },
       "failed": false,
       "errors": 0,
@@ -8285,12 +8285,12 @@
         3
       ],
       "assets": [],
-      "issuer": "/home/sdt/www/sylvaindethier.github.io/node_modules/material-ui/svg-icons/navigation/check.js",
-      "issuerId": 366,
-      "issuerName": "./~/material-ui/svg-icons/navigation/check.js",
+      "issuer": "/home/sdt/www/sylvaindethier.github.io/node_modules/material-ui/svg-icons/navigation/menu.js",
+      "issuerId": 369,
+      "issuerName": "./~/material-ui/svg-icons/navigation/menu.js",
       "profile": {
-        "factory": 63,
-        "building": 70
+        "factory": 62,
+        "building": 88
       },
       "failed": false,
       "errors": 0,
@@ -8384,8 +8384,8 @@
       "issuerId": 23,
       "issuerName": "./~/react-dom/lib/ReactUpdates.js",
       "profile": {
-        "factory": 92,
-        "building": 311,
+        "factory": 85,
+        "building": 317,
         "dependencies": 0
       },
       "failed": false,
@@ -8480,9 +8480,9 @@
       "issuerId": 0,
       "issuerName": "./~/react/react.js",
       "profile": {
-        "factory": 79,
-        "building": 1040,
-        "dependencies": 369
+        "factory": 43,
+        "building": 716,
+        "dependencies": 286
       },
       "failed": false,
       "errors": 0,
@@ -8572,13 +8572,13 @@
         3
       ],
       "assets": [],
-      "issuer": "/home/sdt/www/sylvaindethier.github.io/node_modules/material-ui/svg-icons/navigation/check.js",
-      "issuerId": 366,
-      "issuerName": "./~/material-ui/svg-icons/navigation/check.js",
+      "issuer": "/home/sdt/www/sylvaindethier.github.io/node_modules/material-ui/svg-icons/navigation/menu.js",
+      "issuerId": 369,
+      "issuerName": "./~/material-ui/svg-icons/navigation/menu.js",
       "profile": {
-        "factory": 19,
+        "factory": 36,
         "building": 83,
-        "dependencies": 2
+        "dependencies": 0
       },
       "failed": false,
       "errors": 0,
@@ -8672,8 +8672,8 @@
       "issuerId": 267,
       "issuerName": "./~/core-js/library/modules/es6.symbol.js",
       "profile": {
-        "factory": 41,
-        "building": 51,
+        "factory": 17,
+        "building": 64,
         "dependencies": 0
       },
       "failed": false,
@@ -8759,8 +8759,8 @@
       "issuerId": 267,
       "issuerName": "./~/core-js/library/modules/es6.symbol.js",
       "profile": {
-        "factory": 40,
-        "building": 49
+        "factory": 16,
+        "building": 62
       },
       "failed": false,
       "errors": 0,
@@ -8846,7 +8846,7 @@
       "issuerName": "./~/core-js/library/modules/web.dom.iterable.js",
       "profile": {
         "factory": 53,
-        "building": 54,
+        "building": 50,
         "dependencies": 0
       },
       "failed": false,
@@ -8932,8 +8932,9 @@
       "issuerId": 264,
       "issuerName": "./~/core-js/library/modules/es6.object.keys.js",
       "profile": {
-        "factory": 39,
-        "building": 61
+        "factory": 38,
+        "building": 60,
+        "dependencies": 30
       },
       "failed": false,
       "errors": 0,
@@ -9018,9 +9019,9 @@
       "issuerId": 175,
       "issuerName": "./~/react-dom/lib/ReactMount.js",
       "profile": {
-        "factory": 98,
-        "building": 303,
-        "dependencies": 67
+        "factory": 97,
+        "building": 300,
+        "dependencies": 75
       },
       "failed": false,
       "errors": 0,
@@ -9105,8 +9106,8 @@
       "issuerId": 13,
       "issuerName": "./~/react-dom/lib/ReactDOMComponentTree.js",
       "profile": {
-        "factory": 108,
-        "building": 257,
+        "factory": 101,
+        "building": 253,
         "dependencies": 0
       },
       "failed": false,
@@ -9192,9 +9193,9 @@
       "issuerId": 382,
       "issuerName": "./~/react-dom/lib/ChangeEventPlugin.js",
       "profile": {
-        "factory": 112,
-        "building": 812,
-        "dependencies": 111
+        "factory": 120,
+        "building": 798,
+        "dependencies": 0
       },
       "failed": false,
       "errors": 0,
@@ -9275,13 +9276,13 @@
         4
       ],
       "assets": [],
-      "issuer": "/home/sdt/www/sylvaindethier.github.io/node_modules/react-dom/lib/BeforeInputEventPlugin.js",
-      "issuerId": 380,
-      "issuerName": "./~/react-dom/lib/BeforeInputEventPlugin.js",
+      "issuer": "/home/sdt/www/sylvaindethier.github.io/node_modules/react-dom/lib/ChangeEventPlugin.js",
+      "issuerId": 382,
+      "issuerName": "./~/react-dom/lib/ChangeEventPlugin.js",
       "profile": {
-        "factory": 114,
-        "building": 805,
-        "dependencies": 0
+        "factory": 121,
+        "building": 798,
+        "dependencies": 114
       },
       "failed": false,
       "errors": 0,
@@ -9366,9 +9367,9 @@
       "issuerId": 392,
       "issuerName": "./~/react-dom/lib/ReactDOM.js",
       "profile": {
-        "factory": 338,
-        "building": 286,
-        "dependencies": 54
+        "factory": 204,
+        "building": 255,
+        "dependencies": 89
       },
       "failed": false,
       "errors": 0,
@@ -9453,8 +9454,8 @@
       "issuerId": 421,
       "issuerName": "./~/react-dom/lib/SimpleEventPlugin.js",
       "profile": {
-        "factory": 85,
-        "building": 862,
+        "factory": 56,
+        "building": 871,
         "dependencies": 0
       },
       "failed": false,
@@ -9540,9 +9541,9 @@
       "issuerId": 38,
       "issuerName": "./~/react/lib/React.js",
       "profile": {
-        "factory": 351,
-        "building": 245,
-        "dependencies": 141
+        "factory": 271,
+        "building": 177,
+        "dependencies": 159
       },
       "failed": false,
       "errors": 0,
@@ -9623,12 +9624,12 @@
         4
       ],
       "assets": [],
-      "issuer": "/home/sdt/www/sylvaindethier.github.io/node_modules/react/lib/ReactComponent.js",
-      "issuerId": 126,
-      "issuerName": "./~/react/lib/ReactComponent.js",
+      "issuer": "/home/sdt/www/sylvaindethier.github.io/node_modules/react/lib/ReactClass.js",
+      "issuerId": 476,
+      "issuerName": "./~/react/lib/ReactClass.js",
       "profile": {
-        "factory": 206,
-        "building": 258
+        "factory": 191,
+        "building": 253
       },
       "failed": false,
       "errors": 0,
@@ -9713,8 +9714,8 @@
       "issuerId": 102,
       "issuerName": "./~/material-ui/Menu/Menu.js",
       "profile": {
-        "factory": 79,
-        "building": 134,
+        "factory": 73,
+        "building": 128,
         "dependencies": 60
       },
       "failed": false,
@@ -9800,8 +9801,8 @@
       "issuerId": 254,
       "issuerName": "./~/core-js/library/modules/_set-proto.js",
       "profile": {
-        "factory": 36,
-        "building": 16
+        "factory": 28,
+        "building": 17
       },
       "failed": false,
       "errors": 0,
@@ -9878,7 +9879,7 @@
       "issuerName": "./~/core-js/library/modules/web.dom.iterable.js",
       "profile": {
         "factory": 53,
-        "building": 55
+        "building": 50
       },
       "failed": false,
       "errors": 0,
@@ -9954,8 +9955,8 @@
       "issuerId": 267,
       "issuerName": "./~/core-js/library/modules/es6.symbol.js",
       "profile": {
-        "factory": 42,
-        "building": 50
+        "factory": 35,
+        "building": 48
       },
       "failed": false,
       "errors": 0,
@@ -10031,8 +10032,8 @@
       "issuerId": 263,
       "issuerName": "./~/core-js/library/modules/es6.object.get-prototype-of.js",
       "profile": {
-        "factory": 39,
-        "building": 58
+        "factory": 41,
+        "building": 56
       },
       "failed": false,
       "errors": 0,
@@ -10108,8 +10109,8 @@
       "issuerId": 480,
       "issuerName": "./~/react/lib/ReactPureComponent.js",
       "profile": {
-        "factory": 217,
-        "building": 257
+        "factory": 208,
+        "building": 252
       },
       "failed": false,
       "errors": 0,
@@ -10185,8 +10186,8 @@
       "issuerId": 465,
       "issuerName": "./~/react-router/es/StaticRouter.js",
       "profile": {
-        "factory": 600,
-        "building": 133
+        "factory": 475,
+        "building": 153
       },
       "failed": false,
       "errors": 0,
@@ -10262,8 +10263,8 @@
       "issuerId": 208,
       "issuerName": "./src/App/Footer.js",
       "profile": {
-        "factory": 185,
-        "building": 620
+        "factory": 171,
+        "building": 644
       },
       "failed": false,
       "errors": 0,
@@ -10339,8 +10340,8 @@
       "issuerId": 212,
       "issuerName": "./src/App/muiTheme.js",
       "profile": {
-        "factory": 671,
-        "building": 55
+        "factory": 640,
+        "building": 58
       },
       "failed": false,
       "errors": 0,
@@ -10416,8 +10417,8 @@
       "issuerId": 175,
       "issuerName": "./~/react-dom/lib/ReactMount.js",
       "profile": {
-        "factory": 99,
-        "building": 304
+        "factory": 98,
+        "building": 305
       },
       "failed": false,
       "errors": 0,
@@ -10493,9 +10494,9 @@
       "issuerId": 496,
       "issuerName": "multi ./config/polyfills.js react react-dom react-router react-router-dom react-loadable",
       "profile": {
-        "factory": 77,
-        "building": 311,
-        "dependencies": 17
+        "factory": 74,
+        "building": 325,
+        "dependencies": 9
       },
       "failed": false,
       "errors": 0,
@@ -10562,8 +10563,8 @@
       "issuerId": 207,
       "issuerName": "./src/App/Bar.js",
       "profile": {
-        "factory": 409,
-        "building": 103
+        "factory": 382,
+        "building": 228
       },
       "failed": false,
       "errors": 0,
@@ -10648,8 +10649,8 @@
       "issuerId": 370,
       "issuerName": "./~/material-ui/utils/autoprefixer.js",
       "profile": {
-        "factory": 419,
-        "building": 111
+        "factory": 393,
+        "building": 113
       },
       "failed": false,
       "errors": 0,
@@ -10716,8 +10717,8 @@
       "issuerId": 267,
       "issuerName": "./~/core-js/library/modules/es6.symbol.js",
       "profile": {
-        "factory": 43,
-        "building": 51
+        "factory": 36,
+        "building": 49
       },
       "failed": false,
       "errors": 0,
@@ -10784,8 +10785,8 @@
       "issuerId": 267,
       "issuerName": "./~/core-js/library/modules/es6.symbol.js",
       "profile": {
-        "factory": 40,
-        "building": 50
+        "factory": 16,
+        "building": 63
       },
       "failed": false,
       "errors": 0,
@@ -10852,8 +10853,8 @@
       "issuerId": 393,
       "issuerName": "./~/react-dom/lib/ReactDOMComponent.js",
       "profile": {
-        "factory": 98,
-        "building": 856
+        "factory": 104,
+        "building": 845
       },
       "failed": false,
       "errors": 0,
@@ -10916,12 +10917,12 @@
         3
       ],
       "assets": [],
-      "issuer": "/home/sdt/www/sylvaindethier.github.io/node_modules/inline-style-prefixer/lib/static/plugins/calc.js",
-      "issuerId": 300,
-      "issuerName": "./~/inline-style-prefixer/lib/static/plugins/calc.js",
+      "issuer": "/home/sdt/www/sylvaindethier.github.io/node_modules/inline-style-prefixer/lib/static/plugins/cursor.js",
+      "issuerId": 301,
+      "issuerName": "./~/inline-style-prefixer/lib/static/plugins/cursor.js",
       "profile": {
-        "factory": 30,
-        "building": 67
+        "factory": 28,
+        "building": 62
       },
       "failed": false,
       "errors": 0,
@@ -10988,8 +10989,8 @@
       "issuerId": 124,
       "issuerName": "./~/react-router/es/Router.js",
       "profile": {
-        "factory": 658,
-        "building": 281
+        "factory": 551,
+        "building": 193
       },
       "failed": false,
       "errors": 0,
@@ -11056,8 +11057,8 @@
       "issuerId": 326,
       "issuerName": "./~/material-ui/Drawer/Drawer.js",
       "profile": {
-        "factory": 287,
-        "building": 115
+        "factory": 276,
+        "building": 117
       },
       "failed": false,
       "errors": 0,
@@ -11124,8 +11125,8 @@
       "issuerId": 326,
       "issuerName": "./~/material-ui/Drawer/Drawer.js",
       "profile": {
-        "factory": 99,
-        "building": 124
+        "factory": 97,
+        "building": 125
       },
       "failed": false,
       "errors": 0,
@@ -11192,9 +11193,9 @@
       "issuerId": 162,
       "issuerName": "./~/material-ui/styles/getMuiTheme.js",
       "profile": {
-        "factory": 615,
-        "building": 135,
-        "dependencies": 365
+        "factory": 639,
+        "building": 142,
+        "dependencies": 341
       },
       "failed": false,
       "errors": 0,
@@ -11261,8 +11262,8 @@
       "issuerId": 389,
       "issuerName": "./~/react-dom/lib/ReactChildReconciler.js",
       "profile": {
-        "factory": 525,
-        "building": 162
+        "factory": 510,
+        "building": 157
       },
       "failed": false,
       "errors": 0,
@@ -11329,9 +11330,9 @@
       "issuerId": 409,
       "issuerName": "./~/react-dom/lib/ReactInjection.js",
       "profile": {
-        "factory": 89,
-        "building": 858,
-        "dependencies": 58
+        "factory": 90,
+        "building": 847,
+        "dependencies": 45
       },
       "failed": false,
       "errors": 0,
@@ -11398,9 +11399,9 @@
       "issuerId": 175,
       "issuerName": "./~/react-dom/lib/ReactMount.js",
       "profile": {
-        "factory": 98,
-        "building": 301,
-        "dependencies": 70
+        "factory": 97,
+        "building": 298,
+        "dependencies": 78
       },
       "failed": false,
       "errors": 0,
@@ -11467,8 +11468,8 @@
       "issuerId": 385,
       "issuerName": "./~/react-dom/lib/EnterLeaveEventPlugin.js",
       "profile": {
-        "factory": 112,
-        "building": 816,
+        "factory": 119,
+        "building": 805,
         "dependencies": 0
       },
       "failed": false,
@@ -11536,8 +11537,8 @@
       "issuerId": 23,
       "issuerName": "./~/react-dom/lib/ReactUpdates.js",
       "profile": {
-        "factory": 93,
-        "building": 311,
+        "factory": 86,
+        "building": 314,
         "dependencies": 1
       },
       "failed": false,
@@ -11605,8 +11606,8 @@
       "issuerId": 393,
       "issuerName": "./~/react-dom/lib/ReactDOMComponent.js",
       "profile": {
-        "factory": 96,
-        "building": 854
+        "factory": 102,
+        "building": 844
       },
       "failed": false,
       "errors": 0,
@@ -11673,9 +11674,9 @@
       "issuerId": 175,
       "issuerName": "./~/react-dom/lib/ReactMount.js",
       "profile": {
-        "factory": 100,
-        "building": 306,
-        "dependencies": 87
+        "factory": 99,
+        "building": 309,
+        "dependencies": 72
       },
       "failed": false,
       "errors": 0,
@@ -11742,8 +11743,8 @@
       "issuerId": 207,
       "issuerName": "./src/App/Bar.js",
       "profile": {
-        "factory": 410,
-        "building": 281,
+        "factory": 384,
+        "building": 324,
         "dependencies": 0
       },
       "failed": false,
@@ -11811,8 +11812,8 @@
       "issuerId": 207,
       "issuerName": "./src/App/Bar.js",
       "profile": {
-        "factory": 409,
-        "building": 278
+        "factory": 383,
+        "building": 177
       },
       "failed": false,
       "errors": 0,
@@ -11870,9 +11871,9 @@
       "issuerId": 215,
       "issuerName": "./src/pages/async/About.js",
       "profile": {
-        "factory": 133,
-        "building": 232,
-        "dependencies": 1
+        "factory": 160,
+        "building": 227,
+        "dependencies": 0
       },
       "failed": false,
       "errors": 0,
@@ -11930,8 +11931,8 @@
       "issuerId": 373,
       "issuerName": "./~/material-ui/utils/rtl.js",
       "profile": {
-        "factory": 397,
-        "building": 112
+        "factory": 389,
+        "building": 111
       },
       "failed": false,
       "errors": 0,
@@ -11990,7 +11991,7 @@
       "issuerName": "./~/core-js/library/modules/_is-array.js",
       "profile": {
         "factory": 7,
-        "building": 24
+        "building": 23
       },
       "failed": false,
       "errors": 0,
@@ -12048,8 +12049,8 @@
       "issuerId": 258,
       "issuerName": "./~/core-js/library/modules/es6.array.from.js",
       "profile": {
-        "factory": 37,
-        "building": 68
+        "factory": 36,
+        "building": 65
       },
       "failed": false,
       "errors": 0,
@@ -12107,8 +12108,8 @@
       "issuerId": 56,
       "issuerName": "./~/core-js/library/modules/_to-object.js",
       "profile": {
-        "factory": 40,
-        "building": 15
+        "factory": 35,
+        "building": 17
       },
       "failed": false,
       "errors": 0,
@@ -12162,12 +12163,12 @@
         3
       ],
       "assets": [],
-      "issuer": "/home/sdt/www/sylvaindethier.github.io/node_modules/core-js/library/modules/_object-keys.js",
-      "issuerId": 43,
-      "issuerName": "./~/core-js/library/modules/_object-keys.js",
+      "issuer": "/home/sdt/www/sylvaindethier.github.io/node_modules/core-js/library/modules/_object-create.js",
+      "issuerId": 89,
+      "issuerName": "./~/core-js/library/modules/_object-create.js",
       "profile": {
-        "factory": 37,
-        "building": 32
+        "factory": 31,
+        "building": 17
       },
       "failed": false,
       "errors": 0,
@@ -12225,8 +12226,8 @@
       "issuerId": 267,
       "issuerName": "./~/core-js/library/modules/es6.symbol.js",
       "profile": {
-        "factory": 43,
-        "building": 52
+        "factory": 36,
+        "building": 49
       },
       "failed": false,
       "errors": 0,
@@ -12284,9 +12285,9 @@
       "issuerId": 261,
       "issuerName": "./~/core-js/library/modules/es6.object.create.js",
       "profile": {
-        "factory": 39,
-        "building": 62,
-        "dependencies": 35
+        "factory": 38,
+        "building": 59,
+        "dependencies": 31
       },
       "failed": false,
       "errors": 0,
@@ -12344,8 +12345,8 @@
       "issuerId": 267,
       "issuerName": "./~/core-js/library/modules/es6.symbol.js",
       "profile": {
-        "factory": 43,
-        "building": 51
+        "factory": 36,
+        "building": 49
       },
       "failed": false,
       "errors": 0,
@@ -12403,9 +12404,9 @@
       "issuerId": 267,
       "issuerName": "./~/core-js/library/modules/es6.symbol.js",
       "profile": {
-        "factory": 40,
-        "building": 49,
-        "dependencies": 1
+        "factory": 16,
+        "building": 63,
+        "dependencies": 0
       },
       "failed": false,
       "errors": 0,
@@ -12463,7 +12464,7 @@
       "issuerId": 144,
       "issuerName": "./~/core-js/library/modules/_object-gpo.js",
       "profile": {
-        "factory": 39,
+        "factory": 36,
         "building": 16,
         "dependencies": 0
       },
@@ -12523,8 +12524,8 @@
       "issuerId": 267,
       "issuerName": "./~/core-js/library/modules/es6.symbol.js",
       "profile": {
-        "factory": 40,
-        "building": 49,
+        "factory": 16,
+        "building": 62,
         "dependencies": 0
       },
       "failed": false,
@@ -12583,8 +12584,8 @@
       "issuerId": 255,
       "issuerName": "./~/core-js/library/modules/_string-at.js",
       "profile": {
-        "factory": 33,
-        "building": 33
+        "factory": 29,
+        "building": 17
       },
       "failed": false,
       "errors": 0,
@@ -12642,8 +12643,8 @@
       "issuerId": 267,
       "issuerName": "./~/core-js/library/modules/es6.symbol.js",
       "profile": {
-        "factory": 42,
-        "building": 51,
+        "factory": 18,
+        "building": 64,
         "dependencies": 0
       },
       "failed": false,
@@ -12702,8 +12703,8 @@
       "issuerId": 267,
       "issuerName": "./~/core-js/library/modules/es6.symbol.js",
       "profile": {
-        "factory": 40,
-        "building": 50,
+        "factory": 17,
+        "building": 62,
         "dependencies": 0
       },
       "failed": false,
@@ -12762,9 +12763,9 @@
       "issuerId": 235,
       "issuerName": "./~/core-js/library/fn/symbol/iterator.js",
       "profile": {
-        "factory": 56,
-        "building": 44,
-        "dependencies": 53
+        "factory": 58,
+        "building": 39,
+        "dependencies": 52
       },
       "failed": false,
       "errors": 0,
@@ -12818,13 +12819,13 @@
         4
       ],
       "assets": [],
-      "issuer": "/home/sdt/www/sylvaindethier.github.io/node_modules/history/createBrowserHistory.js",
-      "issuerId": 154,
-      "issuerName": "./~/history/createBrowserHistory.js",
+      "issuer": "/home/sdt/www/sylvaindethier.github.io/node_modules/history/createMemoryHistory.js",
+      "issuerId": 287,
+      "issuerName": "./~/history/createMemoryHistory.js",
       "profile": {
-        "factory": 270,
-        "building": 219,
-        "dependencies": 1
+        "factory": 205,
+        "building": 309,
+        "dependencies": 0
       },
       "failed": false,
       "errors": 0,
@@ -12878,12 +12879,12 @@
         4
       ],
       "assets": [],
-      "issuer": "/home/sdt/www/sylvaindethier.github.io/node_modules/history/createBrowserHistory.js",
-      "issuerId": 154,
-      "issuerName": "./~/history/createBrowserHistory.js",
+      "issuer": "/home/sdt/www/sylvaindethier.github.io/node_modules/history/createMemoryHistory.js",
+      "issuerId": 287,
+      "issuerName": "./~/history/createMemoryHistory.js",
       "profile": {
-        "factory": 270,
-        "building": 221,
+        "factory": 206,
+        "building": 310,
         "dependencies": 0
       },
       "failed": false,
@@ -12942,8 +12943,8 @@
       "issuerId": 288,
       "issuerName": "./~/inline-style-prefixer/lib/Prefixer.js",
       "profile": {
-        "factory": 66,
-        "building": 58
+        "factory": 67,
+        "building": 56
       },
       "failed": false,
       "errors": 0,
@@ -13001,8 +13002,8 @@
       "issuerId": 300,
       "issuerName": "./~/inline-style-prefixer/lib/static/plugins/calc.js",
       "profile": {
-        "factory": 31,
-        "building": 66
+        "factory": 28,
+        "building": 62
       },
       "failed": false,
       "errors": 0,
@@ -13060,9 +13061,9 @@
       "issuerId": 337,
       "issuerName": "./~/material-ui/Menu/index.js",
       "profile": {
-        "factory": 18,
-        "building": 522,
-        "dependencies": 262
+        "factory": 29,
+        "building": 510,
+        "dependencies": 249
       },
       "failed": false,
       "errors": 0,
@@ -13120,8 +13121,8 @@
       "issuerId": 207,
       "issuerName": "./src/App/Bar.js",
       "profile": {
-        "factory": 447,
-        "building": 614
+        "factory": 423,
+        "building": 630
       },
       "failed": false,
       "errors": 0,
@@ -13179,9 +13180,9 @@
       "issuerId": 332,
       "issuerName": "./~/material-ui/IconButton/IconButton.js",
       "profile": {
-        "factory": 96,
-        "building": 138,
-        "dependencies": 73
+        "factory": 95,
+        "building": 129,
+        "dependencies": 77
       },
       "failed": false,
       "errors": 0,
@@ -13239,8 +13240,8 @@
       "issuerId": 332,
       "issuerName": "./~/material-ui/IconButton/IconButton.js",
       "profile": {
-        "factory": 64,
-        "building": 131,
+        "factory": 65,
+        "building": 124,
         "dependencies": 0
       },
       "failed": false,
@@ -13299,8 +13300,8 @@
       "issuerId": 328,
       "issuerName": "./~/material-ui/DropDownMenu/DropDownMenu.js",
       "profile": {
-        "factory": 123,
-        "building": 60
+        "factory": 124,
+        "building": 61
       },
       "failed": false,
       "errors": 0,
@@ -13358,8 +13359,8 @@
       "issuerId": 215,
       "issuerName": "./src/pages/async/About.js",
       "profile": {
-        "factory": 470,
-        "building": 314,
+        "factory": 486,
+        "building": 306,
         "dependencies": 0
       },
       "failed": false,
@@ -13418,9 +13419,9 @@
       "issuerId": 390,
       "issuerName": "./~/react-dom/lib/ReactComponentBrowserEnvironment.js",
       "profile": {
-        "factory": 102,
-        "building": 820,
-        "dependencies": 1
+        "factory": 118,
+        "building": 809,
+        "dependencies": 0
       },
       "failed": false,
       "errors": 0,
@@ -13478,8 +13479,8 @@
       "issuerId": 393,
       "issuerName": "./~/react-dom/lib/ReactDOMComponent.js",
       "profile": {
-        "factory": 94,
-        "building": 825
+        "factory": 100,
+        "building": 814
       },
       "failed": false,
       "errors": 0,
@@ -13537,8 +13538,8 @@
       "issuerId": 393,
       "issuerName": "./~/react-dom/lib/ReactDOMComponent.js",
       "profile": {
-        "factory": 95,
-        "building": 830,
+        "factory": 101,
+        "building": 819,
         "dependencies": 0
       },
       "failed": false,
@@ -13597,8 +13598,8 @@
       "issuerId": 389,
       "issuerName": "./~/react-dom/lib/ReactChildReconciler.js",
       "profile": {
-        "factory": 36,
-        "building": 487
+        "factory": 34,
+        "building": 470
       },
       "failed": false,
       "errors": 0,
@@ -13652,12 +13653,12 @@
         4
       ],
       "assets": [],
-      "issuer": "/home/sdt/www/sylvaindethier.github.io/node_modules/react-dom/lib/ReactDOMSelect.js",
-      "issuerId": 170,
-      "issuerName": "./~/react-dom/lib/ReactDOMSelect.js",
+      "issuer": "/home/sdt/www/sylvaindethier.github.io/node_modules/react-dom/lib/ReactDOMInput.js",
+      "issuerId": 398,
+      "issuerName": "./~/react-dom/lib/ReactDOMInput.js",
       "profile": {
-        "factory": 88,
-        "building": 597,
+        "factory": 90,
+        "building": 621,
         "dependencies": 0
       },
       "failed": false,
@@ -13716,9 +13717,9 @@
       "issuerId": 409,
       "issuerName": "./~/react-dom/lib/ReactInjection.js",
       "profile": {
-        "factory": 89,
-        "building": 858,
-        "dependencies": 0
+        "factory": 90,
+        "building": 847,
+        "dependencies": 1
       },
       "failed": false,
       "errors": 0,
@@ -13776,8 +13777,8 @@
       "issuerId": 46,
       "issuerName": "./~/react-dom/lib/EventPluginHub.js",
       "profile": {
-        "factory": 111,
-        "building": 594
+        "factory": 104,
+        "building": 630
       },
       "failed": false,
       "errors": 0,
@@ -13836,7 +13837,7 @@
       "issuerName": "./~/react-dom/lib/ReactMount.js",
       "profile": {
         "factory": 99,
-        "building": 305,
+        "building": 307,
         "dependencies": 1
       },
       "failed": false,
@@ -13895,7 +13896,7 @@
       "issuerId": 75,
       "issuerName": "./~/react-dom/lib/ReactBrowserEventEmitter.js",
       "profile": {
-        "factory": 93,
+        "factory": 84,
         "building": 849
       },
       "failed": false,
@@ -13954,8 +13955,8 @@
       "issuerId": 44,
       "issuerName": "./~/react-dom/lib/DOMLazyTree.js",
       "profile": {
-        "factory": 91,
-        "building": 851
+        "factory": 83,
+        "building": 848
       },
       "failed": false,
       "errors": 0,
@@ -14013,8 +14014,8 @@
       "issuerId": 421,
       "issuerName": "./~/react-dom/lib/SimpleEventPlugin.js",
       "profile": {
-        "factory": 98,
-        "building": 850
+        "factory": 57,
+        "building": 871
       },
       "failed": false,
       "errors": 0,
@@ -14073,7 +14074,7 @@
       "issuerName": "./~/react-dom/lib/SyntheticMouseEvent.js",
       "profile": {
         "factory": 105,
-        "building": 596
+        "building": 619
       },
       "failed": false,
       "errors": 0,
@@ -14131,8 +14132,8 @@
       "issuerId": 382,
       "issuerName": "./~/react-dom/lib/ChangeEventPlugin.js",
       "profile": {
-        "factory": 113,
-        "building": 816
+        "factory": 121,
+        "building": 804
       },
       "failed": false,
       "errors": 0,
@@ -14190,9 +14191,9 @@
       "issuerId": 382,
       "issuerName": "./~/react-dom/lib/ChangeEventPlugin.js",
       "profile": {
-        "factory": 113,
-        "building": 816,
-        "dependencies": 0
+        "factory": 122,
+        "building": 803,
+        "dependencies": 1
       },
       "failed": false,
       "errors": 0,
@@ -14251,7 +14252,7 @@
       "issuerName": "./~/react-dom/lib/ReactMount.js",
       "profile": {
         "factory": 100,
-        "building": 309
+        "building": 311
       },
       "failed": false,
       "errors": 0,
@@ -14309,8 +14310,8 @@
       "issuerId": 393,
       "issuerName": "./~/react-dom/lib/ReactDOMComponent.js",
       "profile": {
-        "factory": 97,
-        "building": 856,
+        "factory": 103,
+        "building": 846,
         "dependencies": 0
       },
       "failed": false,
@@ -14369,9 +14370,9 @@
       "issuerId": 14,
       "issuerName": "./~/react-router/es/index.js",
       "profile": {
-        "factory": 55,
-        "building": 1084,
-        "dependencies": 657
+        "factory": 34,
+        "building": 730,
+        "dependencies": 272
       },
       "failed": false,
       "errors": 0,
@@ -14433,8 +14434,8 @@
       "issuerId": 14,
       "issuerName": "./~/react-router/es/index.js",
       "profile": {
-        "factory": 58,
-        "building": 1106
+        "factory": 36,
+        "building": 757
       },
       "failed": false,
       "errors": 0,
@@ -14496,9 +14497,9 @@
       "issuerId": 38,
       "issuerName": "./~/react/lib/React.js",
       "profile": {
-        "factory": 349,
-        "building": 182,
-        "dependencies": 206
+        "factory": 269,
+        "building": 163,
+        "dependencies": 176
       },
       "failed": false,
       "errors": 0,
@@ -14556,8 +14557,8 @@
       "issuerId": 389,
       "issuerName": "./~/react-dom/lib/ReactChildReconciler.js",
       "profile": {
-        "factory": 37,
-        "building": 492,
+        "factory": 35,
+        "building": 474,
         "dependencies": 0
       },
       "failed": false,
@@ -14616,8 +14617,8 @@
       "issuerId": 480,
       "issuerName": "./~/react/lib/ReactPureComponent.js",
       "profile": {
-        "factory": 216,
-        "building": 257,
+        "factory": 207,
+        "building": 250,
         "dependencies": 0
       },
       "failed": false,
@@ -14676,8 +14677,8 @@
       "issuerId": 205,
       "issuerName": "./~/asap/browser-raw.js",
       "profile": {
-        "factory": 1,
-        "building": 0
+        "factory": 0,
+        "building": 1
       },
       "failed": false,
       "errors": 0,
@@ -14740,12 +14741,12 @@
         3
       ],
       "assets": [],
-      "issuer": "/home/sdt/www/sylvaindethier.github.io/node_modules/babel-loader/lib/index.js!/home/sdt/www/sylvaindethier.github.io/node_modules/eslint-loader/index.js!/home/sdt/www/sylvaindethier.github.io/src/pages/NoMatch.js",
-      "issuerId": 214,
-      "issuerName": "./src/pages/NoMatch.js",
+      "issuer": "/home/sdt/www/sylvaindethier.github.io/node_modules/babel-loader/lib/index.js!/home/sdt/www/sylvaindethier.github.io/node_modules/eslint-loader/index.js!/home/sdt/www/sylvaindethier.github.io/src/pages/Home.js",
+      "issuerId": 213,
+      "issuerName": "./src/pages/Home.js",
       "profile": {
-        "factory": 339,
-        "building": 548
+        "factory": 342,
+        "building": 426
       },
       "failed": false,
       "errors": 0,
@@ -14821,9 +14822,9 @@
       "issuerId": 207,
       "issuerName": "./src/App/Bar.js",
       "profile": {
-        "factory": 885,
-        "building": 242,
-        "dependencies": 616
+        "factory": 718,
+        "building": 411,
+        "dependencies": 596
       },
       "failed": false,
       "errors": 0,
@@ -14881,9 +14882,9 @@
       "issuerId": 207,
       "issuerName": "./src/App/Bar.js",
       "profile": {
-        "factory": 886,
-        "building": 266,
-        "dependencies": 591
+        "factory": 719,
+        "building": 424,
+        "dependencies": 582
       },
       "failed": false,
       "errors": 0,
@@ -14941,8 +14942,8 @@
       "issuerId": 137,
       "issuerName": "./~/babel-runtime/helpers/toConsumableArray.js",
       "profile": {
-        "factory": 107,
-        "building": 169
+        "factory": 100,
+        "building": 170
       },
       "failed": false,
       "errors": 0,
@@ -14991,8 +14992,8 @@
       "issuerId": 11,
       "issuerName": "./~/babel-runtime/helpers/extends.js",
       "profile": {
-        "factory": 133,
-        "building": 64
+        "factory": 119,
+        "building": 60
       },
       "failed": false,
       "errors": 0,
@@ -15041,8 +15042,8 @@
       "issuerId": 2,
       "issuerName": "./~/babel-runtime/helpers/createClass.js",
       "profile": {
-        "factory": 50,
-        "building": 219
+        "factory": 49,
+        "building": 213
       },
       "failed": false,
       "errors": 0,
@@ -15091,8 +15092,8 @@
       "issuerId": 102,
       "issuerName": "./~/material-ui/Menu/Menu.js",
       "profile": {
-        "factory": 78,
-        "building": 135,
+        "factory": 73,
+        "building": 127,
         "dependencies": 0
       },
       "failed": false,
@@ -15142,8 +15143,8 @@
       "issuerId": 162,
       "issuerName": "./~/material-ui/styles/getMuiTheme.js",
       "profile": {
-        "factory": 747,
-        "building": 485
+        "factory": 776,
+        "building": 462
       },
       "failed": false,
       "errors": 0,
@@ -15192,8 +15193,8 @@
       "issuerId": 89,
       "issuerName": "./~/core-js/library/modules/_object-create.js",
       "profile": {
-        "factory": 35,
-        "building": 33,
+        "factory": 32,
+        "building": 16,
         "dependencies": 0
       },
       "failed": false,
@@ -15243,8 +15244,8 @@
       "issuerId": 31,
       "issuerName": "./~/core-js/library/modules/_object-dp.js",
       "profile": {
-        "factory": 36,
-        "building": 32,
+        "factory": 32,
+        "building": 17,
         "dependencies": 0
       },
       "failed": false,
@@ -15294,8 +15295,8 @@
       "issuerId": 251,
       "issuerName": "./~/core-js/library/modules/_object-assign.js",
       "profile": {
-        "factory": 14,
-        "building": 25,
+        "factory": 17,
+        "building": 23,
         "dependencies": 0
       },
       "failed": false,
@@ -15345,8 +15346,8 @@
       "issuerId": 149,
       "issuerName": "./~/core-js/library/modules/es6.string.iterator.js",
       "profile": {
-        "factory": 39,
-        "building": 67,
+        "factory": 38,
+        "building": 64,
         "dependencies": 0
       },
       "failed": false,
@@ -15396,8 +15397,8 @@
       "issuerId": 267,
       "issuerName": "./~/core-js/library/modules/es6.symbol.js",
       "profile": {
-        "factory": 42,
-        "building": 52,
+        "factory": 36,
+        "building": 48,
         "dependencies": 0
       },
       "failed": false,
@@ -15447,8 +15448,8 @@
       "issuerId": 267,
       "issuerName": "./~/core-js/library/modules/es6.symbol.js",
       "profile": {
-        "factory": 42,
-        "building": 52,
+        "factory": 36,
+        "building": 49,
         "dependencies": 0
       },
       "failed": false,
@@ -15498,8 +15499,8 @@
       "issuerId": 263,
       "issuerName": "./~/core-js/library/modules/es6.object.get-prototype-of.js",
       "profile": {
-        "factory": 39,
-        "building": 59,
+        "factory": 42,
+        "building": 55,
         "dependencies": 0
       },
       "failed": false,
@@ -15549,8 +15550,8 @@
       "issuerId": 43,
       "issuerName": "./~/core-js/library/modules/_object-keys.js",
       "profile": {
-        "factory": 37,
-        "building": 15,
+        "factory": 31,
+        "building": 17,
         "dependencies": 0
       },
       "failed": false,
@@ -15600,8 +15601,8 @@
       "issuerId": 263,
       "issuerName": "./~/core-js/library/modules/es6.object.get-prototype-of.js",
       "profile": {
-        "factory": 39,
-        "building": 60,
+        "factory": 42,
+        "building": 56,
         "dependencies": 0
       },
       "failed": false,
@@ -15651,8 +15652,8 @@
       "issuerId": 267,
       "issuerName": "./~/core-js/library/modules/es6.symbol.js",
       "profile": {
-        "factory": 39,
-        "building": 49,
+        "factory": 16,
+        "building": 61,
         "dependencies": 0
       },
       "failed": false,
@@ -15702,9 +15703,9 @@
       "issuerId": 258,
       "issuerName": "./~/core-js/library/modules/es6.array.from.js",
       "profile": {
-        "factory": 38,
-        "building": 69,
-        "dependencies": 28
+        "factory": 37,
+        "building": 66,
+        "dependencies": 23
       },
       "failed": false,
       "errors": 0,
@@ -15753,8 +15754,8 @@
       "issuerId": 227,
       "issuerName": "./~/core-js/library/fn/array/from.js",
       "profile": {
-        "factory": 54,
-        "building": 39
+        "factory": 34,
+        "building": 58
       },
       "failed": false,
       "errors": 0,
@@ -15803,8 +15804,8 @@
       "issuerId": 408,
       "issuerName": "./~/react-dom/lib/ReactEventListener.js",
       "profile": {
-        "factory": 89,
-        "building": 858,
+        "factory": 95,
+        "building": 846,
         "dependencies": 0
       },
       "failed": false,
@@ -15855,7 +15856,7 @@
       "issuerName": "./~/react-dom/lib/AutoFocusUtils.js",
       "profile": {
         "factory": 100,
-        "building": 595
+        "building": 620
       },
       "failed": false,
       "errors": 0,
@@ -15904,8 +15905,8 @@
       "issuerId": 420,
       "issuerName": "./~/react-dom/lib/SelectEventPlugin.js",
       "profile": {
-        "factory": 61,
-        "building": 868
+        "factory": 82,
+        "building": 849
       },
       "failed": false,
       "errors": 0,
@@ -15954,8 +15955,8 @@
       "issuerId": 154,
       "issuerName": "./~/history/createBrowserHistory.js",
       "profile": {
-        "factory": 271,
-        "building": 221
+        "factory": 200,
+        "building": 310
       },
       "failed": false,
       "errors": 0,
@@ -16004,9 +16005,9 @@
       "issuerId": 450,
       "issuerName": "./~/react-router-dom/es/BrowserRouter.js",
       "profile": {
-        "factory": 576,
-        "building": 127,
-        "dependencies": 350
+        "factory": 455,
+        "building": 154,
+        "dependencies": 325
       },
       "failed": false,
       "errors": 0,
@@ -16055,8 +16056,8 @@
       "issuerId": 297,
       "issuerName": "./~/inline-style-prefixer/lib/plugins/transition.js",
       "profile": {
-        "factory": 131,
-        "building": 54
+        "factory": 117,
+        "building": 60
       },
       "failed": false,
       "errors": 0,
@@ -16106,7 +16107,7 @@
       "issuerName": "./~/inline-style-prefixer/lib/static/prefixAll.js",
       "profile": {
         "factory": 54,
-        "building": 59
+        "building": 57
       },
       "failed": false,
       "errors": 0,
@@ -16155,8 +16156,8 @@
       "issuerId": 288,
       "issuerName": "./~/inline-style-prefixer/lib/Prefixer.js",
       "profile": {
-        "factory": 66,
-        "building": 59
+        "factory": 67,
+        "building": 58
       },
       "failed": false,
       "errors": 0,
@@ -16205,9 +16206,9 @@
       "issuerId": 130,
       "issuerName": "./~/material-ui/Card/index.js",
       "profile": {
-        "factory": 87,
-        "building": 196,
-        "dependencies": 38
+        "factory": 85,
+        "building": 188,
+        "dependencies": 39
       },
       "failed": false,
       "errors": 0,
@@ -16256,9 +16257,9 @@
       "issuerId": 102,
       "issuerName": "./~/material-ui/Menu/Menu.js",
       "profile": {
-        "factory": 115,
-        "building": 148,
-        "dependencies": 81
+        "factory": 109,
+        "building": 142,
+        "dependencies": 83
       },
       "failed": false,
       "errors": 0,
@@ -16307,9 +16308,9 @@
       "issuerId": 103,
       "issuerName": "./~/material-ui/MenuItem/index.js",
       "profile": {
-        "factory": 19,
-        "building": 528,
-        "dependencies": 254
+        "factory": 28,
+        "building": 515,
+        "dependencies": 244
       },
       "failed": false,
       "errors": 0,
@@ -16358,9 +16359,9 @@
       "issuerId": 160,
       "issuerName": "./~/material-ui/MenuItem/MenuItem.js",
       "profile": {
-        "factory": 110,
-        "building": 161,
-        "dependencies": 71
+        "factory": 107,
+        "building": 152,
+        "dependencies": 72
       },
       "failed": false,
       "errors": 0,
@@ -16409,9 +16410,9 @@
       "issuerId": 212,
       "issuerName": "./src/App/muiTheme.js",
       "profile": {
-        "factory": 671,
-        "building": 48,
-        "dependencies": 3
+        "factory": 639,
+        "building": 53,
+        "dependencies": 2
       },
       "failed": false,
       "errors": 0,
@@ -16460,8 +16461,8 @@
       "issuerId": 357,
       "issuerName": "./~/material-ui/internal/TouchRipple.js",
       "profile": {
-        "factory": 51,
-        "building": 68
+        "factory": 49,
+        "building": 67
       },
       "failed": false,
       "errors": 0,
@@ -16510,8 +16511,8 @@
       "issuerId": 374,
       "issuerName": "./~/promise/lib/es6-extensions.js",
       "profile": {
-        "factory": 144,
-        "building": 368
+        "factory": 108,
+        "building": 287
       },
       "failed": false,
       "errors": 0,
@@ -16560,8 +16561,8 @@
       "issuerId": 357,
       "issuerName": "./~/material-ui/internal/TouchRipple.js",
       "profile": {
-        "factory": 128,
-        "building": 57
+        "factory": 125,
+        "building": 56
       },
       "failed": false,
       "errors": 0,
@@ -16610,8 +16611,8 @@
       "issuerId": 381,
       "issuerName": "./~/react-dom/lib/CSSPropertyOperations.js",
       "profile": {
-        "factory": 98,
-        "building": 595
+        "factory": 99,
+        "building": 620
       },
       "failed": false,
       "errors": 0,
@@ -16660,9 +16661,9 @@
       "issuerId": 23,
       "issuerName": "./~/react-dom/lib/ReactUpdates.js",
       "profile": {
-        "factory": 92,
-        "building": 310,
-        "dependencies": 0
+        "factory": 85,
+        "building": 312,
+        "dependencies": 1
       },
       "failed": false,
       "errors": 0,
@@ -16711,8 +16712,8 @@
       "issuerId": 393,
       "issuerName": "./~/react-dom/lib/ReactDOMComponent.js",
       "profile": {
-        "factory": 94,
-        "building": 828,
+        "factory": 101,
+        "building": 816,
         "dependencies": 1
       },
       "failed": false,
@@ -16762,8 +16763,8 @@
       "issuerId": 13,
       "issuerName": "./~/react-dom/lib/ReactDOMComponentTree.js",
       "profile": {
-        "factory": 109,
-        "building": 256
+        "factory": 102,
+        "building": 252
       },
       "failed": false,
       "errors": 0,
@@ -16812,9 +16813,9 @@
       "issuerId": 393,
       "issuerName": "./~/react-dom/lib/ReactDOMComponent.js",
       "profile": {
-        "factory": 95,
-        "building": 834,
-        "dependencies": 1
+        "factory": 101,
+        "building": 825,
+        "dependencies": 86
       },
       "failed": false,
       "errors": 0,
@@ -16864,7 +16865,7 @@
       "issuerName": "./~/react-dom/lib/ReactInjection.js",
       "profile": {
         "factory": 90,
-        "building": 858
+        "building": 848
       },
       "failed": false,
       "errors": 0,
@@ -16963,8 +16964,8 @@
       "issuerId": 409,
       "issuerName": "./~/react-dom/lib/ReactInjection.js",
       "profile": {
-        "factory": 90,
-        "building": 858,
+        "factory": 91,
+        "building": 847,
         "dependencies": 0
       },
       "failed": false,
@@ -17014,8 +17015,8 @@
       "issuerId": 414,
       "issuerName": "./~/react-dom/lib/ReactReconcileTransaction.js",
       "profile": {
-        "factory": 86,
-        "building": 859,
+        "factory": 89,
+        "building": 847,
         "dependencies": 56
       },
       "failed": false,
@@ -17065,9 +17066,9 @@
       "issuerId": 392,
       "issuerName": "./~/react-dom/lib/ReactDOM.js",
       "profile": {
-        "factory": 338,
-        "building": 297,
-        "dependencies": 140
+        "factory": 203,
+        "building": 245,
+        "dependencies": 153
       },
       "failed": false,
       "errors": 0,
@@ -17116,8 +17117,8 @@
       "issuerId": 179,
       "issuerName": "./~/react-dom/lib/getHostComponentFromComposite.js",
       "profile": {
-        "factory": 88,
-        "building": 312,
+        "factory": 82,
+        "building": 316,
         "dependencies": 0
       },
       "failed": false,
@@ -17163,13 +17164,13 @@
         4
       ],
       "assets": [],
-      "issuer": "/home/sdt/www/sylvaindethier.github.io/node_modules/react-dom/lib/EventPropagators.js",
-      "issuerId": 47,
-      "issuerName": "./~/react-dom/lib/EventPropagators.js",
+      "issuer": "/home/sdt/www/sylvaindethier.github.io/node_modules/react-dom/lib/EventPluginHub.js",
+      "issuerId": 46,
+      "issuerName": "./~/react-dom/lib/EventPluginHub.js",
       "profile": {
-        "factory": 119,
-        "building": 594,
-        "dependencies": 1
+        "factory": 115,
+        "building": 619,
+        "dependencies": 0
       },
       "failed": false,
       "errors": 0,
@@ -17214,12 +17215,12 @@
         4
       ],
       "assets": [],
-      "issuer": "/home/sdt/www/sylvaindethier.github.io/node_modules/react-dom/lib/EventPropagators.js",
-      "issuerId": 47,
-      "issuerName": "./~/react-dom/lib/EventPropagators.js",
+      "issuer": "/home/sdt/www/sylvaindethier.github.io/node_modules/react-dom/lib/EventPluginHub.js",
+      "issuerId": 46,
+      "issuerName": "./~/react-dom/lib/EventPluginHub.js",
       "profile": {
-        "factory": 120,
-        "building": 594
+        "factory": 115,
+        "building": 619
       },
       "failed": false,
       "errors": 0,
@@ -17268,8 +17269,8 @@
       "issuerId": 392,
       "issuerName": "./~/react-dom/lib/ReactDOM.js",
       "profile": {
-        "factory": 339,
-        "building": 310
+        "factory": 205,
+        "building": 263
       },
       "failed": false,
       "errors": 0,
@@ -17318,8 +17319,8 @@
       "issuerId": 387,
       "issuerName": "./~/react-dom/lib/FallbackCompositionState.js",
       "profile": {
-        "factory": 116,
-        "building": 593,
+        "factory": 105,
+        "building": 620,
         "dependencies": 0
       },
       "failed": false,
@@ -17370,8 +17371,8 @@
       "issuerName": "./~/react-dom/lib/ReactMount.js",
       "profile": {
         "factory": 99,
-        "building": 309,
-        "dependencies": 65
+        "building": 311,
+        "dependencies": 68
       },
       "failed": false,
       "errors": 0,
@@ -17420,8 +17421,8 @@
       "issuerId": 382,
       "issuerName": "./~/react-dom/lib/ChangeEventPlugin.js",
       "profile": {
-        "factory": 114,
-        "building": 816
+        "factory": 122,
+        "building": 804
       },
       "failed": false,
       "errors": 0,
@@ -17470,9 +17471,9 @@
       "issuerId": 44,
       "issuerName": "./~/react-dom/lib/DOMLazyTree.js",
       "profile": {
-        "factory": 92,
-        "building": 850,
-        "dependencies": 0
+        "factory": 84,
+        "building": 848,
+        "dependencies": 1
       },
       "failed": false,
       "errors": 0,
@@ -17521,9 +17522,9 @@
       "issuerId": 389,
       "issuerName": "./~/react-dom/lib/ReactChildReconciler.js",
       "profile": {
-        "factory": 37,
-        "building": 487,
-        "dependencies": 1
+        "factory": 35,
+        "building": 471,
+        "dependencies": 0
       },
       "failed": false,
       "errors": 0,
@@ -17572,9 +17573,9 @@
       "issuerId": 326,
       "issuerName": "./~/material-ui/Drawer/Drawer.js",
       "profile": {
-        "factory": 353,
-        "building": 61,
-        "dependencies": 37
+        "factory": 345,
+        "building": 59,
+        "dependencies": 38
       },
       "failed": false,
       "errors": 0,
@@ -17623,8 +17624,8 @@
       "issuerId": 198,
       "issuerName": "./~/react-router-dom/es/index.js",
       "profile": {
-        "factory": 22,
-        "building": 1117,
+        "factory": 33,
+        "building": 768,
         "dependencies": 23
       },
       "failed": false,
@@ -17678,9 +17679,9 @@
       "issuerId": 14,
       "issuerName": "./~/react-router/es/index.js",
       "profile": {
-        "factory": 55,
-        "building": 1076,
-        "dependencies": 331
+        "factory": 34,
+        "building": 737,
+        "dependencies": 542
       },
       "failed": false,
       "errors": 0,
@@ -17733,8 +17734,8 @@
       "issuerId": 193,
       "issuerName": "./~/react/lib/traverseAllChildren.js",
       "profile": {
-        "factory": 123,
-        "building": 798
+        "factory": 129,
+        "building": 796
       },
       "failed": false,
       "errors": 0,
@@ -17783,8 +17784,8 @@
       "issuerId": 50,
       "issuerName": "./~/react/lib/ReactElement.js",
       "profile": {
-        "factory": 143,
-        "building": 257
+        "factory": 160,
+        "building": 250
       },
       "failed": false,
       "errors": 0,
@@ -17833,8 +17834,8 @@
       "issuerId": 476,
       "issuerName": "./~/react/lib/ReactClass.js",
       "profile": {
-        "factory": 172,
-        "building": 257
+        "factory": 191,
+        "building": 253
       },
       "failed": false,
       "errors": 0,
@@ -17883,8 +17884,8 @@
       "issuerId": 126,
       "issuerName": "./~/react/lib/ReactComponent.js",
       "profile": {
-        "factory": 206,
-        "building": 258
+        "factory": 176,
+        "building": 251
       },
       "failed": false,
       "errors": 0,
@@ -17933,8 +17934,8 @@
       "issuerId": 478,
       "issuerName": "./~/react/lib/ReactPropTypes.js",
       "profile": {
-        "factory": 114,
-        "building": 255
+        "factory": 137,
+        "building": 250
       },
       "failed": false,
       "errors": 0,
@@ -17983,8 +17984,8 @@
       "issuerId": 475,
       "issuerName": "./~/react/lib/ReactChildren.js",
       "profile": {
-        "factory": 233,
-        "building": 256,
+        "factory": 219,
+        "building": 253,
         "dependencies": 0
       },
       "failed": false,
@@ -18035,7 +18036,7 @@
       "issuerName": "./~/recompose/pure.js",
       "profile": {
         "factory": 32,
-        "building": 75
+        "building": 73
       },
       "failed": false,
       "errors": 0,
@@ -18084,8 +18085,8 @@
       "issuerId": 62,
       "issuerName": "./~/react-loadable/lib/index.js",
       "profile": {
-        "factory": 1168,
-        "building": 386
+        "factory": 807,
+        "building": 295
       },
       "failed": false,
       "errors": 0,
@@ -18134,8 +18135,8 @@
       "issuerId": 496,
       "issuerName": "multi ./config/polyfills.js react react-dom react-router react-router-dom react-loadable",
       "profile": {
-        "factory": 23,
-        "building": 37
+        "factory": 24,
+        "building": 36
       },
       "failed": false,
       "errors": 0,
@@ -18175,9 +18176,9 @@
       "issuerId": 497,
       "issuerName": "multi ./src/index.js",
       "profile": {
-        "factory": 90,
-        "building": 1301,
-        "dependencies": 5
+        "factory": 84,
+        "building": 992,
+        "dependencies": 3
       },
       "failed": false,
       "errors": 0,
@@ -18217,8 +18218,8 @@
       "issuerId": 496,
       "issuerName": "multi ./config/polyfills.js react react-dom react-router react-router-dom react-loadable",
       "profile": {
-        "factory": 77,
-        "building": 318
+        "factory": 74,
+        "building": 305
       },
       "failed": false,
       "errors": 0,
@@ -18272,8 +18273,8 @@
       "issuerId": 213,
       "issuerName": "./src/pages/Home.js",
       "profile": {
-        "factory": 204,
-        "building": 550
+        "factory": 342,
+        "building": 427
       },
       "failed": false,
       "errors": 0,
@@ -18331,8 +18332,8 @@
       "issuerId": 215,
       "issuerName": "./src/pages/async/About.js",
       "profile": {
-        "factory": 134,
-        "building": 335,
+        "factory": 160,
+        "building": 325,
         "dependencies": 0
       },
       "failed": false,
@@ -18382,9 +18383,9 @@
       "issuerId": 216,
       "issuerName": "./src/pages/async/Contact.js",
       "profile": {
-        "factory": 46,
-        "building": 401,
-        "dependencies": 2
+        "factory": 44,
+        "building": 465,
+        "dependencies": 79
       },
       "failed": false,
       "errors": 0,
@@ -18433,9 +18434,9 @@
       "issuerId": 217,
       "issuerName": "./src/pages/async/Resume.js",
       "profile": {
-        "factory": 80,
-        "building": 482,
-        "dependencies": 93
+        "factory": 126,
+        "building": 402,
+        "dependencies": 1
       },
       "failed": false,
       "errors": 0,
@@ -18484,9 +18485,9 @@
       "issuerId": 208,
       "issuerName": "./src/App/Footer.js",
       "profile": {
-        "factory": 624,
-        "building": 289,
-        "dependencies": 568
+        "factory": 467,
+        "building": 461,
+        "dependencies": 545
       },
       "failed": false,
       "errors": 0,
@@ -18535,9 +18536,9 @@
       "issuerId": 208,
       "issuerName": "./src/App/Footer.js",
       "profile": {
-        "factory": 625,
-        "building": 299,
-        "dependencies": 557
+        "factory": 468,
+        "building": 472,
+        "dependencies": 533
       },
       "failed": false,
       "errors": 0,
@@ -18586,8 +18587,8 @@
       "issuerId": 164,
       "issuerName": "./~/promise/lib/core.js",
       "profile": {
-        "factory": 526,
-        "building": 288
+        "factory": 496,
+        "building": 310
       },
       "failed": false,
       "errors": 0,
@@ -18627,9 +18628,9 @@
       "issuerId": 211,
       "issuerName": "./src/App/index.js",
       "profile": {
-        "factory": 213,
+        "factory": 183,
         "building": 213,
-        "dependencies": 102
+        "dependencies": 96
       },
       "failed": false,
       "errors": 0,
@@ -18669,8 +18670,8 @@
       "issuerId": 206,
       "issuerName": "./src/App/App.js",
       "profile": {
-        "factory": 182,
-        "building": 533,
+        "factory": 184,
+        "building": 545,
         "dependencies": 0
       },
       "failed": false,
@@ -18711,9 +18712,9 @@
       "issuerId": 206,
       "issuerName": "./src/App/App.js",
       "profile": {
-        "factory": 193,
-        "building": 785,
-        "dependencies": 147
+        "factory": 186,
+        "building": 795,
+        "dependencies": 131
       },
       "failed": false,
       "errors": 0,
@@ -18753,8 +18754,8 @@
       "issuerId": 207,
       "issuerName": "./src/App/Bar.js",
       "profile": {
-        "factory": 408,
-        "building": 202,
+        "factory": 382,
+        "building": 312,
         "dependencies": 1
       },
       "failed": false,
@@ -18795,9 +18796,9 @@
       "issuerId": 206,
       "issuerName": "./src/App/App.js",
       "profile": {
-        "factory": 192,
-        "building": 652,
-        "dependencies": 282
+        "factory": 185,
+        "building": 648,
+        "dependencies": 279
       },
       "failed": false,
       "errors": 0,
@@ -18837,8 +18838,8 @@
       "issuerId": 197,
       "issuerName": "./src/index.js",
       "profile": {
-        "factory": 157,
-        "building": 359
+        "factory": 119,
+        "building": 284
       },
       "failed": false,
       "errors": 0,
@@ -18878,8 +18879,8 @@
       "issuerId": 206,
       "issuerName": "./src/App/App.js",
       "profile": {
-        "factory": 182,
-        "building": 271
+        "factory": 184,
+        "building": 286
       },
       "failed": false,
       "errors": 0,
@@ -18919,9 +18920,9 @@
       "issuerId": 210,
       "issuerName": "./src/App/PageContent.js",
       "profile": {
-        "factory": 308,
-        "building": 445,
-        "dependencies": 204
+        "factory": 298,
+        "building": 449,
+        "dependencies": 203
       },
       "failed": false,
       "errors": 0,
@@ -18961,9 +18962,9 @@
       "issuerId": 210,
       "issuerName": "./src/App/PageContent.js",
       "profile": {
-        "factory": 309,
-        "building": 309,
-        "dependencies": 317
+        "factory": 298,
+        "building": 600,
+        "dependencies": 191
       },
       "failed": false,
       "errors": 0,
@@ -19003,9 +19004,9 @@
       "issuerId": 210,
       "issuerName": "./src/App/PageContent.js",
       "profile": {
-        "factory": 309,
-        "building": 502,
-        "dependencies": 124
+        "factory": 299,
+        "building": 511,
+        "dependencies": 150
       },
       "failed": false,
       "errors": 0,
@@ -19045,9 +19046,9 @@
       "issuerId": 210,
       "issuerName": "./src/App/PageContent.js",
       "profile": {
-        "factory": 310,
-        "building": 592,
-        "dependencies": 381
+        "factory": 299,
+        "building": 630,
+        "dependencies": 369
       },
       "failed": false,
       "errors": 0,
@@ -19087,9 +19088,9 @@
       "issuerId": 210,
       "issuerName": "./src/App/PageContent.js",
       "profile": {
-        "factory": 309,
-        "building": 559,
-        "dependencies": 415
+        "factory": 299,
+        "building": 548,
+        "dependencies": 451
       },
       "failed": false,
       "errors": 0,
@@ -19129,9 +19130,9 @@
       "issuerId": 208,
       "issuerName": "./src/App/Footer.js",
       "profile": {
-        "factory": 624,
-        "building": 278,
-        "dependencies": 579
+        "factory": 467,
+        "building": 451,
+        "dependencies": 555
       },
       "failed": false,
       "errors": 0,
@@ -19171,9 +19172,9 @@
       "issuerId": 207,
       "issuerName": "./src/App/Bar.js",
       "profile": {
-        "factory": 884,
-        "building": 215,
-        "dependencies": 92
+        "factory": 718,
+        "building": 396,
+        "dependencies": 610
       },
       "failed": false,
       "errors": 0,
@@ -19213,9 +19214,9 @@
       "issuerId": 207,
       "issuerName": "./src/App/Bar.js",
       "profile": {
-        "factory": 885,
-        "building": 230,
-        "dependencies": 627
+        "factory": 718,
+        "building": 380,
+        "dependencies": 100
       },
       "failed": false,
       "errors": 0,
@@ -19255,9 +19256,9 @@
       "issuerId": 213,
       "issuerName": "./src/pages/Home.js",
       "profile": {
-        "factory": 193,
-        "building": 169,
-        "dependencies": 500
+        "factory": 224,
+        "building": 173,
+        "dependencies": 477
       },
       "failed": false,
       "errors": 0,
@@ -19297,8 +19298,8 @@
       "issuerId": 5,
       "issuerName": "./~/babel-runtime/helpers/inherits.js",
       "profile": {
-        "factory": 49,
-        "building": 220
+        "factory": 47,
+        "building": 214
       },
       "failed": false,
       "errors": 0,
@@ -19338,8 +19339,8 @@
       "issuerId": 5,
       "issuerName": "./~/babel-runtime/helpers/inherits.js",
       "profile": {
-        "factory": 49,
-        "building": 220
+        "factory": 47,
+        "building": 215
       },
       "failed": false,
       "errors": 0,
@@ -19379,8 +19380,8 @@
       "issuerId": 64,
       "issuerName": "./~/babel-runtime/helpers/typeof.js",
       "profile": {
-        "factory": 81,
-        "building": 154
+        "factory": 74,
+        "building": 159
       },
       "failed": false,
       "errors": 0,
@@ -19420,8 +19421,8 @@
       "issuerId": 64,
       "issuerName": "./~/babel-runtime/helpers/typeof.js",
       "profile": {
-        "factory": 81,
-        "building": 154
+        "factory": 74,
+        "building": 158
       },
       "failed": false,
       "errors": 0,
@@ -19461,8 +19462,8 @@
       "issuerId": 310,
       "issuerName": "./~/inline-style-prefixer/lib/utils/getBrowserInformation.js",
       "profile": {
-        "factory": 145,
-        "building": 60
+        "factory": 138,
+        "building": 57
       },
       "failed": false,
       "errors": 0,
@@ -19502,9 +19503,9 @@
       "issuerId": 133,
       "issuerName": "./~/babel-runtime/core-js/array/from.js",
       "profile": {
-        "factory": 48,
-        "building": 71,
-        "dependencies": 53
+        "factory": 30,
+        "building": 87,
+        "dependencies": 33
       },
       "failed": false,
       "errors": 0,
@@ -19544,9 +19545,9 @@
       "issuerId": 134,
       "issuerName": "./~/babel-runtime/core-js/object/assign.js",
       "profile": {
-        "factory": 38,
-        "building": 63,
-        "dependencies": 25
+        "factory": 57,
+        "building": 61,
+        "dependencies": 4
       },
       "failed": false,
       "errors": 0,
@@ -19586,9 +19587,9 @@
       "issuerId": 222,
       "issuerName": "./~/babel-runtime/core-js/object/create.js",
       "profile": {
-        "factory": 26,
+        "factory": 25,
         "building": 98,
-        "dependencies": 56
+        "dependencies": 35
       },
       "failed": false,
       "errors": 0,
@@ -19628,9 +19629,9 @@
       "issuerId": 135,
       "issuerName": "./~/babel-runtime/core-js/object/define-property.js",
       "profile": {
-        "factory": 27,
-        "building": 98,
-        "dependencies": 56
+        "factory": 26,
+        "building": 97,
+        "dependencies": 36
       },
       "failed": false,
       "errors": 0,
@@ -19670,8 +19671,8 @@
       "issuerId": 4,
       "issuerName": "./~/babel-runtime/core-js/object/get-prototype-of.js",
       "profile": {
-        "factory": 293,
-        "building": 98
+        "factory": 285,
+        "building": 97
       },
       "failed": false,
       "errors": 0,
@@ -19711,9 +19712,9 @@
       "issuerId": 83,
       "issuerName": "./~/babel-runtime/core-js/object/keys.js",
       "profile": {
-        "factory": 243,
-        "building": 98,
-        "dependencies": 57
+        "factory": 238,
+        "building": 97,
+        "dependencies": 36
       },
       "failed": false,
       "errors": 0,
@@ -19753,9 +19754,9 @@
       "issuerId": 223,
       "issuerName": "./~/babel-runtime/core-js/object/set-prototype-of.js",
       "profile": {
-        "factory": 26,
+        "factory": 25,
         "building": 97,
-        "dependencies": 57
+        "dependencies": 35
       },
       "failed": false,
       "errors": 0,
@@ -19795,9 +19796,9 @@
       "issuerId": 224,
       "issuerName": "./~/babel-runtime/core-js/symbol.js",
       "profile": {
-        "factory": 103,
-        "building": 63,
-        "dependencies": 1
+        "factory": 97,
+        "building": 66,
+        "dependencies": 0
       },
       "failed": false,
       "errors": 0,
@@ -19837,9 +19838,9 @@
       "issuerId": 225,
       "issuerName": "./~/babel-runtime/core-js/symbol/iterator.js",
       "profile": {
-        "factory": 43,
-        "building": 68,
-        "dependencies": 54
+        "factory": 41,
+        "building": 66,
+        "dependencies": 32
       },
       "failed": false,
       "errors": 0,
@@ -19879,8 +19880,8 @@
       "issuerId": 85,
       "issuerName": "./~/core-js/library/modules/_ctx.js",
       "profile": {
-        "factory": 30,
-        "building": 34
+        "factory": 26,
+        "building": 17
       },
       "failed": false,
       "errors": 0,
@@ -19920,8 +19921,8 @@
       "issuerId": 259,
       "issuerName": "./~/core-js/library/modules/es6.array.iterator.js",
       "profile": {
-        "factory": 35,
-        "building": 25
+        "factory": 30,
+        "building": 9
       },
       "failed": false,
       "errors": 0,
@@ -19961,7 +19962,7 @@
       "issuerId": 145,
       "issuerName": "./~/core-js/library/modules/_object-keys-internal.js",
       "profile": {
-        "factory": 22,
+        "factory": 19,
         "building": 2,
         "dependencies": 0
       },
@@ -20003,8 +20004,8 @@
       "issuerId": 257,
       "issuerName": "./~/core-js/library/modules/core.get-iterator-method.js",
       "profile": {
-        "factory": 27,
-        "building": 34,
+        "factory": 24,
+        "building": 18,
         "dependencies": 0
       },
       "failed": false,
@@ -20045,8 +20046,8 @@
       "issuerId": 258,
       "issuerName": "./~/core-js/library/modules/es6.array.from.js",
       "profile": {
-        "factory": 38,
-        "building": 69,
+        "factory": 37,
+        "building": 66,
         "dependencies": 0
       },
       "failed": false,
@@ -20087,8 +20088,8 @@
       "issuerId": 267,
       "issuerName": "./~/core-js/library/modules/es6.symbol.js",
       "profile": {
-        "factory": 41,
-        "building": 50,
+        "factory": 17,
+        "building": 64,
         "dependencies": 0
       },
       "failed": false,
@@ -20129,8 +20130,8 @@
       "issuerId": 89,
       "issuerName": "./~/core-js/library/modules/_object-create.js",
       "profile": {
-        "factory": 36,
-        "building": 33,
+        "factory": 32,
+        "building": 16,
         "dependencies": 0
       },
       "failed": false,
@@ -20171,7 +20172,7 @@
       "issuerId": 258,
       "issuerName": "./~/core-js/library/modules/es6.array.from.js",
       "profile": {
-        "factory": 38,
+        "factory": 36,
         "building": 68,
         "dependencies": 0
       },
@@ -20213,8 +20214,8 @@
       "issuerId": 267,
       "issuerName": "./~/core-js/library/modules/es6.symbol.js",
       "profile": {
-        "factory": 41,
-        "building": 50
+        "factory": 17,
+        "building": 64
       },
       "failed": false,
       "errors": 0,
@@ -20254,9 +20255,9 @@
       "issuerId": 258,
       "issuerName": "./~/core-js/library/modules/es6.array.from.js",
       "profile": {
-        "factory": 38,
-        "building": 67,
-        "dependencies": 1
+        "factory": 36,
+        "building": 66,
+        "dependencies": 0
       },
       "failed": false,
       "errors": 0,
@@ -20296,8 +20297,8 @@
       "issuerId": 141,
       "issuerName": "./~/core-js/library/modules/_iter-define.js",
       "profile": {
-        "factory": 31,
-        "building": 33,
+        "factory": 27,
+        "building": 17,
         "dependencies": 0
       },
       "failed": false,
@@ -20338,8 +20339,8 @@
       "issuerId": 258,
       "issuerName": "./~/core-js/library/modules/es6.array.from.js",
       "profile": {
-        "factory": 39,
-        "building": 70,
+        "factory": 37,
+        "building": 67,
         "dependencies": 0
       },
       "failed": false,
@@ -20380,8 +20381,8 @@
       "issuerId": 259,
       "issuerName": "./~/core-js/library/modules/es6.array.iterator.js",
       "profile": {
-        "factory": 35,
-        "building": 25
+        "factory": 30,
+        "building": 9
       },
       "failed": false,
       "errors": 0,
@@ -20421,8 +20422,8 @@
       "issuerId": 267,
       "issuerName": "./~/core-js/library/modules/es6.symbol.js",
       "profile": {
-        "factory": 41,
-        "building": 50,
+        "factory": 17,
+        "building": 63,
         "dependencies": 0
       },
       "failed": false,
@@ -20463,9 +20464,9 @@
       "issuerId": 267,
       "issuerName": "./~/core-js/library/modules/es6.symbol.js",
       "profile": {
-        "factory": 39,
-        "building": 49,
-        "dependencies": 1
+        "factory": 16,
+        "building": 62,
+        "dependencies": 0
       },
       "failed": false,
       "errors": 0,
@@ -20505,8 +20506,8 @@
       "issuerId": 260,
       "issuerName": "./~/core-js/library/modules/es6.object.assign.js",
       "profile": {
-        "factory": 34,
-        "building": 64,
+        "factory": 32,
+        "building": 56,
         "dependencies": 1
       },
       "failed": false,
@@ -20547,9 +20548,9 @@
       "issuerId": 89,
       "issuerName": "./~/core-js/library/modules/_object-create.js",
       "profile": {
-        "factory": 35,
-        "building": 33,
-        "dependencies": 0
+        "factory": 31,
+        "building": 16,
+        "dependencies": 1
       },
       "failed": false,
       "errors": 0,
@@ -20589,8 +20590,8 @@
       "issuerId": 267,
       "issuerName": "./~/core-js/library/modules/es6.symbol.js",
       "profile": {
-        "factory": 42,
-        "building": 51,
+        "factory": 35,
+        "building": 48,
         "dependencies": 0
       },
       "failed": false,
@@ -20631,8 +20632,8 @@
       "issuerId": 265,
       "issuerName": "./~/core-js/library/modules/es6.object.set-prototype-of.js",
       "profile": {
-        "factory": 40,
-        "building": 61,
+        "factory": 37,
+        "building": 63,
         "dependencies": 0
       },
       "failed": false,
@@ -20673,9 +20674,9 @@
       "issuerId": 149,
       "issuerName": "./~/core-js/library/modules/es6.string.iterator.js",
       "profile": {
-        "factory": 39,
-        "building": 65,
-        "dependencies": 31
+        "factory": 38,
+        "building": 61,
+        "dependencies": 28
       },
       "failed": false,
       "errors": 0,
@@ -20757,8 +20758,8 @@
       "issuerId": 258,
       "issuerName": "./~/core-js/library/modules/es6.array.from.js",
       "profile": {
-        "factory": 38,
-        "building": 70,
+        "factory": 37,
+        "building": 66,
         "dependencies": 0
       },
       "failed": false,
@@ -20799,9 +20800,9 @@
       "issuerId": 227,
       "issuerName": "./~/core-js/library/fn/array/from.js",
       "profile": {
-        "factory": 54,
-        "building": 41,
-        "dependencies": 36
+        "factory": 35,
+        "building": 59,
+        "dependencies": 34
       },
       "failed": false,
       "errors": 0,
@@ -20841,9 +20842,9 @@
       "issuerId": 270,
       "issuerName": "./~/core-js/library/modules/web.dom.iterable.js",
       "profile": {
-        "factory": 53,
-        "building": 52,
-        "dependencies": 1
+        "factory": 52,
+        "building": 50,
+        "dependencies": 0
       },
       "failed": false,
       "errors": 0,
@@ -20883,9 +20884,9 @@
       "issuerId": 228,
       "issuerName": "./~/core-js/library/fn/object/assign.js",
       "profile": {
-        "factory": 43,
-        "building": 58,
-        "dependencies": 2
+        "factory": 44,
+        "building": 54,
+        "dependencies": 1
       },
       "failed": false,
       "errors": 0,
@@ -20925,9 +20926,9 @@
       "issuerId": 229,
       "issuerName": "./~/core-js/library/fn/object/create.js",
       "profile": {
-        "factory": 57,
-        "building": 39,
-        "dependencies": 38
+        "factory": 36,
+        "building": 57,
+        "dependencies": 37
       },
       "failed": false,
       "errors": 0,
@@ -20967,9 +20968,8 @@
       "issuerId": 230,
       "issuerName": "./~/core-js/library/fn/object/define-property.js",
       "profile": {
-        "factory": 57,
-        "building": 38,
-        "dependencies": 39
+        "factory": 37,
+        "building": 56
       },
       "failed": false,
       "errors": 0,
@@ -21010,7 +21010,7 @@
       "issuerName": "./~/core-js/library/fn/object/get-prototype-of.js",
       "profile": {
         "factory": 37,
-        "building": 58
+        "building": 53
       },
       "failed": false,
       "errors": 0,
@@ -21050,9 +21050,9 @@
       "issuerId": 232,
       "issuerName": "./~/core-js/library/fn/object/keys.js",
       "profile": {
-        "factory": 57,
-        "building": 39,
-        "dependencies": 38
+        "factory": 37,
+        "building": 57,
+        "dependencies": 37
       },
       "failed": false,
       "errors": 0,
@@ -21092,8 +21092,9 @@
       "issuerId": 233,
       "issuerName": "./~/core-js/library/fn/object/set-prototype-of.js",
       "profile": {
-        "factory": 57,
-        "building": 38
+        "factory": 36,
+        "building": 58,
+        "dependencies": 36
       },
       "failed": false,
       "errors": 0,
@@ -21133,7 +21134,7 @@
       "issuerId": 234,
       "issuerName": "./~/core-js/library/fn/symbol/index.js",
       "profile": {
-        "factory": 22,
+        "factory": 17,
         "building": 74
       },
       "failed": false,
@@ -21174,9 +21175,9 @@
       "issuerId": 234,
       "issuerName": "./~/core-js/library/fn/symbol/index.js",
       "profile": {
-        "factory": 22,
-        "building": 67,
-        "dependencies": 9
+        "factory": 17,
+        "building": 68,
+        "dependencies": 6
       },
       "failed": false,
       "errors": 0,
@@ -21216,9 +21217,9 @@
       "issuerId": 234,
       "issuerName": "./~/core-js/library/fn/symbol/index.js",
       "profile": {
-        "factory": 22,
+        "factory": 17,
         "building": 74,
-        "dependencies": 33
+        "dependencies": 12
       },
       "failed": false,
       "errors": 0,
@@ -21258,9 +21259,9 @@
       "issuerId": 234,
       "issuerName": "./~/core-js/library/fn/symbol/index.js",
       "profile": {
-        "factory": 22,
+        "factory": 17,
         "building": 74,
-        "dependencies": 33
+        "dependencies": 12
       },
       "failed": false,
       "errors": 0,
@@ -21300,8 +21301,8 @@
       "issuerId": 235,
       "issuerName": "./~/core-js/library/fn/symbol/iterator.js",
       "profile": {
-        "factory": 56,
-        "building": 43
+        "factory": 58,
+        "building": 38
       },
       "failed": false,
       "errors": 0,
@@ -21341,7 +21342,7 @@
       "issuerId": 197,
       "issuerName": "./src/index.js",
       "profile": {
-        "factory": 840,
+        "factory": 712,
         "building": 4
       },
       "failed": false,
@@ -21382,9 +21383,9 @@
       "issuerId": 206,
       "issuerName": "./src/App/App.js",
       "profile": {
-        "factory": 194,
-        "building": 2,
-        "dependencies": 3
+        "factory": 186,
+        "building": 4,
+        "dependencies": 2
       },
       "failed": false,
       "errors": 0,
@@ -21424,8 +21425,8 @@
       "issuerId": 274,
       "issuerName": "./~/fbjs/lib/camelizeStyleName.js",
       "profile": {
-        "factory": 41,
-        "building": 486
+        "factory": 38,
+        "building": 469
       },
       "failed": false,
       "errors": 0,
@@ -21465,8 +21466,8 @@
       "issuerId": 381,
       "issuerName": "./~/react-dom/lib/CSSPropertyOperations.js",
       "profile": {
-        "factory": 99,
-        "building": 595
+        "factory": 100,
+        "building": 620
       },
       "failed": false,
       "errors": 0,
@@ -21506,8 +21507,8 @@
       "issuerId": 174,
       "issuerName": "./~/react-dom/lib/ReactInputSelection.js",
       "profile": {
-        "factory": 60,
-        "building": 602
+        "factory": 59,
+        "building": 627
       },
       "failed": false,
       "errors": 0,
@@ -21547,8 +21548,8 @@
       "issuerId": 277,
       "issuerName": "./~/fbjs/lib/createNodesFromMarkup.js",
       "profile": {
-        "factory": 92,
-        "building": 143,
+        "factory": 77,
+        "building": 149,
         "dependencies": 0
       },
       "failed": false,
@@ -21589,8 +21590,8 @@
       "issuerId": 383,
       "issuerName": "./~/react-dom/lib/Danger.js",
       "profile": {
-        "factory": 43,
-        "building": 484,
+        "factory": 41,
+        "building": 468,
         "dependencies": 1
       },
       "failed": false,
@@ -21631,8 +21632,8 @@
       "issuerId": 277,
       "issuerName": "./~/fbjs/lib/createNodesFromMarkup.js",
       "profile": {
-        "factory": 92,
-        "building": 144,
+        "factory": 77,
+        "building": 150,
         "dependencies": 0
       },
       "failed": false,
@@ -21673,8 +21674,8 @@
       "issuerId": 408,
       "issuerName": "./~/react-dom/lib/ReactEventListener.js",
       "profile": {
-        "factory": 89,
-        "building": 858
+        "factory": 95,
+        "building": 846
       },
       "failed": false,
       "errors": 0,
@@ -21714,8 +21715,8 @@
       "issuerId": 281,
       "issuerName": "./~/fbjs/lib/hyphenateStyleName.js",
       "profile": {
-        "factory": 40,
-        "building": 486
+        "factory": 38,
+        "building": 469
       },
       "failed": false,
       "errors": 0,
@@ -21756,7 +21757,7 @@
       "issuerName": "./~/react-dom/lib/CSSPropertyOperations.js",
       "profile": {
         "factory": 100,
-        "building": 595
+        "building": 620
       },
       "failed": false,
       "errors": 0,
@@ -21796,8 +21797,8 @@
       "issuerId": 283,
       "issuerName": "./~/fbjs/lib/isTextNode.js",
       "profile": {
-        "factory": 105,
-        "building": 123
+        "factory": 104,
+        "building": 116
       },
       "failed": false,
       "errors": 0,
@@ -21837,8 +21838,8 @@
       "issuerId": 275,
       "issuerName": "./~/fbjs/lib/containsNode.js",
       "profile": {
-        "factory": 33,
-        "building": 491
+        "factory": 31,
+        "building": 474
       },
       "failed": false,
       "errors": 0,
@@ -21878,7 +21879,7 @@
       "issuerId": 470,
       "issuerName": "./~/react-tap-event-plugin/src/TapEventPlugin.js",
       "profile": {
-        "factory": 428,
+        "factory": 404,
         "building": 111
       },
       "failed": false,
@@ -21920,7 +21921,7 @@
       "issuerName": "./~/react-dom/lib/CSSPropertyOperations.js",
       "profile": {
         "factory": 100,
-        "building": 595
+        "building": 620
       },
       "failed": false,
       "errors": 0,
@@ -21960,9 +21961,9 @@
       "issuerId": 451,
       "issuerName": "./~/react-router-dom/es/HashRouter.js",
       "profile": {
-        "factory": 592,
-        "building": 315,
-        "dependencies": 163
+        "factory": 454,
+        "building": 158,
+        "dependencies": 321
       },
       "failed": false,
       "errors": 0,
@@ -22004,9 +22005,9 @@
       "issuerId": 462,
       "issuerName": "./~/react-router/es/MemoryRouter.js",
       "profile": {
-        "factory": 646,
-        "building": 132,
-        "dependencies": 347
+        "factory": 473,
+        "building": 149,
+        "dependencies": 331
       },
       "failed": false,
       "errors": 0,
@@ -22048,7 +22049,7 @@
       "issuerId": 370,
       "issuerName": "./~/material-ui/utils/autoprefixer.js",
       "profile": {
-        "factory": 612,
+        "factory": 579,
         "building": 156
       },
       "failed": false,
@@ -22089,8 +22090,9 @@
       "issuerId": 288,
       "issuerName": "./~/inline-style-prefixer/lib/Prefixer.js",
       "profile": {
-        "factory": 67,
-        "building": 59
+        "factory": 68,
+        "building": 58,
+        "dependencies": 49
       },
       "failed": false,
       "errors": 0,
@@ -22130,9 +22132,9 @@
       "issuerId": 288,
       "issuerName": "./~/inline-style-prefixer/lib/Prefixer.js",
       "profile": {
-        "factory": 67,
-        "building": 61,
-        "dependencies": 49
+        "factory": 68,
+        "building": 60,
+        "dependencies": 47
       },
       "failed": false,
       "errors": 0,
@@ -22172,9 +22174,9 @@
       "issuerId": 288,
       "issuerName": "./~/inline-style-prefixer/lib/Prefixer.js",
       "profile": {
-        "factory": 68,
-        "building": 64,
-        "dependencies": 45
+        "factory": 69,
+        "building": 62,
+        "dependencies": 44
       },
       "failed": false,
       "errors": 0,
@@ -22214,9 +22216,9 @@
       "issuerId": 288,
       "issuerName": "./~/inline-style-prefixer/lib/Prefixer.js",
       "profile": {
-        "factory": 68,
-        "building": 65,
-        "dependencies": 44
+        "factory": 69,
+        "building": 63,
+        "dependencies": 43
       },
       "failed": false,
       "errors": 0,
@@ -22256,9 +22258,9 @@
       "issuerId": 288,
       "issuerName": "./~/inline-style-prefixer/lib/Prefixer.js",
       "profile": {
-        "factory": 67,
-        "building": 61,
-        "dependencies": 49
+        "factory": 68,
+        "building": 59,
+        "dependencies": 48
       },
       "failed": false,
       "errors": 0,
@@ -22298,8 +22300,8 @@
       "issuerId": 288,
       "issuerName": "./~/inline-style-prefixer/lib/Prefixer.js",
       "profile": {
-        "factory": 67,
-        "building": 64,
+        "factory": 69,
+        "building": 60,
         "dependencies": 46
       },
       "failed": false,
@@ -22340,9 +22342,8 @@
       "issuerId": 288,
       "issuerName": "./~/inline-style-prefixer/lib/Prefixer.js",
       "profile": {
-        "factory": 66,
-        "building": 61,
-        "dependencies": 50
+        "factory": 67,
+        "building": 59
       },
       "failed": false,
       "errors": 0,
@@ -22382,9 +22383,9 @@
       "issuerId": 288,
       "issuerName": "./~/inline-style-prefixer/lib/Prefixer.js",
       "profile": {
-        "factory": 67,
-        "building": 62,
-        "dependencies": 48
+        "factory": 68,
+        "building": 61,
+        "dependencies": 46
       },
       "failed": false,
       "errors": 0,
@@ -22424,8 +22425,8 @@
       "issuerId": 288,
       "issuerName": "./~/inline-style-prefixer/lib/Prefixer.js",
       "profile": {
-        "factory": 68,
-        "building": 62
+        "factory": 69,
+        "building": 61
       },
       "failed": false,
       "errors": 0,
@@ -22465,9 +22466,9 @@
       "issuerId": 288,
       "issuerName": "./~/inline-style-prefixer/lib/Prefixer.js",
       "profile": {
-        "factory": 67,
-        "building": 60,
-        "dependencies": 50
+        "factory": 68,
+        "building": 59,
+        "dependencies": 48
       },
       "failed": false,
       "errors": 0,
@@ -22507,8 +22508,8 @@
       "issuerId": 288,
       "issuerName": "./~/inline-style-prefixer/lib/Prefixer.js",
       "profile": {
-        "factory": 41,
-        "building": 69
+        "factory": 40,
+        "building": 70
       },
       "failed": false,
       "errors": 0,
@@ -22549,7 +22550,8 @@
       "issuerName": "./~/inline-style-prefixer/lib/static/prefixAll.js",
       "profile": {
         "factory": 63,
-        "building": 60
+        "building": 58,
+        "dependencies": 28
       },
       "failed": false,
       "errors": 0,
@@ -22589,9 +22591,8 @@
       "issuerId": 309,
       "issuerName": "./~/inline-style-prefixer/lib/static/prefixAll.js",
       "profile": {
-        "factory": 64,
-        "building": 60,
-        "dependencies": 29
+        "factory": 63,
+        "building": 58
       },
       "failed": false,
       "errors": 0,
@@ -22631,7 +22632,7 @@
       "issuerId": 309,
       "issuerName": "./~/inline-style-prefixer/lib/static/prefixAll.js",
       "profile": {
-        "factory": 64,
+        "factory": 63,
         "building": 60
       },
       "failed": false,
@@ -22672,8 +22673,8 @@
       "issuerId": 309,
       "issuerName": "./~/inline-style-prefixer/lib/static/prefixAll.js",
       "profile": {
-        "factory": 65,
-        "building": 61
+        "factory": 64,
+        "building": 63
       },
       "failed": false,
       "errors": 0,
@@ -22713,8 +22714,8 @@
       "issuerId": 309,
       "issuerName": "./~/inline-style-prefixer/lib/static/prefixAll.js",
       "profile": {
-        "factory": 65,
-        "building": 64
+        "factory": 64,
+        "building": 63
       },
       "failed": false,
       "errors": 0,
@@ -22754,9 +22755,9 @@
       "issuerId": 309,
       "issuerName": "./~/inline-style-prefixer/lib/static/prefixAll.js",
       "profile": {
-        "factory": 65,
-        "building": 60,
-        "dependencies": 29
+        "factory": 64,
+        "building": 59,
+        "dependencies": 26
       },
       "failed": false,
       "errors": 0,
@@ -22796,8 +22797,8 @@
       "issuerId": 309,
       "issuerName": "./~/inline-style-prefixer/lib/static/prefixAll.js",
       "profile": {
-        "factory": 63,
-        "building": 61
+        "factory": 62,
+        "building": 58
       },
       "failed": false,
       "errors": 0,
@@ -22837,9 +22838,9 @@
       "issuerId": 309,
       "issuerName": "./~/inline-style-prefixer/lib/static/prefixAll.js",
       "profile": {
-        "factory": 65,
-        "building": 60,
-        "dependencies": 28
+        "factory": 64,
+        "building": 58,
+        "dependencies": 27
       },
       "failed": false,
       "errors": 0,
@@ -22879,9 +22880,9 @@
       "issuerId": 309,
       "issuerName": "./~/inline-style-prefixer/lib/static/prefixAll.js",
       "profile": {
-        "factory": 65,
-        "building": 62,
-        "dependencies": 27
+        "factory": 64,
+        "building": 61,
+        "dependencies": 24
       },
       "failed": false,
       "errors": 0,
@@ -22921,8 +22922,8 @@
       "issuerId": 288,
       "issuerName": "./~/inline-style-prefixer/lib/Prefixer.js",
       "profile": {
-        "factory": 65,
-        "building": 54,
+        "factory": 66,
+        "building": 53,
         "dependencies": 2
       },
       "failed": false,
@@ -22963,8 +22964,8 @@
       "issuerId": 288,
       "issuerName": "./~/inline-style-prefixer/lib/Prefixer.js",
       "profile": {
-        "factory": 66,
-        "building": 55
+        "factory": 67,
+        "building": 57
       },
       "failed": false,
       "errors": 0,
@@ -23004,8 +23005,8 @@
       "issuerId": 288,
       "issuerName": "./~/inline-style-prefixer/lib/Prefixer.js",
       "profile": {
-        "factory": 66,
-        "building": 57
+        "factory": 67,
+        "building": 55
       },
       "failed": false,
       "errors": 0,
@@ -23045,8 +23046,8 @@
       "issuerId": 157,
       "issuerName": "./~/inline-style-prefixer/lib/utils/sortPrefixedStyle.js",
       "profile": {
-        "factory": 51,
-        "building": 58
+        "factory": 50,
+        "building": 56
       },
       "failed": false,
       "errors": 0,
@@ -23086,8 +23087,8 @@
       "issuerId": 297,
       "issuerName": "./~/inline-style-prefixer/lib/plugins/transition.js",
       "profile": {
-        "factory": 47,
-        "building": 58
+        "factory": 46,
+        "building": 55
       },
       "failed": false,
       "errors": 0,
@@ -23127,9 +23128,9 @@
       "issuerId": 162,
       "issuerName": "./~/material-ui/styles/getMuiTheme.js",
       "profile": {
-        "factory": 776,
-        "building": 483,
-        "dependencies": 1
+        "factory": 789,
+        "building": 476,
+        "dependencies": 0
       },
       "failed": false,
       "errors": 0,
@@ -23170,7 +23171,7 @@
       "issuerName": "./~/material-ui/Popover/Popover.js",
       "profile": {
         "factory": 173,
-        "building": 63,
+        "building": 62,
         "dependencies": 0
       },
       "failed": false,
@@ -23211,9 +23212,9 @@
       "issuerId": 317,
       "issuerName": "./~/material-ui/AppBar/index.js",
       "profile": {
-        "factory": 16,
-        "building": 533,
-        "dependencies": 248
+        "factory": 29,
+        "building": 486,
+        "dependencies": 272
       },
       "failed": false,
       "errors": 0,
@@ -23253,8 +23254,8 @@
       "issuerId": 207,
       "issuerName": "./src/App/Bar.js",
       "profile": {
-        "factory": 446,
-        "building": 619
+        "factory": 422,
+        "building": 630
       },
       "failed": false,
       "errors": 0,
@@ -23295,8 +23296,8 @@
       "issuerName": "./~/material-ui/Avatar/index.js",
       "profile": {
         "factory": 8,
-        "building": 78,
-        "dependencies": 6
+        "building": 74,
+        "dependencies": 7
       },
       "failed": false,
       "errors": 0,
@@ -23336,7 +23337,7 @@
       "issuerId": 322,
       "issuerName": "./~/material-ui/Card/CardHeader.js",
       "profile": {
-        "factory": 77,
+        "factory": 80,
         "building": 98
       },
       "failed": false,
@@ -23377,9 +23378,9 @@
       "issuerId": 130,
       "issuerName": "./~/material-ui/Card/index.js",
       "profile": {
-        "factory": 85,
-        "building": 182,
-        "dependencies": 53
+        "factory": 84,
+        "building": 178,
+        "dependencies": 49
       },
       "failed": false,
       "errors": 0,
@@ -23419,9 +23420,9 @@
       "issuerId": 130,
       "issuerName": "./~/material-ui/Card/index.js",
       "profile": {
-        "factory": 86,
-        "building": 194,
-        "dependencies": 41
+        "factory": 85,
+        "building": 185,
+        "dependencies": 42
       },
       "failed": false,
       "errors": 0,
@@ -23461,9 +23462,9 @@
       "issuerId": 130,
       "issuerName": "./~/material-ui/Card/index.js",
       "profile": {
-        "factory": 86,
-        "building": 184,
-        "dependencies": 50
+        "factory": 84,
+        "building": 173,
+        "dependencies": 54
       },
       "failed": false,
       "errors": 0,
@@ -23503,9 +23504,9 @@
       "issuerId": 130,
       "issuerName": "./~/material-ui/Card/index.js",
       "profile": {
-        "factory": 86,
-        "building": 187,
-        "dependencies": 47
+        "factory": 84,
+        "building": 182,
+        "dependencies": 45
       },
       "failed": false,
       "errors": 0,
@@ -23545,9 +23546,9 @@
       "issuerId": 130,
       "issuerName": "./~/material-ui/Card/index.js",
       "profile": {
-        "factory": 86,
-        "building": 192,
-        "dependencies": 42
+        "factory": 85,
+        "building": 183,
+        "dependencies": 43
       },
       "failed": false,
       "errors": 0,
@@ -23587,9 +23588,9 @@
       "issuerId": 130,
       "issuerName": "./~/material-ui/Card/index.js",
       "profile": {
-        "factory": 86,
-        "building": 189,
-        "dependencies": 45
+        "factory": 84,
+        "building": 175,
+        "dependencies": 52
       },
       "failed": false,
       "errors": 0,
@@ -23629,9 +23630,9 @@
       "issuerId": 327,
       "issuerName": "./~/material-ui/Drawer/index.js",
       "profile": {
-        "factory": 19,
-        "building": 497,
-        "dependencies": 50
+        "factory": 30,
+        "building": 481,
+        "dependencies": 48
       },
       "failed": false,
       "errors": 0,
@@ -23671,8 +23672,8 @@
       "issuerId": 207,
       "issuerName": "./src/App/Bar.js",
       "profile": {
-        "factory": 446,
-        "building": 615
+        "factory": 422,
+        "building": 629
       },
       "failed": false,
       "errors": 0,
@@ -23712,8 +23713,8 @@
       "issuerId": 329,
       "issuerName": "./~/material-ui/DropDownMenu/index.js",
       "profile": {
-        "factory": 104,
-        "building": 127,
+        "factory": 103,
+        "building": 119,
         "dependencies": 61
       },
       "failed": false,
@@ -23754,8 +23755,8 @@
       "issuerId": 209,
       "issuerName": "./src/App/LanguageSelector.js",
       "profile": {
-        "factory": 470,
-        "building": 492,
+        "factory": 387,
+        "building": 475,
         "dependencies": 1
       },
       "failed": false,
@@ -23796,9 +23797,9 @@
       "issuerId": 331,
       "issuerName": "./~/material-ui/FontIcon/index.js",
       "profile": {
-        "factory": 13,
-        "building": 103,
-        "dependencies": 6
+        "factory": 12,
+        "building": 104,
+        "dependencies": 5
       },
       "failed": false,
       "errors": 0,
@@ -23839,7 +23840,7 @@
       "issuerName": "./~/material-ui/IconButton/IconButton.js",
       "profile": {
         "factory": 113,
-        "building": 222
+        "building": 216
       },
       "failed": false,
       "errors": 0,
@@ -23880,8 +23881,8 @@
       "issuerName": "./~/material-ui/IconButton/index.js",
       "profile": {
         "factory": 15,
-        "building": 539,
-        "dependencies": 241
+        "building": 522,
+        "dependencies": 236
       },
       "failed": false,
       "errors": 0,
@@ -23921,9 +23922,9 @@
       "issuerId": 334,
       "issuerName": "./~/material-ui/LinearProgress/index.js",
       "profile": {
-        "factory": 38,
-        "building": 76,
-        "dependencies": 33
+        "factory": 41,
+        "building": 73,
+        "dependencies": 18
       },
       "failed": false,
       "errors": 0,
@@ -23963,8 +23964,8 @@
       "issuerId": 82,
       "issuerName": "./src/pages/async/Loading.js",
       "profile": {
-        "factory": 416,
-        "building": 202
+        "factory": 400,
+        "building": 196
       },
       "failed": false,
       "errors": 0,
@@ -24004,9 +24005,9 @@
       "issuerId": 160,
       "issuerName": "./~/material-ui/MenuItem/MenuItem.js",
       "profile": {
-        "factory": 109,
-        "building": 154,
-        "dependencies": 74
+        "factory": 105,
+        "building": 147,
+        "dependencies": 77
       },
       "failed": false,
       "errors": 0,
@@ -24046,8 +24047,8 @@
       "issuerId": 335,
       "issuerName": "./~/material-ui/List/ListItem.js",
       "profile": {
-        "factory": 88,
-        "building": 70,
+        "factory": 90,
+        "building": 68,
         "dependencies": 1
       },
       "failed": false,
@@ -24088,8 +24089,8 @@
       "issuerId": 207,
       "issuerName": "./src/App/Bar.js",
       "profile": {
-        "factory": 446,
-        "building": 616,
+        "factory": 423,
+        "building": 629,
         "dependencies": 1
       },
       "failed": false,
@@ -24130,8 +24131,8 @@
       "issuerId": 102,
       "issuerName": "./~/material-ui/Menu/Menu.js",
       "profile": {
-        "factory": 77,
-        "building": 135,
+        "factory": 73,
+        "building": 127,
         "dependencies": 0
       },
       "failed": false,
@@ -24173,8 +24174,8 @@
       "issuerName": "./~/material-ui/Paper/index.js",
       "profile": {
         "factory": 36,
-        "building": 80,
-        "dependencies": 30
+        "building": 81,
+        "dependencies": 29
       },
       "failed": false,
       "errors": 0,
@@ -24214,9 +24215,9 @@
       "issuerId": 161,
       "issuerName": "./~/material-ui/Popover/Popover.js",
       "profile": {
-        "factory": 82,
-        "building": 73,
-        "dependencies": 0
+        "factory": 84,
+        "building": 71,
+        "dependencies": 1
       },
       "failed": false,
       "errors": 0,
@@ -24256,8 +24257,8 @@
       "issuerId": 328,
       "issuerName": "./~/material-ui/DropDownMenu/DropDownMenu.js",
       "profile": {
-        "factory": 123,
-        "building": 62,
+        "factory": 124,
+        "building": 59,
         "dependencies": 1
       },
       "failed": false,
@@ -24298,8 +24299,8 @@
       "issuerId": 199,
       "issuerName": "./~/material-ui/RaisedButton/index.js",
       "profile": {
-        "factory": 85,
-        "building": 200,
+        "factory": 84,
+        "building": 193,
         "dependencies": 34
       },
       "failed": false,
@@ -24341,8 +24342,8 @@
       "issuerName": "./~/material-ui/Subheader/index.js",
       "profile": {
         "factory": 9,
-        "building": 75,
-        "dependencies": 5
+        "building": 76,
+        "dependencies": 6
       },
       "failed": false,
       "errors": 0,
@@ -24383,7 +24384,7 @@
       "issuerName": "./~/material-ui/List/List.js",
       "profile": {
         "factory": 114,
-        "building": 98
+        "building": 97
       },
       "failed": false,
       "errors": 0,
@@ -24423,9 +24424,9 @@
       "issuerId": 36,
       "issuerName": "./~/material-ui/SvgIcon/index.js",
       "profile": {
-        "factory": 31,
+        "factory": 29,
         "building": 55,
-        "dependencies": 18
+        "dependencies": 17
       },
       "failed": false,
       "errors": 0,
@@ -24465,8 +24466,8 @@
       "issuerId": 352,
       "issuerName": "./~/material-ui/internal/Overlay.js",
       "profile": {
-        "factory": 134,
-        "building": 62,
+        "factory": 137,
+        "building": 61,
         "dependencies": 0
       },
       "failed": false,
@@ -24507,9 +24508,9 @@
       "issuerId": 349,
       "issuerName": "./~/material-ui/internal/ClearFix.js",
       "profile": {
-        "factory": 57,
-        "building": 66,
-        "dependencies": 0
+        "factory": 56,
+        "building": 63,
+        "dependencies": 1
       },
       "failed": false,
       "errors": 0,
@@ -24549,9 +24550,9 @@
       "issuerId": 357,
       "issuerName": "./~/material-ui/internal/TouchRipple.js",
       "profile": {
-        "factory": 51,
-        "building": 69,
-        "dependencies": 1
+        "factory": 50,
+        "building": 68,
+        "dependencies": 0
       },
       "failed": false,
       "errors": 0,
@@ -24591,8 +24592,8 @@
       "issuerId": 328,
       "issuerName": "./~/material-ui/DropDownMenu/DropDownMenu.js",
       "profile": {
-        "factory": 123,
-        "building": 60,
+        "factory": 124,
+        "building": 61,
         "dependencies": 0
       },
       "failed": false,
@@ -24633,9 +24634,9 @@
       "issuerId": 102,
       "issuerName": "./~/material-ui/Menu/Menu.js",
       "profile": {
-        "factory": 114,
-        "building": 105,
-        "dependencies": 107
+        "factory": 108,
+        "building": 104,
+        "dependencies": 102
       },
       "failed": false,
       "errors": 0,
@@ -24675,7 +24676,7 @@
       "issuerId": 104,
       "issuerName": "./~/material-ui/internal/EnhancedButton.js",
       "profile": {
-        "factory": 104,
+        "factory": 107,
         "building": 63,
         "dependencies": 1
       },
@@ -24717,9 +24718,9 @@
       "issuerId": 326,
       "issuerName": "./~/material-ui/Drawer/Drawer.js",
       "profile": {
-        "factory": 139,
-        "building": 108,
-        "dependencies": 104
+        "factory": 137,
+        "building": 99,
+        "dependencies": 107
       },
       "failed": false,
       "errors": 0,
@@ -24759,8 +24760,8 @@
       "issuerId": 161,
       "issuerName": "./~/material-ui/Popover/Popover.js",
       "profile": {
-        "factory": 82,
-        "building": 71,
+        "factory": 84,
+        "building": 69,
         "dependencies": 44
       },
       "failed": false,
@@ -24801,9 +24802,9 @@
       "issuerId": 351,
       "issuerName": "./~/material-ui/internal/FocusRipple.js",
       "profile": {
-        "factory": 54,
-        "building": 66,
-        "dependencies": 11
+        "factory": 53,
+        "building": 64,
+        "dependencies": 12
       },
       "failed": false,
       "errors": 0,
@@ -24843,8 +24844,8 @@
       "issuerId": 354,
       "issuerName": "./~/material-ui/internal/ScaleIn.js",
       "profile": {
-        "factory": 18,
-        "building": 78,
+        "factory": 19,
+        "building": 65,
         "dependencies": 1
       },
       "failed": false,
@@ -24885,9 +24886,9 @@
       "issuerId": 332,
       "issuerName": "./~/material-ui/IconButton/IconButton.js",
       "profile": {
-        "factory": 96,
-        "building": 133,
-        "dependencies": 78
+        "factory": 95,
+        "building": 135,
+        "dependencies": 71
       },
       "failed": false,
       "errors": 0,
@@ -24927,9 +24928,9 @@
       "issuerId": 104,
       "issuerName": "./~/material-ui/internal/EnhancedButton.js",
       "profile": {
-        "factory": 104,
-        "building": 66,
-        "dependencies": 2
+        "factory": 108,
+        "building": 65,
+        "dependencies": 1
       },
       "failed": false,
       "errors": 0,
@@ -24970,8 +24971,8 @@
       "issuerName": "./src/App/App.js",
       "profile": {
         "factory": 1027,
-        "building": 137,
-        "dependencies": 247
+        "building": 127,
+        "dependencies": 290
       },
       "failed": false,
       "errors": 0,
@@ -25011,9 +25012,9 @@
       "issuerId": 162,
       "issuerName": "./~/material-ui/styles/getMuiTheme.js",
       "profile": {
-        "factory": 616,
-        "building": 159,
-        "dependencies": 1
+        "factory": 640,
+        "building": 148,
+        "dependencies": 0
       },
       "failed": false,
       "errors": 0,
@@ -25053,8 +25054,8 @@
       "issuerId": 359,
       "issuerName": "./~/material-ui/styles/baseThemes/lightBaseTheme.js",
       "profile": {
-        "factory": 395,
-        "building": 113
+        "factory": 388,
+        "building": 112
       },
       "failed": false,
       "errors": 0,
@@ -25094,9 +25095,9 @@
       "issuerId": 162,
       "issuerName": "./~/material-ui/styles/getMuiTheme.js",
       "profile": {
-        "factory": 604,
-        "building": 129,
-        "dependencies": 13
+        "factory": 618,
+        "building": 145,
+        "dependencies": 12
       },
       "failed": false,
       "errors": 0,
@@ -25136,8 +25137,8 @@
       "issuerId": 162,
       "issuerName": "./~/material-ui/styles/getMuiTheme.js",
       "profile": {
-        "factory": 604,
-        "building": 129
+        "factory": 617,
+        "building": 146
       },
       "failed": false,
       "errors": 0,
@@ -25177,9 +25178,9 @@
       "issuerId": 158,
       "issuerName": "./~/material-ui/Card/CardExpandable.js",
       "profile": {
-        "factory": 52,
-        "building": 102,
-        "dependencies": 8
+        "factory": 53,
+        "building": 86,
+        "dependencies": 23
       },
       "failed": false,
       "errors": 0,
@@ -25220,8 +25221,8 @@
       "issuerName": "./~/material-ui/Card/CardExpandable.js",
       "profile": {
         "factory": 52,
-        "building": 84,
-        "dependencies": 26
+        "building": 85,
+        "dependencies": 25
       },
       "failed": false,
       "errors": 0,
@@ -25261,9 +25262,9 @@
       "issuerId": 328,
       "issuerName": "./~/material-ui/DropDownMenu/DropDownMenu.js",
       "profile": {
-        "factory": 122,
-        "building": 59,
-        "dependencies": 27
+        "factory": 123,
+        "building": 58,
+        "dependencies": 9
       },
       "failed": false,
       "errors": 0,
@@ -25303,9 +25304,9 @@
       "issuerId": 160,
       "issuerName": "./~/material-ui/MenuItem/MenuItem.js",
       "profile": {
-        "factory": 123,
-        "building": 217,
-        "dependencies": 12
+        "factory": 118,
+        "building": 194,
+        "dependencies": 61
       },
       "failed": false,
       "errors": 0,
@@ -25345,8 +25346,8 @@
       "issuerId": 335,
       "issuerName": "./~/material-ui/List/ListItem.js",
       "profile": {
-        "factory": 87,
-        "building": 70,
+        "factory": 89,
+        "building": 68,
         "dependencies": 0
       },
       "failed": false,
@@ -25387,9 +25388,9 @@
       "issuerId": 335,
       "issuerName": "./~/material-ui/List/ListItem.js",
       "profile": {
-        "factory": 87,
-        "building": 70,
-        "dependencies": 1
+        "factory": 90,
+        "building": 68,
+        "dependencies": 0
       },
       "failed": false,
       "errors": 0,
@@ -25429,9 +25430,9 @@
       "issuerId": 316,
       "issuerName": "./~/material-ui/AppBar/AppBar.js",
       "profile": {
-        "factory": 117,
-        "building": 218,
-        "dependencies": 62
+        "factory": 146,
+        "building": 193,
+        "dependencies": 29
       },
       "failed": false,
       "errors": 0,
@@ -25471,9 +25472,9 @@
       "issuerId": 162,
       "issuerName": "./~/material-ui/styles/getMuiTheme.js",
       "profile": {
-        "factory": 615,
-        "building": 136,
-        "dependencies": 364
+        "factory": 639,
+        "building": 143,
+        "dependencies": 340
       },
       "failed": false,
       "errors": 0,
@@ -25513,9 +25514,9 @@
       "issuerId": 162,
       "issuerName": "./~/material-ui/styles/getMuiTheme.js",
       "profile": {
-        "factory": 616,
-        "building": 136,
-        "dependencies": 363
+        "factory": 640,
+        "building": 143,
+        "dependencies": 339
       },
       "failed": false,
       "errors": 0,
@@ -25555,8 +25556,8 @@
       "issuerId": 161,
       "issuerName": "./~/material-ui/Popover/Popover.js",
       "profile": {
-        "factory": 82,
-        "building": 74
+        "factory": 85,
+        "building": 71
       },
       "failed": false,
       "errors": 0,
@@ -25596,8 +25597,8 @@
       "issuerId": 162,
       "issuerName": "./~/material-ui/styles/getMuiTheme.js",
       "profile": {
-        "factory": 616,
-        "building": 157
+        "factory": 640,
+        "building": 147
       },
       "failed": false,
       "errors": 0,
@@ -25638,7 +25639,7 @@
       "issuerName": "./config/polyfills.js",
       "profile": {
         "factory": 340,
-        "building": 1006
+        "building": 690
       },
       "failed": false,
       "errors": 0,
@@ -25678,9 +25679,9 @@
       "issuerId": 196,
       "issuerName": "./config/polyfills.js",
       "profile": {
-        "factory": 339,
-        "building": 1011,
-        "dependencies": 140
+        "factory": 340,
+        "building": 694,
+        "dependencies": 104
       },
       "failed": false,
       "errors": 0,
@@ -25720,8 +25721,8 @@
       "issuerId": 105,
       "issuerName": "./~/material-ui/utils/childUtils.js",
       "profile": {
-        "factory": 224,
-        "building": 50,
+        "factory": 223,
+        "building": 49,
         "dependencies": 26
       },
       "failed": false,
@@ -25762,7 +25763,7 @@
       "issuerId": 185,
       "issuerName": "./~/react-event-listener/lib/index.js",
       "profile": {
-        "factory": 157,
+        "factory": 156,
         "building": 36
       },
       "failed": false,
@@ -25803,8 +25804,8 @@
       "issuerId": 405,
       "issuerName": "./~/react-dom/lib/ReactDefaultInjection.js",
       "profile": {
-        "factory": 109,
-        "building": 255
+        "factory": 101,
+        "building": 251
       },
       "failed": false,
       "errors": 0,
@@ -25844,8 +25845,8 @@
       "issuerId": 393,
       "issuerName": "./~/react-dom/lib/ReactDOMComponent.js",
       "profile": {
-        "factory": 94,
-        "building": 821,
+        "factory": 100,
+        "building": 809,
         "dependencies": 0
       },
       "failed": false,
@@ -25886,8 +25887,9 @@
       "issuerId": 405,
       "issuerName": "./~/react-dom/lib/ReactDefaultInjection.js",
       "profile": {
-        "factory": 109,
-        "building": 257
+        "factory": 101,
+        "building": 257,
+        "dependencies": 120
       },
       "failed": false,
       "errors": 0,
@@ -25927,9 +25929,9 @@
       "issuerId": 393,
       "issuerName": "./~/react-dom/lib/ReactDOMComponent.js",
       "profile": {
-        "factory": 94,
-        "building": 823,
-        "dependencies": 0
+        "factory": 100,
+        "building": 811,
+        "dependencies": 1
       },
       "failed": false,
       "errors": 0,
@@ -25969,9 +25971,9 @@
       "issuerId": 405,
       "issuerName": "./~/react-dom/lib/ReactDefaultInjection.js",
       "profile": {
-        "factory": 110,
-        "building": 260,
-        "dependencies": 112
+        "factory": 101,
+        "building": 254,
+        "dependencies": 0
       },
       "failed": false,
       "errors": 0,
@@ -26011,9 +26013,9 @@
       "issuerId": 108,
       "issuerName": "./~/react-dom/lib/DOMChildrenOperations.js",
       "profile": {
-        "factory": 102,
-        "building": 594,
-        "dependencies": 0
+        "factory": 101,
+        "building": 619,
+        "dependencies": 1
       },
       "failed": false,
       "errors": 0,
@@ -26053,8 +26055,8 @@
       "issuerId": 405,
       "issuerName": "./~/react-dom/lib/ReactDefaultInjection.js",
       "profile": {
-        "factory": 110,
-        "building": 261
+        "factory": 101,
+        "building": 258
       },
       "failed": false,
       "errors": 0,
@@ -26094,9 +26096,9 @@
       "issuerId": 405,
       "issuerName": "./~/react-dom/lib/ReactDefaultInjection.js",
       "profile": {
-        "factory": 110,
-        "building": 262,
-        "dependencies": 108
+        "factory": 102,
+        "building": 258,
+        "dependencies": 116
       },
       "failed": false,
       "errors": 0,
@@ -26136,8 +26138,8 @@
       "issuerId": 470,
       "issuerName": "./~/react-tap-event-plugin/src/TapEventPlugin.js",
       "profile": {
-        "factory": 428,
-        "building": 111
+        "factory": 403,
+        "building": 112
       },
       "failed": false,
       "errors": 0,
@@ -26177,9 +26179,9 @@
       "issuerId": 380,
       "issuerName": "./~/react-dom/lib/BeforeInputEventPlugin.js",
       "profile": {
-        "factory": 114,
-        "building": 809,
-        "dependencies": 1
+        "factory": 120,
+        "building": 805,
+        "dependencies": 0
       },
       "failed": false,
       "errors": 0,
@@ -26219,8 +26221,8 @@
       "issuerId": 405,
       "issuerName": "./~/react-dom/lib/ReactDefaultInjection.js",
       "profile": {
-        "factory": 110,
-        "building": 271,
+        "factory": 102,
+        "building": 259,
         "dependencies": 0
       },
       "failed": false,
@@ -26261,9 +26263,9 @@
       "issuerId": 411,
       "issuerName": "./~/react-dom/lib/ReactMultiChild.js",
       "profile": {
-        "factory": 70,
-        "building": 598,
-        "dependencies": 1
+        "factory": 81,
+        "building": 623,
+        "dependencies": 0
       },
       "failed": false,
       "errors": 0,
@@ -26303,8 +26305,8 @@
       "issuerId": 405,
       "issuerName": "./~/react-dom/lib/ReactDefaultInjection.js",
       "profile": {
-        "factory": 110,
-        "building": 272
+        "factory": 102,
+        "building": 259
       },
       "failed": false,
       "errors": 0,
@@ -26344,9 +26346,9 @@
       "issuerId": 181,
       "issuerName": "./~/react-dom/lib/instantiateReactComponent.js",
       "profile": {
-        "factory": 85,
-        "building": 860,
-        "dependencies": 35
+        "factory": 72,
+        "building": 858,
+        "dependencies": 29
       },
       "failed": false,
       "errors": 0,
@@ -26386,9 +26388,9 @@
       "issuerId": 16,
       "issuerName": "./~/react-dom/index.js",
       "profile": {
-        "factory": 77,
-        "building": 1054,
-        "dependencies": 678
+        "factory": 48,
+        "building": 779,
+        "dependencies": 493
       },
       "failed": false,
       "errors": 0,
@@ -26428,9 +26430,9 @@
       "issuerId": 405,
       "issuerName": "./~/react-dom/lib/ReactDefaultInjection.js",
       "profile": {
-        "factory": 111,
-        "building": 280,
-        "dependencies": 98
+        "factory": 102,
+        "building": 278,
+        "dependencies": 103
       },
       "failed": false,
       "errors": 0,
@@ -26471,8 +26473,8 @@
       "issuerName": "./~/react-dom/lib/ReactMount.js",
       "profile": {
         "factory": 98,
-        "building": 304,
-        "dependencies": 69
+        "building": 303,
+        "dependencies": 74
       },
       "failed": false,
       "errors": 0,
@@ -26512,9 +26514,9 @@
       "issuerId": 405,
       "issuerName": "./~/react-dom/lib/ReactDefaultInjection.js",
       "profile": {
-        "factory": 111,
-        "building": 271,
-        "dependencies": 1
+        "factory": 103,
+        "building": 259,
+        "dependencies": 0
       },
       "failed": false,
       "errors": 0,
@@ -26555,7 +26557,7 @@
       "issuerName": "./~/react-dom/lib/ReactMount.js",
       "profile": {
         "factory": 98,
-        "building": 305
+        "building": 304
       },
       "failed": false,
       "errors": 0,
@@ -26595,8 +26597,8 @@
       "issuerId": 390,
       "issuerName": "./~/react-dom/lib/ReactComponentBrowserEnvironment.js",
       "profile": {
-        "factory": 102,
-        "building": 821,
+        "factory": 119,
+        "building": 809,
         "dependencies": 0
       },
       "failed": false,
@@ -26637,9 +26639,9 @@
       "issuerId": 393,
       "issuerName": "./~/react-dom/lib/ReactDOMComponent.js",
       "profile": {
-        "factory": 95,
-        "building": 837,
-        "dependencies": 85
+        "factory": 101,
+        "building": 821,
+        "dependencies": 1
       },
       "failed": false,
       "errors": 0,
@@ -26679,9 +26681,9 @@
       "issuerId": 393,
       "issuerName": "./~/react-dom/lib/ReactDOMComponent.js",
       "profile": {
-        "factory": 95,
-        "building": 832,
-        "dependencies": 1
+        "factory": 101,
+        "building": 824,
+        "dependencies": 0
       },
       "failed": false,
       "errors": 0,
@@ -26721,8 +26723,8 @@
       "issuerId": 174,
       "issuerName": "./~/react-dom/lib/ReactInputSelection.js",
       "profile": {
-        "factory": 59,
-        "building": 602,
+        "factory": 58,
+        "building": 627,
         "dependencies": 0
       },
       "failed": false,
@@ -26763,9 +26765,9 @@
       "issuerId": 405,
       "issuerName": "./~/react-dom/lib/ReactDefaultInjection.js",
       "profile": {
-        "factory": 111,
-        "building": 287,
-        "dependencies": 90
+        "factory": 103,
+        "building": 283,
+        "dependencies": 97
       },
       "failed": false,
       "errors": 0,
@@ -26805,9 +26807,9 @@
       "issuerId": 393,
       "issuerName": "./~/react-dom/lib/ReactDOMComponent.js",
       "profile": {
-        "factory": 95,
-        "building": 849,
-        "dependencies": 73
+        "factory": 102,
+        "building": 826,
+        "dependencies": 84
       },
       "failed": false,
       "errors": 0,
@@ -26847,9 +26849,9 @@
       "issuerId": 405,
       "issuerName": "./~/react-dom/lib/ReactDefaultInjection.js",
       "profile": {
-        "factory": 111,
-        "building": 285,
-        "dependencies": 0
+        "factory": 103,
+        "building": 261,
+        "dependencies": 7
       },
       "failed": false,
       "errors": 0,
@@ -26889,9 +26891,9 @@
       "issuerId": 405,
       "issuerName": "./~/react-dom/lib/ReactDefaultInjection.js",
       "profile": {
-        "factory": 112,
-        "building": 287,
-        "dependencies": 90
+        "factory": 103,
+        "building": 284,
+        "dependencies": 96
       },
       "failed": false,
       "errors": 0,
@@ -26931,8 +26933,8 @@
       "issuerId": 392,
       "issuerName": "./~/react-dom/lib/ReactDOM.js",
       "profile": {
-        "factory": 337,
-        "building": 282,
+        "factory": 203,
+        "building": 238,
         "dependencies": 1
       },
       "failed": false,
@@ -26973,8 +26975,8 @@
       "issuerId": 184,
       "issuerName": "./~/react-dom/lib/traverseAllChildren.js",
       "profile": {
-        "factory": 110,
-        "building": 123
+        "factory": 73,
+        "building": 150
       },
       "failed": false,
       "errors": 0,
@@ -27014,8 +27016,8 @@
       "issuerId": 75,
       "issuerName": "./~/react-dom/lib/ReactBrowserEventEmitter.js",
       "profile": {
-        "factory": 93,
-        "building": 849,
+        "factory": 84,
+        "building": 847,
         "dependencies": 0
       },
       "failed": false,
@@ -27056,9 +27058,9 @@
       "issuerId": 405,
       "issuerName": "./~/react-dom/lib/ReactDefaultInjection.js",
       "profile": {
-        "factory": 112,
-        "building": 290,
-        "dependencies": 81
+        "factory": 104,
+        "building": 285,
+        "dependencies": 89
       },
       "failed": false,
       "errors": 0,
@@ -27098,9 +27100,9 @@
       "issuerId": 405,
       "issuerName": "./~/react-dom/lib/ReactDefaultInjection.js",
       "profile": {
-        "factory": 112,
-        "building": 288,
-        "dependencies": 83
+        "factory": 104,
+        "building": 291,
+        "dependencies": 80
       },
       "failed": false,
       "errors": 0,
@@ -27141,7 +27143,7 @@
       "issuerName": "./~/react-dom/lib/ReactMount.js",
       "profile": {
         "factory": 99,
-        "building": 306
+        "building": 305
       },
       "failed": false,
       "errors": 0,
@@ -27181,9 +27183,9 @@
       "issuerId": 393,
       "issuerName": "./~/react-dom/lib/ReactDOMComponent.js",
       "profile": {
-        "factory": 96,
-        "building": 852,
-        "dependencies": 1
+        "factory": 102,
+        "building": 829,
+        "dependencies": 12
       },
       "failed": false,
       "errors": 0,
@@ -27223,9 +27225,9 @@
       "issuerId": 415,
       "issuerName": "./~/react-dom/lib/ReactRef.js",
       "profile": {
-        "factory": 83,
-        "building": 861,
-        "dependencies": 0
+        "factory": 71,
+        "building": 859,
+        "dependencies": 1
       },
       "failed": false,
       "errors": 0,
@@ -27265,8 +27267,8 @@
       "issuerId": 112,
       "issuerName": "./~/react-dom/lib/LinkedValueUtils.js",
       "profile": {
-        "factory": 38,
-        "building": 486
+        "factory": 36,
+        "building": 469
       },
       "failed": false,
       "errors": 0,
@@ -27306,9 +27308,9 @@
       "issuerId": 405,
       "issuerName": "./~/react-dom/lib/ReactDefaultInjection.js",
       "profile": {
-        "factory": 113,
-        "building": 292,
-        "dependencies": 0
+        "factory": 104,
+        "building": 294,
+        "dependencies": 1
       },
       "failed": false,
       "errors": 0,
@@ -27348,8 +27350,8 @@
       "issuerId": 48,
       "issuerName": "./~/react-dom/lib/ReactReconciler.js",
       "profile": {
-        "factory": 109,
-        "building": 294
+        "factory": 90,
+        "building": 311
       },
       "failed": false,
       "errors": 0,
@@ -27389,8 +27391,8 @@
       "issuerId": 393,
       "issuerName": "./~/react-dom/lib/ReactDOMComponent.js",
       "profile": {
-        "factory": 96,
-        "building": 849,
+        "factory": 102,
+        "building": 842,
         "dependencies": 0
       },
       "failed": false,
@@ -27431,8 +27433,8 @@
       "issuerId": 416,
       "issuerName": "./~/react-dom/lib/ReactServerRenderingTransaction.js",
       "profile": {
-        "factory": 73,
-        "building": 597,
+        "factory": 68,
+        "building": 626,
         "dependencies": 0
       },
       "failed": false,
@@ -27473,8 +27475,8 @@
       "issuerId": 392,
       "issuerName": "./~/react-dom/lib/ReactDOM.js",
       "profile": {
-        "factory": 338,
-        "building": 308
+        "factory": 204,
+        "building": 258
       },
       "failed": false,
       "errors": 0,
@@ -27514,8 +27516,8 @@
       "issuerId": 405,
       "issuerName": "./~/react-dom/lib/ReactDefaultInjection.js",
       "profile": {
-        "factory": 113,
-        "building": 294
+        "factory": 105,
+        "building": 296
       },
       "failed": false,
       "errors": 0,
@@ -27555,9 +27557,9 @@
       "issuerId": 405,
       "issuerName": "./~/react-dom/lib/ReactDefaultInjection.js",
       "profile": {
-        "factory": 113,
-        "building": 338,
-        "dependencies": 40
+        "factory": 105,
+        "building": 302,
+        "dependencies": 80
       },
       "failed": false,
       "errors": 0,
@@ -27597,9 +27599,9 @@
       "issuerId": 405,
       "issuerName": "./~/react-dom/lib/ReactDefaultInjection.js",
       "profile": {
-        "factory": 114,
-        "building": 296,
-        "dependencies": 81
+        "factory": 105,
+        "building": 331,
+        "dependencies": 48
       },
       "failed": false,
       "errors": 0,
@@ -27639,9 +27641,9 @@
       "issuerId": 421,
       "issuerName": "./~/react-dom/lib/SimpleEventPlugin.js",
       "profile": {
-        "factory": 82,
-        "building": 860,
-        "dependencies": 0
+        "factory": 55,
+        "building": 867,
+        "dependencies": 1
       },
       "failed": false,
       "errors": 0,
@@ -27681,9 +27683,9 @@
       "issuerId": 421,
       "issuerName": "./~/react-dom/lib/SimpleEventPlugin.js",
       "profile": {
-        "factory": 83,
-        "building": 860,
-        "dependencies": 1
+        "factory": 55,
+        "building": 868,
+        "dependencies": 0
       },
       "failed": false,
       "errors": 0,
@@ -27723,9 +27725,9 @@
       "issuerId": 380,
       "issuerName": "./~/react-dom/lib/BeforeInputEventPlugin.js",
       "profile": {
-        "factory": 115,
-        "building": 809,
-        "dependencies": 1
+        "factory": 121,
+        "building": 804,
+        "dependencies": 0
       },
       "failed": false,
       "errors": 0,
@@ -27765,8 +27767,8 @@
       "issuerId": 421,
       "issuerName": "./~/react-dom/lib/SimpleEventPlugin.js",
       "profile": {
-        "factory": 83,
-        "building": 863,
+        "factory": 56,
+        "building": 869,
         "dependencies": 0
       },
       "failed": false,
@@ -27807,8 +27809,8 @@
       "issuerId": 421,
       "issuerName": "./~/react-dom/lib/SimpleEventPlugin.js",
       "profile": {
-        "factory": 83,
-        "building": 861,
+        "factory": 55,
+        "building": 869,
         "dependencies": 0
       },
       "failed": false,
@@ -27849,8 +27851,8 @@
       "issuerId": 380,
       "issuerName": "./~/react-dom/lib/BeforeInputEventPlugin.js",
       "profile": {
-        "factory": 115,
-        "building": 810,
+        "factory": 121,
+        "building": 805,
         "dependencies": 0
       },
       "failed": false,
@@ -27891,9 +27893,9 @@
       "issuerId": 421,
       "issuerName": "./~/react-dom/lib/SimpleEventPlugin.js",
       "profile": {
-        "factory": 83,
-        "building": 862,
-        "dependencies": 51
+        "factory": 56,
+        "building": 868,
+        "dependencies": 29
       },
       "failed": false,
       "errors": 0,
@@ -27933,9 +27935,9 @@
       "issuerId": 421,
       "issuerName": "./~/react-dom/lib/SimpleEventPlugin.js",
       "profile": {
-        "factory": 84,
-        "building": 862,
-        "dependencies": 50
+        "factory": 56,
+        "building": 870,
+        "dependencies": 27
       },
       "failed": false,
       "errors": 0,
@@ -27975,8 +27977,8 @@
       "issuerId": 421,
       "issuerName": "./~/react-dom/lib/SimpleEventPlugin.js",
       "profile": {
-        "factory": 84,
-        "building": 863,
+        "factory": 56,
+        "building": 870,
         "dependencies": 0
       },
       "failed": false,
@@ -28017,8 +28019,8 @@
       "issuerId": 421,
       "issuerName": "./~/react-dom/lib/SimpleEventPlugin.js",
       "profile": {
-        "factory": 98,
-        "building": 850,
+        "factory": 56,
+        "building": 871,
         "dependencies": 0
       },
       "failed": false,
@@ -28059,8 +28061,8 @@
       "issuerId": 410,
       "issuerName": "./~/react-dom/lib/ReactMarkupChecksum.js",
       "profile": {
-        "factory": 88,
-        "building": 851
+        "factory": 77,
+        "building": 850
       },
       "failed": false,
       "errors": 0,
@@ -28101,7 +28103,7 @@
       "issuerName": "./~/react-dom/lib/CSSPropertyOperations.js",
       "profile": {
         "factory": 99,
-        "building": 595,
+        "building": 620,
         "dependencies": 0
       },
       "failed": false,
@@ -28142,9 +28144,9 @@
       "issuerId": 392,
       "issuerName": "./~/react-dom/lib/ReactDOM.js",
       "profile": {
-        "factory": 339,
-        "building": 308,
-        "dependencies": 129
+        "factory": 204,
+        "building": 262,
+        "dependencies": 136
       },
       "failed": false,
       "errors": 0,
@@ -28184,9 +28186,9 @@
       "issuerId": 411,
       "issuerName": "./~/react-dom/lib/ReactMultiChild.js",
       "profile": {
-        "factory": 70,
-        "building": 600,
-        "dependencies": 523
+        "factory": 81,
+        "building": 624,
+        "dependencies": 509
       },
       "failed": false,
       "errors": 0,
@@ -28226,8 +28228,8 @@
       "issuerId": 428,
       "issuerName": "./~/react-dom/lib/SyntheticKeyboardEvent.js",
       "profile": {
-        "factory": 55,
-        "building": 603,
+        "factory": 35,
+        "building": 645,
         "dependencies": 0
       },
       "failed": false,
@@ -28268,8 +28270,8 @@
       "issuerId": 184,
       "issuerName": "./~/react-dom/lib/traverseAllChildren.js",
       "profile": {
-        "factory": 110,
-        "building": 123
+        "factory": 73,
+        "building": 150
       },
       "failed": false,
       "errors": 0,
@@ -28309,8 +28311,8 @@
       "issuerId": 181,
       "issuerName": "./~/react-dom/lib/instantiateReactComponent.js",
       "profile": {
-        "factory": 85,
-        "building": 851
+        "factory": 72,
+        "building": 849
       },
       "failed": false,
       "errors": 0,
@@ -28350,8 +28352,8 @@
       "issuerId": 400,
       "issuerName": "./~/react-dom/lib/ReactDOMSelection.js",
       "profile": {
-        "factory": 34,
-        "building": 492
+        "factory": 31,
+        "building": 475
       },
       "failed": false,
       "errors": 0,
@@ -28391,8 +28393,8 @@
       "issuerId": 75,
       "issuerName": "./~/react-dom/lib/ReactBrowserEventEmitter.js",
       "profile": {
-        "factory": 93,
-        "building": 850,
+        "factory": 85,
+        "building": 849,
         "dependencies": 0
       },
       "failed": false,
@@ -28433,8 +28435,8 @@
       "issuerId": 168,
       "issuerName": "./~/react-dom/lib/DOMPropertyOperations.js",
       "profile": {
-        "factory": 95,
-        "building": 595,
+        "factory": 94,
+        "building": 621,
         "dependencies": 0
       },
       "failed": false,
@@ -28475,8 +28477,8 @@
       "issuerId": 392,
       "issuerName": "./~/react-dom/lib/ReactDOM.js",
       "profile": {
-        "factory": 339,
-        "building": 311,
+        "factory": 205,
+        "building": 264,
         "dependencies": 0
       },
       "failed": false,
@@ -28518,7 +28520,7 @@
       "issuerName": "./~/react-event-listener/lib/supports.js",
       "profile": {
         "factory": 43,
-        "building": 58,
+        "building": 56,
         "dependencies": 1
       },
       "failed": false,
@@ -28559,8 +28561,8 @@
       "issuerId": 185,
       "issuerName": "./~/react-event-listener/lib/index.js",
       "profile": {
-        "factory": 57,
-        "building": 62
+        "factory": 59,
+        "building": 60
       },
       "failed": false,
       "errors": 0,
@@ -28600,9 +28602,9 @@
       "issuerId": 206,
       "issuerName": "./src/App/App.js",
       "profile": {
-        "factory": 199,
-        "building": 817,
-        "dependencies": 1
+        "factory": 192,
+        "building": 792,
+        "dependencies": 2
       },
       "failed": false,
       "errors": 0,
@@ -28642,9 +28644,9 @@
       "issuerId": 207,
       "issuerName": "./src/App/Bar.js",
       "profile": {
-        "factory": 410,
-        "building": 279,
-        "dependencies": 1
+        "factory": 383,
+        "building": 313,
+        "dependencies": 11
       },
       "failed": false,
       "errors": 0,
@@ -28684,8 +28686,8 @@
       "issuerId": 210,
       "issuerName": "./src/App/PageContent.js",
       "profile": {
-        "factory": 285,
-        "building": 281,
+        "factory": 282,
+        "building": 325,
         "dependencies": 0
       },
       "failed": false,
@@ -28726,8 +28728,8 @@
       "issuerId": 210,
       "issuerName": "./src/App/PageContent.js",
       "profile": {
-        "factory": 284,
-        "building": 282,
+        "factory": 282,
+        "building": 325,
         "dependencies": 0
       },
       "failed": false,
@@ -28768,9 +28770,9 @@
       "issuerId": 210,
       "issuerName": "./src/App/PageContent.js",
       "profile": {
-        "factory": 285,
-        "building": 281,
-        "dependencies": 0
+        "factory": 282,
+        "building": 325,
+        "dependencies": 1
       },
       "failed": false,
       "errors": 0,
@@ -28810,9 +28812,9 @@
       "issuerId": 198,
       "issuerName": "./~/react-router-dom/es/index.js",
       "profile": {
-        "factory": 22,
-        "building": 1124,
-        "dependencies": 17
+        "factory": 33,
+        "building": 763,
+        "dependencies": 28
       },
       "failed": false,
       "errors": 0,
@@ -28856,9 +28858,9 @@
       "issuerId": 198,
       "issuerName": "./~/react-router-dom/es/index.js",
       "profile": {
-        "factory": 22,
-        "building": 1108,
-        "dependencies": 32
+        "factory": 33,
+        "building": 765,
+        "dependencies": 26
       },
       "failed": false,
       "errors": 0,
@@ -28902,8 +28904,8 @@
       "issuerId": 198,
       "issuerName": "./~/react-router-dom/es/index.js",
       "profile": {
-        "factory": 23,
-        "building": 1117,
+        "factory": 33,
+        "building": 769,
         "dependencies": 22
       },
       "failed": false,
@@ -28948,9 +28950,9 @@
       "issuerId": 198,
       "issuerName": "./~/react-router-dom/es/index.js",
       "profile": {
-        "factory": 23,
-        "building": 1119,
-        "dependencies": 21
+        "factory": 34,
+        "building": 770,
+        "dependencies": 20
       },
       "failed": false,
       "errors": 0,
@@ -28994,9 +28996,9 @@
       "issuerId": 198,
       "issuerName": "./~/react-router-dom/es/index.js",
       "profile": {
-        "factory": 23,
-        "building": 1120,
-        "dependencies": 20
+        "factory": 34,
+        "building": 772,
+        "dependencies": 18
       },
       "failed": false,
       "errors": 0,
@@ -29040,9 +29042,9 @@
       "issuerId": 198,
       "issuerName": "./~/react-router-dom/es/index.js",
       "profile": {
-        "factory": 24,
-        "building": 1119,
-        "dependencies": 20
+        "factory": 34,
+        "building": 773,
+        "dependencies": 17
       },
       "failed": false,
       "errors": 0,
@@ -29086,9 +29088,9 @@
       "issuerId": 198,
       "issuerName": "./~/react-router-dom/es/index.js",
       "profile": {
-        "factory": 25,
-        "building": 1119,
-        "dependencies": 19
+        "factory": 34,
+        "building": 773,
+        "dependencies": 17
       },
       "failed": false,
       "errors": 0,
@@ -29132,9 +29134,9 @@
       "issuerId": 198,
       "issuerName": "./~/react-router-dom/es/index.js",
       "profile": {
-        "factory": 25,
-        "building": 1119,
-        "dependencies": 19
+        "factory": 35,
+        "building": 773,
+        "dependencies": 16
       },
       "failed": false,
       "errors": 0,
@@ -29178,8 +29180,8 @@
       "issuerId": 198,
       "issuerName": "./~/react-router-dom/es/index.js",
       "profile": {
-        "factory": 25,
-        "building": 1122,
+        "factory": 35,
+        "building": 773,
         "dependencies": 16
       },
       "failed": false,
@@ -29224,9 +29226,9 @@
       "issuerId": 198,
       "issuerName": "./~/react-router-dom/es/index.js",
       "profile": {
-        "factory": 26,
-        "building": 1123,
-        "dependencies": 14
+        "factory": 35,
+        "building": 773,
+        "dependencies": 16
       },
       "failed": false,
       "errors": 0,
@@ -29270,9 +29272,9 @@
       "issuerId": 198,
       "issuerName": "./~/react-router-dom/es/index.js",
       "profile": {
-        "factory": 26,
-        "building": 1124,
-        "dependencies": 13
+        "factory": 35,
+        "building": 774,
+        "dependencies": 15
       },
       "failed": false,
       "errors": 0,
@@ -29316,9 +29318,9 @@
       "issuerId": 198,
       "issuerName": "./~/react-router-dom/es/index.js",
       "profile": {
-        "factory": 26,
-        "building": 1127,
-        "dependencies": 10
+        "factory": 36,
+        "building": 774,
+        "dependencies": 14
       },
       "failed": false,
       "errors": 0,
@@ -29362,9 +29364,9 @@
       "issuerId": 14,
       "issuerName": "./~/react-router/es/index.js",
       "profile": {
-        "factory": 53,
-        "building": 1059,
-        "dependencies": 350
+        "factory": 33,
+        "building": 749,
+        "dependencies": 254
       },
       "failed": false,
       "errors": 0,
@@ -29408,9 +29410,9 @@
       "issuerId": 14,
       "issuerName": "./~/react-router/es/index.js",
       "profile": {
-        "factory": 54,
-        "building": 1063,
-        "dependencies": 345
+        "factory": 34,
+        "building": 719,
+        "dependencies": 283
       },
       "failed": false,
       "errors": 0,
@@ -29454,9 +29456,9 @@
       "issuerId": 14,
       "issuerName": "./~/react-router/es/index.js",
       "profile": {
-        "factory": 54,
-        "building": 1070,
-        "dependencies": 338
+        "factory": 34,
+        "building": 723,
+        "dependencies": 279
       },
       "failed": false,
       "errors": 0,
@@ -29500,9 +29502,9 @@
       "issuerId": 14,
       "issuerName": "./~/react-router/es/index.js",
       "profile": {
-        "factory": 57,
-        "building": 1101,
-        "dependencies": 640
+        "factory": 35,
+        "building": 744,
+        "dependencies": 537
       },
       "failed": false,
       "errors": 0,
@@ -29546,9 +29548,9 @@
       "issuerId": 14,
       "issuerName": "./~/react-router/es/index.js",
       "profile": {
-        "factory": 57,
-        "building": 1104,
-        "dependencies": 634
+        "factory": 36,
+        "building": 760,
+        "dependencies": 517
       },
       "failed": false,
       "errors": 0,
@@ -29592,9 +29594,9 @@
       "issuerId": 14,
       "issuerName": "./~/react-router/es/index.js",
       "profile": {
-        "factory": 58,
-        "building": 1107,
-        "dependencies": 297
+        "factory": 36,
+        "building": 762,
+        "dependencies": 238
       },
       "failed": false,
       "errors": 0,
@@ -29638,8 +29640,8 @@
       "issuerId": 469,
       "issuerName": "./~/react-router/~/path-to-regexp/index.js",
       "profile": {
-        "factory": 933,
-        "building": 615
+        "factory": 926,
+        "building": 630
       },
       "failed": false,
       "errors": 0,
@@ -29679,8 +29681,8 @@
       "issuerId": 125,
       "issuerName": "./~/react-router/es/matchPath.js",
       "profile": {
-        "factory": 709,
-        "building": 330
+        "factory": 578,
+        "building": 339
       },
       "failed": false,
       "errors": 0,
@@ -29722,9 +29724,9 @@
       "issuerId": 473,
       "issuerName": "./~/react-tap-event-plugin/src/injectTapEventPlugin.js",
       "profile": {
-        "factory": 369,
-        "building": 129,
-        "dependencies": 5
+        "factory": 354,
+        "building": 135,
+        "dependencies": 4
       },
       "failed": false,
       "errors": 0,
@@ -29764,8 +29766,8 @@
       "issuerId": 470,
       "issuerName": "./~/react-tap-event-plugin/src/TapEventPlugin.js",
       "profile": {
-        "factory": 428,
-        "building": 111
+        "factory": 403,
+        "building": 112
       },
       "failed": false,
       "errors": 0,
@@ -29805,8 +29807,8 @@
       "issuerId": 473,
       "issuerName": "./~/react-tap-event-plugin/src/injectTapEventPlugin.js",
       "profile": {
-        "factory": 369,
-        "building": 125
+        "factory": 354,
+        "building": 140
       },
       "failed": false,
       "errors": 0,
@@ -29846,9 +29848,9 @@
       "issuerId": 206,
       "issuerName": "./src/App/App.js",
       "profile": {
-        "factory": 1130,
-        "building": 284,
-        "dependencies": 333
+        "factory": 1116,
+        "building": 327,
+        "dependencies": 320
       },
       "failed": false,
       "errors": 0,
@@ -29888,9 +29890,9 @@
       "issuerId": 475,
       "issuerName": "./~/react/lib/ReactChildren.js",
       "profile": {
-        "factory": 232,
-        "building": 258,
-        "dependencies": 1
+        "factory": 218,
+        "building": 251,
+        "dependencies": 0
       },
       "failed": false,
       "errors": 0,
@@ -29930,9 +29932,9 @@
       "issuerId": 38,
       "issuerName": "./~/react/lib/React.js",
       "profile": {
-        "factory": 349,
-        "building": 153,
-        "dependencies": 1
+        "factory": 269,
+        "building": 115,
+        "dependencies": 9
       },
       "failed": false,
       "errors": 0,
@@ -29972,9 +29974,9 @@
       "issuerId": 38,
       "issuerName": "./~/react/lib/React.js",
       "profile": {
-        "factory": 350,
-        "building": 217,
-        "dependencies": 172
+        "factory": 270,
+        "building": 144,
+        "dependencies": 191
       },
       "failed": false,
       "errors": 0,
@@ -30014,9 +30016,9 @@
       "issuerId": 38,
       "issuerName": "./~/react/lib/React.js",
       "profile": {
-        "factory": 350,
-        "building": 231,
-        "dependencies": 1
+        "factory": 270,
+        "building": 159,
+        "dependencies": 0
       },
       "failed": false,
       "errors": 0,
@@ -30056,9 +30058,9 @@
       "issuerId": 38,
       "issuerName": "./~/react/lib/React.js",
       "profile": {
-        "factory": 351,
-        "building": 276,
-        "dependencies": 112
+        "factory": 271,
+        "building": 201,
+        "dependencies": 133
       },
       "failed": false,
       "errors": 0,
@@ -30098,8 +30100,8 @@
       "issuerId": 478,
       "issuerName": "./~/react/lib/ReactPropTypes.js",
       "profile": {
-        "factory": 113,
-        "building": 256
+        "factory": 137,
+        "building": 250
       },
       "failed": false,
       "errors": 0,
@@ -30139,9 +30141,9 @@
       "issuerId": 38,
       "issuerName": "./~/react/lib/React.js",
       "profile": {
-        "factory": 350,
-        "building": 170,
-        "dependencies": 1
+        "factory": 269,
+        "building": 128,
+        "dependencies": 0
       },
       "failed": false,
       "errors": 0,
@@ -30181,7 +30183,7 @@
       "issuerId": 482,
       "issuerName": "./~/react/lib/ReactTransitionGroup.js",
       "profile": {
-        "factory": 15,
+        "factory": 14,
         "building": 24
       },
       "failed": false,
@@ -30222,8 +30224,8 @@
       "issuerId": 165,
       "issuerName": "./~/react-addons-transition-group/index.js",
       "profile": {
-        "factory": 36,
-        "building": 63,
+        "factory": 33,
+        "building": 60,
         "dependencies": 0
       },
       "failed": false,
@@ -30264,8 +30266,8 @@
       "issuerId": 38,
       "issuerName": "./~/react/lib/React.js",
       "profile": {
-        "factory": 352,
-        "building": 276
+        "factory": 271,
+        "building": 186
       },
       "failed": false,
       "errors": 0,
@@ -30305,9 +30307,9 @@
       "issuerId": 481,
       "issuerName": "./~/react/lib/ReactTransitionChildMapping.js",
       "profile": {
-        "factory": 2,
+        "factory": 1,
         "building": 2,
-        "dependencies": 1
+        "dependencies": 0
       },
       "failed": false,
       "errors": 0,
@@ -30347,9 +30349,9 @@
       "issuerId": 38,
       "issuerName": "./~/react/lib/React.js",
       "profile": {
-        "factory": 352,
-        "building": 277,
-        "dependencies": 110
+        "factory": 271,
+        "building": 183,
+        "dependencies": 153
       },
       "failed": false,
       "errors": 0,
@@ -30389,8 +30391,8 @@
       "issuerId": 162,
       "issuerName": "./~/material-ui/styles/getMuiTheme.js",
       "profile": {
-        "factory": 735,
-        "building": 485
+        "factory": 764,
+        "building": 462
       },
       "failed": false,
       "errors": 0,
@@ -30431,7 +30433,7 @@
       "issuerName": "./~/recompose/shouldUpdate.js",
       "profile": {
         "factory": 14,
-        "building": 78
+        "building": 74
       },
       "failed": false,
       "errors": 0,
@@ -30471,8 +30473,8 @@
       "issuerId": 489,
       "issuerName": "./~/recompose/isReferentiallyTransparentFunctionComponent.js",
       "profile": {
-        "factory": 2,
-        "building": 24
+        "factory": 1,
+        "building": 23
       },
       "failed": false,
       "errors": 0,
@@ -30512,8 +30514,8 @@
       "issuerId": 487,
       "issuerName": "./~/recompose/createEagerFactory.js",
       "profile": {
-        "factory": 24,
-        "building": 53
+        "factory": 23,
+        "building": 51
       },
       "failed": false,
       "errors": 0,
@@ -30554,7 +30556,7 @@
       "issuerName": "./~/recompose/pure.js",
       "profile": {
         "factory": 32,
-        "building": 73,
+        "building": 71,
         "dependencies": 0
       },
       "failed": false,
@@ -30596,8 +30598,8 @@
       "issuerName": "./~/recompose/createEagerFactory.js",
       "profile": {
         "factory": 43,
-        "building": 35,
-        "dependencies": 1
+        "building": 32,
+        "dependencies": 0
       },
       "failed": false,
       "errors": 0,
@@ -30637,8 +30639,8 @@
       "issuerId": 98,
       "issuerName": "./~/history/LocationUtils.js",
       "profile": {
-        "factory": 1016,
-        "building": 383
+        "factory": 1029,
+        "building": 368
       },
       "failed": false,
       "errors": 0,
@@ -30678,8 +30680,8 @@
       "issuerId": 98,
       "issuerName": "./~/history/LocationUtils.js",
       "profile": {
-        "factory": 1016,
-        "building": 384
+        "factory": 1029,
+        "building": 367
       },
       "failed": false,
       "errors": 0,
@@ -30719,8 +30721,8 @@
       "issuerId": 226,
       "issuerName": "./~/bowser/src/bowser.js",
       "profile": {
-        "factory": 22,
-        "building": 25
+        "factory": 20,
+        "building": 24
       },
       "failed": false,
       "errors": 0,
@@ -30779,8 +30781,8 @@
       "issuerId": 196,
       "issuerName": "./config/polyfills.js",
       "profile": {
-        "factory": 340,
-        "building": 1041
+        "factory": 341,
+        "building": 719
       },
       "failed": false,
       "errors": 0,
@@ -30820,7 +30822,7 @@
       "issuerId": null,
       "issuerName": null,
       "profile": {
-        "factory": 0,
+        "factory": 1,
         "building": 1
       },
       "failed": false,
@@ -30851,7 +30853,7 @@
       "issuerName": null,
       "profile": {
         "factory": 0,
-        "building": 0
+        "building": 1
       },
       "failed": false,
       "errors": 0,
@@ -30877,13 +30879,13 @@
         1
       ],
       "assets": [],
-      "issuer": "/home/sdt/www/sylvaindethier.github.io/node_modules/babel-loader/lib/index.js!/home/sdt/www/sylvaindethier.github.io/node_modules/eslint-loader/index.js!/home/sdt/www/sylvaindethier.github.io/src/pages/Contact.js",
-      "issuerId": 201,
-      "issuerName": "./src/pages/Contact.js",
+      "issuer": "/home/sdt/www/sylvaindethier.github.io/node_modules/babel-loader/lib/index.js!/home/sdt/www/sylvaindethier.github.io/node_modules/eslint-loader/index.js!/home/sdt/www/sylvaindethier.github.io/src/pages/Resume.js",
+      "issuerId": 202,
+      "issuerName": "./src/pages/Resume.js",
       "profile": {
-        "factory": 174,
-        "building": 101,
-        "dependencies": 1
+        "factory": 141,
+        "building": 122,
+        "dependencies": 0
       },
       "failed": false,
       "errors": 0,
@@ -30932,9 +30934,9 @@
       "issuerId": 201,
       "issuerName": "./src/pages/Contact.js",
       "profile": {
-        "factory": 174,
-        "building": 132,
-        "dependencies": 0
+        "factory": 80,
+        "building": 148,
+        "dependencies": 1
       },
       "failed": false,
       "errors": 0,
@@ -30974,9 +30976,9 @@
       "issuerId": 202,
       "issuerName": "./src/pages/Resume.js",
       "profile": {
-        "factory": 94,
-        "building": 142,
-        "dependencies": 1
+        "factory": 141,
+        "building": 113,
+        "dependencies": 0
       },
       "failed": false,
       "errors": 0,
@@ -31014,8 +31016,8 @@
       "issuerId": 502,
       "issuerName": "./~/buffer/index.js",
       "profile": {
-        "factory": 283,
-        "building": 58
+        "factory": 277,
+        "building": 55
       },
       "failed": false,
       "errors": 0,
@@ -31053,8 +31055,8 @@
       "issuerId": 505,
       "issuerName": "./~/css-loader/lib/css-base.js",
       "profile": {
-        "factory": 736,
-        "building": 485,
+        "factory": 765,
+        "building": 462,
         "dependencies": 1
       },
       "failed": false,
@@ -31093,8 +31095,8 @@
       "issuerId": 271,
       "issuerName": "./~/sanitize.css/sanitize.css",
       "profile": {
-        "factory": 102,
-        "building": 388
+        "factory": 105,
+        "building": 389
       },
       "failed": false,
       "errors": 0,
@@ -31122,9 +31124,9 @@
       "issuerId": 272,
       "issuerName": "./src/App/styles.css",
       "profile": {
-        "factory": 2,
-        "building": 816,
-        "dependencies": 14
+        "factory": 1,
+        "building": 827,
+        "dependencies": 78
       },
       "failed": false,
       "errors": 0,
@@ -31152,8 +31154,8 @@
       "issuerId": 503,
       "issuerName": "./~/css-loader?{\"importLoaders\":1}!./~/postcss-loader?{\"ident\":\"postcss\"}!./~/sanitize.css/sanitize.css",
       "profile": {
-        "factory": 635,
-        "building": 141
+        "factory": 685,
+        "building": 63
       },
       "failed": false,
       "errors": 0,
@@ -31200,8 +31202,8 @@
       "issuerId": 502,
       "issuerName": "./~/buffer/index.js",
       "profile": {
-        "factory": 284,
-        "building": 55
+        "factory": 278,
+        "building": 59
       },
       "failed": false,
       "errors": 0,
@@ -31239,8 +31241,8 @@
       "issuerId": 502,
       "issuerName": "./~/buffer/index.js",
       "profile": {
-        "factory": 15,
-        "building": 129
+        "factory": 16,
+        "building": 121
       },
       "failed": false,
       "errors": 0,
@@ -31278,8 +31280,8 @@
       "issuerId": 271,
       "issuerName": "./~/sanitize.css/sanitize.css",
       "profile": {
-        "factory": 202,
-        "building": 293
+        "factory": 252,
+        "building": 305
       },
       "failed": false,
       "errors": 0,
@@ -31307,8 +31309,8 @@
       "issuerId": 508,
       "issuerName": "./~/style-loader/addStyles.js",
       "profile": {
-        "factory": 631,
-        "building": 141
+        "factory": 637,
+        "building": 58
       },
       "failed": false,
       "errors": 0,
@@ -31340,7 +31342,7 @@
       "assets": [
         {
           "name": "index.html",
-          "size": 548871,
+          "size": 550315,
           "chunks": [
             0
           ],
@@ -31364,12 +31366,12 @@
           "initial": true,
           "entry": true,
           "extraAsync": false,
-          "size": 545721,
+          "size": 547165,
           "names": [],
           "files": [
             "index.html"
           ],
-          "hash": "fea6e89ad4c71b8cdf36",
+          "hash": "fd15ef0c88da47a3e6cf",
           "parents": [],
           "origins": [
             {
@@ -31403,8 +31405,8 @@
           "issuerId": 1,
           "issuerName": "./~/html-webpack-plugin/lib/loader.js!./public/index.html",
           "profile": {
-            "factory": 1310,
-            "building": 397
+            "factory": 998,
+            "building": 309
           },
           "failed": false,
           "errors": 0,
@@ -31431,7 +31433,7 @@
           "name": "./~/html-webpack-plugin/lib/loader.js!./public/index.html",
           "index": 0,
           "index2": 3,
-          "size": 5107,
+          "size": 6551,
           "cacheable": true,
           "built": true,
           "optional": false,
@@ -31444,8 +31446,8 @@
           "issuerId": null,
           "issuerName": null,
           "profile": {
-            "factory": 51,
-            "building": 44
+            "factory": 56,
+            "building": 38
           },
           "failed": false,
           "errors": 0,
@@ -31454,7 +31456,7 @@
           "usedExports": true,
           "providedExports": null,
           "depth": 0,
-          "source": "var _ = require(\"../node_modules/lodash/lodash.js\");module.exports = function (templateParams) {var compilation = templateParams.compilation;var webpack = templateParams.webpack;var webpackConfig = templateParams.webpackConfig;var htmlWebpackPlugin = templateParams.htmlWebpackPlugin;return (function(data) {\nvar __t, __p = '';\n__p += '<!doctype html>\\n<html lang=\"fr\">\\n  <head>\\n    <meta charset=\"utf-8\">\\n    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\\n    <!-- Use minimum-scale=1 to enable GPU rasterization -->\\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, minimum-scale=1, shrink-to-fit=no\">\\n    <title>Sylvain Dethier - Web app developer</title>\\n    <meta name=\"description\" content=\"Développeur d\\'application web: JavaScript, NodeJS, ReactJS\">\\n    <meta name=\"keywords\" content=\"développeur, web, full stack, JavaScript, NodeJS, ReactJS\">\\n\\n    <!-- Add to homescreen for Chrome on Android -->\\n    <meta name=\"mobile-web-app-capable\" content=\"yes\">\\n    <link rel=\"icon\" sizes=\"192x192\" href=\"%PUBLIC_URL%/icons/android-desktop.png\">\\n\\n    <!-- Add to homescreen for Safari on iOS -->\\n    <meta name=\"apple-mobile-web-app-capable\" content=\"yes\">\\n    <meta name=\"apple-mobile-web-app-status-bar-style\" content=\"black\">\\n    <meta name=\"apple-mobile-web-app-title\" content=\"JS Web Dev\">\\n    <link rel=\"apple-touch-icon-precomposed\" href=\"%PUBLIC_URL%/icons/ios-desktop.png\">\\n\\n    <!-- Tile icon for Win8 (144x144 + tile color) -->\\n    <meta name=\"msapplication-TileImage\" content=\"%PUBLIC_URL%/icons/ms-touch-icon-precomposed.png\">\\n    <meta name=\"msapplication-TileColor\" content=\"#2196F3\">\\n\\n    <link rel=\"shortcut icon\" href=\"%PUBLIC_URL%/icons/favicon.png\">\\n    <!--\\n      Notice the use of %PUBLIC_URL% in the tag above.\\n      It will be replaced with the URL of the `public` folder during the build.\\n      Only files inside the `public` folder can be referenced from the HTML.\\n\\n      Unlike \"/favicon.ico\" or \"favicon.ico\", \"%PUBLIC_URL%/favicon.ico\" will\\n      work correctly both with client-side routing and a non-root public URL.\\n      Learn how to configure a non-root public URL by running `npm run build`.\\n    -->\\n    <!-- Roboto from Google webfonts -->\\n    <link href=\"https://fonts.googleapis.com/css?family=Roboto:300,400,500\" rel=\"stylesheet\">\\n    <style type=\"text/css\">\\n    html, body {\\n      font-family: \\'Roboto\\', sans-serif;\\n    }\\n    /* https://codepen.io/jczimm/pen/vEBpoL */\\n    .loader {\\n      position: relative;\\n      margin: 0 auto;\\n      margin-top: 100px;\\n      width: 100px;\\n    }\\n    .loader:before {\\n      content: \\'\\';\\n      display: block;\\n      padding-top: 100%;\\n    }\\n    .circular {\\n      -webkit-animation: rotate 2s linear infinite;\\n              animation: rotate 2s linear infinite;\\n      height: 100%;\\n      -webkit-transform-origin: center center;\\n              transform-origin: center center;\\n      width: 100%;\\n      position: absolute;\\n      top: 0;\\n      bottom: 0;\\n      left: 0;\\n      right: 0;\\n      margin: auto;\\n    }\\n    .path {\\n      stroke-dasharray: 1, 200;\\n      stroke-dashoffset: 0;\\n      stroke: #0057e7;\\n      -webkit-animation: dash 1.5s ease-in-out infinite;\\n              animation: dash 1.5s ease-in-out infinite;\\n      stroke-linecap: round;\\n    }\\n    @-webkit-keyframes rotate {\\n      100% {\\n        -webkit-transform: rotate(360deg);\\n                transform: rotate(360deg);\\n      }\\n    }\\n\\n    @keyframes rotate {\\n      100% {\\n        -webkit-transform: rotate(360deg);\\n                transform: rotate(360deg);\\n      }\\n    }\\n    @-webkit-keyframes dash {\\n      0% {\\n        stroke-dasharray: 1, 200;\\n        stroke-dashoffset: 0;\\n      }\\n      50% {\\n        stroke-dasharray: 89, 200;\\n        stroke-dashoffset: -35px;\\n      }\\n      100% {\\n        stroke-dasharray: 89, 200;\\n        stroke-dashoffset: -124px;\\n      }\\n    }\\n    @keyframes dash {\\n      0% {\\n        stroke-dasharray: 1, 200;\\n        stroke-dashoffset: 0;\\n      }\\n      50% {\\n        stroke-dasharray: 89, 200;\\n        stroke-dashoffset: -35px;\\n      }\\n      100% {\\n        stroke-dasharray: 89, 200;\\n        stroke-dashoffset: -124px;\\n      }\\n    }\\n    </style>\\n  </head>\\n  <body>\\n    <!-- Display a message if JS has been disabled on the browser. -->\\n    <noscript>If you\\'re seeing this message, that means <strong>JavaScript has been disabled on your browser</strong>, please <strong>enable JavaScript</strong> to make this app work.</noscript>\\n    <noscript>Si vous voyez ce message, cela signifie que <strong>JavaScript a été désactivé sur votre navigateur</strong>, veuillez <strong>activer JavaScript</strong> pour que cette application fonctionne.</noscript>\\n\\n    <div id=\"root\">\\n      <!-- Display loader first. -->\\n      <div class=\"loader\">\\n        <svg class=\"circular\" viewBox=\"25 25 50 50\">\\n          <circle class=\"path\" cx=\"50\" cy=\"50\" r=\"20\" fill=\"none\" stroke-width=\"2\" stroke-miterlimit=\"10\" />\\n        </svg>\\n      </div>\\n    </div>\\n  </body>\\n</html>\\n';\nreturn __p\n})();}"
+          "source": "var _ = require(\"../node_modules/lodash/lodash.js\");module.exports = function (templateParams) {var compilation = templateParams.compilation;var webpack = templateParams.webpack;var webpackConfig = templateParams.webpackConfig;var htmlWebpackPlugin = templateParams.htmlWebpackPlugin;return (function(data) {\nvar __t, __p = '';\n__p += '<!doctype html>\\n<html lang=\"fr\">\\n  <head>\\n    <meta charset=\"utf-8\">\\n    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\\n    <!-- Use minimum-scale=1 to enable GPU rasterization -->\\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, minimum-scale=1, shrink-to-fit=no\">\\n    <title>Sylvain Dethier - Web app developer</title>\\n    <meta name=\"description\" content=\"Développeur d\\'application web: JavaScript, NodeJS, ReactJS\">\\n    <meta name=\"keywords\" content=\"développeur, web, full stack, JavaScript, NodeJS, ReactJS\">\\n\\n    <!-- Add to homescreen for Chrome on Android -->\\n    <meta name=\"mobile-web-app-capable\" content=\"yes\">\\n    <link rel=\"icon\" sizes=\"192x192\" href=\"%PUBLIC_URL%/icons/android-desktop.png\">\\n\\n    <!-- Add to homescreen for Safari on iOS -->\\n    <meta name=\"apple-mobile-web-app-capable\" content=\"yes\">\\n    <meta name=\"apple-mobile-web-app-status-bar-style\" content=\"black\">\\n    <meta name=\"apple-mobile-web-app-title\" content=\"JS Web Dev\">\\n    <link rel=\"apple-touch-icon-precomposed\" href=\"%PUBLIC_URL%/icons/ios-desktop.png\">\\n\\n    <!-- Tile icon for Win8 (144x144 + tile color) -->\\n    <meta name=\"msapplication-TileImage\" content=\"%PUBLIC_URL%/icons/ms-touch-icon-precomposed.png\">\\n    <meta name=\"msapplication-TileColor\" content=\"#2196F3\">\\n\\n    <link rel=\"shortcut icon\" href=\"%PUBLIC_URL%/icons/favicon.png\">\\n    <!--\\n      Notice the use of %PUBLIC_URL% in the tag above.\\n      It will be replaced with the URL of the `public` folder during the build.\\n      Only files inside the `public` folder can be referenced from the HTML.\\n\\n      Unlike \"/favicon.ico\" or \"favicon.ico\", \"%PUBLIC_URL%/favicon.ico\" will\\n      work correctly both with client-side routing and a non-root public URL.\\n      Learn how to configure a non-root public URL by running `npm run build`.\\n    -->\\n    <!-- Roboto from Google webfonts -->\\n    <link href=\"https://fonts.googleapis.com/css?family=Roboto:300,400,500\" rel=\"stylesheet\">\\n    <style type=\"text/css\">\\n    html, body {\\n      font-family: \\'Roboto\\', sans-serif;\\n    }\\n    /* https://codepen.io/jczimm/pen/vEBpoL */\\n    .loader {\\n      position: relative;\\n      margin: 0 auto;\\n      margin-top: 100px;\\n      width: 100px;\\n    }\\n    .loader:before {\\n      content: \\'\\';\\n      display: block;\\n      padding-top: 100%;\\n    }\\n    .circular {\\n      -webkit-animation: rotate 2s linear infinite;\\n              animation: rotate 2s linear infinite;\\n      height: 100%;\\n      -webkit-transform-origin: center center;\\n              transform-origin: center center;\\n      width: 100%;\\n      position: absolute;\\n      top: 0;\\n      bottom: 0;\\n      left: 0;\\n      right: 0;\\n      margin: auto;\\n    }\\n    .path {\\n      stroke-dasharray: 1, 200;\\n      stroke-dashoffset: 0;\\n      stroke: #0057e7;\\n      -webkit-animation: dash 1.5s ease-in-out infinite;\\n              animation: dash 1.5s ease-in-out infinite;\\n      stroke-linecap: round;\\n    }\\n    @-webkit-keyframes rotate {\\n      100% {\\n        -webkit-transform: rotate(360deg);\\n                transform: rotate(360deg);\\n      }\\n    }\\n\\n    @keyframes rotate {\\n      100% {\\n        -webkit-transform: rotate(360deg);\\n                transform: rotate(360deg);\\n      }\\n    }\\n    @-webkit-keyframes dash {\\n      0% {\\n        stroke-dasharray: 1, 200;\\n        stroke-dashoffset: 0;\\n      }\\n      50% {\\n        stroke-dasharray: 89, 200;\\n        stroke-dashoffset: -35px;\\n      }\\n      100% {\\n        stroke-dasharray: 89, 200;\\n        stroke-dashoffset: -124px;\\n      }\\n    }\\n    @keyframes dash {\\n      0% {\\n        stroke-dasharray: 1, 200;\\n        stroke-dashoffset: 0;\\n      }\\n      50% {\\n        stroke-dasharray: 89, 200;\\n        stroke-dashoffset: -35px;\\n      }\\n      100% {\\n        stroke-dasharray: 89, 200;\\n        stroke-dashoffset: -124px;\\n      }\\n    }\\n    </style>\\n\\n    <!-- Start Single Page Apps for GitHub Pages -->\\n    <script type=\"text/javascript\">\\n      // Single Page Apps for GitHub Pages\\n      // https://github.com/rafrex/spa-github-pages\\n      // Copyright (c) 2016 Rafael Pedicini, licensed under the MIT License\\n      // ----------------------------------------------------------------------\\n      // This script checks to see if a redirect is present in the query string\\n      // and converts it back into the correct url and adds it to the\\n      // browser\\'s history using window.history.replaceState(...),\\n      // which won\\'t cause the browser to attempt to load the new url.\\n      // When the single page app is loaded further down in this file,\\n      // the correct url will be waiting in the browser\\'s history for\\n      // the single page app to route accordingly.\\n      (function(l) {\\n        if (l.search) {\\n          var q = {};\\n          l.search.slice(1).split(\\'&\\').forEach(function(v) {\\n            var a = v.split(\\'=\\');\\n            q[a[0]] = a.slice(1).join(\\'=\\').replace(/~and~/g, \\'&\\');\\n          });\\n          if (q.p !== undefined) {\\n            window.history.replaceState(null, null,\\n              l.pathname.slice(0, -1) + (q.p || \\'\\') +\\n              (q.q ? (\\'?\\' + q.q) : \\'\\') +\\n              l.hash\\n            );\\n          }\\n        }\\n      }(window.location))\\n    </script>\\n    <!-- End Single Page Apps for GitHub Pages -->\\n  </head>\\n  <body>\\n    <!-- Display a message if JS has been disabled on the browser. -->\\n    <noscript>If you\\'re seeing this message, that means <strong>JavaScript has been disabled on your browser</strong>, please <strong>enable JavaScript</strong> to make this app work.</noscript>\\n    <noscript>Si vous voyez ce message, cela signifie que <strong>JavaScript a été désactivé sur votre navigateur</strong>, veuillez <strong>activer JavaScript</strong> pour que cette application fonctionne.</noscript>\\n\\n    <div id=\"root\">\\n      <!-- Display loader first. -->\\n      <div class=\"loader\">\\n        <svg class=\"circular\" viewBox=\"25 25 50 50\">\\n          <circle class=\"path\" cx=\"50\" cy=\"50\" r=\"20\" fill=\"none\" stroke-width=\"2\" stroke-miterlimit=\"10\" />\\n        </svg>\\n      </div>\\n    </div>\\n  </body>\\n</html>\\n';\nreturn __p\n})();}"
         },
         {
           "id": 2,
@@ -31475,8 +31477,8 @@
           "issuerId": 0,
           "issuerName": "./~/lodash/lodash.js",
           "profile": {
-            "factory": 22,
-            "building": 341
+            "factory": 19,
+            "building": 293
           },
           "failed": false,
           "errors": 0,
@@ -31516,8 +31518,8 @@
           "issuerId": 0,
           "issuerName": "./~/lodash/lodash.js",
           "profile": {
-            "factory": 3,
-            "building": 144
+            "factory": 1,
+            "building": 110
           },
           "failed": false,
           "errors": 0,
@@ -31605,8 +31607,8 @@
           "issuerId": 3,
           "issuerName": "./~/css-loader?{\"importLoaders\":1}!./~/postcss-loader?{\"ident\":\"postcss\"}!./~/sanitize.css/sanitize.css",
           "profile": {
-            "factory": 5,
-            "building": 2
+            "factory": 6,
+            "building": 1
           },
           "failed": false,
           "errors": 0,
@@ -31646,7 +31648,7 @@
           "issuerId": 2,
           "issuerName": "./~/buffer/index.js",
           "profile": {
-            "factory": 16,
+            "factory": 15,
             "building": 2
           },
           "failed": false,
@@ -31687,8 +31689,8 @@
           "issuerId": 0,
           "issuerName": "./~/css-loader/lib/css-base.js",
           "profile": {
-            "factory": 1,
-            "building": 36
+            "factory": 2,
+            "building": 34
           },
           "failed": false,
           "errors": 0,
@@ -31728,8 +31730,8 @@
           "issuerId": null,
           "issuerName": null,
           "profile": {
-            "factory": 7,
-            "building": 86
+            "factory": 8,
+            "building": 94
           },
           "failed": false,
           "errors": 0,
@@ -31759,7 +31761,7 @@
           "issuerId": 2,
           "issuerName": "./~/buffer/index.js",
           "profile": {
-            "factory": 16,
+            "factory": 15,
             "building": 3
           },
           "failed": false,
@@ -31800,8 +31802,8 @@
           "issuerId": 2,
           "issuerName": "./~/buffer/index.js",
           "profile": {
-            "factory": 17,
-            "building": 2
+            "factory": 15,
+            "building": 3
           },
           "failed": false,
           "errors": 0,
@@ -31841,7 +31843,7 @@
           "issuerId": 2,
           "issuerName": "./~/buffer/index.js",
           "profile": {
-            "factory": 17,
+            "factory": 16,
             "building": 2
           },
           "failed": false,
@@ -31931,7 +31933,7 @@
           "issuerName": "./~/css-loader?{\"importLoaders\":1}!./~/postcss-loader?{\"ident\":\"postcss\"}!./src/App/styles.css",
           "profile": {
             "factory": 1,
-            "building": 2
+            "building": 3
           },
           "failed": false,
           "errors": 0,
@@ -31972,7 +31974,7 @@
           "issuerName": "./~/buffer/index.js",
           "profile": {
             "factory": 1,
-            "building": 4
+            "building": 3
           },
           "failed": false,
           "errors": 0,
@@ -32013,7 +32015,7 @@
           "issuerName": "./~/css-loader/lib/css-base.js",
           "profile": {
             "factory": 0,
-            "building": 52
+            "building": 49
           },
           "failed": false,
           "errors": 0,
@@ -32054,7 +32056,7 @@
           "issuerName": null,
           "profile": {
             "factory": 13,
-            "building": 85
+            "building": 93
           },
           "failed": false,
           "errors": 0,
@@ -32085,7 +32087,7 @@
           "issuerName": "./~/buffer/index.js",
           "profile": {
             "factory": 1,
-            "building": 5
+            "building": 4
           },
           "failed": false,
           "errors": 0,
@@ -32126,7 +32128,7 @@
           "issuerName": "./~/buffer/index.js",
           "profile": {
             "factory": 1,
-            "building": 5
+            "building": 4
           },
           "failed": false,
           "errors": 0,
