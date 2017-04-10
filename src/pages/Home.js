@@ -23,7 +23,7 @@ const AboutCard = (
       avatar="/icons/favicon.png"
     />
     <CardActions>
-      <Link to={intlLocation(urls.about)}>
+      <Link to={intlLocation(urls.about)} data-ga-label="About @home-page">
         <RaisedButton
           primary
           label="Voir la page"
@@ -42,7 +42,7 @@ const ResumeCard = (
       avatar={<CodeIcon className="react-icons bigger" />}
     />
     <CardActions>
-      <Link to={intlLocation(urls.resume)}>
+      <Link to={intlLocation(urls.resume)} data-ga-label="Resume @home-page">
         <RaisedButton
           primary
           label="Voir la page"
@@ -61,7 +61,7 @@ const ContactCard = (
       avatar={<ContactMailIcon className="react-icons bigger" />}
     />
     <CardActions>
-      <Link to={intlLocation(urls.contact)}>
+      <Link to={intlLocation(urls.contact)} data-ga-label="Contact @home-page">
         <RaisedButton
           primary
           label="Voir la page"

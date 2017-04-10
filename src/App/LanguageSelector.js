@@ -41,7 +41,13 @@ class LanguageSelector extends Component {
         <MenuItem
           value="fr"
           primaryText={
-            <Link to="/fr/" className="menu-item-link">Français</Link>
+            <Link
+              to="/fr/"
+              className="menu-item-link"
+              data-ga-label="FR @language"
+            >
+              Français
+            </Link>
           }
         />
         <MenuItem

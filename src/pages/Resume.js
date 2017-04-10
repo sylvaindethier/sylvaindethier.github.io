@@ -1,5 +1,6 @@
 /* @flow */
 import React from "react";
+import Link from "react-router-dom/Link";
 import { Card, CardHeader, CardText, CardActions } from "material-ui/Card";
 import RaisedButton from "material-ui/RaisedButton";
 import CodeIcon from "react-icons/md/code";
@@ -9,10 +10,7 @@ import GitHubIcon from "react-icons/fa/github";
 import urls from "../urls";
 
 const styles = {
-  RaisedButton: {
-    marginLeft: "0.5em",
-    marginRight: "0.5em"
-  }
+  Button: { marginRight: "0.5em", marginLeft: "0.5em" }
 };
 
 const Resume = () => (
@@ -23,41 +21,56 @@ const Resume = () => (
       avatar={<CodeIcon className="react-icons bigger" />}
     />
     <CardText>
-      Mon parcours sur
-      <RaisedButton
-        href={urls.linkedin}
-        label="LinkedIn"
-        icon={<LinkedInIcon className="react-icons big" />}
-        style={styles.RaisedButton}
-      />
+      Mon parcours complet sur
+      <Link
+        to={urls.linkedin}
+        data-ga-label="LinkedIn @resume-page"
+        style={styles.Button}
+      >
+        <RaisedButton
+          label="LinkedIn"
+          icon={<LinkedInIcon className="react-icons big" />}
+        />
+      </Link>
       <br />
       <br />
       Mes collaborations publiques sur
-      <RaisedButton
-        href={urls.github}
-        label="GitHub"
-        icon={<GitHubIcon className="react-icons big" />}
-        style={styles.RaisedButton}
-      />
-      {" "}, à voir aussi sur
-      <RaisedButton
-        href={urls.gitshowcase}
-        label="Git Showcase"
-        icon={<GitHubIcon className="react-icons big" />}
-        style={styles.RaisedButton}
-      />
+      <Link
+        to={urls.github}
+        data-ga-label="GitHub @resume-page"
+        style={styles.Button}
+      >
+        <RaisedButton
+          label="GitHub"
+          icon={<GitHubIcon className="react-icons big" />}
+        />
+      </Link>, à voir aussi sur
+      <Link
+        to={urls.gitshowcase}
+        data-ga-label="GitShowcase @resume-page"
+        style={styles.Button}
+      >
+        <RaisedButton
+          label="Git Showcase"
+          icon={<GitHubIcon className="react-icons big" />}
+        />
+      </Link>
     </CardText>
     <CardText>
       Dernière mise à jour: <b>avril 2017</b>.
     </CardText>
     <CardActions>
-      <RaisedButton
-        primary
-        href={urls.resumePdf}
+      <Link
+        to={urls.resumePdf}
         target="_blank"
-        label="Télécharger le PDF"
-        icon={<FileDownloadIcon className="react-icons big" />}
-      />
+        data-ga-label="PDF @resume-page"
+      >
+        <RaisedButton
+          primary
+          label="Télécharger le PDF"
+          icon={<FileDownloadIcon className="react-icons big" />}
+        />
+      </Link>
     </CardActions>
   </Card>
 );

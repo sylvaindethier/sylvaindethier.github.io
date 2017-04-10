@@ -20,7 +20,8 @@ const menuItems = [
     link: {
       to: intlLocation(urls.home),
       exact: true,
-      children: "Accueil"
+      children: "Accueil",
+      "data-ga-label": "Home @menu"
     }
   },
 
@@ -28,7 +29,8 @@ const menuItems = [
     icon: <AboutIcon />,
     link: {
       to: intlLocation(urls.about),
-      children: "À propos"
+      children: "À propos",
+      "data-ga-label": "About @menu"
     }
   },
 
@@ -36,7 +38,8 @@ const menuItems = [
     icon: <ResumeIcon />,
     link: {
       to: intlLocation(urls.resume),
-      children: "CV"
+      children: "CV",
+      "data-ga-label": "Resume @menu"
     }
   },
 
@@ -44,7 +47,8 @@ const menuItems = [
     icon: <ContactIcon />,
     link: {
       to: intlLocation(urls.contact),
-      children: "Contact"
+      children: "Contact",
+      "data-ga-label": "Contact @menu"
     }
   }
 ];
@@ -71,7 +75,11 @@ export default class Bar extends Component {
       <header>
         <AppBar
           title={
-            <Link to={intlLocation(urls.home)} className="bar-link">
+            <Link
+              to={intlLocation(urls.home)}
+              className="bar-link"
+              data-ga-label="Home @appbar"
+            >
               S. Dethier - WebApp Developer
             </Link>
           }

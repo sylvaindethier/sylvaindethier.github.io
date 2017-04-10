@@ -37,7 +37,10 @@ const Site = (
     {" "}
     by Sylvain Dethier. Found a bug?
     {" "}
-    <a href="https://github.com/sylvaindethier/sylvaindethier.github.io/issues">
+    <a
+      href="https://github.com/sylvaindethier/sylvaindethier.github.io/issues"
+      data-ga-label="GitHub issues @footer"
+    >
       Fill in an issue
     </a>
     .
@@ -81,6 +84,7 @@ const Socials = (
       iconStyle={styles.mediumIcon}
       style={styles.medium}
       href={urls.twitter}
+      data-ga-label="Twitter @footer"
       tooltip="Mon Twitter"
       tooltipPosition="top-center"
       touch
@@ -91,6 +95,7 @@ const Socials = (
       iconStyle={styles.mediumIcon}
       style={styles.medium}
       href={urls.github}
+      data-ga-label="GitHub @footer"
       tooltip="Mon GitHub"
       tooltipPosition="top-center"
       touch
