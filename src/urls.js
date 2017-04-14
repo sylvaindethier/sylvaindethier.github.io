@@ -6,7 +6,7 @@ const urls: { [key: string]: string } = {
   resumePdf: "/documents/test.pdf",
   contact: "/contact",
   // externals
-  linkedin: "https://linked.com/in/sylvaindethier",
+  linkedin: "https://www.linkedin.com/in/sylvaindethier/",
   github: "https://github.com/sylvaindethier",
   gitshowcase: "https://gitshowcase.com/sylvaindethier",
   twitter: "https://twitter.com/sylvaindethier",
