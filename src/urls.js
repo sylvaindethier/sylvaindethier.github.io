@@ -10,6 +10,7 @@ const urls: { [key: string]: string } = {
   github: "https://github.com/sylvaindethier",
   gitshowcase: "https://gitshowcase.com/sylvaindethier",
   twitter: "https://twitter.com/sylvaindethier",
+  stackoverflow: "https://stackoverflow.com/users/5046098/dethier",
   email: "mailto:dethiersylvain@gmail.com"
 };
 
